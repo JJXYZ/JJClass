@@ -12,6 +12,16 @@
  */
 
 
+/**
+ *  王中周的个人博客:CocoaPods详解之----制作篇
+    blog.csdn.net/wzzvictory/article/details/20067595
+ */
+
+/**
+    玉令天下的博客:Publish Your Pods on CocoaPods with Trunk
+ * yulingtianxia.com/blog/2014/05/26/publish-your-pods-on-cocoapods-with-trunk/
+ */
+
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
