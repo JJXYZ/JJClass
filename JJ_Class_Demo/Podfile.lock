@@ -1,0 +1,13 @@
+PODS:
+  - JJDefine (1.0.0)
+  - JJSandBox (1.0.0)
+
+DEPENDENCIES:
+  - JJDefine (~> 1.0.0)
+  - JJSandBox (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  JJDefine: 70cb1394144ff5dcf3bede1dd848cf27cfada8a4
+  JJSandBox: e02bc7a8812efe5a5254006041b8ec018a5c0ebf
+
+COCOAPODS: 0.38.2

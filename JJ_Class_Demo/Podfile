@@ -1,0 +1,7 @@
+
+platform:ios,'7.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod 'JJDefine', '~> 1.0.0'
+pod 'JJSandBox', '~> 1.0.0'
