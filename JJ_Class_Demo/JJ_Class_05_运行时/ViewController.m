@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    Class class = objc_getClass([@"NSString2" UTF8String]);
+    NSLog(@"%@", NSStringFromClass(class));
 }
 
 @end

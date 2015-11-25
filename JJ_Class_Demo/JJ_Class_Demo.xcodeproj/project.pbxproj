@@ -262,6 +262,8 @@
 		A3224DED1C05A48500675C60 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
 		A3224DEE1C05A48500675C60 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
 		A3224DEF1C05A48500675C60 /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
+		A3224DF21C05BCE900675C60 /* 面试.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "面试.h"; sourceTree = "<group>"; };
+		A3224DF31C05BE2600675C60 /* runtime方法.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "runtime方法.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +378,7 @@
 			children = (
 				A3224C041C0557A500675C60 /* 关于Git.h */,
 				A3224C3C1C055D0300675C60 /* 代码.h */,
+				A3224DF21C05BCE900675C60 /* 面试.h */,
 			);
 			path = "JJ_Class_01_笔记";
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 		A3224D401C05A1E500675C60 /* JJ_Class_05_运行时 */ = {
 			isa = PBXGroup;
 			children = (
+				A3224DF31C05BE2600675C60 /* runtime方法.h */,
 				A3224D441C05A1E500675C60 /* AppDelegate.h */,
 				A3224D451C05A1E500675C60 /* AppDelegate.m */,
 				A3224D471C05A1E500675C60 /* ViewController.h */,
@@ -1655,6 +1659,7 @@
 				A3224CAD1C059A8B00675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3224CE31C059AF800675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_03_JSPatch" */ = {
 			isa = XCConfigurationList;
@@ -1663,6 +1668,7 @@
 				A3224CE51C059AF800675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3224D061C059DBB00675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_04_AutoLayout" */ = {
 			isa = XCConfigurationList;
@@ -1671,6 +1677,7 @@
 				A3224D081C059DBB00675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3224D211C059F0300675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_04_Masonry" */ = {
 			isa = XCConfigurationList;
@@ -1679,6 +1686,7 @@
 				A3224D231C059F0300675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3224D381C059FB000675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_05_对象模型" */ = {
 			isa = XCConfigurationList;
@@ -1687,6 +1695,7 @@
 				A3224D3A1C059FB000675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3224D531C05A1E500675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_05_运行时" */ = {
 			isa = XCConfigurationList;
@@ -1695,6 +1704,7 @@
 				A3224D551C05A1E500675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3224D6E1C05A24700675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_05_MJExtension" */ = {
 			isa = XCConfigurationList;
@@ -1703,6 +1713,7 @@
 				A3224D701C05A24700675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
