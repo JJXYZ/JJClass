@@ -46,9 +46,16 @@ http://blog.devtang.com/blog/2014/03/05/use-alcatraz-to-manage-xcode-plugins/
 ====================================================================
 
 
+安装pods
+ cocoapods安装与使用
+ http://blog.csdn.net/folish_audi/article/details/37501403
+ CocoaPods安装和使用教程
+ http://code4app.com/article/cocoapods-install-usage
+ 
+ 注意:gem sources -a https://ruby.taobao.org/  被干掉了使用 http://rubygems.org/
+ 
 
-
-
+====================================================================
 
 
  
