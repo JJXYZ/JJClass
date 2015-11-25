@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  JJ_Class_Demo
+//
+//  Created by Jay on 15/11/25.
+//  Copyright © 2015年 JJ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "JJDefine_Device.h"
+#import "JJDefine_UI.h"
+
+#import "JJSandBox.h"
+
+#endif /* PrefixHeader_pch */

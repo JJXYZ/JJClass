@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JJDefine_UI.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = RGB(100,100,100);
+    
+//    [JJSandBox getHomeDirectoryPath];
 }
 
 @end

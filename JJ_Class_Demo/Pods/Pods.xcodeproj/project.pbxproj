@@ -7,65 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34ABD30C9AE6502651FBC0EB87FC7293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2541677A919E6471E891BA6569648A4B /* Foundation.framework */; };
-		3910C1CB723E46D5920C5E976ABA3202 /* JJSandBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA0888D082B3B475D36693E27DBC57E /* JJSandBox-dummy.m */; };
-		3B4EF54B49202FC6BF2C01990974E1CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7574F55FA60F6929831084C03793F5 /* CoreGraphics.framework */; };
-		45D2A266AB576B3447EF0EC2E863FF01 /* JJSandBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E33E1C71F3A4FF1C618F95087B71B2 /* JJSandBox.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2C3E0BAB8AB8F2B1BEF75A5D6005D188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14F813BB5B4E463629CAC63F605471D /* Foundation.framework */; };
+		4ABD9DF8468D7AC2AA2036068C3677A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43452101B0577B2733E5E2C67D04E80 /* UIKit.framework */; };
+		91CD72AF4DBD6BA2B1E4BD23339BE1CE /* JJSandBox.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B1191B254500F3EA3142BA3C4A1D21 /* JJSandBox.h */; };
 		9505A0B95DCF62B1BD3FADFAD9F347F6 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB169B54E175782F527C698FF19DA5F /* Pods-dummy.m */; };
-		A3DE01DFC17BBE81F4979B01CF296C21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2541677A919E6471E891BA6569648A4B /* Foundation.framework */; };
-		AF2CCA8C38EAC6E81D238DE2A8E96003 /* JJSandBox.h in Headers */ = {isa = PBXBuildFile; fileRef = A92FD8CA019FD00A8656370EF193ED10 /* JJSandBox.h */; };
-		E15242C341E04747B81847AC761621FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7991BEAEE343A41582308AC4D323C7FE /* UIKit.framework */; };
+		A3DE01DFC17BBE81F4979B01CF296C21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14F813BB5B4E463629CAC63F605471D /* Foundation.framework */; };
+		B56A4AE3CB84B25579099483B13A333B /* JJSandBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1593250C2500E340E3C0E593E9424FAB /* JJSandBox-dummy.m */; };
+		D27AC80DC37A31DC6E5B939CB46B31E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8A5B133F4FC4747E7407B1C22A02D6 /* CoreGraphics.framework */; };
+		D447307FD4FD0C68E7D5237437961865 /* JJSandBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 328599FD10E5B305323D017EBA152D97 /* JJSandBox.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5E6C202C27679476A2CFE40FFD867D57 /* PBXContainerItemProxy */ = {
+		86B940670A1EBDB2177265B2103AFC62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F5CA8EED4898C1A21702515C82E097E0;
+			remoteGlobalIDString = 4D5684E274A184DA408560340C557E28;
 			remoteInfo = JJSandBox;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F2B29309CAAEBB3A865EBDA5FB5D28B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		1593250C2500E340E3C0E593E9424FAB /* JJSandBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JJSandBox-dummy.m"; sourceTree = "<group>"; };
 		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1807B480777A45554F88D4D2E9D7FBD1 /* JJSandBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJSandBox-prefix.pch"; sourceTree = "<group>"; };
 		1FB169B54E175782F527C698FF19DA5F /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		2541677A919E6471E891BA6569648A4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2F30BE0336C4E57E2796257ADAF3E1BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FDFD4627DA3C7FF754808A34179B04A /* libJJSandBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJSandBox.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C7574F55FA60F6929831084C03793F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		328599FD10E5B305323D017EBA152D97 /* JJSandBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JJSandBox.m; path = JJSandBox/JJSandBox.m; sourceTree = "<group>"; };
 		574B27948A19C8BF1B068D2BC33D53C3 /* JJSandBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JJSandBox.xcconfig; sourceTree = "<group>"; };
 		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		7991BEAEE343A41582308AC4D323C7FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		81D41BD53C9A484323476B5EFE06C193 /* JJDefine_Device.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JJDefine_Device.h; path = JJDefine/JJDefine_Device.h; sourceTree = "<group>"; };
-		A3FC55E6FA0CE2A4E02544BA49914214 /* JJSandBox-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JJSandBox-Private.xcconfig"; sourceTree = "<group>"; };
-		A92FD8CA019FD00A8656370EF193ED10 /* JJSandBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JJSandBox.h; path = JJSandBox/JJSandBox.h; sourceTree = "<group>"; };
+		B14F813BB5B4E463629CAC63F605471D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B18179AD2F0A251229856C3C32B16A75 /* JJDefine_UI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JJDefine_UI.h; path = JJDefine/JJDefine_UI.h; sourceTree = "<group>"; };
+		B57CB5D31FBF0D0F44C2BFEA15306A2B /* JJSandBox-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JJSandBox-Private.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCA0888D082B3B475D36693E27DBC57E /* JJSandBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JJSandBox-dummy.m"; sourceTree = "<group>"; };
 		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		D4E33E1C71F3A4FF1C618F95087B71B2 /* JJSandBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JJSandBox.m; path = JJSandBox/JJSandBox.m; sourceTree = "<group>"; };
+		BFBDBB7268C6FA0B6E123C649FBDACCF /* libJJSandBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJSandBox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B1191B254500F3EA3142BA3C4A1D21 /* JJSandBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JJSandBox.h; path = JJSandBox/JJSandBox.h; sourceTree = "<group>"; };
+		EC8A5B133F4FC4747E7407B1C22A02D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F43452101B0577B2733E5E2C67D04E80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FEC8D7172685C049CCFC349C3CDA9D39 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B7CDB14B7BC153F91EB3AC83788CEF09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27AC80DC37A31DC6E5B939CB46B31E5 /* CoreGraphics.framework in Frameworks */,
+				2C3E0BAB8AB8F2B1BEF75A5D6005D188 /* Foundation.framework in Frameworks */,
+				4ABD9DF8468D7AC2AA2036068C3677A2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD83CC2114BDAF17D107F9043C1C1375 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A3DE01DFC17BBE81F4979B01CF296C21 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB326C7C5C16A90DB67EBAF222F53227 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B4EF54B49202FC6BF2C01990974E1CD /* CoreGraphics.framework in Frameworks */,
-				34ABD30C9AE6502651FBC0EB87FC7293 /* Foundation.framework in Frameworks */,
-				E15242C341E04747B81847AC761621FE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +83,8 @@
 		2E598C9F231E6BAF17CA8BFD7684D74E /* JJSandBox */ = {
 			isa = PBXGroup;
 			children = (
-				A92FD8CA019FD00A8656370EF193ED10 /* JJSandBox.h */,
-				D4E33E1C71F3A4FF1C618F95087B71B2 /* JJSandBox.m */,
+				D3B1191B254500F3EA3142BA3C4A1D21 /* JJSandBox.h */,
+				328599FD10E5B305323D017EBA152D97 /* JJSandBox.m */,
 				8F6DD6B223F7D2CD990577D8AEE0CAFC /* Support Files */,
 			);
 			path = JJSandBox;
@@ -93,9 +93,9 @@
 		39CF33B2E976FD3E12A7D9F562B97919 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4C7574F55FA60F6929831084C03793F5 /* CoreGraphics.framework */,
-				2541677A919E6471E891BA6569648A4B /* Foundation.framework */,
-				7991BEAEE343A41582308AC4D323C7FE /* UIKit.framework */,
+				EC8A5B133F4FC4747E7407B1C22A02D6 /* CoreGraphics.framework */,
+				B14F813BB5B4E463629CAC63F605471D /* Foundation.framework */,
+				F43452101B0577B2733E5E2C67D04E80 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -124,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				574B27948A19C8BF1B068D2BC33D53C3 /* JJSandBox.xcconfig */,
-				A3FC55E6FA0CE2A4E02544BA49914214 /* JJSandBox-Private.xcconfig */,
-				BCA0888D082B3B475D36693E27DBC57E /* JJSandBox-dummy.m */,
+				B57CB5D31FBF0D0F44C2BFEA15306A2B /* JJSandBox-Private.xcconfig */,
+				1593250C2500E340E3C0E593E9424FAB /* JJSandBox-dummy.m */,
 				1807B480777A45554F88D4D2E9D7FBD1 /* JJSandBox-prefix.pch */,
 			);
 			name = "Support Files";
@@ -158,7 +158,7 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FDFD4627DA3C7FF754808A34179B04A /* libJJSandBox.a */,
+				BFBDBB7268C6FA0B6E123C649FBDACCF /* libJJSandBox.a */,
 				2F30BE0336C4E57E2796257ADAF3E1BB /* libPods.a */,
 			);
 			name = Products;
@@ -175,17 +175,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C9F2B83B55445FC85A85F094F6767472 /* Headers */ = {
+		FD9688751AA30FC4A8CCEDD85660C04F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2CCA8C38EAC6E81D238DE2A8E96003 /* JJSandBox.h in Headers */,
+				91CD72AF4DBD6BA2B1E4BD23339BE1CE /* JJSandBox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4D5684E274A184DA408560340C557E28 /* JJSandBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00495AF84A1439C13C57DA92F99D5F39 /* Build configuration list for PBXNativeTarget "JJSandBox" */;
+			buildPhases = (
+				9ABAFC428358EFEECFF91CCA60AB8C3C /* Sources */,
+				B7CDB14B7BC153F91EB3AC83788CEF09 /* Frameworks */,
+				FD9688751AA30FC4A8CCEDD85660C04F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJSandBox;
+			productName = JJSandBox;
+			productReference = BFBDBB7268C6FA0B6E123C649FBDACCF /* libJJSandBox.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		E6718510140655670681FE0E1E21B7AA /* Pods */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F142162943D4E6B9DCBAFD43CEF174C /* Build configuration list for PBXNativeTarget "Pods" */;
@@ -196,28 +213,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				3630E9E748F439057A900C3A8CB64555 /* PBXTargetDependency */,
+				2B632EF0C30169DC5BBB20F2DFE8E8C8 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
 			productReference = 2F30BE0336C4E57E2796257ADAF3E1BB /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F5CA8EED4898C1A21702515C82E097E0 /* JJSandBox */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF842DE13D3AE82EC8D8CB8B0839BA43 /* Build configuration list for PBXNativeTarget "JJSandBox" */;
-			buildPhases = (
-				72DD2B1EE08A8ABA45CB166A7C08F462 /* Sources */,
-				CB326C7C5C16A90DB67EBAF222F53227 /* Frameworks */,
-				C9F2B83B55445FC85A85F094F6767472 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JJSandBox;
-			productName = JJSandBox;
-			productReference = 2FDFD4627DA3C7FF754808A34179B04A /* libJJSandBox.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -241,19 +241,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F5CA8EED4898C1A21702515C82E097E0 /* JJSandBox */,
+				4D5684E274A184DA408560340C557E28 /* JJSandBox */,
 				E6718510140655670681FE0E1E21B7AA /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		72DD2B1EE08A8ABA45CB166A7C08F462 /* Sources */ = {
+		9ABAFC428358EFEECFF91CCA60AB8C3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3910C1CB723E46D5920C5E976ABA3202 /* JJSandBox-dummy.m in Sources */,
-				45D2A266AB576B3447EF0EC2E863FF01 /* JJSandBox.m in Sources */,
+				B56A4AE3CB84B25579099483B13A333B /* JJSandBox-dummy.m in Sources */,
+				D447307FD4FD0C68E7D5237437961865 /* JJSandBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,11 +268,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3630E9E748F439057A900C3A8CB64555 /* PBXTargetDependency */ = {
+		2B632EF0C30169DC5BBB20F2DFE8E8C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JJSandBox;
-			target = F5CA8EED4898C1A21702515C82E097E0 /* JJSandBox */;
-			targetProxy = 5E6C202C27679476A2CFE40FFD867D57 /* PBXContainerItemProxy */;
+			target = 4D5684E274A184DA408560340C557E28 /* JJSandBox */;
+			targetProxy = 86B940670A1EBDB2177265B2103AFC62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,38 +310,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		1A81A2498FC5E4E1D9715841BB230259 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3FC55E6FA0CE2A4E02544BA49914214 /* JJSandBox-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JJSandBox/JJSandBox-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		3D3BD96FE53A66D271857C57FC80B9C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3FC55E6FA0CE2A4E02544BA49914214 /* JJSandBox-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JJSandBox/JJSandBox-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		4F3EC7ABD3A15399B24B7A96B75D8193 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -414,9 +382,50 @@
 			};
 			name = Debug;
 		};
+		B41ED88DF3413085B1A4E019FF0F66F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57CB5D31FBF0D0F44C2BFEA15306A2B /* JJSandBox-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JJSandBox/JJSandBox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E26EEB23C9A915EBF119559F9B0E706B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57CB5D31FBF0D0F44C2BFEA15306A2B /* JJSandBox-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JJSandBox/JJSandBox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00495AF84A1439C13C57DA92F99D5F39 /* Build configuration list for PBXNativeTarget "JJSandBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26EEB23C9A915EBF119559F9B0E706B /* Debug */,
+				B41ED88DF3413085B1A4E019FF0F66F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -431,15 +440,6 @@
 			buildConfigurations = (
 				4F3EC7ABD3A15399B24B7A96B75D8193 /* Debug */,
 				9728833FB1A3F2916633F5E028E7EDA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DF842DE13D3AE82EC8D8CB8B0839BA43 /* Build configuration list for PBXNativeTarget "JJSandBox" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D3BD96FE53A66D271857C57FC80B9C9 /* Debug */,
-				1A81A2498FC5E4E1D9715841BB230259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

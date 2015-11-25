@@ -3,5 +3,7 @@ platform:ios,'7.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
 
+link_with 'JJ_Class_01_笔记', 'JJ_Class_02_3DTouch', 'JJ_Class_02_3DTouch-PeekAndPopGestureDemo', 'JJ_Class_03_js', 'JJ_Class_03_JSPatch', 'JJ_Class_04_AutoLayout', 'JJ_Class_04_Masonry', 'JJ_Class_05_运行时', 'JJ_Class_05_MJExtension', 'JJ_Class_06_RunLoop', '', '', '', '', '', '', '', '', '', '', ''
+
 pod 'JJDefine', '~> 1.0.0'
 pod 'JJSandBox', '~> 1.0.0'
