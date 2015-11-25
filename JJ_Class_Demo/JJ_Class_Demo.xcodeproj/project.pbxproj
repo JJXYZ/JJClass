@@ -23,6 +23,19 @@
 		A3224C7B1C05610400675C60 /* TZTestOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3224C761C05610400675C60 /* TZTestOneViewController.xib */; };
 		A3224C7C1C05610400675C60 /* TZTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224C781C05610400675C60 /* TZTestTwoViewController.m */; };
 		A3224C7D1C05610400675C60 /* TZTestTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3224C791C05610400675C60 /* TZTestTwoViewController.xib */; };
+		A3224C861C059A8A00675C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224C851C059A8A00675C60 /* main.m */; };
+		A3224C891C059A8A00675C60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224C881C059A8A00675C60 /* AppDelegate.m */; };
+		A3224C8C1C059A8B00675C60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224C8B1C059A8B00675C60 /* ViewController.m */; };
+		A3224C8F1C059A8B00675C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224C8D1C059A8B00675C60 /* Main.storyboard */; };
+		A3224C911C059A8B00675C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3224C901C059A8B00675C60 /* Assets.xcassets */; };
+		A3224C941C059A8B00675C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224C921C059A8B00675C60 /* LaunchScreen.storyboard */; };
+		A3224CBD1C059AF800675C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224CBC1C059AF800675C60 /* main.m */; };
+		A3224CC01C059AF800675C60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224CBF1C059AF800675C60 /* AppDelegate.m */; };
+		A3224CC31C059AF800675C60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224CC21C059AF800675C60 /* ViewController.m */; };
+		A3224CC61C059AF800675C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224CC41C059AF800675C60 /* Main.storyboard */; };
+		A3224CC81C059AF800675C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3224CC71C059AF800675C60 /* Assets.xcassets */; };
+		A3224CCB1C059AF800675C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224CC91C059AF800675C60 /* LaunchScreen.storyboard */; };
+		A3224CED1C059B8B00675C60 /* JSPatch in Resources */ = {isa = PBXBuildFile; fileRef = A3224CEC1C059B8B00675C60 /* JSPatch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +68,27 @@
 		A3224C771C05610400675C60 /* TZTestTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTestTwoViewController.h; sourceTree = "<group>"; };
 		A3224C781C05610400675C60 /* TZTestTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTestTwoViewController.m; sourceTree = "<group>"; };
 		A3224C791C05610400675C60 /* TZTestTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZTestTwoViewController.xib; sourceTree = "<group>"; };
+		A3224C821C059A8A00675C60 /* JJ_Class_03_js.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_03_js.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3224C851C059A8A00675C60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3224C871C059A8A00675C60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3224C881C059A8A00675C60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3224C8A1C059A8B00675C60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3224C8B1C059A8B00675C60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3224C8E1C059A8B00675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3224C901C059A8B00675C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3224C931C059A8B00675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3224C951C059A8B00675C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3224CB91C059AF800675C60 /* JJ_Class_03_JSPatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_03_JSPatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3224CBC1C059AF800675C60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3224CBE1C059AF800675C60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3224CBF1C059AF800675C60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3224CC11C059AF800675C60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3224CC21C059AF800675C60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3224CC51C059AF800675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3224CC71C059AF800675C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3224CCA1C059AF800675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3224CCC1C059AF800675C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3224CEC1C059B8B00675C60 /* JSPatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JSPatch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +113,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3224C7F1C059A8A00675C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224CB61C059AF800675C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +136,8 @@
 				A3224BD21C05574300675C60 /* JJ_Class_01_笔记 */,
 				A3224C0A1C0559B900675C60 /* JJ_Class_02_3DTouch */,
 				A3224C421C055FC000675C60 /* JJ_Class_02_3DTouch-PeekAndPopGestureDemo */,
+				A3224C831C059A8A00675C60 /* JJ_Class_03_js */,
+				A3224CBA1C059AF800675C60 /* JJ_Class_03_JSPatch */,
 				A3224B981C0555F200675C60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +148,8 @@
 				A3224BD11C05574300675C60 /* JJ_Class_01_笔记.app */,
 				A3224C091C0559B900675C60 /* JJ_Class_02_3DTouch.app */,
 				A3224C411C055FC000675C60 /* JJ_Class_02_3DTouch-PeekAndPopGestureDemo.app */,
+				A3224C821C059A8A00675C60 /* JJ_Class_03_js.app */,
+				A3224CB91C059AF800675C60 /* JJ_Class_03_JSPatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +217,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A3224C831C059A8A00675C60 /* JJ_Class_03_js */ = {
+			isa = PBXGroup;
+			children = (
+				A3224C871C059A8A00675C60 /* AppDelegate.h */,
+				A3224C881C059A8A00675C60 /* AppDelegate.m */,
+				A3224C8A1C059A8B00675C60 /* ViewController.h */,
+				A3224C8B1C059A8B00675C60 /* ViewController.m */,
+				A3224C8D1C059A8B00675C60 /* Main.storyboard */,
+				A3224C901C059A8B00675C60 /* Assets.xcassets */,
+				A3224C921C059A8B00675C60 /* LaunchScreen.storyboard */,
+				A3224C951C059A8B00675C60 /* Info.plist */,
+				A3224C841C059A8A00675C60 /* Supporting Files */,
+			);
+			path = JJ_Class_03_js;
+			sourceTree = "<group>";
+		};
+		A3224C841C059A8A00675C60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3224C851C059A8A00675C60 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3224CBA1C059AF800675C60 /* JJ_Class_03_JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				A3224CEC1C059B8B00675C60 /* JSPatch */,
+				A3224CBE1C059AF800675C60 /* AppDelegate.h */,
+				A3224CBF1C059AF800675C60 /* AppDelegate.m */,
+				A3224CC11C059AF800675C60 /* ViewController.h */,
+				A3224CC21C059AF800675C60 /* ViewController.m */,
+				A3224CC41C059AF800675C60 /* Main.storyboard */,
+				A3224CC71C059AF800675C60 /* Assets.xcassets */,
+				A3224CC91C059AF800675C60 /* LaunchScreen.storyboard */,
+				A3224CCC1C059AF800675C60 /* Info.plist */,
+				A3224CBB1C059AF800675C60 /* Supporting Files */,
+			);
+			path = JJ_Class_03_JSPatch;
+			sourceTree = "<group>";
+		};
+		A3224CBB1C059AF800675C60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3224CBC1C059AF800675C60 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +320,40 @@
 			productReference = A3224C411C055FC000675C60 /* JJ_Class_02_3DTouch-PeekAndPopGestureDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A3224C811C059A8A00675C60 /* JJ_Class_03_js */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3224CB21C059A8B00675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_03_js" */;
+			buildPhases = (
+				A3224C7E1C059A8A00675C60 /* Sources */,
+				A3224C7F1C059A8A00675C60 /* Frameworks */,
+				A3224C801C059A8A00675C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJ_Class_03_js;
+			productName = JJ_Class_03_js;
+			productReference = A3224C821C059A8A00675C60 /* JJ_Class_03_js.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3224CB81C059AF800675C60 /* JJ_Class_03_JSPatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3224CE31C059AF800675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_03_JSPatch" */;
+			buildPhases = (
+				A3224CB51C059AF800675C60 /* Sources */,
+				A3224CB61C059AF800675C60 /* Frameworks */,
+				A3224CB71C059AF800675C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJ_Class_03_JSPatch;
+			productName = JJ_Class_03_JSPatch;
+			productReference = A3224CB91C059AF800675C60 /* JJ_Class_03_JSPatch.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,6 +370,12 @@
 						CreatedOnToolsVersion = 7.1.1;
 					};
 					A3224C401C055FC000675C60 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A3224C811C059A8A00675C60 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A3224CB81C059AF800675C60 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -255,6 +396,8 @@
 				A3224BD01C05574300675C60 /* JJ_Class_01_笔记 */,
 				A3224C081C0559B900675C60 /* JJ_Class_02_3DTouch */,
 				A3224C401C055FC000675C60 /* JJ_Class_02_3DTouch-PeekAndPopGestureDemo */,
+				A3224C811C059A8A00675C60 /* JJ_Class_03_js */,
+				A3224CB81C059AF800675C60 /* JJ_Class_03_JSPatch */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +429,27 @@
 				A3224C501C055FC000675C60 /* Assets.xcassets in Resources */,
 				A3224C4E1C055FC000675C60 /* Main.storyboard in Resources */,
 				A3224C7B1C05610400675C60 /* TZTestOneViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224C801C059A8A00675C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3224C941C059A8B00675C60 /* LaunchScreen.storyboard in Resources */,
+				A3224C911C059A8B00675C60 /* Assets.xcassets in Resources */,
+				A3224C8F1C059A8B00675C60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224CB71C059AF800675C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3224CED1C059B8B00675C60 /* JSPatch in Resources */,
+				A3224CCB1C059AF800675C60 /* LaunchScreen.storyboard in Resources */,
+				A3224CC81C059AF800675C60 /* Assets.xcassets in Resources */,
+				A3224CC61C059AF800675C60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +485,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3224C7E1C059A8A00675C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3224C8C1C059A8B00675C60 /* ViewController.m in Sources */,
+				A3224C891C059A8A00675C60 /* AppDelegate.m in Sources */,
+				A3224C861C059A8A00675C60 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224CB51C059AF800675C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3224CC31C059AF800675C60 /* ViewController.m in Sources */,
+				A3224CC01C059AF800675C60 /* AppDelegate.m in Sources */,
+				A3224CBD1C059AF800675C60 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -352,6 +536,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				A3224C521C055FC000675C60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A3224C8D1C059A8B00675C60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3224C8E1C059A8B00675C60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3224C921C059A8B00675C60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3224C931C059A8B00675C60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A3224CC41C059AF800675C60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3224CC51C059AF800675C60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3224CC91C059AF800675C60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3224CCA1C059AF800675C60 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -507,6 +723,50 @@
 			};
 			name = Release;
 		};
+		A3224CAC1C059A8B00675C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_03_js/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-03-js";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3224CAD1C059A8B00675C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_03_js/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-03-js";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3224CE41C059AF800675C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_03_JSPatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-03-JSPatch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3224CE51C059AF800675C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_03_JSPatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-03-JSPatch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -526,6 +786,7 @@
 				A3224BFD1C05574400675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3224C331C0559BA00675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_02_3DTouch" */ = {
 			isa = XCConfigurationList;
@@ -534,12 +795,30 @@
 				A3224C351C0559BA00675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3224C6B1C055FC000675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_02_3DTouch-PeekAndPopGestureDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3224C6C1C055FC000675C60 /* Debug */,
 				A3224C6D1C055FC000675C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3224CB21C059A8B00675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_03_js" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3224CAC1C059A8B00675C60 /* Debug */,
+				A3224CAD1C059A8B00675C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3224CE31C059AF800675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_03_JSPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3224CE41C059AF800675C60 /* Debug */,
+				A3224CE51C059AF800675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

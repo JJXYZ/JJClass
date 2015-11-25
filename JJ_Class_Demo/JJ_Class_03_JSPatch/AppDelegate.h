@@ -1,15 +1,16 @@
 //
 //  AppDelegate.h
-//  TZPeekAndPopDemo
+//  JJ_Class_03_JSPatch
 //
-//  Created by 谭真 on 15/11/6.
-//  Copyright © 2015年 谭真. All rights reserved.
+//  Created by Jay on 15/11/25.
+//  Copyright © 2015年 JJ. All rights reserved.
 //
 
 
 /**
- *  github:3DTouch-PeekAndPopGestureDemo
+ *  github:JSPatch
  */
+
 
 
 #import <UIKit/UIKit.h>
