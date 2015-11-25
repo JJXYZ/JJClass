@@ -36,6 +36,19 @@
 		A3224CC81C059AF800675C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3224CC71C059AF800675C60 /* Assets.xcassets */; };
 		A3224CCB1C059AF800675C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224CC91C059AF800675C60 /* LaunchScreen.storyboard */; };
 		A3224CED1C059B8B00675C60 /* JSPatch in Resources */ = {isa = PBXBuildFile; fileRef = A3224CEC1C059B8B00675C60 /* JSPatch */; };
+		A3224CF61C059DBB00675C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224CF51C059DBB00675C60 /* main.m */; };
+		A3224CF91C059DBB00675C60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224CF81C059DBB00675C60 /* AppDelegate.m */; };
+		A3224CFC1C059DBB00675C60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224CFB1C059DBB00675C60 /* ViewController.m */; };
+		A3224CFF1C059DBB00675C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224CFD1C059DBB00675C60 /* Main.storyboard */; };
+		A3224D011C059DBB00675C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3224D001C059DBB00675C60 /* Assets.xcassets */; };
+		A3224D041C059DBB00675C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224D021C059DBB00675C60 /* LaunchScreen.storyboard */; };
+		A3224D111C059F0300675C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D101C059F0300675C60 /* main.m */; };
+		A3224D141C059F0300675C60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D131C059F0300675C60 /* AppDelegate.m */; };
+		A3224D171C059F0300675C60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D161C059F0300675C60 /* ViewController.m */; };
+		A3224D1A1C059F0300675C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224D181C059F0300675C60 /* Main.storyboard */; };
+		A3224D1C1C059F0300675C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3224D1B1C059F0300675C60 /* Assets.xcassets */; };
+		A3224D1F1C059F0300675C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224D1D1C059F0300675C60 /* LaunchScreen.storyboard */; };
+		A3224D251C059F3700675C60 /* Masonry in Resources */ = {isa = PBXBuildFile; fileRef = A3224D241C059F3700675C60 /* Masonry */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +102,28 @@
 		A3224CCA1C059AF800675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3224CCC1C059AF800675C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3224CEC1C059B8B00675C60 /* JSPatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JSPatch; sourceTree = "<group>"; };
+		A3224CF21C059DBB00675C60 /* JJ_Class_04_AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_04_AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3224CF51C059DBB00675C60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3224CF71C059DBB00675C60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3224CF81C059DBB00675C60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3224CFA1C059DBB00675C60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3224CFB1C059DBB00675C60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3224CFE1C059DBB00675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3224D001C059DBB00675C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3224D031C059DBB00675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3224D051C059DBB00675C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3224D0D1C059F0300675C60 /* JJ_Class_04_Masonry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_04_Masonry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3224D101C059F0300675C60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3224D121C059F0300675C60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3224D131C059F0300675C60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3224D151C059F0300675C60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3224D161C059F0300675C60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3224D191C059F0300675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3224D1B1C059F0300675C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3224D1E1C059F0300675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3224D201C059F0300675C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3224D241C059F3700675C60 /* Masonry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Masonry; sourceTree = "<group>"; };
+		A3224D2A1C059FB000675C60 /* JJ_Class_05_对象模型.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_05_对象模型.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +162,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3224CEF1C059DBB00675C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224D0A1C059F0300675C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224D271C059FB000675C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -138,6 +194,8 @@
 				A3224C421C055FC000675C60 /* JJ_Class_02_3DTouch-PeekAndPopGestureDemo */,
 				A3224C831C059A8A00675C60 /* JJ_Class_03_js */,
 				A3224CBA1C059AF800675C60 /* JJ_Class_03_JSPatch */,
+				A3224CF31C059DBB00675C60 /* JJ_Class_04_AutoLayout */,
+				A3224D0E1C059F0300675C60 /* JJ_Class_04_Masonry */,
 				A3224B981C0555F200675C60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +208,9 @@
 				A3224C411C055FC000675C60 /* JJ_Class_02_3DTouch-PeekAndPopGestureDemo.app */,
 				A3224C821C059A8A00675C60 /* JJ_Class_03_js.app */,
 				A3224CB91C059AF800675C60 /* JJ_Class_03_JSPatch.app */,
+				A3224CF21C059DBB00675C60 /* JJ_Class_04_AutoLayout.app */,
+				A3224D0D1C059F0300675C60 /* JJ_Class_04_Masonry.app */,
+				A3224D2A1C059FB000675C60 /* JJ_Class_05_对象模型.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,6 +327,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A3224CF31C059DBB00675C60 /* JJ_Class_04_AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A3224CF71C059DBB00675C60 /* AppDelegate.h */,
+				A3224CF81C059DBB00675C60 /* AppDelegate.m */,
+				A3224CFA1C059DBB00675C60 /* ViewController.h */,
+				A3224CFB1C059DBB00675C60 /* ViewController.m */,
+				A3224CFD1C059DBB00675C60 /* Main.storyboard */,
+				A3224D001C059DBB00675C60 /* Assets.xcassets */,
+				A3224D021C059DBB00675C60 /* LaunchScreen.storyboard */,
+				A3224D051C059DBB00675C60 /* Info.plist */,
+				A3224CF41C059DBB00675C60 /* Supporting Files */,
+			);
+			path = JJ_Class_04_AutoLayout;
+			sourceTree = "<group>";
+		};
+		A3224CF41C059DBB00675C60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3224CF51C059DBB00675C60 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3224D0E1C059F0300675C60 /* JJ_Class_04_Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				A3224D241C059F3700675C60 /* Masonry */,
+				A3224D121C059F0300675C60 /* AppDelegate.h */,
+				A3224D131C059F0300675C60 /* AppDelegate.m */,
+				A3224D151C059F0300675C60 /* ViewController.h */,
+				A3224D161C059F0300675C60 /* ViewController.m */,
+				A3224D181C059F0300675C60 /* Main.storyboard */,
+				A3224D1B1C059F0300675C60 /* Assets.xcassets */,
+				A3224D1D1C059F0300675C60 /* LaunchScreen.storyboard */,
+				A3224D201C059F0300675C60 /* Info.plist */,
+				A3224D0F1C059F0300675C60 /* Supporting Files */,
+			);
+			path = JJ_Class_04_Masonry;
+			sourceTree = "<group>";
+		};
+		A3224D0F1C059F0300675C60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3224D101C059F0300675C60 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +464,57 @@
 			productReference = A3224CB91C059AF800675C60 /* JJ_Class_03_JSPatch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A3224CF11C059DBB00675C60 /* JJ_Class_04_AutoLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3224D061C059DBB00675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_04_AutoLayout" */;
+			buildPhases = (
+				A3224CEE1C059DBB00675C60 /* Sources */,
+				A3224CEF1C059DBB00675C60 /* Frameworks */,
+				A3224CF01C059DBB00675C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJ_Class_04_AutoLayout;
+			productName = JJ_Class_04_AutoLayout;
+			productReference = A3224CF21C059DBB00675C60 /* JJ_Class_04_AutoLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3224D0C1C059F0300675C60 /* JJ_Class_04_Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3224D211C059F0300675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_04_Masonry" */;
+			buildPhases = (
+				A3224D091C059F0300675C60 /* Sources */,
+				A3224D0A1C059F0300675C60 /* Frameworks */,
+				A3224D0B1C059F0300675C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJ_Class_04_Masonry;
+			productName = JJ_Class_04_Masonry;
+			productReference = A3224D0D1C059F0300675C60 /* JJ_Class_04_Masonry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3224D291C059FB000675C60 /* JJ_Class_05_对象模型 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3224D381C059FB000675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_05_对象模型" */;
+			buildPhases = (
+				A3224D261C059FB000675C60 /* Sources */,
+				A3224D271C059FB000675C60 /* Frameworks */,
+				A3224D281C059FB000675C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JJ_Class_05_对象模型";
+			productName = "JJ_Class_05_对象模型";
+			productReference = A3224D2A1C059FB000675C60 /* JJ_Class_05_对象模型.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -378,6 +539,15 @@
 					A3224CB81C059AF800675C60 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					A3224CF11C059DBB00675C60 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A3224D0C1C059F0300675C60 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A3224D291C059FB000675C60 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 				};
 			};
 			buildConfigurationList = A3224B921C0555F200675C60 /* Build configuration list for PBXProject "JJ_Class_Demo" */;
@@ -398,6 +568,9 @@
 				A3224C401C055FC000675C60 /* JJ_Class_02_3DTouch-PeekAndPopGestureDemo */,
 				A3224C811C059A8A00675C60 /* JJ_Class_03_js */,
 				A3224CB81C059AF800675C60 /* JJ_Class_03_JSPatch */,
+				A3224CF11C059DBB00675C60 /* JJ_Class_04_AutoLayout */,
+				A3224D0C1C059F0300675C60 /* JJ_Class_04_Masonry */,
+				A3224D291C059FB000675C60 /* JJ_Class_05_对象模型 */,
 			);
 		};
 /* End PBXProject section */
@@ -453,6 +626,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3224CF01C059DBB00675C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3224D041C059DBB00675C60 /* LaunchScreen.storyboard in Resources */,
+				A3224D011C059DBB00675C60 /* Assets.xcassets in Resources */,
+				A3224CFF1C059DBB00675C60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224D0B1C059F0300675C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3224D251C059F3700675C60 /* Masonry in Resources */,
+				A3224D1F1C059F0300675C60 /* LaunchScreen.storyboard in Resources */,
+				A3224D1C1C059F0300675C60 /* Assets.xcassets in Resources */,
+				A3224D1A1C059F0300675C60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224D281C059FB000675C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -502,6 +703,33 @@
 				A3224CC31C059AF800675C60 /* ViewController.m in Sources */,
 				A3224CC01C059AF800675C60 /* AppDelegate.m in Sources */,
 				A3224CBD1C059AF800675C60 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224CEE1C059DBB00675C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3224CFC1C059DBB00675C60 /* ViewController.m in Sources */,
+				A3224CF91C059DBB00675C60 /* AppDelegate.m in Sources */,
+				A3224CF61C059DBB00675C60 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224D091C059F0300675C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3224D171C059F0300675C60 /* ViewController.m in Sources */,
+				A3224D141C059F0300675C60 /* AppDelegate.m in Sources */,
+				A3224D111C059F0300675C60 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3224D261C059FB000675C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +796,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				A3224CCA1C059AF800675C60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A3224CFD1C059DBB00675C60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3224CFE1C059DBB00675C60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3224D021C059DBB00675C60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3224D031C059DBB00675C60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A3224D181C059F0300675C60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3224D191C059F0300675C60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3224D1D1C059F0300675C60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3224D1E1C059F0300675C60 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -767,6 +1027,80 @@
 			};
 			name = Release;
 		};
+		A3224D071C059DBB00675C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_04_AutoLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-04-AutoLayout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3224D081C059DBB00675C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_04_AutoLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-04-AutoLayout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3224D221C059F0300675C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_04_Masonry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-04-Masonry";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3224D231C059F0300675C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_04_Masonry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-04-Masonry";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3224D391C059FB000675C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "JJ_Class_05_对象模型/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-05-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A3224D3A1C059FB000675C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "JJ_Class_05_对象模型/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-05-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -819,6 +1153,30 @@
 			buildConfigurations = (
 				A3224CE41C059AF800675C60 /* Debug */,
 				A3224CE51C059AF800675C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3224D061C059DBB00675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_04_AutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3224D071C059DBB00675C60 /* Debug */,
+				A3224D081C059DBB00675C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3224D211C059F0300675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_04_Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3224D221C059F0300675C60 /* Debug */,
+				A3224D231C059F0300675C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3224D381C059FB000675C60 /* Build configuration list for PBXNativeTarget "JJ_Class_05_对象模型" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3224D391C059FB000675C60 /* Debug */,
+				A3224D3A1C059FB000675C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
