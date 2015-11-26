@@ -14,12 +14,12 @@
 拷贝/Users/JayXu/.ssh/id_rsa
  
 ====================================================================
-Git SSH Key 生成步骤
+ hustpzb的专栏:Git SSH Key 生成步骤
 http://blog.csdn.net/hustpzb/article/details/8230454/
 
 ====================================================================
  
-唐巧:用CocoaPods做iOS程序的依赖管理
+唐巧的技术博客:用CocoaPods做iOS程序的依赖管理
 http://blog.devtang.com/blog/2014/05/25/use-cocoapod-to-manage-ios-lib-dependency/
 
 ====================================================================
@@ -34,7 +34,7 @@ http://yulingtianxia.com/blog/2014/05/26/publish-your-pods-on-cocoapods-with-tru
 
 github:Alcatraz
  
-唐巧,使用Alcatraz来管理Xcode插件:
+唐巧的技术博客:使用Alcatraz来管理Xcode插件:
 http://blog.devtang.com/blog/2014/03/05/use-alcatraz-to-manage-xcode-plugins/
 
 自动添加注释插件:VVDocumenter
@@ -45,11 +45,11 @@ http://blog.devtang.com/blog/2014/03/05/use-alcatraz-to-manage-xcode-plugins/
 
 ====================================================================
 
-
 安装pods
- cocoapods安装与使用
+ 
+ 万花筒 邪灵噶 的博客:cocoapods安装与使用
  http://blog.csdn.net/folish_audi/article/details/37501403
- CocoaPods安装和使用教程
+ Code4App:CocoaPods安装和使用教程
  http://code4app.com/article/cocoapods-install-usage
  
  注意:gem sources -a https://ruby.taobao.org/  被干掉了使用 http://rubygems.org/
