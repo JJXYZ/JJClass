@@ -53,9 +53,11 @@
  
  视频:http://www.infoq.com/cn/presentations/practice-of-reactivecocoa-in-huabanwang-client
  
+ ====================================================================
  
  
- 
+ benbeng:ReactiveCocoa入门教程
+ http://benbeng.leanote.com/tag/ReactiveCocoa
  
  
  
