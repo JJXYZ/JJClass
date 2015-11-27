@@ -1,13 +1,22 @@
 PODS:
   - JJDefine (1.0.0)
   - JJSandBox (1.0.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
 
 DEPENDENCIES:
   - JJDefine (~> 1.0.0)
   - JJSandBox (~> 1.0.0)
+  - ReactiveCocoa
 
 SPEC CHECKSUMS:
   JJDefine: 70cb1394144ff5dcf3bede1dd848cf27cfada8a4
   JJSandBox: e02bc7a8812efe5a5254006041b8ec018a5c0ebf
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
