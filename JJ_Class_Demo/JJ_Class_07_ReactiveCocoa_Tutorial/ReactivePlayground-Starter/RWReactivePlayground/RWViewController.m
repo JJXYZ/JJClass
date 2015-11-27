@@ -8,6 +8,7 @@
 
 #import "RWViewController.h"
 #import "RWDummySignInService.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface RWViewController ()
 
