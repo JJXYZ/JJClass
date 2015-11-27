@@ -8,16 +8,18 @@
 
 /**
  
- ====================================================================
+ ============================NScoder========================================
+ 
  Eric_xchen的专栏:NScoder和NScoding简析
  http://blog.csdn.net/Eric_xchen/article/details/40325737
  
- ====================================================================
+ 
+ =============================RunLoop=======================================
  
  CocoaChina:深入理解RunLoop
  http://www.cocoachina.com/cms/wap.php?action=article&id=11970 (JJ_Class_06_RunLoop)
  
- ====================================================================
+ ==========================面试题==========================================
  
  1. property 里面 weak和assign的区别？
  2.  请举出一到两个ARC下循环引用或者内存泄漏的例子
@@ -34,7 +36,7 @@
  13. SQLite中如何只用一行SQL语句实现 “插入或更新”
  
  
- ====================================================================
+ ===========================运行时=========================================
  
  南峰子的技术博客:Objective-C Runtime 运行时之一：类与对象
  http://southpeak.github.io/blog/2014/10/25/objective-c-runtime-yun-xing-shi-zhi-lei-yu-dui-xiang/
@@ -45,7 +47,7 @@
  南峰子的技术博客:Objective-C Runtime 运行时之三：方法与消息
  http://southpeak.github.io/blog/2014/11/03/objective-c-runtime-yun-xing-shi-zhi-san-:fang-fa-yu-xiao-xi-zhuan-fa/
  
- ====================================================================
+ ============================ReactiveCocoa========================================
  
  Github:ReactiveCocoa
  
@@ -53,11 +55,28 @@
  
  视频:http://www.infoq.com/cn/presentations/practice-of-reactivecocoa-in-huabanwang-client
  
- ====================================================================
- 
- 
  benbeng:ReactiveCocoa入门教程
  http://benbeng.leanote.com/tag/ReactiveCocoa
+ 
+ 南峰子的技术博客:ReactiveCocoa Tutorial – the Definitive Introduction
+ http://southpeak.github.io/blog/2014/08/02/reactivecocoazhi-nan-%5B%3F%5D-:xin-hao/
+ 
+ 
+ =============================插件=======================================
+ 
+ github:Alcatraz
+ 
+ 唐巧的技术博客:使用Alcatraz来管理Xcode插件:
+ http://blog.devtang.com/blog/2014/03/05/use-alcatraz-to-manage-xcode-plugins/
+ 
+ 自动添加注释插件:VVDocumenter
+ 设置RGB颜色 预览的插件:ColorSense
+ 自动对齐XAlign.tar:XAlign.xcplugin
+ 图片名字提示插件KSImageNamed-Xcode-master
+ 滤波器FuzzyAutocompletePlugin-master
+ 
+ ====================================================================
+ 
  
  
  

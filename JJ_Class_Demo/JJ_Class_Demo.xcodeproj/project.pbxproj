@@ -356,6 +356,7 @@
 		A391FCD21C07FEAC00EF9780 /* RWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWViewController.h; sourceTree = "<group>"; };
 		A391FCD31C07FEAC00EF9780 /* RWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWViewController.m; sourceTree = "<group>"; };
 		A391FCD41C07FEAC00EF9780 /* RWReactivePlayground.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RWReactivePlayground.xcodeproj; sourceTree = "<group>"; };
+		A391FCEE1C08325500EF9780 /* CocoaPods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaPods.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -562,6 +563,7 @@
 			isa = PBXGroup;
 			children = (
 				A3224C3C1C055D0300675C60 /* 代码.h */,
+				A391FCEE1C08325500EF9780 /* CocoaPods.h */,
 				A3224C041C0557A500675C60 /* 关于Git.h */,
 				A3224DF21C05BCE900675C60 /* 干货.h */,
 			);
