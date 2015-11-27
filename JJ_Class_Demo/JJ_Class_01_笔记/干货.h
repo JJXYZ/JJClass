@@ -38,13 +38,13 @@
  
  ===========================运行时=========================================
  
- 南峰子的技术博客:Objective-C Runtime 运行时之一：类与对象
+ 南峰子的技术博客:Objective-C Runtime 运行时之一：类与对象 (JJ_Class_05_运行时)
  http://southpeak.github.io/blog/2014/10/25/objective-c-runtime-yun-xing-shi-zhi-lei-yu-dui-xiang/
  
- 南峰子的技术博客:Objective-C Runtime 运行时之二：成员变量与属性
+ 南峰子的技术博客:Objective-C Runtime 运行时之二：成员变量与属性 (JJ_Class_05_运行时)
  http://southpeak.github.io/blog/2014/10/30/objective-c-runtime-yun-xing-shi-zhi-er-:cheng-yuan-bian-liang-yu-shu-xing/
  
- 南峰子的技术博客:Objective-C Runtime 运行时之三：方法与消息
+ 南峰子的技术博客:Objective-C Runtime 运行时之三：方法与消息 (JJ_Class_05_运行时)
  http://southpeak.github.io/blog/2014/11/03/objective-c-runtime-yun-xing-shi-zhi-san-:fang-fa-yu-xiao-xi-zhuan-fa/
  
  ============================ReactiveCocoa========================================
@@ -58,7 +58,7 @@
  benbeng:ReactiveCocoa入门教程
  http://benbeng.leanote.com/tag/ReactiveCocoa
  
- 南峰子的技术博客:ReactiveCocoa Tutorial – the Definitive Introduction
+ 南峰子的技术博客:ReactiveCocoa Tutorial – the Definitive Introduction(JJ_Class_07_ReactiveCocoa_Tutorial)
  http://southpeak.github.io/blog/2014/08/02/reactivecocoazhi-nan-%5B%3F%5D-:xin-hao/
  
  
@@ -75,15 +75,21 @@
  图片名字提示插件KSImageNamed-Xcode-master
  滤波器FuzzyAutocompletePlugin-master
  
- ====================================================================
+ =============================3DTouch=======================================
+ 
+ github:3DTouch-PeekAndPopGestureDemo(JJ_Class_02_3DTouch-PeekAndPopGestureDemo)
+ 
+ 
+ 作者 肖浩呗 :[iOS]iOS9 3DTouch、ShortcutItem、Peek And Pop技术一览
+ http://www.jianshu.com/p/74fe6cbc542b
  
  
  
  
- 
- 
- 
- 
+ ===========================================================================
+ ===========================================================================
+ ===========================================================================
+ ===========================================================================
  
  
  
