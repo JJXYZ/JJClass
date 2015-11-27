@@ -7,3 +7,4 @@ link_with 'JJ_Class_01_笔记', 'JJ_Class_02_3DTouch', 'JJ_Class_02_3DTouch-Peek
 
 pod 'JJDefine', '~> 1.0.0'
 pod 'JJSandBox', '~> 1.0.0'
+pod 'ReactiveCocoa',
