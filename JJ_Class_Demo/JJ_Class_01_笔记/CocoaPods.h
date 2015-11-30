@@ -39,6 +39,9 @@
  Tomato And Peter:Podfile语法参考(译)
  http://www.tomatopeter.com/blog/2014/11/22/podfile-syntax-reference-chinese/
  
+ 王中周的个人博客:CocoaPods详解之----进阶篇
+ http://blog.csdn.net/wzzvictory/article/details/19178709
+ 
  ====================================================================
  
  Recording:从工程中删除Cocoapods
