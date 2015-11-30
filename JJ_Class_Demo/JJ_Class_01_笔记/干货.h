@@ -60,6 +60,7 @@
  
  南峰子的技术博客:ReactiveCocoa Tutorial – the Definitive Introduction(JJ_Class_07_ReactiveCocoa_Tutorial)
  http://southpeak.github.io/blog/2014/08/02/reactivecocoazhi-nan-%5B%3F%5D-:xin-hao/
+ http://southpeak.github.io/blog/2014/08/02/reactivecocoazhi-nan-er-:twittersou-suo-shi-li/
  
  
  =============================插件=======================================

@@ -117,6 +117,16 @@
 		A32A5DCC1C06F31B0000020D /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DCB1C06F31B0000020D /* MyObject.m */; };
 		A32A5DD01C0709C60000020D /* SUTRuntimeMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DCF1C0709C60000020D /* SUTRuntimeMethodHelper.m */; };
 		A32A5DD31C0709DB0000020D /* SUTRuntimeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DD21C0709DB0000020D /* SUTRuntimeMethod.m */; };
+		A3E2F18B1C0C58A000236638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E2F1761C0C58A000236638 /* Main.storyboard */; };
+		A3E2F18C1C0C58A000236638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3E2F1781C0C58A000236638 /* InfoPlist.strings */; };
+		A3E2F18D1C0C58A000236638 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E2F17A1C0C58A000236638 /* Images.xcassets */; };
+		A3E2F18E1C0C58A000236638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E2F17B1C0C58A000236638 /* main.m */; };
+		A3E2F18F1C0C58A000236638 /* RWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E2F17D1C0C58A000236638 /* RWAppDelegate.m */; };
+		A3E2F1901C0C58A000236638 /* RWSearchFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E2F17F1C0C58A000236638 /* RWSearchFormViewController.m */; };
+		A3E2F1911C0C58A000236638 /* RWSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E2F1811C0C58A000236638 /* RWSearchResultsViewController.m */; };
+		A3E2F1921C0C58A000236638 /* RWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E2F1831C0C58A000236638 /* RWTableViewCell.m */; };
+		A3E2F1931C0C58A000236638 /* RWTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E2F1851C0C58A000236638 /* RWTweet.m */; };
+		A3E2F1941C0C58A000236638 /* TwitterInstant-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3E2F1861C0C58A000236638 /* TwitterInstant-Info.plist */; };
 		AEA3AF73FEA214B7C19629B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D87917BEC98D492799EE6A /* libPods.a */; };
 		AFD6FCB3857F18DC277B080D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D87917BEC98D492799EE6A /* libPods.a */; };
 		C87FB37B326FAAE0F3BD6629 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D87917BEC98D492799EE6A /* libPods.a */; };
@@ -138,6 +148,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 72A2883B18618A2E00DDD30A;
 			remoteInfo = RWReactivePlaygroundTests;
+		};
+		A3E2F1961C0C58A000236638 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E2F1881C0C58A000236638 /* TwitterInstant.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 721C000D184D33AC0026A576;
+			remoteInfo = TwitterInstant;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -357,6 +374,23 @@
 		A391FCD31C07FEAC00EF9780 /* RWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWViewController.m; sourceTree = "<group>"; };
 		A391FCD41C07FEAC00EF9780 /* RWReactivePlayground.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RWReactivePlayground.xcodeproj; sourceTree = "<group>"; };
 		A391FCEE1C08325500EF9780 /* CocoaPods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaPods.h; sourceTree = "<group>"; };
+		A3E2F1771C0C58A000236638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3E2F1791C0C58A000236638 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3E2F17A1C0C58A000236638 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A3E2F17B1C0C58A000236638 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3E2F17C1C0C58A000236638 /* RWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWAppDelegate.h; sourceTree = "<group>"; };
+		A3E2F17D1C0C58A000236638 /* RWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWAppDelegate.m; sourceTree = "<group>"; };
+		A3E2F17E1C0C58A000236638 /* RWSearchFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSearchFormViewController.h; sourceTree = "<group>"; };
+		A3E2F17F1C0C58A000236638 /* RWSearchFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSearchFormViewController.m; sourceTree = "<group>"; };
+		A3E2F1801C0C58A000236638 /* RWSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSearchResultsViewController.h; sourceTree = "<group>"; };
+		A3E2F1811C0C58A000236638 /* RWSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSearchResultsViewController.m; sourceTree = "<group>"; };
+		A3E2F1821C0C58A000236638 /* RWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTableViewCell.h; sourceTree = "<group>"; };
+		A3E2F1831C0C58A000236638 /* RWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTableViewCell.m; sourceTree = "<group>"; };
+		A3E2F1841C0C58A000236638 /* RWTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTweet.h; sourceTree = "<group>"; };
+		A3E2F1851C0C58A000236638 /* RWTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTweet.m; sourceTree = "<group>"; };
+		A3E2F1861C0C58A000236638 /* TwitterInstant-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitterInstant-Info.plist"; sourceTree = "<group>"; };
+		A3E2F1871C0C58A000236638 /* TwitterInstant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwitterInstant-Prefix.pch"; sourceTree = "<group>"; };
+		A3E2F1881C0C58A000236638 /* TwitterInstant.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TwitterInstant.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -929,6 +963,7 @@
 		A391FCC21C07FE4D00EF9780 /* JJ_Class_07_ReactiveCocoa_Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				A3E2F1741C0C58A000236638 /* TwitterInstant-Starter-4 */,
 				A391FCC31C07FEAC00EF9780 /* ReactivePlayground-Starter */,
 			);
 			path = JJ_Class_07_ReactiveCocoa_Tutorial;
@@ -1014,6 +1049,46 @@
 				A391FCC21C07FE4D00EF9780 /* JJ_Class_07_ReactiveCocoa_Tutorial */,
 			);
 			name = JJ_Class_07_ReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		A3E2F1741C0C58A000236638 /* TwitterInstant-Starter-4 */ = {
+			isa = PBXGroup;
+			children = (
+				A3E2F1751C0C58A000236638 /* TwitterInstant */,
+				A3E2F1881C0C58A000236638 /* TwitterInstant.xcodeproj */,
+			);
+			path = "TwitterInstant-Starter-4";
+			sourceTree = "<group>";
+		};
+		A3E2F1751C0C58A000236638 /* TwitterInstant */ = {
+			isa = PBXGroup;
+			children = (
+				A3E2F1761C0C58A000236638 /* Main.storyboard */,
+				A3E2F1781C0C58A000236638 /* InfoPlist.strings */,
+				A3E2F17A1C0C58A000236638 /* Images.xcassets */,
+				A3E2F17B1C0C58A000236638 /* main.m */,
+				A3E2F17C1C0C58A000236638 /* RWAppDelegate.h */,
+				A3E2F17D1C0C58A000236638 /* RWAppDelegate.m */,
+				A3E2F17E1C0C58A000236638 /* RWSearchFormViewController.h */,
+				A3E2F17F1C0C58A000236638 /* RWSearchFormViewController.m */,
+				A3E2F1801C0C58A000236638 /* RWSearchResultsViewController.h */,
+				A3E2F1811C0C58A000236638 /* RWSearchResultsViewController.m */,
+				A3E2F1821C0C58A000236638 /* RWTableViewCell.h */,
+				A3E2F1831C0C58A000236638 /* RWTableViewCell.m */,
+				A3E2F1841C0C58A000236638 /* RWTweet.h */,
+				A3E2F1851C0C58A000236638 /* RWTweet.m */,
+				A3E2F1861C0C58A000236638 /* TwitterInstant-Info.plist */,
+				A3E2F1871C0C58A000236638 /* TwitterInstant-Prefix.pch */,
+			);
+			path = TwitterInstant;
+			sourceTree = "<group>";
+		};
+		A3E2F1891C0C58A000236638 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3E2F1971C0C58A000236638 /* TwitterInstant.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B72D127575E132714623A7B4 /* Frameworks */ = {
@@ -1327,6 +1402,10 @@
 					ProductGroup = A391FCD51C07FEAC00EF9780 /* Products */;
 					ProjectRef = A391FCD41C07FEAC00EF9780 /* RWReactivePlayground.xcodeproj */;
 				},
+				{
+					ProductGroup = A3E2F1891C0C58A000236638 /* Products */;
+					ProjectRef = A3E2F1881C0C58A000236638 /* TwitterInstant.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -1361,6 +1440,13 @@
 			remoteRef = A391FCDB1C07FEAC00EF9780 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		A3E2F1971C0C58A000236638 /* TwitterInstant.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TwitterInstant.app;
+			remoteRef = A3E2F1961C0C58A000236638 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1388,6 +1474,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E2F1941C0C58A000236638 /* TwitterInstant-Info.plist in Resources */,
+				A3E2F18D1C0C58A000236638 /* Images.xcassets in Resources */,
+				A3E2F18B1C0C58A000236638 /* Main.storyboard in Resources */,
+				A3E2F18C1C0C58A000236638 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2007,6 +2097,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E2F18E1C0C58A000236638 /* main.m in Sources */,
+				A3E2F1901C0C58A000236638 /* RWSearchFormViewController.m in Sources */,
+				A3E2F1931C0C58A000236638 /* RWTweet.m in Sources */,
+				A3E2F1911C0C58A000236638 /* RWSearchResultsViewController.m in Sources */,
+				A3E2F18F1C0C58A000236638 /* RWAppDelegate.m in Sources */,
+				A3E2F1921C0C58A000236638 /* RWTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2312,6 +2408,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A391FCC81C07FEAC00EF9780 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A3E2F1761C0C58A000236638 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3E2F1771C0C58A000236638 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3E2F1781C0C58A000236638 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3E2F1791C0C58A000236638 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
