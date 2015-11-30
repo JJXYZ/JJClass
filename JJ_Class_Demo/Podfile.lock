@@ -1,6 +1,11 @@
 PODS:
   - JJDefine (1.0.0)
   - JJSandBox (1.0.0)
+  - JSPatch (0.1.5):
+    - JSPatch/Core (= 0.1.5)
+  - JSPatch/Core (0.1.5)
+  - Masonry (0.6.3)
+  - MJExtension (3.0.7)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -12,11 +17,17 @@ PODS:
 DEPENDENCIES:
   - JJDefine (~> 1.0.0)
   - JJSandBox (~> 1.0.0)
-  - ReactiveCocoa
+  - JSPatch (~> 0.1.5)
+  - Masonry (~> 0.6.3)
+  - MJExtension (~> 3.0.7)
+  - ReactiveCocoa (~> 2.5)
 
 SPEC CHECKSUMS:
   JJDefine: 70cb1394144ff5dcf3bede1dd848cf27cfada8a4
   JJSandBox: e02bc7a8812efe5a5254006041b8ec018a5c0ebf
+  JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  MJExtension: 290cc966f0f849b12b6391a38e296e0004ae8e5e
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-COCOAPODS: 0.39.0
+COCOAPODS: 0.38.2
