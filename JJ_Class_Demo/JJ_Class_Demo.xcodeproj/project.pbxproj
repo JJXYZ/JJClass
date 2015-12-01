@@ -152,6 +152,25 @@
 		A3E2F1921C0C58A000236638 /* RWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E2F1831C0C58A000236638 /* RWTableViewCell.m */; };
 		A3E2F1931C0C58A000236638 /* RWTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E2F1851C0C58A000236638 /* RWTweet.m */; };
 		A3E2F1941C0C58A000236638 /* TwitterInstant-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3E2F1861C0C58A000236638 /* TwitterInstant-Info.plist */; };
+		A3FE8B531C0D516600A2E8B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B301C0D516600A2E8B6 /* InfoPlist.strings */; };
+		A3FE8B541C0D516600A2E8B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B321C0D516600A2E8B6 /* Images.xcassets */; };
+		A3FE8B551C0D516600A2E8B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8B331C0D516600A2E8B6 /* main.m */; };
+		A3FE8B561C0D516600A2E8B6 /* RWTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8B351C0D516600A2E8B6 /* RWTAppDelegate.m */; };
+		A3FE8B571C0D516600A2E8B6 /* RWTFlickrSearch-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B361C0D516600A2E8B6 /* RWTFlickrSearch-Info.plist */; };
+		A3FE8B581C0D516600A2E8B6 /* CETableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8B3B1C0D516600A2E8B6 /* CETableViewBindingHelper.m */; };
+		A3FE8B591C0D516600A2E8B6 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B3D1C0D516600A2E8B6 /* comment.png */; };
+		A3FE8B5A1C0D516600A2E8B6 /* fave.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B3E1C0D516600A2E8B6 /* fave.png */; };
+		A3FE8B5B1C0D516600A2E8B6 /* RWTFlickrSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8B401C0D516600A2E8B6 /* RWTFlickrSearchViewController.m */; };
+		A3FE8B5C1C0D516600A2E8B6 /* RWTFlickrSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B411C0D516600A2E8B6 /* RWTFlickrSearchViewController.xib */; };
+		A3FE8B5D1C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8B431C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.m */; };
+		A3FE8B5E1C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B441C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.xib */; };
+		A3FE8B5F1C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8B461C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.m */; };
+		A3FE8B601C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B471C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.xib */; };
+		A3FE8B611C0D516600A2E8B6 /* RWTSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8B491C0D516600A2E8B6 /* RWTSearchResultsViewController.m */; };
+		A3FE8B621C0D516600A2E8B6 /* RWTSearchResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B4A1C0D516600A2E8B6 /* RWTSearchResultsViewController.xib */; };
+		A3FE8B631C0D516600A2E8B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B4F1C0D516600A2E8B6 /* InfoPlist.strings */; };
+		A3FE8B641C0D516600A2E8B6 /* RWTFlickrSearchTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3FE8B511C0D516600A2E8B6 /* RWTFlickrSearchTests-Info.plist */; };
+		A3FE8B651C0D516600A2E8B6 /* RWTFlickrSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8B521C0D516600A2E8B6 /* RWTFlickrSearchTests.m */; };
 		AEA3AF73FEA214B7C19629B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D87917BEC98D492799EE6A /* libPods.a */; };
 		AFD6FCB3857F18DC277B080D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D87917BEC98D492799EE6A /* libPods.a */; };
 		C87FB37B326FAAE0F3BD6629 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D87917BEC98D492799EE6A /* libPods.a */; };
@@ -180,6 +199,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 721C000D184D33AC0026A576;
 			remoteInfo = TwitterInstant;
+		};
+		A3FE8B681C0D516600A2E8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FE8B4B1C0D516600A2E8B6 /* RWTFlickrSearch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72E4016C192BFFCE00354806;
+			remoteInfo = RWTFlickrSearch;
+		};
+		A3FE8B6A1C0D516600A2E8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FE8B4B1C0D516600A2E8B6 /* RWTFlickrSearch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72E4018D192BFFCE00354806;
+			remoteInfo = RWTFlickrSearchTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -462,6 +495,34 @@
 		A3E2F1861C0C58A000236638 /* TwitterInstant-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitterInstant-Info.plist"; sourceTree = "<group>"; };
 		A3E2F1871C0C58A000236638 /* TwitterInstant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwitterInstant-Prefix.pch"; sourceTree = "<group>"; };
 		A3E2F1881C0C58A000236638 /* TwitterInstant.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TwitterInstant.xcodeproj; sourceTree = "<group>"; };
+		A3FE8B311C0D516600A2E8B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3FE8B321C0D516600A2E8B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A3FE8B331C0D516600A2E8B6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3FE8B341C0D516600A2E8B6 /* RWTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTAppDelegate.h; sourceTree = "<group>"; };
+		A3FE8B351C0D516600A2E8B6 /* RWTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTAppDelegate.m; sourceTree = "<group>"; };
+		A3FE8B361C0D516600A2E8B6 /* RWTFlickrSearch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RWTFlickrSearch-Info.plist"; sourceTree = "<group>"; };
+		A3FE8B371C0D516600A2E8B6 /* RWTFlickrSearch-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RWTFlickrSearch-Prefix.pch"; sourceTree = "<group>"; };
+		A3FE8B391C0D516600A2E8B6 /* CEReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReactiveView.h; sourceTree = "<group>"; };
+		A3FE8B3A1C0D516600A2E8B6 /* CETableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETableViewBindingHelper.h; sourceTree = "<group>"; };
+		A3FE8B3B1C0D516600A2E8B6 /* CETableViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETableViewBindingHelper.m; sourceTree = "<group>"; };
+		A3FE8B3D1C0D516600A2E8B6 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		A3FE8B3E1C0D516600A2E8B6 /* fave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fave.png; sourceTree = "<group>"; };
+		A3FE8B3F1C0D516600A2E8B6 /* RWTFlickrSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchViewController.h; sourceTree = "<group>"; };
+		A3FE8B401C0D516600A2E8B6 /* RWTFlickrSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewController.m; sourceTree = "<group>"; };
+		A3FE8B411C0D516600A2E8B6 /* RWTFlickrSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTFlickrSearchViewController.xib; sourceTree = "<group>"; };
+		A3FE8B421C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTRecentSearchItemTableViewCell.h; sourceTree = "<group>"; };
+		A3FE8B431C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTRecentSearchItemTableViewCell.m; sourceTree = "<group>"; };
+		A3FE8B441C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTRecentSearchItemTableViewCell.xib; sourceTree = "<group>"; };
+		A3FE8B451C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsTableViewCell.h; sourceTree = "<group>"; };
+		A3FE8B461C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsTableViewCell.m; sourceTree = "<group>"; };
+		A3FE8B471C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		A3FE8B481C0D516600A2E8B6 /* RWTSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsViewController.h; sourceTree = "<group>"; };
+		A3FE8B491C0D516600A2E8B6 /* RWTSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsViewController.m; sourceTree = "<group>"; };
+		A3FE8B4A1C0D516600A2E8B6 /* RWTSearchResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsViewController.xib; sourceTree = "<group>"; };
+		A3FE8B4B1C0D516600A2E8B6 /* RWTFlickrSearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RWTFlickrSearch.xcodeproj; sourceTree = "<group>"; };
+		A3FE8B501C0D516600A2E8B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3FE8B511C0D516600A2E8B6 /* RWTFlickrSearchTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RWTFlickrSearchTests-Info.plist"; sourceTree = "<group>"; };
+		A3FE8B521C0D516600A2E8B6 /* RWTFlickrSearchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1243,6 +1304,7 @@
 			children = (
 				6979DD251C0753FF009F3038 /* JJ_Class_07_ReactiveCocoa */,
 				A391FCC21C07FE4D00EF9780 /* JJ_Class_07_ReactiveCocoa_Tutorial */,
+				A3FE8AFF1C0D4CA200A2E8B6 /* JJ_Class_07_ReactiveCocoa_MVVM_Tutorial */,
 			);
 			name = JJ_Class_07_ReactiveCocoa;
 			sourceTree = "<group>";
@@ -1285,6 +1347,90 @@
 				A3E2F1971C0C58A000236638 /* TwitterInstant.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FE8AFF1C0D4CA200A2E8B6 /* JJ_Class_07_ReactiveCocoa_MVVM_Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8B2E1C0D516600A2E8B6 /* FlickrSearchStarterProject */,
+			);
+			path = JJ_Class_07_ReactiveCocoa_MVVM_Tutorial;
+			sourceTree = "<group>";
+		};
+		A3FE8B2E1C0D516600A2E8B6 /* FlickrSearchStarterProject */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8B2F1C0D516600A2E8B6 /* RWTFlickrSearch */,
+				A3FE8B4B1C0D516600A2E8B6 /* RWTFlickrSearch.xcodeproj */,
+				A3FE8B4E1C0D516600A2E8B6 /* RWTFlickrSearchTests */,
+			);
+			path = FlickrSearchStarterProject;
+			sourceTree = "<group>";
+		};
+		A3FE8B2F1C0D516600A2E8B6 /* RWTFlickrSearch */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8B301C0D516600A2E8B6 /* InfoPlist.strings */,
+				A3FE8B321C0D516600A2E8B6 /* Images.xcassets */,
+				A3FE8B331C0D516600A2E8B6 /* main.m */,
+				A3FE8B341C0D516600A2E8B6 /* RWTAppDelegate.h */,
+				A3FE8B351C0D516600A2E8B6 /* RWTAppDelegate.m */,
+				A3FE8B361C0D516600A2E8B6 /* RWTFlickrSearch-Info.plist */,
+				A3FE8B371C0D516600A2E8B6 /* RWTFlickrSearch-Prefix.pch */,
+				A3FE8B381C0D516600A2E8B6 /* Util */,
+				A3FE8B3C1C0D516600A2E8B6 /* View */,
+			);
+			path = RWTFlickrSearch;
+			sourceTree = "<group>";
+		};
+		A3FE8B381C0D516600A2E8B6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8B391C0D516600A2E8B6 /* CEReactiveView.h */,
+				A3FE8B3A1C0D516600A2E8B6 /* CETableViewBindingHelper.h */,
+				A3FE8B3B1C0D516600A2E8B6 /* CETableViewBindingHelper.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A3FE8B3C1C0D516600A2E8B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8B3D1C0D516600A2E8B6 /* comment.png */,
+				A3FE8B3E1C0D516600A2E8B6 /* fave.png */,
+				A3FE8B3F1C0D516600A2E8B6 /* RWTFlickrSearchViewController.h */,
+				A3FE8B401C0D516600A2E8B6 /* RWTFlickrSearchViewController.m */,
+				A3FE8B411C0D516600A2E8B6 /* RWTFlickrSearchViewController.xib */,
+				A3FE8B421C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.h */,
+				A3FE8B431C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.m */,
+				A3FE8B441C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.xib */,
+				A3FE8B451C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.h */,
+				A3FE8B461C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.m */,
+				A3FE8B471C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.xib */,
+				A3FE8B481C0D516600A2E8B6 /* RWTSearchResultsViewController.h */,
+				A3FE8B491C0D516600A2E8B6 /* RWTSearchResultsViewController.m */,
+				A3FE8B4A1C0D516600A2E8B6 /* RWTSearchResultsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3FE8B4C1C0D516600A2E8B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8B691C0D516600A2E8B6 /* RWTFlickrSearch.app */,
+				A3FE8B6B1C0D516600A2E8B6 /* RWTFlickrSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FE8B4E1C0D516600A2E8B6 /* RWTFlickrSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE8B4F1C0D516600A2E8B6 /* InfoPlist.strings */,
+				A3FE8B511C0D516600A2E8B6 /* RWTFlickrSearchTests-Info.plist */,
+				A3FE8B521C0D516600A2E8B6 /* RWTFlickrSearchTests.m */,
+			);
+			path = RWTFlickrSearchTests;
 			sourceTree = "<group>";
 		};
 		B72D127575E132714623A7B4 /* Frameworks */ = {
@@ -1628,6 +1774,10 @@
 					ProjectRef = A391FCD41C07FEAC00EF9780 /* RWReactivePlayground.xcodeproj */;
 				},
 				{
+					ProductGroup = A3FE8B4C1C0D516600A2E8B6 /* Products */;
+					ProjectRef = A3FE8B4B1C0D516600A2E8B6 /* RWTFlickrSearch.xcodeproj */;
+				},
+				{
 					ProductGroup = A3E2F1891C0C58A000236638 /* Products */;
 					ProjectRef = A3E2F1881C0C58A000236638 /* TwitterInstant.xcodeproj */;
 				},
@@ -1672,6 +1822,20 @@
 			fileType = wrapper.application;
 			path = TwitterInstant.app;
 			remoteRef = A3E2F1961C0C58A000236638 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FE8B691C0D516600A2E8B6 /* RWTFlickrSearch.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RWTFlickrSearch.app;
+			remoteRef = A3FE8B681C0D516600A2E8B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FE8B6B1C0D516600A2E8B6 /* RWTFlickrSearchTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RWTFlickrSearchTests.xctest;
+			remoteRef = A3FE8B6A1C0D516600A2E8B6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1722,9 +1886,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3E2F1941C0C58A000236638 /* TwitterInstant-Info.plist in Resources */,
+				A3FE8B631C0D516600A2E8B6 /* InfoPlist.strings in Resources */,
+				A3FE8B591C0D516600A2E8B6 /* comment.png in Resources */,
+				A3FE8B5A1C0D516600A2E8B6 /* fave.png in Resources */,
+				A3FE8B571C0D516600A2E8B6 /* RWTFlickrSearch-Info.plist in Resources */,
+				A3FE8B621C0D516600A2E8B6 /* RWTSearchResultsViewController.xib in Resources */,
 				A3E2F18D1C0C58A000236638 /* Images.xcassets in Resources */,
 				A3E2F18B1C0C58A000236638 /* Main.storyboard in Resources */,
+				A3FE8B5E1C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.xib in Resources */,
+				A3FE8B541C0D516600A2E8B6 /* Images.xcassets in Resources */,
+				A3FE8B5C1C0D516600A2E8B6 /* RWTFlickrSearchViewController.xib in Resources */,
 				A3E2F18C1C0C58A000236638 /* InfoPlist.strings in Resources */,
+				A3FE8B601C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.xib in Resources */,
+				A3FE8B531C0D516600A2E8B6 /* InfoPlist.strings in Resources */,
+				A3FE8B641C0D516600A2E8B6 /* RWTFlickrSearchTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2205,6 +2380,7 @@
 				692714811C0CA9CD00630D42 /* ASIS3ObjectRequest.m in Sources */,
 				6927148D1C0CA9CD00630D42 /* BlocksTests.m in Sources */,
 				6927148E1C0CA9CD00630D42 /* ClientCertificateTests.m in Sources */,
+				A3FE8B611C0D516600A2E8B6 /* RWTSearchResultsViewController.m in Sources */,
 				692714841C0CA9CD00630D42 /* ASICloudFilesRequestTests.m in Sources */,
 				692714881C0CA9CD00630D42 /* ASIHTTPRequestTests.m in Sources */,
 				A3E2F1901C0C58A000236638 /* RWSearchFormViewController.m in Sources */,
@@ -2213,6 +2389,7 @@
 				6927146F1C0CA9CD00630D42 /* ASIDataCompressor.m in Sources */,
 				6927148A1C0CA9CD00630D42 /* ASIS3RequestTests.m in Sources */,
 				692714891C0CA9CD00630D42 /* ASINetworkQueueTests.m in Sources */,
+				A3FE8B651C0D516600A2E8B6 /* RWTFlickrSearchTests.m in Sources */,
 				A3E2F1931C0C58A000236638 /* RWTweet.m in Sources */,
 				6927148F1C0CA9CD00630D42 /* GHUnitTestMain.m in Sources */,
 				692714731C0CA9CD00630D42 /* ASIHTTPRequest.m in Sources */,
@@ -2222,12 +2399,15 @@
 				692714861C0CA9CD00630D42 /* ASIDownloadCacheTests.m in Sources */,
 				692714701C0CA9CD00630D42 /* ASIDataDecompressor.m in Sources */,
 				6927147C1C0CA9CD00630D42 /* ASICloudFilesObjectRequest.m in Sources */,
+				A3FE8B581C0D516600A2E8B6 /* CETableViewBindingHelper.m in Sources */,
 				692714801C0CA9CD00630D42 /* ASIS3BucketRequest.m in Sources */,
 				692714901C0CA9CD00630D42 /* PerformanceTests.m in Sources */,
 				6927148C1C0CA9CD00630D42 /* ASIWebPageRequestTests.m in Sources */,
 				A3E2F18F1C0C58A000236638 /* RWAppDelegate.m in Sources */,
 				692714821C0CA9CD00630D42 /* ASIS3Request.m in Sources */,
 				692714751C0CA9CD00630D42 /* ASINetworkQueue.m in Sources */,
+				A3FE8B561C0D516600A2E8B6 /* RWTAppDelegate.m in Sources */,
+				A3FE8B5B1C0D516600A2E8B6 /* RWTFlickrSearchViewController.m in Sources */,
 				692714851C0CA9CD00630D42 /* ASIDataCompressorTests.m in Sources */,
 				6927147A1C0CA9CD00630D42 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				692714791C0CA9CD00630D42 /* ASICloudFilesContainerRequest.m in Sources */,
@@ -2239,7 +2419,10 @@
 				692714831C0CA9CD00630D42 /* ASIS3ServiceRequest.m in Sources */,
 				6927148B1C0CA9CD00630D42 /* ASITestCase.m in Sources */,
 				6927147F1C0CA9CD00630D42 /* ASIS3BucketObject.m in Sources */,
+				A3FE8B5F1C0D516600A2E8B6 /* RWTSearchResultsTableViewCell.m in Sources */,
+				A3FE8B551C0D516600A2E8B6 /* main.m in Sources */,
 				A3E2F1921C0C58A000236638 /* RWTableViewCell.m in Sources */,
+				A3FE8B5D1C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2571,6 +2754,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A3E2F1791C0C58A000236638 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A3FE8B301C0D516600A2E8B6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FE8B311C0D516600A2E8B6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A3FE8B4F1C0D516600A2E8B6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FE8B501C0D516600A2E8B6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -3019,6 +3218,7 @@
 				6927141A1C0CA8ED00630D42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		692714AC1C0CABE100630D42 /* Build configuration list for PBXNativeTarget "JJ_Class_09_MJRefresh" */ = {
 			isa = XCConfigurationList;
@@ -3027,6 +3227,7 @@
 				692714AE1C0CABE100630D42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6979DD381C0753FF009F3038 /* Build configuration list for PBXNativeTarget "JJ_Class_07_ReactiveCocoa" */ = {
 			isa = XCConfigurationList;

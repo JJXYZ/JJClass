@@ -62,6 +62,9 @@
  http://southpeak.github.io/blog/2014/08/02/reactivecocoazhi-nan-%5B%3F%5D-:xin-hao/
  http://southpeak.github.io/blog/2014/08/02/reactivecocoazhi-nan-er-:twittersou-suo-shi-li/
  
+ 南峰子的技术博客:MVVM Tutorial with ReactiveCocoa(JJ_Class_07_ReactiveCocoa_MVVM_Tutorial)
+ http://southpeak.github.io/blog/2014/08/08/mvvmzhi-nan-yi-:flickrsou-suo-shi-li/
+ http://southpeak.github.io/blog/2014/08/12/mvvmzhi-nan-er-:flickrsou-suo-shen-ru/
  
  =============================插件=======================================
  

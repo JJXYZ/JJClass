@@ -25,9 +25,11 @@ PODS:
   - JSPatch (0.1.5):
     - JSPatch/Core (= 0.1.5)
   - JSPatch/Core (0.1.5)
+  - LinqToObjectiveC (2.0.0)
   - Masonry (0.6.3)
   - MJExtension (3.0.7)
   - MJRefresh (3.0.7)
+  - objectiveflickr (2.0.4)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -44,9 +46,11 @@ DEPENDENCIES:
   - JJDefine (~> 1.0.0)
   - JJSandBox (~> 1.0.0)
   - JSPatch (~> 0.1.5)
+  - LinqToObjectiveC (= 2.0.0)
   - Masonry (~> 0.6.3)
   - MJExtension (~> 3.0.7)
   - MJRefresh (~> 3.0.7)
+  - objectiveflickr (= 2.0.4)
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.7.3)
 
@@ -55,10 +59,12 @@ SPEC CHECKSUMS:
   JJDefine: 70cb1394144ff5dcf3bede1dd848cf27cfada8a4
   JJSandBox: e02bc7a8812efe5a5254006041b8ec018a5c0ebf
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
+  LinqToObjectiveC: 768f98c62d5b57cb6bdb7ab869e33d0a7a2da29c
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MJExtension: 290cc966f0f849b12b6391a38e296e0004ae8e5e
   MJRefresh: f3e1228ec3d38c7ba5208d58032631a52f39f495
+  objectiveflickr: aed169dae1eb5a5550ca78f7efd7ccde2e4c26e5
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
