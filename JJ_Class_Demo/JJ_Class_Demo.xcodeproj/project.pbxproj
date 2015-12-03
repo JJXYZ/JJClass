@@ -495,6 +495,7 @@
 		A3E2F1861C0C58A000236638 /* TwitterInstant-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitterInstant-Info.plist"; sourceTree = "<group>"; };
 		A3E2F1871C0C58A000236638 /* TwitterInstant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwitterInstant-Prefix.pch"; sourceTree = "<group>"; };
 		A3E2F1881C0C58A000236638 /* TwitterInstant.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TwitterInstant.xcodeproj; sourceTree = "<group>"; };
+		A3F6A3EA1C102A4D00306E07 /* 编译错误.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "编译错误.h"; sourceTree = "<group>"; };
 		A3FE8B311C0D516600A2E8B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A3FE8B321C0D516600A2E8B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A3FE8B331C0D516600A2E8B6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -932,6 +933,7 @@
 				A391FCEE1C08325500EF9780 /* CocoaPods.h */,
 				A3224C041C0557A500675C60 /* 关于Git.h */,
 				A3224DF21C05BCE900675C60 /* 干货.h */,
+				A3F6A3EA1C102A4D00306E07 /* 编译错误.h */,
 			);
 			path = "JJ_Class_01_笔记";
 			sourceTree = "<group>";
