@@ -68,6 +68,11 @@
                                                  signalBlock:^RACSignal *(id input) {
                                                      return [self executeSearchSignal];
                                                  }];
+    
+    /**
+     *  executeSearch属性是一个ReactiveCococa框架的RACCommand对象。RACCommand类有一个errors属性，用于发送命令执行时产生的任何错误。
+     */
+    self.connectionErrors = self.executeSearch.errors;
 }
 
 
@@ -110,5 +115,8 @@
     return [[[[RACSignal empty] logAll] delay:2.0] logAll];
 }
 #endif
+
+
+
 
 @end

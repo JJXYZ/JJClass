@@ -23,6 +23,11 @@
  */
 @property (strong, nonatomic) RACCommand *executeSearch;
 
+/**
+ *  RWTFlickrSearchViewModel不直接暴露信号给视图。相反它暴露一个状态和一个命令。我们需要扩展接口来提供错误报告。
+ */
+@property (strong, nonatomic) RACSignal *connectionErrors;
+
 
 - (instancetype)initWithServices:(id<RWTViewModelServices>)services;
 

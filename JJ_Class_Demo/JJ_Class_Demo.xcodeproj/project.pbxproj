@@ -701,8 +701,7 @@
 				692714171C0CA8ED00630D42 /* Info.plist */,
 				692714061C0CA8ED00630D42 /* Supporting Files */,
 			);
-			name = JJ_Class_08_ASI;
-			path = ../JJ_Class_08_ASI;
+			path = JJ_Class_08_ASI;
 			sourceTree = "<group>";
 		};
 		692714061C0CA8ED00630D42 /* Supporting Files */ = {

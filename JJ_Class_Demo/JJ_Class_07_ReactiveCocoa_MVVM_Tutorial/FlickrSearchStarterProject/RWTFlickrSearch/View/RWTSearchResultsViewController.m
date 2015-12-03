@@ -6,8 +6,9 @@
 #import "RWTSearchResultsViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "CETableViewBindingHelper.h"
+#import "RWTSearchResultsTableViewCell.h"
 
-@interface RWTSearchResultsViewController ()
+@interface RWTSearchResultsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *searchResultsTable;
 
@@ -50,6 +51,19 @@
      */
     UINib *nib = [UINib nibWithNibName:@"RWTSearchResultsTableViewCell" bundle:nil];
     self.bindingHelper = [CETableViewBindingHelper bindingHelperForTableView:self.searchResultsTable sourceSignal:RACObserve(self.viewModel, searchResults) selectionCommand:nil templateCell:nib];
+    self.bindingHelper.delegate = self;
+}
+
+#pragma mark - UIScrollViewDelegate
+/**
+ *  table view每次滚动时，调用这个方法。它迭代所有的可见cell，计算用于视差效果的偏移值。这个偏移值依赖于cell在table view中可见部分的位置
+ */
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSArray *cells = [self.searchResultsTable visibleCells];
+    for (RWTSearchResultsTableViewCell *cell in cells) {
+        CGFloat value = -40 + (cell.frame.origin.y - self.searchResultsTable.contentOffset.y) / 5;
+        [cell setParallax:value];
+    }
 }
 
 #if 0

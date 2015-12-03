@@ -14,4 +14,9 @@
 
 - (RACSignal *)flickrSearchSignal:(NSString *)searchString;
 
+/**
+ *  ViewModel将使用这个方法来请求给定图片的元数据，如评论和收藏。
+ */
+- (RACSignal *)flickrImageMetadata:(NSString *)photoId;
+
 @end
