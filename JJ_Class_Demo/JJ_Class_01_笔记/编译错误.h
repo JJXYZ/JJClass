@@ -16,11 +16,13 @@
  http://jingyan.baidu.com/article/a3aad71ac4de98b1fb0096ac.html
  
  CocoaChina:升级xcode7后提示警告如何解决   
+ Other linker Flags:-w
  http://www.cocoachina.com/bbs/read.php?tid-328574.html
  
- Other linker Flags:-w
  
  
+ yohunl的专栏:怎么去掉Xcode工程中的某种类型的警告
+ http://blog.csdn.net/yohunl/article/details/41984505
  
  
  
