@@ -108,6 +108,9 @@ static const char MJCachedPropertiesKey = '\0';
 }
 
 #pragma mark - --公共方法--
+/**
+ *  Jay 遍历所有的成员
+ */
 + (void)mj_enumerateProperties:(MJPropertiesEnumeration)enumeration
 {
     // 获得成员变量
@@ -122,6 +125,10 @@ static const char MJCachedPropertiesKey = '\0';
 }
 
 #pragma mark - 公共方法
+
+/**
+ *  Jay 成员变量转换成MJProperty数组
+ */
 + (NSMutableArray *)properties
 {
     NSMutableArray *cachedProperties = [MJDictionaryCache objectForKey:NSStringFromClass(self) forDictId:&MJCachedPropertiesKey];

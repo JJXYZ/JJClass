@@ -38,7 +38,7 @@ int main(int argc, char * argv[]) {
         // 关于模型的具体配置可以参考：MJExtensionConfig.m
         // 或者参考每个模型的.m文件中被注释掉的配置
         
-        execute(keyValues2object, @"简单的字典 -> 模型");
+//        execute(keyValues2object, @"简单的字典 -> 模型");
 //        execute(keyValues2object1, @"JSON字符串 -> 模型");
 //        execute(keyValues2object2, @"复杂的字典 -> 模型 (模型里面包含了模型)");
 //        execute(keyValues2object3, @"复杂的字典 -> 模型 (模型的数组属性里面又装着模型)");

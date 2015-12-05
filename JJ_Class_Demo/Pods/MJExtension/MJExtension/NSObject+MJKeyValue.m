@@ -64,13 +64,18 @@ static NSNumberFormatter *numberFormatter_;
 
 #pragma mark - --公共方法--
 #pragma mark - 字典 -> 模型
+
+/**
+ *  Jay 将字典的键值对转成模型属性
+ *  @param keyValues 字典(可以是NSDictionary、NSData、NSString)
+ */
 - (instancetype)mj_setKeyValues:(id)keyValues
 {
     return [self mj_setKeyValues:keyValues context:nil];
 }
 
 /**
- 核心代码：
+ Jay 核心代码：
  */
 - (instancetype)mj_setKeyValues:(id)keyValues context:(NSManagedObjectContext *)context
 {
@@ -196,11 +201,22 @@ static NSNumberFormatter *numberFormatter_;
     return self;
 }
 
+/**
+ *  Jay 通过字典来创建一个模型
+ *  @param keyValues 字典(可以是NSDictionary、NSData、NSString)
+ *  @return 新建的对象
+ */
 + (instancetype)mj_objectWithKeyValues:(id)keyValues
 {
     return [self mj_objectWithKeyValues:keyValues context:nil];
 }
 
+/**
+ *  Jay 通过字典来创建一个CoreData模型
+ *  @param keyValues 字典(可以是NSDictionary、NSData、NSString)
+ *  @param context   CoreData上下文
+ *  @return 新建的对象
+ */
 + (instancetype)mj_objectWithKeyValues:(id)keyValues context:(NSManagedObjectContext *)context
 {
     // 获得JSON对象
@@ -276,25 +292,54 @@ static NSNumberFormatter *numberFormatter_;
 }
 
 #pragma mark - 模型 -> 字典
+/**
+ *  Jay 将模型转成字典
+ *  @return 字典
+ */
 - (NSMutableDictionary *)mj_keyValues
 {
     return [self mj_keyValuesWithKeys:nil ignoredKeys:nil];
 }
-
+/**
+ *  Jay 将模型转成字典
+ *  @return 字典
+ */
 - (NSMutableDictionary *)mj_keyValuesWithKeys:(NSArray *)keys
 {
     return [self mj_keyValuesWithKeys:keys ignoredKeys:nil];
 }
-
+/**
+ *  Jay 将模型转成字典
+ *  @return 字典
+ */
 - (NSMutableDictionary *)mj_keyValuesWithIgnoredKeys:(NSArray *)ignoredKeys
 {
     return [self mj_keyValuesWithKeys:nil ignoredKeys:ignoredKeys];
 }
-
+/**
+ *  Jay 将模型转成字典
+ *  @return 字典
+ */
 - (NSMutableDictionary *)mj_keyValuesWithKeys:(NSArray *)keys ignoredKeys:(NSArray *)ignoredKeys
 {
     // 如果自己不是模型类, 那就返回自己
+#if 0
     MJExtensionAssertError(![MJFoundation isClassFromFoundation:[self class]], (NSMutableDictionary *)self, [self class], @"不是自定义的模型类")
+#elif 0
+    [[self class] setMj_error:nil];
+    if ((![MJFoundation isClassFromFoundation:[self class]]) == NO) {
+        MJExtensionBuildError([self class], @"不是自定义的模型类");
+        return (NSMutableDictionary *)self;
+    }
+#else
+    [[self class] setMj_error:nil];
+    if ((![MJFoundation isClassFromFoundation:[self class]]) == NO) {
+        NSError *error = [NSError errorWithDomain:@"不是自定义的模型类" code:250 userInfo:nil];
+        [[self class] setMj_error:error];
+        return (NSMutableDictionary *)self;
+    }
+#endif
+
     
     id keyValues = [NSMutableDictionary dictionary];
     
@@ -433,6 +478,9 @@ static NSNumberFormatter *numberFormatter_;
     return [NSJSONSerialization dataWithJSONObject:[self mj_JSONObject] options:kNilOptions error:nil];
 }
 
+/**
+ *  Jay 转换为字典或者数组
+ */
 - (id)mj_JSONObject
 {
     if ([self isKindOfClass:[NSString class]]) {

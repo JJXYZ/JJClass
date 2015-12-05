@@ -16,6 +16,7 @@
 #import "MJBook.h"
 
 @implementation MJExtensionConfig
+#if 0
 /**
  *  这个方法会在MJExtensionConfig加载进内存时调用一次
  */
@@ -91,4 +92,6 @@
     }];
     // 相当于在MJBook.中实现了- (id)mj_newValueFromOldValue:property:方法
 }
+#endif
+
 @end

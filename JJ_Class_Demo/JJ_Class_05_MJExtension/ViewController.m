@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ViewController+MJKeyValues.h"
+#import "MJExtension.h"
 
 @interface ViewController ()
 
@@ -16,6 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [self loadProperty];
+    
+    NSDictionary *dic = [[[UIView alloc] init] mj_keyValues];
+    NSLog(@"self = %@", dic);
 }
 
 @end
