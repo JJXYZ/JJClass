@@ -484,6 +484,7 @@
 		A391FCD31C07FEAC00EF9780 /* RWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWViewController.m; sourceTree = "<group>"; };
 		A391FCD41C07FEAC00EF9780 /* RWReactivePlayground.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RWReactivePlayground.xcodeproj; sourceTree = "<group>"; };
 		A391FCEE1C08325500EF9780 /* CocoaPods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaPods.h; sourceTree = "<group>"; };
+		A3DD6AD41C166E2A00A8C39E /* 动画.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "动画.h"; sourceTree = "<group>"; };
 		A3E2F1771C0C58A000236638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3E2F1791C0C58A000236638 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A3E2F17A1C0C58A000236638 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -943,6 +944,7 @@
 				A3224DF21C05BCE900675C60 /* 干货.h */,
 				A3F6A3EA1C102A4D00306E07 /* 编译错误.h */,
 				A383823C1C1558670060D4AC /* Xcode.h */,
+				A3DD6AD41C166E2A00A8C39E /* 动画.h */,
 			);
 			path = "JJ_Class_01_笔记";
 			sourceTree = "<group>";
