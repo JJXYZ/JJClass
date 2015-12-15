@@ -30,7 +30,8 @@
  http://blog.csdn.net/djl4104804/article/details/43099061
  
  
- 
+ AZZ的博客:iOS新升级，Xcode运行报错Could not find developer disk image
+ http://blog.csdn.net/xieyupeng520/article/details/46755317
  
  
  
