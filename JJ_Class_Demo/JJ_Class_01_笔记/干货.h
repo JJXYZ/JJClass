@@ -5,39 +5,24 @@
 //  Created by Jay on 15/11/25.
 //  Copyright © 2015年 JJ. All rights reserved.
 //
-
+#pragma mark - NSCoder
 /**
- 
- ============================NScoder========================================
- 
  Eric_xchen的专栏:NScoder和NScoding简析
  http://blog.csdn.net/Eric_xchen/article/details/40325737
  
+ */
+
+
+#pragma mark - RunLoop
+/**
  
- =============================RunLoop=======================================
+CocoaChina:深入理解RunLoop
+http://www.cocoachina.com/cms/wap.php?action=article&id=11970 (JJ_Class_06_RunLoop)
  
- CocoaChina:深入理解RunLoop
- http://www.cocoachina.com/cms/wap.php?action=article&id=11970 (JJ_Class_06_RunLoop)
- 
- ==========================面试题==========================================
- 
- 1. property 里面 weak和assign的区别？
- 2.  请举出一到两个ARC下循环引用或者内存泄漏的例子
- 3. Protocol、Delegate和category的联系和区别？Category中如何添加属性?
- 4. 如何创建NSOperation的并行和串行队列？main函数和start函数的区别？
- 5. 请定义一个返回值为BOOL类型，参数为一个NSString 对象的block。
- 6. 什么是Runloop ？ Timer与Runloop的关系？
- 7. UIView和CALayer的联系和区别？
- 8. HTTP 协议中GET和POST的区别？ 举出常见的HTTP状态码 ？举出一两种header中常见的字段？
- 9. 单例初始化的方法？ 什么情况下使用单例？什么情况下使用静态变量？
- 10.  OC与 JS 交互的方式？
- 11. OC中常用的设计模式有哪些？
- 12. 从app中跳转到第三方应用和从第三方跳转回来的方式？
- 13. SQLite中如何只用一行SQL语句实现 “插入或更新”
- 
- 
- ===========================运行时=========================================
- 
+  */
+
+#pragma mark - 运行时
+/**
  南峰子的技术博客:Objective-C Runtime 运行时之一：类与对象 (JJ_Class_05_运行时)
  http://southpeak.github.io/blog/2014/10/25/objective-c-runtime-yun-xing-shi-zhi-lei-yu-dui-xiang/
  
@@ -46,9 +31,13 @@
  
  南峰子的技术博客:Objective-C Runtime 运行时之三：方法与消息 (JJ_Class_05_运行时)
  http://southpeak.github.io/blog/2014/11/03/objective-c-runtime-yun-xing-shi-zhi-san-:fang-fa-yu-xiao-xi-zhuan-fa/
+
  
- ============================ReactiveCocoa========================================
- 
+ */
+
+
+#pragma mark - ReactiveCocoa
+/**
  Github:ReactiveCocoa
  
  Demo:https://github.com/leichunfeng/MVVMReactiveCocoa
@@ -65,8 +54,12 @@
  南峰子的技术博客:MVVM Tutorial with ReactiveCocoa(JJ_Class_07_ReactiveCocoa_MVVM_Tutorial)
  http://southpeak.github.io/blog/2014/08/08/mvvmzhi-nan-yi-:flickrsou-suo-shi-li/
  http://southpeak.github.io/blog/2014/08/12/mvvmzhi-nan-er-:flickrsou-suo-shen-ru/
+
  
- =============================插件=======================================
+ */
+
+#pragma mark - 插件
+/**
  
  github:Alcatraz
  
@@ -78,41 +71,43 @@
  自动对齐XAlign.tar:XAlign.xcplugin
  图片名字提示插件KSImageNamed-Xcode-master
  滤波器FuzzyAutocompletePlugin-master
- 
- =============================3DTouch=======================================
- 
+
+ */
+
+#pragma mark - 3DTouch
+/**
  github:3DTouch-PeekAndPopGestureDemo(JJ_Class_02_3DTouch-PeekAndPopGestureDemo)
  
  
  作者 肖浩呗 :[iOS]iOS9 3DTouch、ShortcutItem、Peek And Pop技术一览
  http://www.jianshu.com/p/74fe6cbc542b
+
  
- 
- ==============================VOIP=============================================
- 
+ */
+
+#pragma mark - VOIP
+/**
  云之讯开放平台:iOS SDK开发指南
  http://113.31.88.100:1180/doku.php?id=ios_sdk%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97
  
- ================================font===========================================
+ */
+
+#pragma mark - Font
+/**
  
  曾静的技术博客:在iOS开发中使用自定义字体
  http://git.devzeng.com/blog/using-custom-font-in-ios.html
  
- ==============================SDWebImage=============================================
+ */
+
+#pragma mark - SDWebImage
+/**
+ 
  
  CocoaChina:最新版SDWebImage的使用
  http://www.cocoachina.com/ios/20141212/10622.html
  
- 
- ===========================================================================
- 
- 
- 
- 
- 
- 
- 
- 
+  */
  
  
  
@@ -164,4 +159,3 @@
  
  
 
- */

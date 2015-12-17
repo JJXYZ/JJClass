@@ -344,6 +344,7 @@
 		69DA59F51C11EFE700851BC5 /* ViewController+MJKeyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MJKeyValues.h"; sourceTree = "<group>"; };
 		69DA59F61C11EFE700851BC5 /* ViewController+MJKeyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MJKeyValues.m"; sourceTree = "<group>"; };
 		84D87917BEC98D492799EE6A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31880DB1C225CFA0051229F /* 面试题.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "面试题.h"; sourceTree = "<group>"; };
 		A3224BD11C05574300675C60 /* JJ_Class_01_笔记.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_01_笔记.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3224C041C0557A500675C60 /* 关于Git.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "关于Git.h"; sourceTree = "<group>"; };
 		A3224C091C0559B900675C60 /* JJ_Class_02_3DTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_02_3DTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -945,6 +946,7 @@
 				A3F6A3EA1C102A4D00306E07 /* 编译错误.h */,
 				A383823C1C1558670060D4AC /* Xcode.h */,
 				A3DD6AD41C166E2A00A8C39E /* 动画.h */,
+				A31880DB1C225CFA0051229F /* 面试题.h */,
 			);
 			path = "JJ_Class_01_笔记";
 			sourceTree = "<group>";
