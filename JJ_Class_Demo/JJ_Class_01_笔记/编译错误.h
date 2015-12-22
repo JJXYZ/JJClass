@@ -34,8 +34,8 @@
  http://blog.csdn.net/xieyupeng520/article/details/46755317
  
  
- 
- 
+ segmentfault:OC 中，覆盖属性会有怎么样的化学反应？
+ http://segmentfault.com/a/1190000002904657
  
  
  
