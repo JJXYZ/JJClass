@@ -65,18 +65,11 @@ static const char MJIgnoredCodingPropertyNamesKey = '\0';
 }
 
 #pragma mark - 属性黑名单配置
-/**
- *  Jay 这个数组中的属性名将会被忽略：不进行字典和模型的转换
- *
- *  @param ignoredPropertyNames          这个数组中的属性名将会被忽略：不进行字典和模型的转换
- */
 + (void)mj_setupIgnoredPropertyNames:(MJIgnoredPropertyNames)ignoredPropertyNames
 {
     [self mj_setupBlockReturnValue:ignoredPropertyNames key:&MJIgnoredPropertyNamesKey];
 }
-/**
- *  Jay 这个数组中的属性名将会被忽略：不进行字典和模型的转换
- */
+
 + (NSMutableArray *)mj_totalIgnoredPropertyNames
 {
     return [self mj_totalObjectsWithSelector:@selector(mj_ignoredPropertyNames) key:&MJIgnoredPropertyNamesKey];
@@ -94,19 +87,11 @@ static const char MJIgnoredCodingPropertyNamesKey = '\0';
 }
 
 #pragma mark - 属性白名单配置
-/**
- *  Jay 这个数组中的属性名才会进行字典和模型的转换
- *
- *  @param allowedPropertyNames          这个数组中的属性名才会进行字典和模型的转换
- */
 + (void)mj_setupAllowedPropertyNames:(MJAllowedPropertyNames)allowedPropertyNames;
 {
     [self mj_setupBlockReturnValue:allowedPropertyNames key:&MJAllowedPropertyNamesKey];
 }
 
-/**
- *  Jay 这个数组中的属性名才会进行字典和模型的转换
- */
 + (NSMutableArray *)mj_totalAllowedPropertyNames
 {
     return [self mj_totalObjectsWithSelector:@selector(mj_allowedPropertyNames) key:&MJAllowedPropertyNamesKey];
@@ -135,12 +120,8 @@ static const char MJIgnoredCodingPropertyNamesKey = '\0';
     [[MJDictionaryCache dictWithDictId:key] removeAllObjects];
 }
 
-/**
- *  Jay 判断是否有SEL
- */
 + (NSMutableArray *)mj_totalObjectsWithSelector:(SEL)selector key:(const char *)key
 {
-    /** Jay 从缓存中获取到数组 */
     NSMutableArray *array = [MJDictionaryCache objectForKey:NSStringFromClass(self) forDictId:key];
     if (array) return array;
     

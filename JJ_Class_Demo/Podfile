@@ -4,11 +4,11 @@ platform:ios,'7.0'
 inhibit_all_warnings!
 
 #xcodeproj 'JJ_Class_07_ReactiveCocoa_Tutorial/ReactivePlayground-Starter/RWReactivePlayground'
-#xcodeproj 'JJ_Class_07_ReactiveCocoa_Tutorial/TwitterInstant-Starter-4/TwitterInstant'
+xcodeproj 'JJ_Class_07_ReactiveCocoa_Tutorial/TwitterInstant-Starter-4/TwitterInstant'
 #xcodeproj 'JJ_Class_07_ReactiveCocoa_MVVM_Tutorial/FlickrSearchStarterProject/RWTFlickrSearch'
 
 
-link_with 'JJ_Class_01_笔记', 'JJ_Class_02_3DTouch', 'JJ_Class_02_3DTouch-PeekAndPopGestureDemo', 'JJ_Class_03_js', 'JJ_Class_03_JSPatch', 'JJ_Class_04_AutoLayout', 'JJ_Class_04_Masonry', 'JJ_Class_05_运行时', 'JJ_Class_05_MJExtension', 'JJ_Class_06_RunLoop', 'JJ_Class_07_ReactiveCocoa', 'JJ_Class_08_ASI', 'JJ_Class_09_MJRefresh'
+#link_with 'JJ_Class_01_笔记', 'JJ_Class_02_3DTouch', 'JJ_Class_02_3DTouch-PeekAndPopGestureDemo', 'JJ_Class_03_js', 'JJ_Class_03_JSPatch', 'JJ_Class_04_AutoLayout', 'JJ_Class_04_Masonry', 'JJ_Class_05_运行时', 'JJ_Class_05_MJExtension', 'JJ_Class_06_RunLoop', 'JJ_Class_07_ReactiveCocoa', 'JJ_Class_08_ASI', 'JJ_Class_09_MJRefresh'
 
 pod 'JJDefine', '~> 1.0.0'
 pod 'JJSandBox', '~> 1.0.0'

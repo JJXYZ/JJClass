@@ -98,7 +98,7 @@
      }];
 #endif
     
-#if 1
+#if 0
     /**
      *  我们要做的第一件事就是创建一对信号来校验用户名与密码的输入是否有效。
      */
@@ -128,7 +128,7 @@
     }];
 #endif
     
-#if 1
+#if 0
     /**
      *  从概念上讲，我们将信号的输出值赋值给文本输入框的backgroundColor属性。但是这段代码有点糟糕。我们可以以另外一种方式来做相同的处理。这得益于ReactiveCocoa定义的一些宏。如下代码所示：
      
@@ -143,7 +143,7 @@
     }];
 #endif
 
-#if 1
+#if 0
     /**
      *  在当前的程序中，Sign in按钮只有在两个输入框都有效时才可点击。是时候处理这个响应了。
      
@@ -176,7 +176,7 @@
      *  为了处理按钮事件，我们需要使用ReactiveCocoa添加到UIKit的另一个方法：rac_signalForControlEvents
      */
     [[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        NSLog(@"Button clicked");
+        NSLog(@"Button clicked %@", x);
     }];
     /**
      *  上面的代码从按钮的UIControlEventTouchUpInside事件中创建一个信号，并添加订阅以在每次事件发生时添加日志。

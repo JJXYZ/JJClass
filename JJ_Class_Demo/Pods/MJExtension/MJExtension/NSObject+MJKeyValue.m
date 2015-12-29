@@ -53,29 +53,21 @@ static const char MJReferenceReplacedKeyWhenCreatingKeyValuesKey = '\0';
 }
 
 #pragma mark - --常用的对象--
-static NSNumberFormatter *numberFormatter_;
 + (void)load
 {
-    numberFormatter_ = [[NSNumberFormatter alloc] init];
-    
     // 默认设置
     [self mj_referenceReplacedKeyWhenCreatingKeyValues:YES];
 }
 
 #pragma mark - --公共方法--
 #pragma mark - 字典 -> 模型
-
-/**
- *  Jay 将字典的键值对转成模型属性
- *  @param keyValues 字典(可以是NSDictionary、NSData、NSString)
- */
 - (instancetype)mj_setKeyValues:(id)keyValues
 {
     return [self mj_setKeyValues:keyValues context:nil];
 }
 
 /**
- Jay 核心代码：
+ 核心代码：
  */
 - (instancetype)mj_setKeyValues:(id)keyValues context:(NSManagedObjectContext *)context
 {
@@ -164,7 +156,7 @@ static NSNumberFormatter *numberFormatter_;
                         NSString *oldValue = value;
                         
                         // NSString -> NSNumber
-                        value = [numberFormatter_ numberFromString:oldValue];
+                        value = [NSDecimalNumber decimalNumberWithString:oldValue];
                         
                         // 如果是BOOL
                         if (type.isBoolType) {
@@ -201,22 +193,11 @@ static NSNumberFormatter *numberFormatter_;
     return self;
 }
 
-/**
- *  Jay 通过字典来创建一个模型
- *  @param keyValues 字典(可以是NSDictionary、NSData、NSString)
- *  @return 新建的对象
- */
 + (instancetype)mj_objectWithKeyValues:(id)keyValues
 {
     return [self mj_objectWithKeyValues:keyValues context:nil];
 }
 
-/**
- *  Jay 通过字典来创建一个CoreData模型
- *  @param keyValues 字典(可以是NSDictionary、NSData、NSString)
- *  @param context   CoreData上下文
- *  @return 新建的对象
- */
 + (instancetype)mj_objectWithKeyValues:(id)keyValues context:(NSManagedObjectContext *)context
 {
     // 获得JSON对象
@@ -292,54 +273,25 @@ static NSNumberFormatter *numberFormatter_;
 }
 
 #pragma mark - 模型 -> 字典
-/**
- *  Jay 将模型转成字典
- *  @return 字典
- */
 - (NSMutableDictionary *)mj_keyValues
 {
     return [self mj_keyValuesWithKeys:nil ignoredKeys:nil];
 }
-/**
- *  Jay 将模型转成字典
- *  @return 字典
- */
+
 - (NSMutableDictionary *)mj_keyValuesWithKeys:(NSArray *)keys
 {
     return [self mj_keyValuesWithKeys:keys ignoredKeys:nil];
 }
-/**
- *  Jay 将模型转成字典
- *  @return 字典
- */
+
 - (NSMutableDictionary *)mj_keyValuesWithIgnoredKeys:(NSArray *)ignoredKeys
 {
     return [self mj_keyValuesWithKeys:nil ignoredKeys:ignoredKeys];
 }
-/**
- *  Jay 将模型转成字典
- *  @return 字典
- */
+
 - (NSMutableDictionary *)mj_keyValuesWithKeys:(NSArray *)keys ignoredKeys:(NSArray *)ignoredKeys
 {
     // 如果自己不是模型类, 那就返回自己
-#if 0
     MJExtensionAssertError(![MJFoundation isClassFromFoundation:[self class]], (NSMutableDictionary *)self, [self class], @"不是自定义的模型类")
-#elif 0
-    [[self class] setMj_error:nil];
-    if ((![MJFoundation isClassFromFoundation:[self class]]) == NO) {
-        MJExtensionBuildError([self class], @"不是自定义的模型类");
-        return (NSMutableDictionary *)self;
-    }
-#else
-    [[self class] setMj_error:nil];
-    if ((![MJFoundation isClassFromFoundation:[self class]]) == NO) {
-        NSError *error = [NSError errorWithDomain:@"不是自定义的模型类" code:250 userInfo:nil];
-        [[self class] setMj_error:error];
-        return (NSMutableDictionary *)self;
-    }
-#endif
-
     
     id keyValues = [NSMutableDictionary dictionary];
     
@@ -478,9 +430,6 @@ static NSNumberFormatter *numberFormatter_;
     return [NSJSONSerialization dataWithJSONObject:[self mj_JSONObject] options:kNilOptions error:nil];
 }
 
-/**
- *  Jay 转换为字典或者数组
- */
 - (id)mj_JSONObject
 {
     if ([self isKindOfClass:[NSString class]]) {
@@ -513,8 +462,11 @@ static NSNumberFormatter *numberFormatter_;
 - (instancetype)setKeyValues:(id)keyValues error:(NSError **)error
 {
     id value = [self mj_setKeyValues:keyValues];
+    if (error != NULL) {
     *error = [self.class mj_error];
+    }
     return value;
+    
 }
 
 - (instancetype)setKeyValues:(id)keyValues context:(NSManagedObjectContext *)context
@@ -525,7 +477,9 @@ static NSNumberFormatter *numberFormatter_;
 - (instancetype)setKeyValues:(id)keyValues context:(NSManagedObjectContext *)context error:(NSError **)error
 {
     id value = [self mj_setKeyValues:keyValues context:context];
+    if (error != NULL) {
     *error = [self.class mj_error];
+    }
     return value;
 }
 
@@ -542,7 +496,9 @@ static NSNumberFormatter *numberFormatter_;
 - (NSMutableDictionary *)keyValuesWithError:(NSError **)error
 {
     id value = [self mj_keyValues];
+    if (error != NULL) {
     *error = [self.class mj_error];
+    }
     return value;
 }
 
@@ -554,7 +510,9 @@ static NSNumberFormatter *numberFormatter_;
 - (NSMutableDictionary *)keyValuesWithKeys:(NSArray *)keys error:(NSError **)error
 {
     id value = [self mj_keyValuesWithKeys:keys];
+    if (error != NULL) {
     *error = [self.class mj_error];
+    }
     return value;
 }
 
@@ -566,7 +524,9 @@ static NSNumberFormatter *numberFormatter_;
 - (NSMutableDictionary *)keyValuesWithIgnoredKeys:(NSArray *)ignoredKeys error:(NSError **)error
 {
     id value = [self mj_keyValuesWithIgnoredKeys:ignoredKeys];
+    if (error != NULL) {
     *error = [self.class mj_error];
+    }
     return value;
 }
 
@@ -578,7 +538,9 @@ static NSNumberFormatter *numberFormatter_;
 + (NSMutableArray *)keyValuesArrayWithObjectArray:(NSArray *)objectArray error:(NSError **)error
 {
     id value = [self mj_keyValuesArrayWithObjectArray:objectArray];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -590,7 +552,9 @@ static NSNumberFormatter *numberFormatter_;
 + (NSMutableArray *)keyValuesArrayWithObjectArray:(NSArray *)objectArray keys:(NSArray *)keys error:(NSError **)error
 {
     id value = [self mj_keyValuesArrayWithObjectArray:objectArray keys:keys];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -602,7 +566,9 @@ static NSNumberFormatter *numberFormatter_;
 + (NSMutableArray *)keyValuesArrayWithObjectArray:(NSArray *)objectArray ignoredKeys:(NSArray *)ignoredKeys error:(NSError **)error
 {
     id value = [self mj_keyValuesArrayWithObjectArray:objectArray ignoredKeys:ignoredKeys];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -614,7 +580,9 @@ static NSNumberFormatter *numberFormatter_;
 + (instancetype)objectWithKeyValues:(id)keyValues error:(NSError **)error
 {
     id value = [self mj_objectWithKeyValues:keyValues];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -626,7 +594,9 @@ static NSNumberFormatter *numberFormatter_;
 + (instancetype)objectWithKeyValues:(id)keyValues context:(NSManagedObjectContext *)context error:(NSError **)error
 {
     id value = [self mj_objectWithKeyValues:keyValues context:context];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -638,7 +608,9 @@ static NSNumberFormatter *numberFormatter_;
 + (instancetype)objectWithFilename:(NSString *)filename error:(NSError **)error
 {
     id value = [self mj_objectWithFilename:filename];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -650,7 +622,9 @@ static NSNumberFormatter *numberFormatter_;
 + (instancetype)objectWithFile:(NSString *)file error:(NSError **)error
 {
     id value = [self mj_objectWithFile:file];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -662,7 +636,9 @@ static NSNumberFormatter *numberFormatter_;
 + (NSMutableArray *)objectArrayWithKeyValuesArray:(id)keyValuesArray error:(NSError **)error
 {
     id value = [self mj_objectArrayWithKeyValuesArray:keyValuesArray];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -674,7 +650,9 @@ static NSNumberFormatter *numberFormatter_;
 + (NSMutableArray *)objectArrayWithKeyValuesArray:(id)keyValuesArray context:(NSManagedObjectContext *)context error:(NSError **)error
 {
     id value = [self mj_objectArrayWithKeyValuesArray:keyValuesArray context:context];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -686,7 +664,9 @@ static NSNumberFormatter *numberFormatter_;
 + (NSMutableArray *)objectArrayWithFilename:(NSString *)filename error:(NSError **)error
 {
     id value = [self mj_objectArrayWithFilename:filename];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 
@@ -698,7 +678,9 @@ static NSNumberFormatter *numberFormatter_;
 + (NSMutableArray *)objectArrayWithFile:(NSString *)file error:(NSError **)error
 {
     id value = [self mj_objectArrayWithFile:file];
+    if (error != NULL) {
     *error = [self mj_error];
+    }
     return value;
 }
 

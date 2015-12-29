@@ -100,7 +100,7 @@ static NSString * const RWTwitterInstantDomain = @"TwitterInstant";
     }];
 #endif
     
-#if 1
+#if 0
     /**
      *  为了避循环引用，根据苹果的文档中推荐的捕获self的一个弱引用。如下代码所示：
      */
@@ -125,7 +125,7 @@ static NSString * const RWTwitterInstantDomain = @"TwitterInstant";
     }];
 #endif
     
-#if 1
+#if 0
     /**
      *  我们在viewDidLoad的结尾处添加以下代码，来创建账户存储及Twitter账户标识：
      */
@@ -148,7 +148,7 @@ static NSString * const RWTwitterInstantDomain = @"TwitterInstant";
      }];
 #endif
 
-#if 1
+#if 0
     /**
      *  then方法会等到completed事件发出后调用，然后订阅由block参数返回的信号。这有效地将控制从一个信号传递给下一个信号。
      */
@@ -181,7 +181,7 @@ static NSString * const RWTwitterInstantDomain = @"TwitterInstant";
      }];
 #endif
     
-#if 1
+#if 0
     /**
      *  在第一部分中我们学习了如何使用flattenMap来将每个next事件映射到一个新的被订阅的信号。这里我们再次使用它们。在viewDidLoad的最后用如下代码更新：
      */
@@ -201,7 +201,7 @@ static NSString * const RWTwitterInstantDomain = @"TwitterInstant";
      }];
 #endif
     
-#if 1
+#if 0
     /**
      *  注意，从左侧的线程列表中我们可以看到debugger到的代码并没有运行在主线程，即线程Thread 1。记住，更新UI的操作一定得在主线程中操作；因此，如果要在UI上显示tweet列表，则必须切换线程。
      
