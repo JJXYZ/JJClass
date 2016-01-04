@@ -81,7 +81,10 @@ http://www.cocoachina.com/cms/wap.php?action=article&id=11970 (JJ_Class_06_RunLo
  
  作者 肖浩呗 :[iOS]iOS9 3DTouch、ShortcutItem、Peek And Pop技术一览
  http://www.jianshu.com/p/74fe6cbc542b
-
+ 
+ 
+ iOS9系列专题一——3D Touch
+http://my.oschina.net/u/2340880/blog/511509
  
  */
 
