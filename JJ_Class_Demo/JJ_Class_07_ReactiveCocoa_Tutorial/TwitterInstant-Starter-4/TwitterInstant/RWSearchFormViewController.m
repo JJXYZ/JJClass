@@ -133,7 +133,7 @@ static NSString * const RWTwitterInstantDomain = @"TwitterInstant";
     self.twitterAccountType = [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
 #endif
     
-#if 1
+#if 0
     /**
      *  一个信号可以发送三种事件类型：next, completed, error。
      
@@ -164,7 +164,7 @@ static NSString * const RWTwitterInstantDomain = @"TwitterInstant";
      }];
 #endif
 
-#if 1
+#if 0
     /**
      *  下一步，我们添加一个filter操作到管道，以移除无效的搜索字符串。在这个实例中，是要求输入长度不小于3：
      */
@@ -201,7 +201,7 @@ static NSString * const RWTwitterInstantDomain = @"TwitterInstant";
      }];
 #endif
     
-#if 0
+#if 1
     /**
      *  注意，从左侧的线程列表中我们可以看到debugger到的代码并没有运行在主线程，即线程Thread 1。记住，更新UI的操作一定得在主线程中操作；因此，如果要在UI上显示tweet列表，则必须切换线程。
      
