@@ -28,6 +28,10 @@
  WWDC 2013 Session笔记 - iOS7中的ViewController切换
  *  http://onevcat.com/2013/10/vc-transition-in-ios7/
  
+ 
+ 自定义控制器的转场动画（Push、Pop）
+ http://www.jianshu.com/p/59224648828b
+ 
  */
 
 #endif /* Header_h */
