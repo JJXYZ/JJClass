@@ -8,17 +8,17 @@ inhibit_all_warnings!
 #xcodeproj 'JJ_Class_07_ReactiveCocoa_MVVM_Tutorial/FlickrSearchStarterProject/RWTFlickrSearch'
 
 
-link_with 'JJ_Class_01_笔记', 'JJ_Class_02_3DTouch', 'JJ_Class_02_3DTouch-PeekAndPopGestureDemo', 'JJ_Class_03_js', 'JJ_Class_03_JSPatch', 'JJ_Class_04_AutoLayout', 'JJ_Class_04_Masonry', 'JJ_Class_05_运行时', 'JJ_Class_05_MJExtension', 'JJ_Class_06_RunLoop', 'JJ_Class_07_ReactiveCocoa', 'JJ_Class_08_ASI', 'JJ_Class_09_MJRefresh'
+link_with 'JJ_Class_01_笔记', 'JJ_Class_02_3DTouch', 'JJ_Class_02_3DTouch-PeekAndPopGestureDemo', 'JJ_Class_03_js', 'JJ_Class_03_JSPatch', 'JJ_Class_04_AutoLayout', 'JJ_Class_04_Masonry', 'JJ_Class_05_运行时', 'JJ_Class_05_MJExtension', 'JJ_Class_06_RunLoop', 'JJ_Class_07_ReactiveCocoa', 'JJ_Class_08_ASI', 'JJ_Class_09_MJRefresh', 'JJ_Class_12_崩溃'
 
-pod 'JJDefine', '~> 1.0.0'
-pod 'JJSandBox', '~> 1.0.0'
-pod 'Masonry', '~> 0.6.3'
-pod 'JSPatch', '~> 0.1.5'
-pod 'MJExtension', '~> 3.0.7'
-pod 'ReactiveCocoa', '~> 2.5'
-pod 'AFNetworking', '~> 2.6.3'
-pod 'SDWebImage', '~> 3.7.3'
-pod 'MJRefresh', '~> 3.0.7'
+pod 'JJDefine', '1.0.0'
+pod 'JJSandBox', '1.0.0'
+pod 'Masonry', '0.6.3'
+pod 'JSPatch', '0.1.5'
+pod 'MJExtension', '3.0.10'
+pod 'ReactiveCocoa', '2.5'
+pod 'AFNetworking', '2.6.3'
+pod 'SDWebImage', '3.7.5'
+pod 'MJRefresh', '3.0.7'
 
 #for RWTFlickrSearch.xcodeproj
 pod 'objectiveflickr', '2.0.4'
