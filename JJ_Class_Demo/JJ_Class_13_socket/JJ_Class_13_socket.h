@@ -13,6 +13,9 @@
 /**
     SocketIO --- iOS使用篇
  *  http://blog.csdn.net/thelittleboy/article/details/46538335
+ 
+ iOS Client 与WebSocket 通信(二)
+ http://blog.csdn.net/justinjing0612/article/details/9367023
  */
 
 #endif /* JJ_Class_13_socket_h */
