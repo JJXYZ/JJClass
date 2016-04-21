@@ -125,8 +125,12 @@
  http://blog.csdn.net/folish_audi/article/details/37501403
  Code4App:CocoaPods安装和使用教程
  http://code4app.com/article/cocoapods-install-usage
+ 最新版 CocoaPods 的安装流程
+ http://www.tuicool.com/articles/7VvuAr3
  
- 注意:gem sources -a https://ruby.taobao.org/  被干掉了使用 http://rubygems.org/
+ 注意:
+ 1.gem sources -a https://ruby.taobao.org/  被干掉了使用 http://rubygems.org/
+ 2.sudo gem install cocoapods 备注：苹果系统升级 OS X EL Capitan 后改为 $sudo gem install -n /usr/local/bin cocoapods
  
  
  
