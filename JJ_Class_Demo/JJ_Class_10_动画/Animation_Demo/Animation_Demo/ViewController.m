@@ -64,4 +64,6 @@ static CGFloat const kDurationValue = 0.3f;
     }];
 }
 
+- (IBAction)click:(id)sender {
+}
 @end

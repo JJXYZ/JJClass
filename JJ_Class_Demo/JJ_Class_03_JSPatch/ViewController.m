@@ -18,4 +18,6 @@
     [super viewDidLoad];
 }
 
+- (IBAction)clickRACSubject:(id)sender {
+}
 @end

@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *btnRACSubject;
+- (IBAction)clickRACSubject:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnRACReplaySubject;
 
 @end
 

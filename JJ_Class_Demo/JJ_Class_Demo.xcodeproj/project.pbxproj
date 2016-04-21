@@ -77,6 +77,10 @@
 		6979DD331C0753FF009F3038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6979DD321C0753FF009F3038 /* Assets.xcassets */; };
 		6979DD361C0753FF009F3038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6979DD341C0753FF009F3038 /* LaunchScreen.storyboard */; };
 		69DA59F71C11EFE700851BC5 /* ViewController+MJKeyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DA59F61C11EFE700851BC5 /* ViewController+MJKeyValues.m */; };
+		69E705471CC91810007D0EE1 /* RACSubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E705451CC91810007D0EE1 /* RACSubjectVC.m */; };
+		69E705481CC91810007D0EE1 /* RACSubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E705451CC91810007D0EE1 /* RACSubjectVC.m */; };
+		69E705491CC91810007D0EE1 /* RACSubjectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E705461CC91810007D0EE1 /* RACSubjectVC.xib */; };
+		69E7054A1CC91810007D0EE1 /* RACSubjectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E705461CC91810007D0EE1 /* RACSubjectVC.xib */; };
 		A318CC581C3CA99C00751ABE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A318CC3A1C3CA99C00751ABE /* .gitignore */; };
 		A318CC591C3CA99C00751ABE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A318CC3B1C3CA99C00751ABE /* LICENSE */; };
 		A318CC5A1C3CA99C00751ABE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A318CC3C1C3CA99C00751ABE /* README.md */; };
@@ -534,6 +538,9 @@
 		6979DD371C0753FF009F3038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69DA59F51C11EFE700851BC5 /* ViewController+MJKeyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MJKeyValues.h"; sourceTree = "<group>"; };
 		69DA59F61C11EFE700851BC5 /* ViewController+MJKeyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MJKeyValues.m"; sourceTree = "<group>"; };
+		69E705441CC91810007D0EE1 /* RACSubjectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSubjectVC.h; sourceTree = "<group>"; };
+		69E705451CC91810007D0EE1 /* RACSubjectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSubjectVC.m; sourceTree = "<group>"; };
+		69E705461CC91810007D0EE1 /* RACSubjectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACSubjectVC.xib; sourceTree = "<group>"; };
 		84D87917BEC98D492799EE6A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A318CC3A1C3CA99C00751ABE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A318CC3B1C3CA99C00751ABE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -1262,6 +1269,9 @@
 				6979DD2C1C0753FF009F3038 /* ViewController.h */,
 				6979DD2D1C0753FF009F3038 /* ViewController.m */,
 				6979DD2F1C0753FF009F3038 /* Main.storyboard */,
+				69E705441CC91810007D0EE1 /* RACSubjectVC.h */,
+				69E705451CC91810007D0EE1 /* RACSubjectVC.m */,
+				69E705461CC91810007D0EE1 /* RACSubjectVC.xib */,
 				6979DD321C0753FF009F3038 /* Assets.xcassets */,
 				6979DD341C0753FF009F3038 /* LaunchScreen.storyboard */,
 				6979DD371C0753FF009F3038 /* Info.plist */,
@@ -2932,6 +2942,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E7054A1CC91810007D0EE1 /* RACSubjectVC.xib in Resources */,
 				6979DD361C0753FF009F3038 /* LaunchScreen.storyboard in Resources */,
 				6979DD331C0753FF009F3038 /* Assets.xcassets in Resources */,
 				6979DD311C0753FF009F3038 /* Main.storyboard in Resources */,
@@ -2974,6 +2985,7 @@
 				A3FE8B5C1C0D516600A2E8B6 /* RWTFlickrSearchViewController.xib in Resources */,
 				A3B584F91C3E4F7600182CC1 /* Info.plist in Resources */,
 				A3E2F18C1C0C58A000236638 /* InfoPlist.strings in Resources */,
+				69E705491CC91810007D0EE1 /* RACSubjectVC.xib in Resources */,
 				A318CC5E1C3CA99C00751ABE /* Images.xcassets in Resources */,
 				A3BBF7121C4605A40092C569 /* InfoPlist.strings in Resources */,
 				A3BBF71C1C4605A40092C569 /* InfoPlist.strings in Resources */,
@@ -3780,6 +3792,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E705481CC91810007D0EE1 /* RACSubjectVC.m in Sources */,
 				6979DD2E1C0753FF009F3038 /* ViewController.m in Sources */,
 				6979DD2B1C0753FF009F3038 /* AppDelegate.m in Sources */,
 				6979DD281C0753FF009F3038 /* main.m in Sources */,
@@ -3830,6 +3843,7 @@
 				A3FE8B651C0D516600A2E8B6 /* RWTFlickrSearchTests.m in Sources */,
 				A3E2F1931C0C58A000236638 /* RWTweet.m in Sources */,
 				A3B585781C3E5DD400182CC1 /* Animation_DemoTests.m in Sources */,
+				69E705471CC91810007D0EE1 /* RACSubjectVC.m in Sources */,
 				6927148F1C0CA9CD00630D42 /* GHUnitTestMain.m in Sources */,
 				A318CC5F1C3CA99C00751ABE /* main.m in Sources */,
 				692714731C0CA9CD00630D42 /* ASIHTTPRequest.m in Sources */,
