@@ -257,7 +257,13 @@ http://www.cocoachina.com/cms/wap.php?action=article&id=11970 (JJ_Class_06_RunLo
  http://www.cocoachina.com/ios/20141212/10622.html
  
   */
- 
+#pragma mark - JavaScriptCore
+/**
+ IOS7开发～JavaScriptCore
+ http://blog.csdn.net/lizhongfu2013/article/details/9232129
+ iOS7新JavaScriptCore框架入门介绍
+ http://blog.iderzheng.com/introduction-to-ios7-javascriptcore-framework/
+  */
 
  
  
