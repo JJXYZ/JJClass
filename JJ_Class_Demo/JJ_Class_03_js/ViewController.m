@@ -17,14 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+}
+
+- (void)fontFamilies {
     NSArray *fontFamilies = [UIFont familyNames];
     for (NSString *fontFamily in fontFamilies)
     {
         NSArray *fontNames = [UIFont fontNamesForFamilyName:fontFamily];
         NSLog (@"%@: %@", fontFamily, fontNames);
     }
-    
-    
 }
 
 @end
