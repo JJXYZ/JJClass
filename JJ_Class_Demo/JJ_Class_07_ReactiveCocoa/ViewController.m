@@ -25,9 +25,61 @@
 //    [self createSignal];
 //    [self createRACSubject];
 //    [self createRACSequence];
-    [self createRACCommand];
-    
+//    [self createRACCommand];
+//    [self signalOfSignals];
+    [self createRACMulticastConnection];
 }
+
+#pragma mark - RACMulticastConnection
+
+- (void)createRACMulticastConnection {
+    // 发送请求，用一个信号内包装，不管有多少个订阅者，只想要发送一次请求
+    
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        // didSubscribeblock中的代码都统称为副作用。
+        // 发送请求
+        NSLog(@"发送请求");
+        
+        [subscriber sendNext:@1];
+        
+        return nil;
+    }];
+    
+    //    // 订阅信号
+    //    [signal subscribeNext:^(id x) {
+    //
+    //        NSLog(@"%@",x);
+    //    }];
+    //
+    //
+    //    [signal subscribeNext:^(id x) {
+    //
+    //        NSLog(@"%@",x);
+    //    }];
+    
+    // 1.创建连接类
+    RACMulticastConnection *connection = [signal publish];
+    
+    // 2.订阅信号
+    [connection.signal subscribeNext:^(id x) {
+        
+        NSLog(@"1 : %@",x);
+    }];
+    [connection.signal subscribeNext:^(id x) {
+        
+        NSLog(@"2 : %@",x);
+    }];
+    [connection.signal subscribeNext:^(id x) {
+        
+        NSLog(@"3 : %@",x);
+    }];
+    
+    // 3.连接：才会把源信号变成热信号
+    [connection connect];
+
+}
+
 #pragma mark - RACCommand
 - (void)createRACCommand {
     // 使用注意点：RACCommand中的block不能返回一个nil的信号
@@ -39,7 +91,6 @@
         // block有什么作用:描述下如何处理事件，网络请求
         
         // 返回数据 1
-        
         
         // 为什么RACCommand必须返回信号，处理事件的时候，肯定会有数据产生，产生的数据就通过返回的信号发出。
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
@@ -66,9 +117,10 @@
     // 2.执行命令,调用signalBlock
     [command execute:@1];
     
-    //    [self signalOfSignals];
+    
 }
 
+#pragma mark - RACSubject signalOfSignals
 - (void)signalOfSignals
 {
     // 创建一个信号中的信号
@@ -197,7 +249,7 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-#pragma mark - RACSiganl
+#pragma mark - RACSignal
 
 - (void)createSignal {
     // 核心：信号类
