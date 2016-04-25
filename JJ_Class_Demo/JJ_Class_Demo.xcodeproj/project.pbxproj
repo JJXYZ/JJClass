@@ -165,6 +165,12 @@
 		A32A5DCC1C06F31B0000020D /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DCB1C06F31B0000020D /* MyObject.m */; };
 		A32A5DD01C0709C60000020D /* SUTRuntimeMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DCF1C0709C60000020D /* SUTRuntimeMethodHelper.m */; };
 		A32A5DD31C0709DB0000020D /* SUTRuntimeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DD21C0709DB0000020D /* SUTRuntimeMethod.m */; };
+		A37DD6B41CCDC78200B1F406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A37DD6B31CCDC78200B1F406 /* main.m */; };
+		A37DD6B71CCDC78200B1F406 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A37DD6B61CCDC78200B1F406 /* AppDelegate.m */; };
+		A37DD6BA1CCDC78200B1F406 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37DD6B91CCDC78200B1F406 /* ViewController.m */; };
+		A37DD6BD1CCDC78200B1F406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6BB1CCDC78200B1F406 /* Main.storyboard */; };
+		A37DD6BF1CCDC78200B1F406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6BE1CCDC78200B1F406 /* Assets.xcassets */; };
+		A37DD6C21CCDC78200B1F406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6C01CCDC78200B1F406 /* LaunchScreen.storyboard */; };
 		A38C7ED71C61957300C6B167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7ED61C61957300C6B167 /* main.m */; };
 		A38C7EDA1C61957300C6B167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7ED91C61957300C6B167 /* AppDelegate.m */; };
 		A38C7EDD1C61957300C6B167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7EDC1C61957300C6B167 /* ViewController.m */; };
@@ -704,6 +710,16 @@
 		A32A5DD11C0709DB0000020D /* SUTRuntimeMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTRuntimeMethod.h; sourceTree = "<group>"; };
 		A32A5DD21C0709DB0000020D /* SUTRuntimeMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTRuntimeMethod.m; sourceTree = "<group>"; };
 		A337A37D1C7AE08300723A50 /* JJ_Class_13_socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJ_Class_13_socket.h; sourceTree = "<group>"; };
+		A37DD6B01CCDC78200B1F406 /* JJ_Class_14_LuaViewSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_14_LuaViewSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A37DD6B31CCDC78200B1F406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A37DD6B51CCDC78200B1F406 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A37DD6B61CCDC78200B1F406 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A37DD6B81CCDC78200B1F406 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A37DD6B91CCDC78200B1F406 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A37DD6BC1CCDC78200B1F406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A37DD6BE1CCDC78200B1F406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A37DD6C11CCDC78200B1F406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A37DD6C31CCDC78200B1F406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A38C7ED31C61957300C6B167 /* JJ_Class_12_崩溃.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_12_崩溃.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38C7ED61C61957300C6B167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A38C7ED81C61957300C6B167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1055,6 +1071,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A37DD6AD1CCDC78200B1F406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A38C7ED01C61957300C6B167 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1394,6 +1417,7 @@
 			isa = PBXGroup;
 			children = (
 				A318CC731C3CB53600751ABE /* 笔记.h */,
+				B72D127575E132714623A7B4 /* Frameworks */,
 				A3224BD21C05574300675C60 /* JJ_Class_01_笔记 */,
 				A391FCDD1C08024A00EF9780 /* JJ_Class_02_3DTouch */,
 				A391FCDE1C08026200EF9780 /* JJ_Class_03_js */,
@@ -1407,9 +1431,9 @@
 				A3BBF69A1C4604560092C569 /* JJ_Class_11_设计模式 */,
 				A38C7EBF1C61951D00C6B167 /* JJ_Class_12_崩溃 */,
 				A337A36C1C7AE03B00723A50 /* JJ_Class_13_socket */,
-				A3224B981C0555F200675C60 /* Products */,
+				A37DD69B1CCDC73300B1F406 /* JJ_Class_14_Lua */,
 				423CFC0C027BFD18212A7C4A /* Pods */,
-				B72D127575E132714623A7B4 /* Frameworks */,
+				A3224B981C0555F200675C60 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1433,6 +1457,7 @@
 				A3B585361C3E550600182CC1 /* JJ_Class_10_Transforms.app */,
 				A38C7ED31C61957300C6B167 /* JJ_Class_12_崩溃.app */,
 				A39016671CCA15A900ACD867 /* JJ_Class_03_JavaScriptCore.app */,
+				A37DD6B01CCDC78200B1F406 /* JJ_Class_14_LuaViewSDK.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1732,6 +1757,38 @@
 				A337A37D1C7AE08300723A50 /* JJ_Class_13_socket.h */,
 			);
 			path = JJ_Class_13_socket;
+			sourceTree = "<group>";
+		};
+		A37DD69B1CCDC73300B1F406 /* JJ_Class_14_Lua */ = {
+			isa = PBXGroup;
+			children = (
+				A37DD6B11CCDC78200B1F406 /* JJ_Class_14_LuaViewSDK */,
+			);
+			path = JJ_Class_14_Lua;
+			sourceTree = "<group>";
+		};
+		A37DD6B11CCDC78200B1F406 /* JJ_Class_14_LuaViewSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A37DD6B51CCDC78200B1F406 /* AppDelegate.h */,
+				A37DD6B61CCDC78200B1F406 /* AppDelegate.m */,
+				A37DD6B81CCDC78200B1F406 /* ViewController.h */,
+				A37DD6B91CCDC78200B1F406 /* ViewController.m */,
+				A37DD6BB1CCDC78200B1F406 /* Main.storyboard */,
+				A37DD6BE1CCDC78200B1F406 /* Assets.xcassets */,
+				A37DD6C01CCDC78200B1F406 /* LaunchScreen.storyboard */,
+				A37DD6C31CCDC78200B1F406 /* Info.plist */,
+				A37DD6B21CCDC78200B1F406 /* Supporting Files */,
+			);
+			path = JJ_Class_14_LuaViewSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		A37DD6B21CCDC78200B1F406 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A37DD6B31CCDC78200B1F406 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A38C7EBF1C61951D00C6B167 /* JJ_Class_12_崩溃 */ = {
@@ -2687,6 +2744,23 @@
 			productReference = A3224D5A1C05A24700675C60 /* JJ_Class_05_MJExtension.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A37DD6AF1CCDC78200B1F406 /* JJ_Class_14_LuaViewSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A37DD6C41CCDC78200B1F406 /* Build configuration list for PBXNativeTarget "JJ_Class_14_LuaViewSDK" */;
+			buildPhases = (
+				A37DD6AC1CCDC78200B1F406 /* Sources */,
+				A37DD6AD1CCDC78200B1F406 /* Frameworks */,
+				A37DD6AE1CCDC78200B1F406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJ_Class_14_LuaViewSDK;
+			productName = JJ_Class_14_LuaViewSDK;
+			productReference = A37DD6B01CCDC78200B1F406 /* JJ_Class_14_LuaViewSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A38C7ED21C61957300C6B167 /* JJ_Class_12_崩溃 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A38C7EE71C61957300C6B167 /* Build configuration list for PBXNativeTarget "JJ_Class_12_崩溃" */;
@@ -2792,6 +2866,9 @@
 					A3224D591C05A24700675C60 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					A37DD6AF1CCDC78200B1F406 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					A38C7ED21C61957300C6B167 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -2875,6 +2952,7 @@
 				A3B585351C3E550600182CC1 /* JJ_Class_10_Transforms */,
 				A38C7ED21C61957300C6B167 /* JJ_Class_12_崩溃 */,
 				A39016661CCA15A900ACD867 /* JJ_Class_03_JavaScriptCore */,
+				A37DD6AF1CCDC78200B1F406 /* JJ_Class_14_LuaViewSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -3174,6 +3252,16 @@
 				A3224D6C1C05A24700675C60 /* LaunchScreen.storyboard in Resources */,
 				A3224D691C05A24700675C60 /* Assets.xcassets in Resources */,
 				A3224D671C05A24700675C60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A37DD6AE1CCDC78200B1F406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A37DD6C21CCDC78200B1F406 /* LaunchScreen.storyboard in Resources */,
+				A37DD6BF1CCDC78200B1F406 /* Assets.xcassets in Resources */,
+				A37DD6BD1CCDC78200B1F406 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4116,6 +4204,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A37DD6AC1CCDC78200B1F406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A37DD6BA1CCDC78200B1F406 /* ViewController.m in Sources */,
+				A37DD6B71CCDC78200B1F406 /* AppDelegate.m in Sources */,
+				A37DD6B41CCDC78200B1F406 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A38C7ECF1C61957300C6B167 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4364,6 +4462,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A3224D6B1C05A24700675C60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A37DD6BB1CCDC78200B1F406 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A37DD6BC1CCDC78200B1F406 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A37DD6C01CCDC78200B1F406 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A37DD6C11CCDC78200B1F406 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -4981,6 +5095,30 @@
 			};
 			name = Release;
 		};
+		A37DD6C51CCDC78200B1F406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_14_LuaViewSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-14-LuaViewSDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A37DD6C61CCDC78200B1F406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JJ_Class_14_LuaViewSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JJ.JJ-Class-14-LuaViewSDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A38C7EE81C61957300C6B167 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0C5E4E364C7FB49711CEEC76 /* Pods.debug.xcconfig */;
@@ -5192,6 +5330,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A37DD6C41CCDC78200B1F406 /* Build configuration list for PBXNativeTarget "JJ_Class_14_LuaViewSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A37DD6C51CCDC78200B1F406 /* Debug */,
+				A37DD6C61CCDC78200B1F406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		A38C7EE71C61957300C6B167 /* Build configuration list for PBXNativeTarget "JJ_Class_12_崩溃" */ = {
 			isa = XCConfigurationList;
