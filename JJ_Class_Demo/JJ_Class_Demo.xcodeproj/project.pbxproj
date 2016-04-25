@@ -171,6 +171,14 @@
 		A37DD6BD1CCDC78200B1F406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6BB1CCDC78200B1F406 /* Main.storyboard */; };
 		A37DD6BF1CCDC78200B1F406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6BE1CCDC78200B1F406 /* Assets.xcassets */; };
 		A37DD6C21CCDC78200B1F406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6C01CCDC78200B1F406 /* LaunchScreen.storyboard */; };
+		A37DD6CA1CCDF63900B1F406 /* VC1.m in Sources */ = {isa = PBXBuildFile; fileRef = A37DD6C81CCDF63900B1F406 /* VC1.m */; };
+		A37DD6CB1CCDF63900B1F406 /* VC1.m in Sources */ = {isa = PBXBuildFile; fileRef = A37DD6C81CCDF63900B1F406 /* VC1.m */; };
+		A37DD6CC1CCDF63900B1F406 /* VC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6C91CCDF63900B1F406 /* VC1.xib */; };
+		A37DD6CD1CCDF63900B1F406 /* VC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6C91CCDF63900B1F406 /* VC1.xib */; };
+		A37DD6D01CCDFA6E00B1F406 /* JSListener.m in Sources */ = {isa = PBXBuildFile; fileRef = A37DD6CF1CCDFA6E00B1F406 /* JSListener.m */; };
+		A37DD6D11CCDFA6E00B1F406 /* JSListener.m in Sources */ = {isa = PBXBuildFile; fileRef = A37DD6CF1CCDFA6E00B1F406 /* JSListener.m */; };
+		A37DD6D31CCDFE0B00B1F406 /* jsListener.js in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6D21CCDFE0B00B1F406 /* jsListener.js */; };
+		A37DD6D41CCDFE0B00B1F406 /* jsListener.js in Resources */ = {isa = PBXBuildFile; fileRef = A37DD6D21CCDFE0B00B1F406 /* jsListener.js */; };
 		A38C7ED71C61957300C6B167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7ED61C61957300C6B167 /* main.m */; };
 		A38C7EDA1C61957300C6B167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7ED91C61957300C6B167 /* AppDelegate.m */; };
 		A38C7EDD1C61957300C6B167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7EDC1C61957300C6B167 /* ViewController.m */; };
@@ -720,6 +728,12 @@
 		A37DD6BE1CCDC78200B1F406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A37DD6C11CCDC78200B1F406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A37DD6C31CCDC78200B1F406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A37DD6C71CCDF63900B1F406 /* VC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC1.h; sourceTree = "<group>"; };
+		A37DD6C81CCDF63900B1F406 /* VC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC1.m; sourceTree = "<group>"; };
+		A37DD6C91CCDF63900B1F406 /* VC1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC1.xib; sourceTree = "<group>"; };
+		A37DD6CE1CCDFA6E00B1F406 /* JSListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSListener.h; sourceTree = "<group>"; };
+		A37DD6CF1CCDFA6E00B1F406 /* JSListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSListener.m; sourceTree = "<group>"; };
+		A37DD6D21CCDFE0B00B1F406 /* jsListener.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jsListener.js; sourceTree = "<group>"; };
 		A38C7ED31C61957300C6B167 /* JJ_Class_12_崩溃.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_12_崩溃.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38C7ED61C61957300C6B167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A38C7ED81C61957300C6B167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1885,10 +1899,16 @@
 			children = (
 				A390168E1CCA16C300ACD867 /* test.js */,
 				A39016971CCA226000ACD867 /* MYButtonJS.js */,
+				A37DD6D21CCDFE0B00B1F406 /* jsListener.js */,
 				A390166C1CCA15AA00ACD867 /* AppDelegate.h */,
 				A390166D1CCA15AA00ACD867 /* AppDelegate.m */,
 				A390166F1CCA15AA00ACD867 /* ViewController.h */,
 				A39016701CCA15AA00ACD867 /* ViewController.m */,
+				A37DD6C71CCDF63900B1F406 /* VC1.h */,
+				A37DD6C81CCDF63900B1F406 /* VC1.m */,
+				A37DD6C91CCDF63900B1F406 /* VC1.xib */,
+				A37DD6CE1CCDFA6E00B1F406 /* JSListener.h */,
+				A37DD6CF1CCDFA6E00B1F406 /* JSListener.m */,
 				A39016941CCA20F500ACD867 /* MYButton.h */,
 				A39016951CCA20F500ACD867 /* MYButton.m */,
 				A39016911CCA1CF900ACD867 /* NativeObject.h */,
@@ -3142,12 +3162,14 @@
 				A3BBF72F1C4605A40092C569 /* MainStoryboard.storyboard in Resources */,
 				A3E2F18D1C0C58A000236638 /* Images.xcassets in Resources */,
 				A3B585751C3E5DD400182CC1 /* Info.plist in Resources */,
+				A37DD6D31CCDFE0B00B1F406 /* jsListener.js in Resources */,
 				A3BBF7131C4605A40092C569 /* MainStoryboard.storyboard in Resources */,
 				A3BBF72E1C4605A40092C569 /* InfoPlist.strings in Resources */,
 				A318CC591C3CA99C00751ABE /* LICENSE in Resources */,
 				A3E2F18B1C0C58A000236638 /* Main.storyboard in Resources */,
 				A3FE8B5E1C0D516600A2E8B6 /* RWTRecentSearchItemTableViewCell.xib in Resources */,
 				A3FE8B541C0D516600A2E8B6 /* Images.xcassets in Resources */,
+				A37DD6CC1CCDF63900B1F406 /* VC1.xib in Resources */,
 				A3FE8B5C1C0D516600A2E8B6 /* RWTFlickrSearchViewController.xib in Resources */,
 				A3B584F91C3E4F7600182CC1 /* Info.plist in Resources */,
 				A3E2F18C1C0C58A000236638 /* InfoPlist.strings in Resources */,
@@ -3292,6 +3314,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37DD6CD1CCDF63900B1F406 /* VC1.xib in Resources */,
+				A37DD6D41CCDFE0B00B1F406 /* jsListener.js in Resources */,
 				A39016791CCA15AA00ACD867 /* LaunchScreen.storyboard in Resources */,
 				A39016761CCA15AA00ACD867 /* Assets.xcassets in Resources */,
 				A39016901CCA16C300ACD867 /* test.js in Resources */,
@@ -4065,6 +4089,7 @@
 				A3B585771C3E5DD400182CC1 /* ViewController.m in Sources */,
 				A3FE8B561C0D516600A2E8B6 /* RWTAppDelegate.m in Sources */,
 				A3FE8B5B1C0D516600A2E8B6 /* RWTFlickrSearchViewController.m in Sources */,
+				A37DD6D01CCDFA6E00B1F406 /* JSListener.m in Sources */,
 				692714851C0CA9CD00630D42 /* ASIDataCompressorTests.m in Sources */,
 				A3B584F41C3E4F7600182CC1 /* main.m in Sources */,
 				A3BBF7291C4605A40092C569 /* BVNonARCSingleton.m in Sources */,
@@ -4078,6 +4103,7 @@
 				A318CC5B1C3CA99C00751ABE /* AppDelegate.m in Sources */,
 				692714871C0CA9CD00630D42 /* ASIFormDataRequestTests.m in Sources */,
 				A3B584F71C3E4F7600182CC1 /* PushTransition.m in Sources */,
+				A37DD6CA1CCDF63900B1F406 /* VC1.m in Sources */,
 				692714721C0CA9CD00630D42 /* ASIFormDataRequest.m in Sources */,
 				A3B584EC1C3E4F7600182CC1 /* PushTransition.m in Sources */,
 				A3B584EA1C3E4F7600182CC1 /* InteractiveTrasitionAnimation.m in Sources */,
@@ -4237,11 +4263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37DD6CB1CCDF63900B1F406 /* VC1.m in Sources */,
 				A39016711CCA15AA00ACD867 /* ViewController.m in Sources */,
 				A390166E1CCA15AA00ACD867 /* AppDelegate.m in Sources */,
 				A390166B1CCA15AA00ACD867 /* main.m in Sources */,
 				A39016961CCA20F500ACD867 /* MYButton.m in Sources */,
 				A39016931CCA1CF900ACD867 /* NativeObject.m in Sources */,
+				A37DD6D11CCDFA6E00B1F406 /* JSListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

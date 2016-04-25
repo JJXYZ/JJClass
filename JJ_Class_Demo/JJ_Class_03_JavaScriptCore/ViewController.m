@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import <objc/runtime.h>
 #import "NativeObject.h"
-#import "MYButton.h"
+
+#import "VC1.h"
 
 @interface ViewController ()
 
@@ -25,25 +26,17 @@
 //    [self testMakeUIColor];
 //    [self addButton];
 //    [self testLog];
-    [self createMYButton];
+    
 }
 
-- (void)createMYButton {
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"MYButtonJS" ofType:@"js"];
-    NSString *testScript = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    
-    JSContext *context = [[JSContext alloc] init];
-    [context evaluateScript:testScript];
-    
-    MYButton *button = [MYButton buttonWithType:UIButtonTypeSystem];
-    
-    context[@"button"] = button;
-    
-    [context evaluateScript:@"button.setOnClickHandler('helloJS')"];
-    
-//    [self.view addSubview:button];
+#pragma mark - Event
+
+- (IBAction)clickVC1 {
+    VC1 *vc = [[VC1 alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
+#pragma mark - Private Method
 
 - (void)testLog
 {
