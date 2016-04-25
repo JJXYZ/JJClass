@@ -12,6 +12,10 @@ link_with 'JJ_Class_01_笔记', 'JJ_Class_02_3DTouch', 'JJ_Class_02_3DTouch-Peek
 
 pod 'JJDefine', '1.0.0'
 pod 'JJSandBox', '1.0.0'
+pod 'JJFMDB', '2.0.0'
+pod 'JJSafe', '1.0.2'
+pod 'JJAFNetworking', '1.0'
+
 pod 'Masonry', '0.6.3'
 pod 'JSPatch', '0.1.5'
 pod 'MJExtension', '3.0.10'

@@ -20,6 +20,4 @@
     assert(0);
 }
 
-- (IBAction)clickRACSubject:(UIButton *)sender {
-}
 @end

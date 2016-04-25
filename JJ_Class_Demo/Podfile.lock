@@ -1,4 +1,6 @@
 PODS:
+  - AFDownloadRequestOperation (2.0.1):
+    - AFNetworking (~> 2.0)
   - AFNetworking (2.6.3):
     - AFNetworking/NSURLConnection (= 2.6.3)
     - AFNetworking/NSURLSession (= 2.6.3)
@@ -20,7 +22,18 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - JJAFNetworking (1.0):
+    - AFDownloadRequestOperation (~> 2.0.1)
+    - AFNetworking (~> 2.6.3)
+    - MJExtension (~> 3.0.7)
   - JJDefine (1.0.0)
+  - JJFMDB (2.0.0):
+    - FMDB (~> 2.2)
+    - JJSandBox (~> 1.0.0)
+  - JJSafe (1.0.2)
   - JJSandBox (1.0.0)
   - JSPatch (0.1.5):
     - JSPatch/Core (= 0.1.5)
@@ -43,7 +56,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
+  - JJAFNetworking (= 1.0)
   - JJDefine (= 1.0.0)
+  - JJFMDB (= 2.0.0)
+  - JJSafe (= 1.0.2)
   - JJSandBox (= 1.0.0)
   - JSPatch (= 0.1.5)
   - LinqToObjectiveC (= 2.0.0)
@@ -55,8 +71,13 @@ DEPENDENCIES:
   - SDWebImage (= 3.7.5)
 
 SPEC CHECKSUMS:
+  AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JJAFNetworking: 1e97563eef60b546a23c78c65203e0182b49af05
   JJDefine: 70cb1394144ff5dcf3bede1dd848cf27cfada8a4
+  JJFMDB: 7b2bb53bc6d844db1467c2fb8257df946411bd82
+  JJSafe: 2d280e480a5af5a762d5bd486040a9e2eaaa4930
   JJSandBox: e02bc7a8812efe5a5254006041b8ec018a5c0ebf
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   LinqToObjectiveC: 768f98c62d5b57cb6bdb7ab869e33d0a7a2da29c

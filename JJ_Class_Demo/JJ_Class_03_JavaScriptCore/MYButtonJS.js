@@ -14,5 +14,5 @@ function ClickHandler(button, callback) {
     this.button.onClickHandler = this;
     this.handleEvent = callback;
     
-    log("OC setOnClickHandler");
+    console.log("OC setOnClickHandler");
 };

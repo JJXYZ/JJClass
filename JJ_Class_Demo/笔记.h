@@ -135,8 +135,8 @@
  
  
  
- Tomato And Peter:Podfile语法参考(译)
- http://www.tomatopeter.com/blog/2014/11/22/podfile-syntax-reference-chinese/
+ Podfile语法参考(译)
+ http://www.jianshu.com/p/8af475c4f717
  
  王中周的个人博客:CocoaPods详解之----进阶篇
  http://blog.csdn.net/wzzvictory/article/details/19178709
