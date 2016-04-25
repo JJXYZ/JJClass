@@ -5209,6 +5209,7 @@
 				A390167C1CCA15AA00ACD867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3B5854A1C3E550600182CC1 /* Build configuration list for PBXNativeTarget "JJ_Class_10_Transforms" */ = {
 			isa = XCConfigurationList;
