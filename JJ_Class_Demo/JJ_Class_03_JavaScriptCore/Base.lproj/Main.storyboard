@@ -21,6 +21,22 @@
                                     <action selector="clickVC1" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzK-7L-kmU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Srh-g7-htS">
+                                <rect key="frame" x="145" y="284" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="VC2"/>
+                                <connections>
+                                    <action selector="clickVC2" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGT-ey-TmA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="scm-r9-2Ju">
+                                <rect key="frame" x="145" y="377" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="VC3"/>
+                                <connections>
+                                    <action selector="clickVC3" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rwu-yh-vqp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

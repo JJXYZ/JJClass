@@ -15,6 +15,8 @@
 
 - (void)setShareText:(JSValue *)handler;
 
+- (void)sayGoodbye;
+
 @end
 
 

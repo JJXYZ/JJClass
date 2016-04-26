@@ -22,15 +22,19 @@
 #if 0
     self.jsValue = value; // Retain cycle
     
-    NSLog(@"%@", self.jsValue.toString);
+    NSLog(@"JSListener:value = %@", self.jsValue.toString);
 #else
     _onClickHandler1 = [JSManagedValue managedValueWithValue:value];
     [_context.virtualMachine addManagedReference:_onClickHandler1 withOwner:self];
     
-    NSLog(@"%@", [_onClickHandler1.value toString]);
+    NSLog(@"JSListener:value = %@", [_onClickHandler1.value toString]);
     
 #endif
 
+}
+
+- (void)sayGoodbye {
+    NSLog(@"sayGoodbye");
 }
 
 - (void)dealloc {

@@ -17,6 +17,9 @@
  
  iOS7新JavaScriptCore框架入门介绍
  http://blog.iderzheng.com/introduction-to-ios7-javascriptcore-framework/
+ 
+ JavaScriptCore 的坑
+ http://www.jianshu.com/p/be956be922b4
  */
 
 

@@ -11,6 +11,8 @@
 #import "NativeObject.h"
 
 #import "VC1.h"
+#import "VC2.h"
+#import "VC3.h"
 
 @interface ViewController ()
 
@@ -37,6 +39,17 @@
     VC1 *vc = [[VC1 alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (IBAction)clickVC2 {
+    VC2 *vc = [[VC2 alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)clickVC3 {
+    VC3 *vc = [[VC3 alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 #pragma mark - Private Method
 - (void)createJSContextToException {
