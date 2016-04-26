@@ -26,7 +26,9 @@
 //    [self testMakeUIColor];
 //    [self addButton];
 //    [self testLog];
-    
+//    [self createJSContextToInt32];
+//    [self createJSContextToArr];
+//    [self createJSContextToSum];
 }
 
 #pragma mark - Event
@@ -37,6 +39,96 @@
 }
 
 #pragma mark - Private Method
+- (void)createJSContextToException {
+    JSContext *context = [[JSContext alloc] init];
+    context.exceptionHandler = ^(JSContext *con, JSValue *exception) {
+        NSLog(@"%@", exception);
+        con.exception = exception;
+    };
+    
+    [context evaluateScript:@"ider.zheng = 21"];
+    
+    //Output:
+    //  ReferenceError: Can't find variable: ider
+}
+
+- (void)createJSContextToSum {
+    JSContext *context = [[JSContext alloc] init];
+    [context evaluateScript:@"function add(a, b) { return a + b; }"];
+    JSValue *add = context[@"add"];
+    NSLog(@"Func:  %@", add);
+    
+    JSValue *sum = [add callWithArguments:@[@(7), @(21)]];
+    NSLog(@"Sum:  %d",[sum toInt32]);
+    //OutPut:
+    //  Func:  function add(a, b) { return a + b; }
+    //  Sum:  28
+}
+
+- (void)createJSContextToMethod {
+    JSContext *context = [[JSContext alloc] init];
+    context[@"log"] = ^() {
+        NSLog(@"+++++++Begin Log+++++++");
+        
+        NSArray *args = [JSContext currentArguments];
+        for (JSValue *jsVal in args) {
+            NSLog(@"%@", jsVal);
+        }
+        
+        JSValue *this = [JSContext currentThis];
+        NSLog(@"this: %@",this);
+        NSLog(@"-------End Log-------");
+    };
+    
+    [context evaluateScript:@"log('ider', [7, 21], { hello:'world', js:100 });"];
+    
+    //Output:
+    //  +++++++Begin Log+++++++
+    //  ider
+    //  7,21
+    //  [object Object]
+    //  this: [object GlobalObject]
+    //  -------End Log-------
+}
+
+- (void)createJSContextToArr {
+    JSContext *context = [[JSContext alloc] init];
+    [context evaluateScript:@"var arr = [21, 7 , 'iderzheng.com'];"];
+    JSValue *jsArr = context[@"arr"]; // Get array from JSContext
+    
+    NSLog(@"JS Array: %@;    Length: %@", jsArr, jsArr[@"length"]);
+    jsArr[1] = @"blog"; // Use JSValue as array
+    jsArr[7] = @7;
+    
+    NSLog(@"JS Array: %@;    Length: %d", jsArr, [jsArr[@"length"] toInt32]);
+    
+    NSArray *nsArr = [jsArr toArray];
+    NSLog(@"NSArray: %@", nsArr);
+    
+    //Output:
+    //  JS Array: 21,7,iderzheng.com    Length: 3
+    //  JS Array: 21,blog,iderzheng.com,,,,,7    Length: 8
+    //  NSArray: (
+    //   21,
+    //   blog,
+    //   "iderzheng.com",
+    //   "<null>",
+    //   "<null>",
+    //   "<null>",
+    //   "<null>",
+    //   7
+    //   )
+}
+
+- (void)createJSContextToInt32 {
+    JSContext *context = [[JSContext alloc] init];
+    JSValue *jsVal = [context evaluateScript:@"21+7"];
+    int iVal = [jsVal toInt32];
+    NSLog(@"JSValue: %@, int: %d", jsVal, iVal);
+    
+    //Output:
+    //  JSValue: 28, int: 28
+}
 
 - (void)testLog
 {

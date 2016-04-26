@@ -41,8 +41,8 @@
     self.jsListener = [[JSListener alloc] init];
     
     context[@"jsListener"] = self.jsListener;
+    context[@"ios"] = self;
     
-//    [context evaluateScript:@"jsListener.setShareContent('1', '2')"];
     
     [context evaluateScript:@"jsListener.setShareText('1')"];
     

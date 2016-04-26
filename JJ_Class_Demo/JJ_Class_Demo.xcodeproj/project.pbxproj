@@ -5366,6 +5366,7 @@
 				A37DD6C61CCDC78200B1F406 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A38C7EE71C61957300C6B167 /* Build configuration list for PBXNativeTarget "JJ_Class_12_崩溃" */ = {
 			isa = XCConfigurationList;
