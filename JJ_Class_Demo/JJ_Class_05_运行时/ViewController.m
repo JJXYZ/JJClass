@@ -25,11 +25,11 @@
     [super viewDidLoad];
     
 //    [self runtime_Test];
-//    [self runtime_MyClass];
+    [self runtime_MyClass];
 //    [self runtime_CreateClass];
 //    [self runtime_CreateObject];
 //    [self runtime_TypeEncoding];
-    [self runtime_ResolveMethod_all];
+//    [self runtime_ResolveMethod_all];
 }
 
 

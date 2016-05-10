@@ -39,6 +39,7 @@ PODS:
     - JSPatch/Core (= 0.1.5)
   - JSPatch/Core (0.1.5)
   - LinqToObjectiveC (2.0.0)
+  - LuaViewSDK (2.1.0.6)
   - Masonry (0.6.3)
   - MJExtension (3.0.10)
   - MJRefresh (3.0.7)
@@ -63,12 +64,22 @@ DEPENDENCIES:
   - JJSandBox (= 1.0.0)
   - JSPatch (= 0.1.5)
   - LinqToObjectiveC (= 2.0.0)
+  - LuaViewSDK (from `https://github.com/alibaba/LuaViewSDK.git`)
   - Masonry (= 0.6.3)
   - MJExtension (= 3.0.10)
   - MJRefresh (= 3.0.7)
   - objectiveflickr (= 2.0.4)
   - ReactiveCocoa (= 2.5)
   - SDWebImage (= 3.7.5)
+
+EXTERNAL SOURCES:
+  LuaViewSDK:
+    :git: https://github.com/alibaba/LuaViewSDK.git
+
+CHECKOUT OPTIONS:
+  LuaViewSDK:
+    :commit: d0eeba099970923cd5962d9bdec612c8fc0ba3d2
+    :git: https://github.com/alibaba/LuaViewSDK.git
 
 SPEC CHECKSUMS:
   AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
@@ -81,6 +92,7 @@ SPEC CHECKSUMS:
   JJSandBox: e02bc7a8812efe5a5254006041b8ec018a5c0ebf
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   LinqToObjectiveC: 768f98c62d5b57cb6bdb7ab869e33d0a7a2da29c
+  LuaViewSDK: 710548f6128763c85efb0103b8ecc3d48a026786
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: f3e1228ec3d38c7ba5208d58032631a52f39f495
