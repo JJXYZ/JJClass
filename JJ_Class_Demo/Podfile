@@ -23,7 +23,7 @@ pod 'ReactiveCocoa', '2.5'
 pod 'AFNetworking', '2.6.3'
 pod 'SDWebImage', '3.7.5'
 pod 'MJRefresh', '3.0.7'
-pod 'LuaViewSDK', :git => 'https://github.com/alibaba/LuaViewSDK.git'
+pod 'Aspects', '1.4.1'
 
 #for RWTFlickrSearch.xcodeproj
 pod 'objectiveflickr', '2.0.4'

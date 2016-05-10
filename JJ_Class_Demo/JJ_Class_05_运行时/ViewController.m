@@ -12,6 +12,7 @@
 #import "MyClass.h"
 #import "SUTRuntimeMethod.h"
 #import "SUTRuntimeMethodHelper.h"
+#import <Aspects.h>
 
 @interface ViewController ()
 
@@ -25,11 +26,29 @@
     [super viewDidLoad];
     
 //    [self runtime_Test];
-    [self runtime_MyClass];
+//    [self runtime_MyClass];
 //    [self runtime_CreateClass];
 //    [self runtime_CreateObject];
 //    [self runtime_TypeEncoding];
 //    [self runtime_ResolveMethod_all];
+    
+    [self aspect_Test];
+    [self aspect];
+    
+    
+}
+
+#pragma mark - aspect方法
+- (void)aspect {
+    NSLog(@"aspect");
+}
+
+- (void)aspect_Test {
+    
+    [self aspect_hookSelector:@selector(aspect) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
+        NSLog(@"aspect_Test");
+       
+    }error:nil];
 }
 
 

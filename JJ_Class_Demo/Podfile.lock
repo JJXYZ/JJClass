@@ -22,6 +22,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -39,7 +40,6 @@ PODS:
     - JSPatch/Core (= 0.1.5)
   - JSPatch/Core (0.1.5)
   - LinqToObjectiveC (2.0.0)
-  - LuaViewSDK (2.1.0.6)
   - Masonry (0.6.3)
   - MJExtension (3.0.10)
   - MJRefresh (3.0.7)
@@ -57,6 +57,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
+  - Aspects (= 1.4.1)
   - JJAFNetworking (= 1.0)
   - JJDefine (= 1.0.0)
   - JJFMDB (= 2.0.0)
@@ -64,7 +65,6 @@ DEPENDENCIES:
   - JJSandBox (= 1.0.0)
   - JSPatch (= 0.1.5)
   - LinqToObjectiveC (= 2.0.0)
-  - LuaViewSDK (from `https://github.com/alibaba/LuaViewSDK.git`)
   - Masonry (= 0.6.3)
   - MJExtension (= 3.0.10)
   - MJRefresh (= 3.0.7)
@@ -72,18 +72,10 @@ DEPENDENCIES:
   - ReactiveCocoa (= 2.5)
   - SDWebImage (= 3.7.5)
 
-EXTERNAL SOURCES:
-  LuaViewSDK:
-    :git: https://github.com/alibaba/LuaViewSDK.git
-
-CHECKOUT OPTIONS:
-  LuaViewSDK:
-    :commit: d0eeba099970923cd5962d9bdec612c8fc0ba3d2
-    :git: https://github.com/alibaba/LuaViewSDK.git
-
 SPEC CHECKSUMS:
   AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   JJAFNetworking: 1e97563eef60b546a23c78c65203e0182b49af05
   JJDefine: 70cb1394144ff5dcf3bede1dd848cf27cfada8a4
@@ -92,7 +84,6 @@ SPEC CHECKSUMS:
   JJSandBox: e02bc7a8812efe5a5254006041b8ec018a5c0ebf
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   LinqToObjectiveC: 768f98c62d5b57cb6bdb7ab869e33d0a7a2da29c
-  LuaViewSDK: 710548f6128763c85efb0103b8ecc3d48a026786
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: f3e1228ec3d38c7ba5208d58032631a52f39f495

@@ -65,7 +65,9 @@
     }
     return signature;
 }
+#endif
 
+#if 1
 /**
  *  forwardInvocation:方法的实现有两个任务：
  
