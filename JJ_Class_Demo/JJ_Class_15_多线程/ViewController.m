@@ -22,6 +22,8 @@
 //    [self lockRecursiveMethod];
     [self runConditionLock];
 }
+- (IBAction)clickRTLabelVC:(id)sender {
+}
 
 /**
  *  NSDistributedLock分布式锁
