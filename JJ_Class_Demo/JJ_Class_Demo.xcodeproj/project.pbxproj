@@ -218,16 +218,7 @@
 		A38C7F3E1C61FD8000C6B167 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A38C7F1A1C61FD8000C6B167 /* InfoPlist.strings */; };
 		A38C7F3F1C61FD8000C6B167 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38C7F1C1C61FD8000C6B167 /* MainStoryboard.storyboard */; };
 		A38C7F401C61FD8000C6B167 /* Lollipop.plist in Resources */ = {isa = PBXBuildFile; fileRef = A38C7F1E1C61FD8000C6B167 /* Lollipop.plist */; };
-		A38C7F411C61FD8000C6B167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F1F1C61FD8000C6B167 /* main.m */; };
 		A38C7F421C61FD8000C6B167 /* Rage Masters-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A38C7F201C61FD8000C6B167 /* Rage Masters-Info.plist */; };
-		A38C7F431C61FD8000C6B167 /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F231C61FD8000C6B167 /* RMAppDelegate.m */; };
-		A38C7F441C61FD8000C6B167 /* RMBookmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F251C61FD8000C6B167 /* RMBookmarks.m */; };
-		A38C7F451C61FD8000C6B167 /* RMBookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F271C61FD8000C6B167 /* RMBookmarksViewController.m */; };
-		A38C7F461C61FD8000C6B167 /* RMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F291C61FD8000C6B167 /* RMDetailViewController.m */; };
-		A38C7F471C61FD8000C6B167 /* RMLollipopLicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F2B1C61FD8000C6B167 /* RMLollipopLicker.m */; };
-		A38C7F481C61FD8000C6B167 /* RMMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F2D1C61FD8000C6B167 /* RMMaster.m */; };
-		A38C7F491C61FD8000C6B167 /* RMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F2F1C61FD8000C6B167 /* RMMasterViewController.m */; };
-		A38C7F4A1C61FD8000C6B167 /* RMRageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7F311C61FD8000C6B167 /* RMRageRequest.m */; };
 		A390166B1CCA15AA00ACD867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A390166A1CCA15AA00ACD867 /* main.m */; };
 		A390166E1CCA15AA00ACD867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A390166D1CCA15AA00ACD867 /* AppDelegate.m */; };
 		A39016711CCA15AA00ACD867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A39016701CCA15AA00ACD867 /* ViewController.m */; };
@@ -4559,18 +4550,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A38C7F471C61FD8000C6B167 /* RMLollipopLicker.m in Sources */,
-				A38C7F4A1C61FD8000C6B167 /* RMRageRequest.m in Sources */,
 				A38C7EDD1C61957300C6B167 /* ViewController.m in Sources */,
-				A38C7F481C61FD8000C6B167 /* RMMaster.m in Sources */,
 				A38C7EDA1C61957300C6B167 /* AppDelegate.m in Sources */,
-				A38C7F491C61FD8000C6B167 /* RMMasterViewController.m in Sources */,
-				A38C7F441C61FD8000C6B167 /* RMBookmarks.m in Sources */,
-				A38C7F411C61FD8000C6B167 /* main.m in Sources */,
-				A38C7F461C61FD8000C6B167 /* RMDetailViewController.m in Sources */,
-				A38C7F451C61FD8000C6B167 /* RMBookmarksViewController.m in Sources */,
 				A38C7ED71C61957300C6B167 /* main.m in Sources */,
-				A38C7F431C61FD8000C6B167 /* RMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5775,6 +5757,7 @@
 				A35B1FAE1CF4415C00AAE16B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A37DD6C41CCDC78200B1F406 /* Build configuration list for PBXNativeTarget "JJ_Class_14_LuaViewSDK" */ = {
 			isa = XCConfigurationList;

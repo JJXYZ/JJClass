@@ -17,7 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    assert(0);
+    [self AssertMethod];
+}
+
+
+- (void)AssertMethod {
+//    assert(0);
+    
+    NSAssert(NO, @"js exception");
 }
 
 @end
