@@ -81,6 +81,8 @@
 		69E705481CC91810007D0EE1 /* RACSubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E705451CC91810007D0EE1 /* RACSubjectVC.m */; };
 		69E705491CC91810007D0EE1 /* RACSubjectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E705461CC91810007D0EE1 /* RACSubjectVC.xib */; };
 		69E7054A1CC91810007D0EE1 /* RACSubjectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E705461CC91810007D0EE1 /* RACSubjectVC.xib */; };
+		A3159BE61CFD78A2002FC42E /* BaseVM.m in Sources */ = {isa = PBXBuildFile; fileRef = A3159BE51CFD78A2002FC42E /* BaseVM.m */; };
+		A3159BE91CFD78BE002FC42E /* VCVM.m in Sources */ = {isa = PBXBuildFile; fileRef = A3159BE81CFD78BE002FC42E /* VCVM.m */; };
 		A318CC581C3CA99C00751ABE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A318CC3A1C3CA99C00751ABE /* .gitignore */; };
 		A318CC591C3CA99C00751ABE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A318CC3B1C3CA99C00751ABE /* LICENSE */; };
 		A318CC5A1C3CA99C00751ABE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A318CC3C1C3CA99C00751ABE /* README.md */; };
@@ -580,6 +582,10 @@
 		69E705451CC91810007D0EE1 /* RACSubjectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSubjectVC.m; sourceTree = "<group>"; };
 		69E705461CC91810007D0EE1 /* RACSubjectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACSubjectVC.xib; sourceTree = "<group>"; };
 		84D87917BEC98D492799EE6A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3159BE41CFD78A2002FC42E /* BaseVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVM.h; sourceTree = "<group>"; };
+		A3159BE51CFD78A2002FC42E /* BaseVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVM.m; sourceTree = "<group>"; };
+		A3159BE71CFD78BE002FC42E /* VCVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCVM.h; sourceTree = "<group>"; };
+		A3159BE81CFD78BE002FC42E /* VCVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCVM.m; sourceTree = "<group>"; };
 		A318CC3A1C3CA99C00751ABE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A318CC3B1C3CA99C00751ABE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A318CC3C1C3CA99C00751ABE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -1398,14 +1404,10 @@
 		6979DD251C0753FF009F3038 /* JJ_Class_07_ReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				A3159BEB1CFD80B5002FC42E /* VC */,
+				A3159BEA1CFD80A6002FC42E /* VM */,
 				6979DD291C0753FF009F3038 /* AppDelegate.h */,
 				6979DD2A1C0753FF009F3038 /* AppDelegate.m */,
-				6979DD2C1C0753FF009F3038 /* ViewController.h */,
-				6979DD2D1C0753FF009F3038 /* ViewController.m */,
-				6979DD2F1C0753FF009F3038 /* Main.storyboard */,
-				69E705441CC91810007D0EE1 /* RACSubjectVC.h */,
-				69E705451CC91810007D0EE1 /* RACSubjectVC.m */,
-				69E705461CC91810007D0EE1 /* RACSubjectVC.xib */,
 				6979DD321C0753FF009F3038 /* Assets.xcassets */,
 				6979DD341C0753FF009F3038 /* LaunchScreen.storyboard */,
 				6979DD371C0753FF009F3038 /* Info.plist */,
@@ -1420,6 +1422,30 @@
 				6979DD271C0753FF009F3038 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3159BEA1CFD80A6002FC42E /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				A3159BE41CFD78A2002FC42E /* BaseVM.h */,
+				A3159BE51CFD78A2002FC42E /* BaseVM.m */,
+				A3159BE71CFD78BE002FC42E /* VCVM.h */,
+				A3159BE81CFD78BE002FC42E /* VCVM.m */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		A3159BEB1CFD80B5002FC42E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6979DD2C1C0753FF009F3038 /* ViewController.h */,
+				6979DD2D1C0753FF009F3038 /* ViewController.m */,
+				6979DD2F1C0753FF009F3038 /* Main.storyboard */,
+				69E705441CC91810007D0EE1 /* RACSubjectVC.h */,
+				69E705451CC91810007D0EE1 /* RACSubjectVC.m */,
+				69E705461CC91810007D0EE1 /* RACSubjectVC.xib */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 		A318CC331C3CA94400751ABE /* JJ_Class_10_动画 */ = {
@@ -2103,8 +2129,8 @@
 		A391FCC21C07FE4D00EF9780 /* JJ_Class_07_ReactiveCocoa_Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				A3E2F1741C0C58A000236638 /* TwitterInstant-Starter-4 */,
 				A391FCC31C07FEAC00EF9780 /* ReactivePlayground-Starter */,
+				A3E2F1741C0C58A000236638 /* TwitterInstant-Starter-4 */,
 			);
 			path = JJ_Class_07_ReactiveCocoa_Tutorial;
 			sourceTree = "<group>";
@@ -4288,8 +4314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E705481CC91810007D0EE1 /* RACSubjectVC.m in Sources */,
+				A3159BE91CFD78BE002FC42E /* VCVM.m in Sources */,
 				6979DD2E1C0753FF009F3038 /* ViewController.m in Sources */,
 				6979DD2B1C0753FF009F3038 /* AppDelegate.m in Sources */,
+				A3159BE61CFD78A2002FC42E /* BaseVM.m in Sources */,
 				6979DD281C0753FF009F3038 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

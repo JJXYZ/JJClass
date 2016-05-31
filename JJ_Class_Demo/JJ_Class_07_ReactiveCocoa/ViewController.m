@@ -9,25 +9,31 @@
 #import "ViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "RACSubjectVC.h"
+#import "VCVM.h"
 
 @interface ViewController ()
 
+@property (nonatomic, strong) VCVM *vcVM;
+
 @property (nonatomic, strong) NSArray *flags;
+@property (weak, nonatomic) IBOutlet UIButton *Button_RACCommond;
 
 @end
 
 @implementation ViewController
 
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.vcVM = [[VCVM alloc] init];
 
+    [self setupSubjectRAC];
 //    [self createSignal];
-//    [self createRACSubject];
 //    [self createRACSequence];
 //    [self createRACCommand];
 //    [self signalOfSignals];
-    [self createRACMulticastConnection];
+//    [self createRACMulticastConnection];
 }
 
 #pragma mark - RACMulticastConnection
@@ -221,94 +227,45 @@
 
 #pragma mark - RACSubject
 
-- (void)createRACSubject {
-    // RACSubject:信号提供者
-    
-    // 1.创建信号
-    RACSubject *subject = [RACSubject subject];
-    
+- (void)setupSubjectRAC {
     // 2.订阅信号
-    [subject subscribeNext:^(id x) {
+    [self.vcVM.subject subscribeNext:^(id x) {
         // block:当有数据发出的时候就会调用
         // block:处理数据
-        NSLog(@"%@",x);
+        NSLog(@"接收 %@",x);
     }];
     
-    // 3.发送信号
-    [subject sendNext:@1];
-    
-    // 开发中，使用这个RACSubject代替代理
+    [self.vcVM.subject subscribeNext:^(id x) {
+        // block:当有数据发出的时候就会调用
+        // block:处理数据
+        NSLog(@"接收2 %@",x);
+    }];
 }
 
 - (IBAction)clickRACSubject:(id)sender {
-    RACSubjectVC *vc = [[RACSubjectVC alloc] init];
-    [vc.subject subscribeNext:^(id x) {
-        NSLog(@"通知了ViewController");
-    }];
-    
-    [self presentViewController:vc animated:YES completion:nil];
+    [self.vcVM createRACSubject];
 }
 
 #pragma mark - RACSignal
 
-- (void)createSignal {
-    // 核心：信号类
-    // 信号类作用：只要有数据改变，就会把数据包装成一个信号，传递出去。
-    // 只要有数据改变，就会有信号发出。
-    // 数据发出，并不是信号类发出。
-    
-    // 1.创建信号 createSignal:didSubscribe(block)
-    // RACDisposable:取消订阅
-    // RACSubscriber:发送数据
-    
-    // createSignal方法:
-    // 1.创建RACDynamicSignal
-    // 2.把didSubscribe保存到RACDynamicSignal
-    
-    RACSignal *siganl = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        // block调用时刻:当信号被订阅的时候就会调用
-        // block作用:描述当前信号哪些数据需要发送
-        //       _subscriber = subscriber;
-        // 发送数据
-        NSLog(@"调用了didSubscribe");
-        // 通常：传递数据出去
-        [subscriber sendNext:@1];
-        // 调用订阅者的nextBlock
-        
-        // 如果信号，想要被取消，就必须返回一个RACDisposable
-        return [RACDisposable disposableWithBlock:^{
-            
-            // 信号什么时候被取消：1.自动取消，当一个信号的订阅者被销毁的时候，就会自动取消订阅 2.主动取消
-            // block调用时刻:一旦一个信号，被取消订阅的时候就会调用
-            // block作用：当信号取消订阅，用于清空一些资源
-            NSLog(@"取消订阅");
-        }];
-    }];
-    
+- (IBAction)clickRACSignal:(id)sender {
+    RACSignal *signal = [self.vcVM createSignal];
     // subscribeNext:
     // 1.创建订阅者
     // 2.把nextBlock保存到订阅者里面
     // 订阅信号
     // 只要订阅信号，就会返回一个取消订阅信号的类
-    RACDisposable *disposable = [siganl subscribeNext:^(id x) {
+    RACDisposable *disposable = [signal subscribeNext:^(id x) {
         
         // block:只要信号内部发送数据，就会调用这个block
-        NSLog(@"%@",x);
+        NSLog(@"收到 %@",x);
     }];
     
     // 取消订阅
     [disposable dispose];
-    
-    // RACSignal使用步骤:
-    // 1.创建信号
-    
-    // 2.订阅信号
-    
-    // RACSignal底层实现:
-    // 1.当一个信号被订阅，创建订阅者，并且把nextBlock保存到订阅者里面
-    // 2.[RACDynamicSignal subscribe:RACSubscriber]
-    // 3.调用RACDynamicSignal的didSubscribe
-    // 4.[subscriber sendNext:@1];
-    // 5.拿到订阅者的nextBlock调用
 }
+
+
+
+
 @end
