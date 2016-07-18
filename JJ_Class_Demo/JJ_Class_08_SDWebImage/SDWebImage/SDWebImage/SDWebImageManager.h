@@ -24,6 +24,8 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
     /**
      * By default, image downloads are started during UI interactions, this flags disable this feature,
      * leading to delayed download on UIScrollView deceleration for instance.
+     默认情况下，图像下载的过程中UI交互启动，这标志禁用此功能，
+          *导致对UIScrollView的减速比如延迟下载。
      */
     SDWebImageLowPriority = 1 << 1,
 
@@ -35,6 +37,8 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
     /**
      * This flag enables progressive download, the image is displayed progressively during download as a browser would do.
      * By default, the image is only displayed once completely downloaded.
+     
+     此标志启用渐进式下载，在下载一个浏览器会做过程中逐渐显示的图像。 *默认情况下，图像只显示一次完全下载。
      */
     SDWebImageProgressiveDownload = 1 << 3,
 
@@ -45,12 +49,21 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
      * If a cached image is refreshed, the completion block is called once with the cached image and again with the final image.
      *
      * Use this flag only if you can't make your URLs static with embedded cache busting parameter.
+     
+     即使图像被高速缓存，尊重HTTP响应缓存控制，并根据需要从远程位置刷新图像。
+          *磁盘缓存将NSURLCache而不是SDWebImage导致轻微的性能降级处理。
+          *该选项有助于应对不断变化的同样请求的URL后面的图像，例如Facebook的图形API的资料照片。
+          *如果一高速缓存图象被刷新，在完成块与最终图像调用一次与缓存的图像和一次。
+          *
+          *使用该标志只有当你不能让你的URL静态嵌入式缓存无效参数。
      */
     SDWebImageRefreshCached = 1 << 4,
 
     /**
      * In iOS 4+, continue the download of the image if the app goes to background. This is achieved by asking the system for
      * extra time in background to let the request finish. If the background task expires the operation will be cancelled.
+     在iOS 4以上，继续进行图像的下载，如果应用程序被切换到后台。这是通过要求系统用于实现
+          *在后台额外的时间来让请求完成。如果该后台任务过期的动作将被取消。
      */
     SDWebImageContinueInBackground = 1 << 5,
 
@@ -63,6 +76,8 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
     /**
      * Enable to allow untrusted SSL certificates.
      * Useful for testing purposes. Use with caution in production.
+     启用允许不受信任的SSL证书。
+          *有用的测试目的。随着产量谨慎使用。
      */
     SDWebImageAllowInvalidSSLCertificates = 1 << 7,
 
@@ -70,6 +85,9 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
      * By default, image are loaded in the order they were queued. This flag move them to
      * the front of the queue and is loaded immediately instead of waiting for the current queue to be loaded (which 
      * could take a while).
+     默认情况下，图像被加载在他们被排队的顺序。该标志将它们移到
+          *要加载的队列的前面，并而不是立即装载的等待当前队列（其
+          *可能需要一段时间）。
      */
     SDWebImageHighPriority = 1 << 8,
     

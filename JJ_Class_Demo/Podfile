@@ -21,7 +21,7 @@ pod 'JSPatch', '0.1.5'
 pod 'MJExtension', '3.0.10'
 pod 'ReactiveCocoa', '2.5'
 pod 'AFNetworking', '2.6.3'
-pod 'SDWebImage', '3.7.5'
+#pod 'SDWebImage', '3.7.5'
 pod 'MJRefresh', '3.0.7'
 pod 'Aspects', '1.4.1'
 

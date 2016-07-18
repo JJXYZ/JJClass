@@ -13,6 +13,9 @@
     一行行看SDWebImage源码(一)
     http://www.cocoachina.com/ios/20160630/16869.html
     一行行看SDWebImage源码(二)
+ 
+ 
+    'SDWebImage', '3.7.5'版本
  */
 
 

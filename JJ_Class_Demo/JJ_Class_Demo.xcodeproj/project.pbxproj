@@ -6017,6 +6017,7 @@
 				A3265F231D3CB64600ABDA46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A35B1FAC1CF4415C00AAE16B /* Build configuration list for PBXNativeTarget "JJ_Class_16_Label" */ = {
 			isa = XCConfigurationList;
