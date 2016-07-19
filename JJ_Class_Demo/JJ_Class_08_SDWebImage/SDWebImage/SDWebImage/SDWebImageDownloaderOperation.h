@@ -20,15 +20,23 @@ extern NSString *const SDWebImageDownloadFinishNotification;
 /**
  * The request used by the operation's connection.
  */
+/**
+ * 下载时用于网络请求的request
+ */
 @property (strong, nonatomic, readonly) NSURLRequest *request;
 
-
+/**
+ * 图片下载完成是否需要解压
+ */
 @property (assign, nonatomic) BOOL shouldDecompressImages;
 
 /**
  * Whether the URL connection should consult the credential storage for authenticating the connection. `YES` by default.
  *
  * This is the value that is returned in the `NSURLConnectionDelegate` method `-connectionShouldUseCredentialStorage:`.
+ */
+/**
+ * :URLConnection是否需要咨询凭据仓库来对连接进行授权,默认YES
  */
 @property (nonatomic, assign) BOOL shouldUseCredentialStorage;
 
@@ -37,20 +45,33 @@ extern NSString *const SDWebImageDownloadFinishNotification;
  *
  * This will be overridden by any shared credentials that exist for the username or password of the request URL, if present.
  */
+/**
+ * web服务要求客户端进行挑战,用NSURLConnectionDelegate提供的方法接收挑战,最终会生成一个挑战凭证,也是NSURLCredential的实例 credential
+ */
 @property (nonatomic, strong) NSURLCredential *credential;
 
 /**
  * The SDWebImageDownloaderOptions for the receiver.
+ */
+/**
+ *
+ SDWebImageDownloader.h里面定义的,一些下载相关的选项
  */
 @property (assign, nonatomic, readonly) SDWebImageDownloaderOptions options;
 
 /**
  * The expected size of data.
  */
+/**
+ * 预期的文件大小
+ */
 @property (assign, nonatomic) NSInteger expectedSize;
 
 /**
  * The response returned by the operation's connection.
+ */
+/**
+ * connection对象进行网络访问,接收到的response
  */
 @property (strong, nonatomic) NSURLResponse *response;
 
@@ -68,6 +89,10 @@ extern NSString *const SDWebImageDownloadFinishNotification;
  *  @param cancelBlock    the block executed if the download (operation) is cancelled
  *
  *  @return the initialized instance
+ */
+/**
+ *
+ 用默认的属性值初始化一个SDWebImageDownloaderOperation对象
  */
 - (id)initWithRequest:(NSURLRequest *)request
               options:(SDWebImageDownloaderOptions)options
