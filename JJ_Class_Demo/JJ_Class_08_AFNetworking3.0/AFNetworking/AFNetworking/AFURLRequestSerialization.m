@@ -205,8 +205,9 @@ static void *AFHTTPRequestSerializerObserverContext = &AFHTTPRequestSerializerOb
         return nil;
     }
 
+    //默认UTF8编码
     self.stringEncoding = NSUTF8StringEncoding;
-
+    //HTTP的Header头
     self.mutableHTTPRequestHeaders = [NSMutableDictionary dictionary];
 
     // Accept-Language HTTP Header; see http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4
@@ -216,6 +217,7 @@ static void *AFHTTPRequestSerializerObserverContext = &AFHTTPRequestSerializerOb
         [acceptLanguagesComponents addObject:[NSString stringWithFormat:@"%@;q=%0.1g", obj, q]];
         *stop = q <= 0.5f;
     }];
+    //增加Accept-Language到Header头 en-US;q=1
     [self setValue:[acceptLanguagesComponents componentsJoinedByString:@", "] forHTTPHeaderField:@"Accept-Language"];
 
     NSString *userAgent = nil;

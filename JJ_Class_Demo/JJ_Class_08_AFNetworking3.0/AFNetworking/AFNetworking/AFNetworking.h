@@ -20,6 +20,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+/**
+ *  此版本为3.1.0
+ */
+
 #import <Foundation/Foundation.h>
 #import <Availability.h>
 #import <TargetConditionals.h>

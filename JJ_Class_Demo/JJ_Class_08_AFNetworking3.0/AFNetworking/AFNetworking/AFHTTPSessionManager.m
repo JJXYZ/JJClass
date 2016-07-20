@@ -78,7 +78,9 @@
 
     self.baseURL = url;
 
+    //request序列化
     self.requestSerializer = [AFHTTPRequestSerializer serializer];
+    //response序列化
     self.responseSerializer = [AFJSONResponseSerializer serializer];
 
     return self;
@@ -116,6 +118,7 @@
                       failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
 {
 
+    // 发起任务
     NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"GET"
                                                         URLString:URLString
                                                        parameters:parameters
@@ -124,6 +127,7 @@
                                                           success:success
                                                           failure:failure];
 
+    //继续任务
     [dataTask resume];
 
     return dataTask;
@@ -258,7 +262,9 @@
                                          success:(void (^)(NSURLSessionDataTask *, id))success
                                          failure:(void (^)(NSURLSessionDataTask *, NSError *))failure
 {
+    //错误
     NSError *serializationError = nil;
+    //创建request
     NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:&serializationError];
     if (serializationError) {
         if (failure) {
