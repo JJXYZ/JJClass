@@ -27,7 +27,7 @@
 #else
 #define NSFoundationVersionNumber_With_Fixed_5871104061079552_bug NSFoundationVersionNumber_iOS_8_0
 #endif
-
+// URL session 生成的队列，串行
 static dispatch_queue_t url_session_manager_creation_queue() {
     static dispatch_queue_t af_url_session_manager_creation_queue;
     static dispatch_once_t onceToken;
@@ -38,6 +38,7 @@ static dispatch_queue_t url_session_manager_creation_queue() {
     return af_url_session_manager_creation_queue;
 }
 
+// 解决NSURLSessionTask 的 taskIdentifier 在并发的情况下不是唯一的 bug，苹果在 iOS8 的时候解决了这个 bug
 static void url_session_manager_create_task_safely(dispatch_block_t block) {
     if (NSFoundationVersionNumber < NSFoundationVersionNumber_With_Fixed_5871104061079552_bug) {
         // Fix of bug
@@ -48,7 +49,7 @@ static void url_session_manager_create_task_safely(dispatch_block_t block) {
         block();
     }
 }
-
+// URL session 处理的队列，并行
 static dispatch_queue_t url_session_manager_processing_queue() {
     static dispatch_queue_t af_url_session_manager_processing_queue;
     static dispatch_once_t onceToken;
@@ -58,7 +59,7 @@ static dispatch_queue_t url_session_manager_processing_queue() {
 
     return af_url_session_manager_processing_queue;
 }
-
+// URL session 完成的 group
 static dispatch_group_t url_session_manager_completion_group() {
     static dispatch_group_t af_url_session_manager_completion_group;
     static dispatch_once_t onceToken;
@@ -84,7 +85,8 @@ NSString * const AFNetworkingTaskDidCompleteAssetPathKey = @"com.alamofire.netwo
 static NSString * const AFURLSessionManagerLockName = @"com.alamofire.networking.session.manager.lock";
 
 static NSUInteger const AFMaximumNumberOfAttemptsToRecreateBackgroundSessionUploadTask = 3;
-
+// 这是一个指向指针的指针，二级指针
+// https://www.zhihu.com/question/35661618
 static void * AFTaskStateChangedContext = &AFTaskStateChangedContext;
 
 typedef void (^AFURLSessionDidBecomeInvalidBlock)(NSURLSession *session, NSError *error);
@@ -112,7 +114,7 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 
 
 #pragma mark -
-
+// 这个类主要用于保存上层调用的completionHandler，每一个 task 都会生成一个 delegate，有独立的completionHandler，保存每个 task 独立的数据
 @interface AFURLSessionManagerTaskDelegate : NSObject <NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDownloadDelegate>
 @property (nonatomic, weak) AFURLSessionManager *manager;
 @property (nonatomic, strong) NSMutableData *mutableData;
@@ -350,7 +352,7 @@ didFinishDownloadingToURL:(NSURL *)location
 @end
 
 #pragma mark -
-
+//解决 iOS7 和 iOS8 NSURLSessionDataTask resume 和 suspend的问题
 /**
  *  A workaround for issues related to key-value observing the `state` of an `NSURLSessionTask`.
  *
@@ -390,27 +392,28 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
          iOS 7 and iOS 8 differ in NSURLSessionTask implementation, which makes the next bit of code a bit tricky.
          Many Unit Tests have been built to validate as much of this behavior has possible.
          Here is what we know:
-            - NSURLSessionTasks are implemented with class clusters, meaning the class you request from the API isn't actually the type of class you will get back.
-            - Simply referencing `[NSURLSessionTask class]` will not work. You need to ask an `NSURLSession` to actually create an object, and grab the class from there.
-            - On iOS 7, `localDataTask` is a `__NSCFLocalDataTask`, which inherits from `__NSCFLocalSessionTask`, which inherits from `__NSCFURLSessionTask`.
-            - On iOS 8, `localDataTask` is a `__NSCFLocalDataTask`, which inherits from `__NSCFLocalSessionTask`, which inherits from `NSURLSessionTask`.
-            - On iOS 7, `__NSCFLocalSessionTask` and `__NSCFURLSessionTask` are the only two classes that have their own implementations of `resume` and `suspend`, and `__NSCFLocalSessionTask` DOES NOT CALL SUPER. This means both classes need to be swizzled.
-            - On iOS 8, `NSURLSessionTask` is the only class that implements `resume` and `suspend`. This means this is the only class that needs to be swizzled.
-            - Because `NSURLSessionTask` is not involved in the class hierarchy for every version of iOS, its easier to add the swizzled methods to a dummy class and manage them there.
-        
-         Some Assumptions:
-            - No implementations of `resume` or `suspend` call super. If this were to change in a future version of iOS, we'd need to handle it.
-            - No background task classes override `resume` or `suspend`
+         - NSURLSessionTasks are implemented with class clusters, meaning the class you request from the API isn't actually the type of class you will get back.
+         - NSURLSessionTasks 使用类簇的形式实现的，意味着你创建的对象的实际类型不一定是你指定的类型
+         - Simply referencing(引用) `[NSURLSessionTask class]` will not work. You need to ask an `NSURLSession` to actually(实际的) create an object, and grab(霸占/夺取) the class from there.
+         - On iOS 7, `localDataTask` is a `__NSCFLocalDataTask`, which inherits(继承) from `__NSCFLocalSessionTask`, which inherits from(继承) `__NSCFURLSessionTask`.
+         - On iOS 8, `localDataTask` is a `__NSCFLocalDataTask`, which inherits from `__NSCFLocalSessionTask`, which inherits from `NSURLSessionTask`.
+         - On iOS 7, `__NSCFLocalSessionTask` and `__NSCFURLSessionTask` are the only two classes that have their own implementations(实现) of `resume` and `suspend`, and `__NSCFLocalSessionTask` DOES NOT CALL SUPER. This means both classes need to be swizzled.
+         - On iOS 8, `NSURLSessionTask` is the only class that implements `resume` and `suspend`. This means this is the only class that needs to be swizzled.
+         - Because `NSURLSessionTask` is not involved(参与/涉及) in the class hierarchy(继承) for every version of iOS, its easier to add the swizzled methods to a dummy(虚拟的/假的) class and manage them there.
          
-         The current solution:
-            1) Grab an instance of `__NSCFLocalDataTask` by asking an instance of `NSURLSession` for a data task.
-            2) Grab a pointer to the original implementation of `af_resume`
-            3) Check to see if the current class has an implementation of resume. If so, continue to step 4.
-            4) Grab the super class of the current class.
-            5) Grab a pointer for the current class to the current implementation of `resume`.
-            6) Grab a pointer for the super class to the current implementation of `resume`.
-            7) If the current class implementation of `resume` is not equal to the super class implementation of `resume` AND the current implementation of `resume` is not equal to the original implementation of `af_resume`, THEN swizzle the methods
-            8) Set the current class to the super class, and repeat steps 3-8
+         Some Assumptions(假设):
+         - No implementations(实现) of `resume` or `suspend` call super. If this were to change in a future version of iOS, we'd need to handle(操控/操作) it.
+         - No background task classes override `resume` or `suspend`
+         
+         The current solution(解决方案):
+         1) Grab(抢占) an instance(实例) of `__NSCFLocalDataTask` by asking an instance of `NSURLSession` for a data task.
+         2) Grab a pointer to the original(原始的) implementation of `af_resume`
+         3) Check to see if the current class has an implementation of resume. If so, continue to step 4.
+         4) Grab the super class of the current class.
+         5) Grab a pointer for the current class to the current implementation of `resume`.
+         6) Grab a pointer for the super class to the current implementation of `resume`.
+         7) If the current class implementation of `resume` is not equal to the super class implementation of `resume` AND the current implementation of `resume` is not equal to the original(原始的) implementation of `af_resume`, THEN swizzle the methods
+         8) Set the current class to the super class, and repeat steps 3-8
          */
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
         NSURLSession * session = [NSURLSession sessionWithConfiguration:configuration];
@@ -521,7 +524,7 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
     self.sessionConfiguration = configuration;
 
     self.operationQueue = [[NSOperationQueue alloc] init];
-    self.operationQueue.maxConcurrentOperationCount = 1;
+    self.operationQueue.maxConcurrentOperationCount = 1;// 同时只允许一个线程执行
 
     self.session = [NSURLSession sessionWithConfiguration:self.sessionConfiguration delegate:self delegateQueue:self.operationQueue];
 
@@ -560,7 +563,7 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
 }
 
 #pragma mark -
-
+// 输出的指针，保证唯一性
 - (NSString *)taskDescriptionForSessionTasks {
     return [NSString stringWithFormat:@"%p", self];
 }
@@ -605,10 +608,11 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
 {
     NSParameterAssert(task);
     NSParameterAssert(delegate);
-
+    // NSMutableDictionary 是线程不安全的，所以为了支持多线程操作，这里加了锁
     [self.lock lock];
     self.mutableTaskDelegatesKeyedByTaskIdentifier[@(task.taskIdentifier)] = delegate;
     [delegate setupProgressForTask:task];
+    // 注册AFNSURLSessionTaskDidResumeNotification和AFNSURLSessionTaskDidSuspendNotification通知，两个通知都是在_AFURLSessionTaskSwizzling类里面，af_suspend和 af_resume 方法里面发出的
     [self addNotificationObserverForTask:task];
     [self.lock unlock];
 }
@@ -678,9 +682,11 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
 }
 
 #pragma mark -
-
+//在 AFURLSessionManager.m 里面的 tasksForKeyPath: 方法，通过引入信号量的方式把NSURLSession的异步方法 getTasksWithCompletionHandler: 变成了同步方法
+// 这里是把本来异步的getTasksWithCompletionHandler方法变成了同步的方式了，通过引入信号量的方式，等待异步方法获取到tasks，然后再返回
 - (NSArray *)tasksForKeyPath:(NSString *)keyPath {
     __block NSArray *tasks = nil;
+    // 这里是把本来异步的getTasksWithCompletionHandler方法变成了同步的方式了，通过引入信号量的方式，等待异步方法获取到tasks，然后再返回
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     [self.session getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
         if ([keyPath isEqualToString:NSStringFromSelector(@selector(dataTasks))]) {
@@ -690,6 +696,7 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
         } else if ([keyPath isEqualToString:NSStringFromSelector(@selector(downloadTasks))]) {
             tasks = downloadTasks;
         } else if ([keyPath isEqualToString:NSStringFromSelector(@selector(tasks))]) {
+            //上面代码中 @unionOfArrays.self 参考：http://nshipster.com/kvc-collection-operators/
             tasks = [@[dataTasks, uploadTasks, downloadTasks] valueForKeyPath:@"@unionOfArrays.self"];
         }
 
@@ -762,6 +769,7 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
                             completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler {
 
     __block NSURLSessionDataTask *dataTask = nil;
+    // 这个方法是同步的
     url_session_manager_create_task_safely(^{
         dataTask = [self.session dataTaskWithRequest:request];
     });
@@ -783,6 +791,7 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
         uploadTask = [self.session uploadTaskWithRequest:request fromFile:fileURL];
     });
 
+    // 这里为了解决 iOS7.0 upload task 可能为 nil 的问题，重复3次创建 upload task
     if (!uploadTask && self.attemptsToRecreateUploadTasksForBackgroundSessions && self.session.configuration.identifier) {
         for (NSUInteger attempts = 0; !uploadTask && attempts < AFMaximumNumberOfAttemptsToRecreateBackgroundSessionUploadTask; attempts++) {
             uploadTask = [self.session uploadTaskWithRequest:request fromFile:fileURL];
@@ -963,7 +972,7 @@ didBecomeInvalidWithError:(NSError *)error
 
     [[NSNotificationCenter defaultCenter] postNotificationName:AFURLSessionDidInvalidateNotification object:session];
 }
-
+// TODO: 证书身份验证
 - (void)URLSession:(NSURLSession *)session
 didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
  completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler
@@ -996,7 +1005,7 @@ didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
 }
 
 #pragma mark - NSURLSessionTaskDelegate
-
+// 重定向
 - (void)URLSession:(NSURLSession *)session
               task:(NSURLSessionTask *)task
 willPerformHTTPRedirection:(NSHTTPURLResponse *)response
@@ -1013,7 +1022,7 @@ willPerformHTTPRedirection:(NSHTTPURLResponse *)response
         completionHandler(redirectRequest);
     }
 }
-
+// 证书验证
 - (void)URLSession:(NSURLSession *)session
               task:(NSURLSessionTask *)task
 didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
@@ -1087,6 +1096,7 @@ didCompleteWithError:(NSError *)error
 
     // delegate may be nil when completing a task in the background
     if (delegate) {
+        // 由于 AFURLSessionManagerTaskDelegate 也实现了 NSURLSessionTaskDelegate 代理方法，所以这里做了一个调用
         [delegate URLSession:session task:task didCompleteWithError:error];
 
         [self removeDelegateForTask:task];
@@ -1168,7 +1178,8 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
 }
 
 #pragma mark - NSURLSessionDownloadDelegate
-
+// TODO: 这里在 delegate 里面做了一次文件移动，这里又做了一次文件移动，为什么？
+// 如果用户即设置了 downloadTaskDidFinishDownloading 又调用了带有 block 的 download 方法，那就会调用两次
 - (void)URLSession:(NSURLSession *)session
       downloadTask:(NSURLSessionDownloadTask *)downloadTask
 didFinishDownloadingToURL:(NSURL *)location

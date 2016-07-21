@@ -59,7 +59,7 @@ static BOOL AFErrorOrUnderlyingErrorHasCodeInDomain(NSError *error, NSInteger co
 
     return NO;
 }
-
+// 递归去掉 jsonobject 里面的 NSNull 值
 static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingOptions readingOptions) {
     if ([JSONObject isKindOfClass:[NSArray class]]) {
         NSMutableArray *mutableArray = [NSMutableArray arrayWithCapacity:[(NSArray *)JSONObject count]];
@@ -106,7 +106,7 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
 }
 
 #pragma mark -
-
+// 验证 response 是否有效，主要检测的 HTTP statu code 和 content-type
 - (BOOL)validateResponse:(NSHTTPURLResponse *)response
                     data:(NSData *)data
                    error:(NSError * __autoreleasing *)error
@@ -542,7 +542,7 @@ static UIImage * AFImageWithDataAtScale(NSData *data, CGFloat scale) {
     
     return [[UIImage alloc] initWithCGImage:[image CGImage] scale:scale orientation:image.imageOrientation];
 }
-
+// 解压图像数据，由于 responderSerialization 是在子线程里面进行的，所以这个方法也是在responderSerialization的子线程进行的
 static UIImage * AFInflatedImageFromResponseWithDataAtScale(NSHTTPURLResponse *response, NSData *data, CGFloat scale) {
     if (!data || [data length] == 0) {
         return nil;

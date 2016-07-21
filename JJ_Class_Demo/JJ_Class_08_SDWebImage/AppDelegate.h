@@ -14,6 +14,8 @@
     http://www.cocoachina.com/ios/20160630/16869.html
     一行行看SDWebImage源码(二)
  
+ http://itangqi.me/2016/03/19/the-notes-of-learning-sdwebimage-one/
+ SDWebImage 源码阅读笔记
  
     'SDWebImage', '3.7.5'版本
  */

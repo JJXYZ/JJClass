@@ -187,6 +187,7 @@
                        failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
     NSError *serializationError = nil;
+    // 使用 request 的构造器构造 request
     NSMutableURLRequest *request = [self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters constructingBodyWithBlock:block error:&serializationError];
     if (serializationError) {
         if (failure) {
@@ -200,7 +201,7 @@
 
         return nil;
     }
-
+    // TODO: 这里的 task 为什么要用 __block
     __block NSURLSessionDataTask *task = [self uploadTaskWithStreamedRequest:request progress:uploadProgress completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
         if (error) {
             if (failure) {
@@ -268,6 +269,7 @@
     NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:&serializationError];
     if (serializationError) {
         if (failure) {
+            //使用 :? 符号，忽略编译器的警告
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wgnu"
             dispatch_async(self.completionQueue ?: dispatch_get_main_queue(), ^{
@@ -343,6 +345,7 @@
     [super encodeWithCoder:coder];
 
     [coder encodeObject:self.baseURL forKey:NSStringFromSelector(@selector(baseURL))];
+    // configuration 可能是用户自己设置的，所以可能没有实现 NSCoding 协议
     if ([self.session.configuration conformsToProtocol:@protocol(NSCoding)]) {
         [coder encodeObject:self.session.configuration forKey:@"sessionConfiguration"];
     } else {

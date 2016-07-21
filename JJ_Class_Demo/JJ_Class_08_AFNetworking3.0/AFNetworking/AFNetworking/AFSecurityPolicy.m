@@ -47,7 +47,7 @@ static BOOL AFSecKeyIsEqualToKey(SecKeyRef key1, SecKeyRef key2) {
     return [AFSecKeyGetData(key1) isEqual:AFSecKeyGetData(key2)];
 #endif
 }
-
+//从证书中获取到公钥
 static id AFPublicKeyForCertificate(NSData *certificate) {
     id allowedPublicKey = nil;
     SecCertificateRef allowedCertificate;
@@ -88,7 +88,7 @@ _out:
 
     return allowedPublicKey;
 }
-
+// 验证证书是否有效
 static BOOL AFServerTrustIsValid(SecTrustRef serverTrust) {
     BOOL isValid = NO;
     SecTrustResultType result;
@@ -99,7 +99,7 @@ static BOOL AFServerTrustIsValid(SecTrustRef serverTrust) {
 _out:
     return isValid;
 }
-
+// 通过服务器返回的整数获取到这个证书的信任链，也就是获取各级根证书
 static NSArray * AFCertificateTrustChainForServerTrust(SecTrustRef serverTrust) {
     CFIndex certificateCount = SecTrustGetCertificateCount(serverTrust);
     NSMutableArray *trustChain = [NSMutableArray arrayWithCapacity:(NSUInteger)certificateCount];
@@ -111,7 +111,7 @@ static NSArray * AFCertificateTrustChainForServerTrust(SecTrustRef serverTrust) 
 
     return [NSArray arrayWithArray:trustChain];
 }
-
+// 通过服务器返回的整数获取到公钥
 static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
     SecPolicyRef policy = SecPolicyCreateBasicX509();
     CFIndex certificateCount = SecTrustGetCertificateCount(serverTrust);
@@ -166,7 +166,7 @@ static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
 
     return [NSSet setWithSet:certificates];
 }
-
+// AFN自带了一些信任的证书
 + (NSSet *)defaultPinnedCertificates {
     static NSSet *_defaultPinnedCertificates = nil;
     static dispatch_once_t onceToken;
@@ -228,7 +228,7 @@ static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
 }
 
 #pragma mark -
-
+// 验证服务器证书
 - (BOOL)evaluateServerTrust:(SecTrustRef)serverTrust
                   forDomain:(NSString *)domain
 {
@@ -277,7 +277,7 @@ static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
 
             // obtain the chain after being validated, which *should* contain the pinned certificate in the last position (if it's the Root CA)
             NSArray *serverCertificates = AFCertificateTrustChainForServerTrust(serverTrust);
-            
+            // 对比服务器返回证书和客户端整数是否一致
             for (NSData *trustChainCertificate in [serverCertificates reverseObjectEnumerator]) {
                 if ([self.pinnedCertificates containsObject:trustChainCertificate]) {
                     return YES;

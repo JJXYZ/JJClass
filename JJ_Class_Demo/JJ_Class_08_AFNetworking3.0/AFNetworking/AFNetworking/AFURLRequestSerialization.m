@@ -44,6 +44,7 @@ typedef NSString * (^AFQueryStringSerializationBlock)(NSURLRequest *request, id 
     - parameter string: The string to be percent-escaped.
     - returns: The percent-escaped string.
  */
+// 给字符串做编码，特殊字符需要编码传输
 NSString * AFPercentEscapedStringFromString(NSString *string) {
     static NSString * const kAFCharactersGeneralDelimitersToEncode = @":#[]@"; // does not include "?" or "/" due to RFC 3986 - Section 3.4
     static NSString * const kAFCharactersSubDelimitersToEncode = @"!$&'()*+,;=";
@@ -80,7 +81,7 @@ NSString * AFPercentEscapedStringFromString(NSString *string) {
 }
 
 #pragma mark -
-
+// 这个是存储 GET 的 query 的一个结构化类
 @interface AFQueryStringPair : NSObject
 @property (readwrite, nonatomic, strong) id field;
 @property (readwrite, nonatomic, strong) id value;
@@ -118,7 +119,7 @@ NSString * AFPercentEscapedStringFromString(NSString *string) {
 
 FOUNDATION_EXPORT NSArray * AFQueryStringPairsFromDictionary(NSDictionary *dictionary);
 FOUNDATION_EXPORT NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value);
-
+// 把 GET 的 param 生成参数： key1=value1&key2=value2 的形式
 NSString * AFQueryStringFromParameters(NSDictionary *parameters) {
     NSMutableArray *mutablePairs = [NSMutableArray array];
     for (AFQueryStringPair *pair in AFQueryStringPairsFromDictionary(parameters)) {
@@ -131,7 +132,8 @@ NSString * AFQueryStringFromParameters(NSDictionary *parameters) {
 NSArray * AFQueryStringPairsFromDictionary(NSDictionary *dictionary) {
     return AFQueryStringPairsFromKeyAndValue(nil, dictionary);
 }
-
+// 格式化请求参数，生成相应的AFQueryStringPair，递归生成
+// 参考：http://blog.cnbang.net/tech/2371/ 『格式化请求参数』一节
 NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value) {
     NSMutableArray *mutableQueryStringComponents = [NSMutableArray array];
 
@@ -173,7 +175,7 @@ NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value) {
 @end
 
 #pragma mark -
-
+// 这些属性需要添加 KVO 监听，用于把该类的这些属性设置给生成的NSMutableURLRequest，这些属性都是NSMutableURLRequest的属性
 static NSArray * AFHTTPRequestSerializerObservedKeyPaths() {
     static NSArray *_AFHTTPRequestSerializerObservedKeyPaths = nil;
     static dispatch_once_t onceToken;
@@ -184,6 +186,9 @@ static NSArray * AFHTTPRequestSerializerObservedKeyPaths() {
     return _AFHTTPRequestSerializerObservedKeyPaths;
 }
 
+// 这是一个指向指针的指针，二级指针
+// https://www.zhihu.com/question/35661618
+//这里是为了做 KVO 的时候给 context 赋值，便于区分不同的 context，由于这个AFHTTPRequestSerializerObserverContext的内存地址是在编译的时候就决定了，所以这么声明确实可以保证 context 不同，是个比较讨巧的方式
 static void *AFHTTPRequestSerializerObserverContext = &AFHTTPRequestSerializerObserverContext;
 
 @interface AFHTTPRequestSerializer ()
@@ -320,7 +325,7 @@ forHTTPHeaderField:(NSString *)field
 - (NSString *)valueForHTTPHeaderField:(NSString *)field {
     return [self.mutableHTTPRequestHeaders valueForKey:field];
 }
-
+// 这个是 Basic Auth 认证
 - (void)setAuthorizationHeaderFieldWithUsername:(NSString *)username
                                        password:(NSString *)password
 {
@@ -520,7 +525,7 @@ forHTTPHeaderField:(NSString *)field
 }
 
 #pragma mark - NSKeyValueObserving
-
+// 设置手动控制通知方式
 + (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key {
     if ([AFHTTPRequestSerializerObservedKeyPaths() containsObject:key]) {
         return NO;
@@ -528,7 +533,7 @@ forHTTPHeaderField:(NSString *)field
 
     return [super automaticallyNotifiesObserversForKey:key];
 }
-
+// 如果有设置这个值，那就把 ketpath 加到mutableObservedChangedKeyPaths里面去，设置 NSNull 就从里面删除
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(__unused id)object
                         change:(NSDictionary *)change
@@ -598,7 +603,7 @@ static inline NSString * AFMultipartFormEncapsulationBoundary(NSString *boundary
 static inline NSString * AFMultipartFormFinalBoundary(NSString *boundary) {
     return [NSString stringWithFormat:@"%@--%@--%@", kAFMultipartFormCRLF, boundary, kAFMultipartFormCRLF];
 }
-
+// 根据文件扩展名获取文件类型 string
 static inline NSString * AFContentTypeForPathExtension(NSString *extension) {
     NSString *UTI = (__bridge_transfer NSString *)UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)extension, NULL);
     NSString *contentType = (__bridge_transfer NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)UTI, kUTTagClassMIMEType);
@@ -821,7 +826,7 @@ NSTimeInterval const kAFUploadStream3GSuggestedDelay = 0.2;
 @end
 
 #pragma mark -
-
+// 把NSStream这个类里面的这两个属性变成 readwrite 的了
 @interface NSStream ()
 @property (readwrite) NSStreamStatus streamStatus;
 @property (readwrite, copy) NSError *streamError;
@@ -858,7 +863,7 @@ NSTimeInterval const kAFUploadStream3GSuggestedDelay = 0.2;
 
     return self;
 }
-
+// 设置初始和结束的边界
 - (void)setInitialAndFinalBoundaries {
     if ([self.HTTPBodyParts count] > 0) {
         for (AFHTTPBodyPart *bodyPart in self.HTTPBodyParts) {

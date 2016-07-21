@@ -175,6 +175,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see https://github.com/AFNetworking/AFNetworking/issues/1675
  */
+// iOS7.0 的一个 bug，当创建 后台的 upload task 的时候可能是 nil，这个值为 YES 的时候会尝试重新创建
 @property (nonatomic, assign) BOOL attemptsToRecreateUploadTasksForBackgroundSessions;
 
 ///---------------------
@@ -195,6 +196,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param cancelPendingTasks Whether or not to cancel pending tasks.
  */
+// 结束 managed session，参数是是否等待现有任务完成之后结束，NO 的话直接结束掉，YES 的话等待现有任务完成在结束
 - (void)invalidateSessionCancelingTasks:(BOOL)cancelPendingTasks;
 
 ///-------------------------

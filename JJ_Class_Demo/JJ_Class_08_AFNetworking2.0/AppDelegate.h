@@ -6,6 +6,13 @@
 //  Copyright © 2016年 JJ. All rights reserved.
 //
 
+/**
+ *  http://blog.cnbang.net/tech/2320/
+ *  AFNetworking2.0源码解析
+ */
+
+
+
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
