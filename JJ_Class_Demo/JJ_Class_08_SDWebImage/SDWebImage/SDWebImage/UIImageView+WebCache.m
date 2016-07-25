@@ -41,9 +41,26 @@ static char TAG_ACTIVITY_SHOW;
     [self sd_setImageWithURL:url placeholderImage:placeholder options:options progress:nil completed:completedBlock];
 }
 
+/**
+ * 根据 url、placeholder 与 custom options 为 imageview 设置 image
+ *
+ * 下载是异步的，并且被缓存的
+ *
+ * @param url            网络图片的 url 地址
+ * @param placeholder    用于预显示的图片
+ * @param options        一些定制化选项
+ * @param progressBlock  下载时的 Block，其定义为：typedef void(^SDWebImageDownloaderProgressBlock)(NSInteger receivedSize, NSInteger expectedSize);
+ * @param completedBlock 下载完成时的 Block，其定义为：typedef void(^SDWebImageDownloaderCompletedBlock)(UIImage *image, NSData *data, NSError *error, BOOL finished);
+ */
 - (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock {
     /** 
      移除UIImageView当前绑定的操作.当TableView的cell包含的UIImageView被重用的时候首先执行这一行代码,保证这个ImageView的下载和缓存组合操作都被取消
+     
+     当执行 sd_setImageWithURL: 函数时，首先会 cancel 掉 operationDictionary 中已经存在的 operation，并重新创建一个新的 SDWebImageCombinedOperation 对象来获取 image，该 operation 会被存入 operationDictionary 中。
+     
+     这样来保证每个 UIImageView 对象中永远只存在一个 operation，当前只允许一个图片网络请求，该 operation 负责从缓存中获取 image 或者是重新下载 image。
+     
+     SDWebImageCombinedOperation 的 cancel 操作同时会 cacel 掉缓存查询的 operation 以及 downloader 的 operation
      */
     [self sd_cancelCurrentImageLoad];
     

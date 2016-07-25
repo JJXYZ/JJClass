@@ -11,6 +11,9 @@
 
 static char loadOperationKey;
 
+/**
+ *  至于为什么添加到 UIView 上, 主要是因为这个 operationDictionary 需要在 UIButton 和 UIImageView 上重用，所以需要添加到它们的根类上。
+ */
 @implementation UIView (WebCacheOperation)
 
 - (NSMutableDictionary *)operationDictionary {

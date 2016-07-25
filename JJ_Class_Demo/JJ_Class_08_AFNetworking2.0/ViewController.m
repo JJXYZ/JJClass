@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "AFNetworking/AFNetworking/AFNetworking.h"
+
+#define DOUBAN_BOOK @"https://api.douban.com/v2/book/1220562"
 
 @interface ViewController ()
 
@@ -16,6 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:DOUBAN_BOOK parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        NSLog(@"operation : %@ responseObject : %@", operation, responseObject);
+    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+        NSLog(@"operation : %@ error : %@", operation, error);
+    }];
 }
 
 @end

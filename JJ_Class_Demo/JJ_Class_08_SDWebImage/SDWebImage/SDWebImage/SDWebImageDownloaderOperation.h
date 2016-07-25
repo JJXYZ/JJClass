@@ -15,6 +15,12 @@ extern NSString *const SDWebImageDownloadReceiveResponseNotification;
 extern NSString *const SDWebImageDownloadStopNotification;
 extern NSString *const SDWebImageDownloadFinishNotification;
 
+
+/**
+ *  NSOperation 是一个抽象类，你可以用它来封装一个任务的相关代码和数据。因为它是个抽象类，所以你不能直接使用它，而是需要继承并实现其子类或者使用系统内置的两个子类（NSInvocationOperation 和 NSBlockOperation）来执行实际的线程任务
+ 
+ NSOperationQueue 类管理着一组 NSOperation 对象的执行，当一个 operation 对象被加入到队列后，它会始终保留在队列中，直到它已经明确的被取消或者完成执行任务。Operations 在队列内（但尚未执行），它们是根据优先级和互相依赖进行组织的，相应的去执行。一个应用可以创建多个操作队列（operation queues）并提交操作（operations）到其中任何一个中
+ */
 @interface SDWebImageDownloaderOperation : NSOperation <SDWebImageOperation>
 
 /**

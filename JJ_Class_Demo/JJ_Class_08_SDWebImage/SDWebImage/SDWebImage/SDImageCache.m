@@ -202,12 +202,14 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
         return;
     }
     // if memory cache is enabled
+    // 内存缓存，将其存入 NSCache 中，同时传入图片的消耗值，cost 为像素值（当内存受限或者所有缓存对象的总代价超过了最大允许的值时，缓存会移除其中的一些对象）
     if (self.shouldCacheImagesInMemory) {
         NSUInteger cost = SDCacheCostForImage(image);
         [self.memCache setObject:image forKey:key cost:cost];
     }
 
     if (toDisk) {
+        // 如果确定需要磁盘缓存，则将缓存操作作为一个任务放入 ioQueue 中
         dispatch_async(self.ioQueue, ^{
             NSData *data = imageData;
 
@@ -220,6 +222,8 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
 
                 // If the imageData is nil (i.e. if trying to save a UIImage directly or the image was transformed on download)
                 // and the image has an alpha channel, we will consider it PNG to avoid losing the transparency
+                // 需要确定图片是 PNG 还是 JPEG。PNG 图片容易检测，因为有一个唯一签名。PNG 图像的前 8 个字节总是包含以下值：137 80 78 71 13 10 26 10
+                // 在 imageData 为 nil 的情况下假定图像为 PNG。我们将其当作 PNG 以避免丢失透明度。而当有图片数据时，我们检测其前缀，确定图片的类型
                 int alphaInfo = CGImageGetAlphaInfo(image.CGImage);
                 BOOL hasAlpha = !(alphaInfo == kCGImageAlphaNone ||
                                   alphaInfo == kCGImageAlphaNoneSkipFirst ||
@@ -231,6 +235,7 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
                     imageIsPng = ImageDataHasPNGPreffix(imageData);
                 }
 
+                // 如果 image 是 PNG 格式，就是用 UIImagePNGRepresentation 将其转化为 NSData，否则按照 JPEG 格式转化，并且压缩质量为 1，即无压缩
                 if (imageIsPng) {
                     data = UIImagePNGRepresentation(image);
                 }
@@ -242,6 +247,7 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
 #endif
             }
 
+            // 创建缓存文件并存储图片（使用 fileManager）
             if (data) {
                 if (![_fileManager fileExistsAtPath:_diskCachePath]) {
                     [_fileManager createDirectoryAtPath:_diskCachePath withIntermediateDirectories:YES attributes:nil error:NULL];
@@ -251,10 +257,11 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
                 NSString *cachePathForKey = [self defaultCachePathForKey:key];
                 // transform to NSUrl
                 NSURL *fileURL = [NSURL fileURLWithPath:cachePathForKey];
-
+                // 保存 data 到指定的路径中
                 [_fileManager createFileAtPath:cachePathForKey contents:data attributes:nil];
 
                 // disable iCloud backup
+                //iCloud备份文件:http://blog.csdn.net/hamasn/article/details/7711749
                 if (self.shouldDisableiCloud) {
                     [fileURL setResourceValue:[NSNumber numberWithBool:YES] forKey:NSURLIsExcludedFromBackupKey error:nil];
                 }
@@ -360,12 +367,18 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
     return nil;
 }
 
+/**
+ *  磁盘缓存的处理则是使用 NSFileManager 对象来实现的。默认以 com.hackemist.SDWebImageCache.default 为磁盘的缓存命名空间，程序运行后，可以在应用程序的文件夹 Library/Caches/default/com.hackemist.SDWebImageCache.default 下看到一些缓存文件。另外，SDImageCache 还定义了一个串行队列，来异步存储图片。
+ 
+ 在磁盘查询的时候，会在后台将 NSData 转成 UIImage，并完成相关的解码工作:
+ */
 - (UIImage *)diskImageForKey:(NSString *)key {
     NSData *data = [self diskImageDataBySearchingAllPathsForKey:key];
     if (data) {
         UIImage *image = [UIImage sd_imageWithData:data];
         image = [self scaledImageForKey:key image:image];
         if (self.shouldDecompressImages) {
+            //为何要进行 decode，参见：https://www.cocoanetics.com/2011/10/avoiding-image-decompression-sickness/
             image = [UIImage decodedImageWithImage:image];
         }
         return image;
@@ -412,6 +425,25 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
             if (diskImage && self.shouldCacheImagesInMemory) {
                 NSUInteger cost = SDCacheCostForImage(diskImage);
                 //self.memCache是NSCache创建的一个对象,下面的方法是NSCache储存对象的方法,如果你对cost的作用不太了解可以看我另外一篇文章NSCache
+                /**
+                 *  NSCache 类结合了各种自动删除策略，以确保不会占用过多的系统内存。如果其它应用需要内存时，系统自动执行这些策略。当调用这些策略时，会从缓存中删除一些对象，以最大限度减少内存的占用
+                 
+                 NSCache 是线程安全的，我们可以在不同的线程中添加、删除和查询缓存中的对象，而不需要锁定缓存区域
+                 
+                 不像 NSMutableDictionary 对象，NSCache 对象并不会拷贝键（key），而是会强引用它
+                 
+                 在开发者自己不编写加锁代码的前提下，多个线程便可以同时访问 NSCache
+                 
+                 NSCache 对象不拷贝键的原因在于：很多时候，键都是由不支持拷贝操作的对象来充当的。所以说，在键不支持拷贝操作的情况下，该类用起来比字典更方便
+                 
+                 可以给 NSCache 对象设置上限，用以限制缓存中的对象总个数及「总成本」，而这些尺度则定义了缓存删减其中对象的时机。但是绝对不要把这些尺度当成可靠的「硬限制」，它们仅对 NSCache 起指导作用
+                 
+                 将 NSPurgeableData 与 NSCache 搭配使用，可实现自动清除数据的功能，也就是说，当 NSPurgeableData 对象所占内存为系统所丢弃时，该对象自身也会从缓存中移除
+                 
+                 如果缓存使用得当，那么应用程序的响应速度就能提高。只有那种「重新计算起来很费事的」数据，才值得放入缓存，比如那些需要从网络获取或者从磁盘读取的数据
+                 
+                 内存查询是同步，磁盘查询是异步
+                 */
                 [self.memCache setObject:diskImage forKey:key cost:cost];
             }
 
@@ -504,6 +536,14 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
     });
 }
 
+/**
+ *  SDImageCache 会在系统发出低内存警告时释放内存，并且在程序进入 UIApplicationWillTerminateNotification 时，清理磁盘缓存，清理磁盘的机制是：
+ 
+ 删除过期的图片，默认 7 天过期，可以通过 maxCacheAge 修改过期天数。
+ 
+ 如果缓存的数据大小超过设置的最大缓存 maxCacheSize，则会按照文件最后修改时间的逆序，以每次一半的递归来移除那些过早的文件，直到缓存的实际大小小于我们设置的最大使用空间，可以通过修改 maxCacheSize 来改变最大缓存大小。
+ */
+
 - (void)cleanDisk {
     [self cleanDiskWithCompletionBlock:nil];
 }
@@ -514,11 +554,12 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
         NSArray *resourceKeys = @[NSURLIsDirectoryKey, NSURLContentModificationDateKey, NSURLTotalFileAllocatedSizeKey];
 
         // This enumerator prefetches useful properties for our cache files.
+        // 该枚举器预先获取缓存文件的有用的属性
         NSDirectoryEnumerator *fileEnumerator = [_fileManager enumeratorAtURL:diskCacheURL
                                                    includingPropertiesForKeys:resourceKeys
                                                                       options:NSDirectoryEnumerationSkipsHiddenFiles
                                                                  errorHandler:NULL];
-
+        // 枚举缓存文件夹中所有文件，该迭代有两个目的：移除比过期日期更老的文件；存储文件属性以备后面执行基于缓存大小的清理操作
         NSDate *expirationDate = [NSDate dateWithTimeIntervalSinceNow:-self.maxCacheAge];
         NSMutableDictionary *cacheFiles = [NSMutableDictionary dictionary];
         NSUInteger currentCacheSize = 0;
@@ -532,11 +573,13 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
             NSDictionary *resourceValues = [fileURL resourceValuesForKeys:resourceKeys error:NULL];
 
             // Skip directories.
+            // 跳过文件夹 
             if ([resourceValues[NSURLIsDirectoryKey] boolValue]) {
                 continue;
             }
 
             // Remove files that are older than the expiration date;
+            // 移除早于有效期的老文件
             NSDate *modificationDate = resourceValues[NSURLContentModificationDateKey];
             if ([[modificationDate laterDate:expirationDate] isEqualToDate:expirationDate]) {
                 [urlsToDelete addObject:fileURL];
@@ -544,6 +587,7 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
             }
 
             // Store a reference to this file and account for its total size.
+            // 存储文件的引用并计算所有文件的总大小，以备后用
             NSNumber *totalAllocatedSize = resourceValues[NSURLTotalFileAllocatedSizeKey];
             currentCacheSize += [totalAllocatedSize unsignedIntegerValue];
             [cacheFiles setObject:resourceValues forKey:fileURL];
@@ -555,17 +599,21 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
 
         // If our remaining disk cache exceeds a configured maximum size, perform a second
         // size-based cleanup pass.  We delete the oldest files first.
+        // 如果磁盘缓存的大小大于我们配置的最大大小，则执行基于文件大小的清理，我们首先删除最早的文件
         if (self.maxCacheSize > 0 && currentCacheSize > self.maxCacheSize) {
             // Target half of our maximum cache size for this cleanup pass.
+            // 以设置的最大缓存大小的一半作为清理目标
             const NSUInteger desiredCacheSize = self.maxCacheSize / 2;
 
             // Sort the remaining cache files by their last modification time (oldest first).
+            // 按照最后修改时间来排序剩下的缓存文件
             NSArray *sortedFiles = [cacheFiles keysSortedByValueWithOptions:NSSortConcurrent
                                                             usingComparator:^NSComparisonResult(id obj1, id obj2) {
                                                                 return [obj1[NSURLContentModificationDateKey] compare:obj2[NSURLContentModificationDateKey]];
                                                             }];
 
             // Delete files until we fall below our desired cache size.
+            // 删除文件，直到缓存总大小降到我们期望的大小
             for (NSURL *fileURL in sortedFiles) {
                 if ([_fileManager removeItemAtURL:fileURL error:nil]) {
                     NSDictionary *resourceValues = cacheFiles[fileURL];

@@ -106,6 +106,7 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
         // 下载任务执行的状态,在执行是YES,不在执行时NO
         self.executing = YES;
         //创建用于下载的connection
+        //SDWebImage 在版本 3.8.0 时将 NSURLConnection 替换成了 NSURLSession（大势所趋啊~）。但本文是以 NSURLConnection 为例进行讲解，如果你对 NSURLConnection 不了解，可以先看下我的文章：从 NSURLConnection 到 NSURLSession
         self.connection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:NO];
         //获取当前得得线程
         self.thread = [NSThread currentThread];
@@ -136,6 +137,7 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
             CFRunLoopRunInMode(kCFRunLoopDefaultMode, 10, false);
         }
         else {
+            // 在默认模式下运行当前 Run Loop，直到调用 CFRunLoopStop 停止运行
             CFRunLoopRun();
         }
 
@@ -281,6 +283,9 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
     }
 }
 
+/**
+ *  该方法的主要任务是接收数据。每次接收到数据时，都会用现有的数据创建一个 CGImageSourceRef 对象以做处理。在首次获取到数据时（width+height==0）会从这些包含图像信息的数据中取出图像的长、宽、方向等信息以备使用。而后在图片下载完成之前，会使用 CGImageSourceRef 对象创建一个图片对象，经过缩放、解压缩操作后生成一个 UIImage 对象供完成回调使用。当然，在这个方法中还需要处理的就是进度信息。如果我们有设置进度回调的话，就调用这个进度回调以处理当前图片的下载进度。
+ */
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     [self.imageData appendData:data];
 
@@ -341,11 +346,13 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
         if (width + height > 0 && totalSize < self.expectedSize) {
             // Create the image
             // 创建图片
+            // 使用现有的数据创建图片对象，如果数据中存有多张图片，则取第一张
             CGImageRef partialImageRef = CGImageSourceCreateImageAtIndex(imageSource, 0, NULL);
 
 #ifdef TARGET_OS_IPHONE
             // Workaround for iOS anamorphic image
             // Workaround for iOS anamorphic(失真的 , 变形的) image
+            // 适用于 iOS 变形图像的解决方案。我的理解是由于 iOS 只支持 RGB 颜色空间，所以在此对下载下来的图片做个颜色空间转换处理
             if (partialImageRef) {
                 const size_t partialHeight = CGImageGetHeight(partialImageRef);
                 CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
@@ -363,7 +370,7 @@ NSString *const SDWebImageDownloadFinishNotification = @"SDWebImageDownloadFinis
                 }
             }
 #endif
-
+            // 对图片进行缩放、解码操作
             if (partialImageRef) {
                 UIImage *image = [UIImage imageWithCGImage:partialImageRef scale:1 orientation:orientation];
                 NSString *key = [[SDWebImageManager sharedManager] cacheKeyForURL:self.request.URL];

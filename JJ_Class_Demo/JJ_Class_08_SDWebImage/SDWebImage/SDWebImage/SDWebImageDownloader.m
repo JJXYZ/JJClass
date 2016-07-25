@@ -14,13 +14,18 @@ static NSString *const kProgressCallbackKey = @"progress";
 static NSString *const kCompletedCallbackKey = @"completed";
 
 @interface SDWebImageDownloader ()
-
+/**
+ *  SDWebImageDownloader 下载管理器是一个单例类，它主要负责图片的下载操作的管理。图片的下载是放在一个 NSOperationQueue 操作队列中来完成的，其声明如下：
+ */
 @property (strong, nonatomic) NSOperationQueue *downloadQueue;
 @property (weak, nonatomic) NSOperation *lastAddedOperation;
 @property (assign, nonatomic) Class operationClass;
 @property (strong, nonatomic) NSMutableDictionary *URLCallbacks;
 @property (strong, nonatomic) NSMutableDictionary *HTTPHeaders;
 // This queue is used to serialize the handling of the network responses of all the download operation in a single queue
+/**
+ *  所有下载操作的网络响应序列化处理是放在一个自定义的并行调度队列中来处理的，其声明及定义如下：
+ */
 @property (SDDispatchQueueSetterSementics, nonatomic) dispatch_queue_t barrierQueue;
 
 @end
@@ -112,6 +117,9 @@ static NSString *const kCompletedCallbackKey = @"completed";
     _operationClass = operationClass ?: [SDWebImageDownloaderOperation class];
 }
 
+/**
+ *  整个下载管理器对于下载请求的管理都是放在 downloadImageWithURL:options:progress:completed: 方法里面来处理的，而该方法又调用了 addProgressCallback:andCompletedBlock:forURL:createCallback: 方法来将请求的信息存入管理器中，同时在创建回调的 block 中创建新的操作，配置之后将其放入 downloadQueue 操作队列中，最后方法返回新创建的操作，具体实现如下：
+ */
 - (id <SDWebImageOperation>)downloadImageWithURL:(NSURL *)url options:(SDWebImageDownloaderOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageDownloaderCompletedBlock)completedBlock {
     __block SDWebImageDownloaderOperation *operation;
     __weak __typeof(self)wself = self;
@@ -317,6 +325,7 @@ static NSString *const kCompletedCallbackKey = @"completed";
      
      串行队列可以保证任务按照添加的顺序一个个开始执行,并且上一个任务结束才开始下一个任务,这已经可以保证任务的执行顺序(或者说是任务结束的顺利)了,但是并行队列不一样,并发队列只能保证任务的开始,至于任务以什么样的顺序结束并不能保证但是并发队列使用Barrier却是可以保证的
      */
+    // 以 dispatch_barrier_sync 操作来保证同一时间只有一个线程能对 URLCallbacks 进行操作
     dispatch_barrier_sync(self.barrierQueue, ^{
         /**
          *  URLCallbacks是一个可变字典,key是NSURL类型,value为NSMutableArray类型,value(数组里面)只包含一个元素,这个元素的类型是NSMutableDictionary类型,这个字典的key为NSString类型代表着回调类型,value为block,是对应的回调
@@ -330,6 +339,7 @@ static NSString *const kCompletedCallbackKey = @"completed";
         }
 
         // Handle single download of simultaneous download request for the same URL
+        // 处理同一 URL 的同步下载请求的单个下载
         NSMutableArray *callbacksForURL = self.URLCallbacks[url];
         NSMutableDictionary *callbacks = [NSMutableDictionary new];
         if (progressBlock) callbacks[kProgressCallbackKey] = [progressBlock copy];

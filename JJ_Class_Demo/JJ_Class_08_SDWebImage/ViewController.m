@@ -26,6 +26,50 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://pic50.nipic.com/file/20140927/14386371_064014515000_2.jpg"] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         NSLog(@"%@ %@ %@ %ld", image, error, imageURL, (long)cacheType);
     }];
+    
+    NSString *s = [ViewController getUidValidateExtendParams];
+    NSLog(@"%@", s);
+}
+
++ (NSString *)getUidValidateExtendParams {
+    NSMutableDictionary *paramsDic = [NSMutableDictionary dictionary];
+    NSString *uid = @"123456";
+    NSString *validate = @"888888";
+    
+    [paramsDic setObject:uid forKey:@"uid"];
+    [paramsDic setObject:validate forKey:@"validate"];
+    
+    NSString *apiResponseJson = [self toJSONString:paramsDic];
+    
+    return apiResponseJson;
+}
+
++ (NSData *)toJSONStringData:(id)theData
+{
+    if (![NSJSONSerialization isValidJSONObject:theData]) {
+        return nil;
+    }
+    
+    NSError* error = nil;
+    NSData *jsonStrData = [NSJSONSerialization dataWithJSONObject:theData options:kNilOptions error:&error];
+    if (error != nil) {
+        return nil;
+    }
+    return jsonStrData;
+}
+
++ (NSString *)toJSONString:(id)theData {
+    NSData *jsonStrData = [self toJSONStringData:theData];
+    
+    NSString *jsonStr = nil;
+    if (jsonStrData) {
+        jsonStr = [[NSString alloc] initWithData:jsonStrData encoding:NSUTF8StringEncoding];
+    }
+    else {
+        jsonStr = nil;
+    }
+    
+    return jsonStr;
 }
 
 @end

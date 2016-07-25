@@ -184,6 +184,9 @@
     NSMutableURLRequest *request = [self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters constructingBodyWithBlock:block error:&serializationError];
     if (serializationError) {
         if (failure) {
+            /**
+             *  表示在这个区间里忽略一些特定的clang的编译警告，因为AFNetworking作为一个库被其他项目引用，所以不能全局忽略clang的一些警告，只能在有需要的时候局部这样做，作者喜欢用?:符号，所以经常见忽略-Wgnu警告的写法，详见这里。
+             */
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wgnu"
             dispatch_async(self.completionQueue ?: dispatch_get_main_queue(), ^{
