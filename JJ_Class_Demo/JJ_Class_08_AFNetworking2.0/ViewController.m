@@ -28,4 +28,19 @@
     }];
 }
 
+
+/** AFNetworking里multipart请求的使用方式是这样： */
+- (void)multipartReuqest {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSDictionary *parameters = @{@"foo": @"bar"};
+    NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
+    [manager POST:@"http://example.com/resources.json" parameters:parameters constructingBodyWithBlock:^(id formData) {
+        [formData appendPartWithFileURL:filePath name:@"image" error:nil];
+    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Success: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
+
 @end
