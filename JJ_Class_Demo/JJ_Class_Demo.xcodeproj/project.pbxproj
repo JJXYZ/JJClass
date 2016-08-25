@@ -68,6 +68,7 @@
 		692714A51C0CABE100630D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692714A31C0CABE100630D42 /* Main.storyboard */; };
 		692714A71C0CABE100630D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692714A61C0CABE100630D42 /* Assets.xcassets */; };
 		692714AA1C0CABE100630D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692714A81C0CABE100630D42 /* LaunchScreen.storyboard */; };
+		6930D9821D6EF49E002B6543 /* Student1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6930D9811D6EF49E002B6543 /* Student1.m */; };
 		6979DD281C0753FF009F3038 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6979DD271C0753FF009F3038 /* main.m */; };
 		6979DD2B1C0753FF009F3038 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6979DD2A1C0753FF009F3038 /* AppDelegate.m */; };
 		6979DD2E1C0753FF009F3038 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6979DD2D1C0753FF009F3038 /* ViewController.m */; };
@@ -79,6 +80,7 @@
 		69E705481CC91810007D0EE1 /* RACSubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E705451CC91810007D0EE1 /* RACSubjectVC.m */; };
 		69E705491CC91810007D0EE1 /* RACSubjectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E705461CC91810007D0EE1 /* RACSubjectVC.xib */; };
 		69E7054A1CC91810007D0EE1 /* RACSubjectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E705461CC91810007D0EE1 /* RACSubjectVC.xib */; };
+		69F80B6F1D63FAD400219B53 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F80B6E1D63FAD400219B53 /* Student.m */; };
 		6A18FA99595A9C0C8A3EC119 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0383B99BE2851E6AA57FEB /* libPods.a */; };
 		6CD6ED0C69B302493423E013 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0383B99BE2851E6AA57FEB /* libPods.a */; };
 		7163C475EE83DB37600190EC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0383B99BE2851E6AA57FEB /* libPods.a */; };
@@ -634,6 +636,8 @@
 		692714A61C0CABE100630D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		692714A91C0CABE100630D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		692714AB1C0CABE100630D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6930D9801D6EF49E002B6543 /* Student1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student1.h; sourceTree = "<group>"; };
+		6930D9811D6EF49E002B6543 /* Student1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student1.m; sourceTree = "<group>"; };
 		6979DD241C0753FF009F3038 /* JJ_Class_07_ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_07_ReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6979DD271C0753FF009F3038 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6979DD291C0753FF009F3038 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -649,6 +653,8 @@
 		69E705441CC91810007D0EE1 /* RACSubjectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSubjectVC.h; sourceTree = "<group>"; };
 		69E705451CC91810007D0EE1 /* RACSubjectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSubjectVC.m; sourceTree = "<group>"; };
 		69E705461CC91810007D0EE1 /* RACSubjectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACSubjectVC.xib; sourceTree = "<group>"; };
+		69F80B6D1D63FAD400219B53 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		69F80B6E1D63FAD400219B53 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		9D0383B99BE2851E6AA57FEB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30CA2291D3E33F400C97804 /* JJ_Class_08_AFNetworking2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_08_AFNetworking2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30CA22C1D3E33F400C97804 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -2337,6 +2343,10 @@
 				A35B1F9E1CF4415C00AAE16B /* AppDelegate.m */,
 				A35B1FA01CF4415C00AAE16B /* ViewController.h */,
 				A35B1FA11CF4415C00AAE16B /* ViewController.m */,
+				69F80B6D1D63FAD400219B53 /* Student.h */,
+				69F80B6E1D63FAD400219B53 /* Student.m */,
+				6930D9801D6EF49E002B6543 /* Student1.h */,
+				6930D9811D6EF49E002B6543 /* Student1.m */,
 				A35B1FA31CF4415C00AAE16B /* Main.storyboard */,
 				A35B1FA61CF4415C00AAE16B /* Assets.xcassets */,
 				A35B1FA81CF4415C00AAE16B /* LaunchScreen.storyboard */,
@@ -5199,6 +5209,8 @@
 				A35B1F9F1CF4415C00AAE16B /* AppDelegate.m in Sources */,
 				A35B1FBA1CF4432A00AAE16B /* DemoTableViewCell.m in Sources */,
 				A35B1FB21CF441AF00AAE16B /* RTLabel.m in Sources */,
+				69F80B6F1D63FAD400219B53 /* Student.m in Sources */,
+				6930D9821D6EF49E002B6543 /* Student1.m in Sources */,
 				A35B1FBB1CF4432A00AAE16B /* DemoTableViewController.m in Sources */,
 				A35B1F9C1CF4415C00AAE16B /* main.m in Sources */,
 			);

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "RTLabel.h"
 #import "DemoTableViewController.h"
+#import "Student1.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    Student1 *s = [[Student1 alloc] init];
+    NSString *string = [s run2];
+    NSLog(@"%@", string);
 }
 
 - (IBAction)clickVC1 {
