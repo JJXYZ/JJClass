@@ -856,7 +856,6 @@
 				A318CC731C3CB53600751ABE /* 笔记.h */,
 				A3224BD21C05574300675C60 /* JJ_Class_01_笔记 */,
 				A391FCDD1C08024A00EF9780 /* JJ_Class_02_3DTouch */,
-				A391FCE01C08028900EF9780 /* JJ_Class_05_运行时 */,
 				6913320A1C05E03000C5885C /* JJ_Class_06_RunLoop */,
 				A391FCE11C08029B00EF9780 /* JJ_Class_07_ReactiveCocoa */,
 				A318CC331C3CA94400751ABE /* JJ_Class_10_动画 */,
@@ -1089,13 +1088,6 @@
 				A3224C421C055FC000675C60 /* JJ_Class_02_3DTouch-PeekAndPopGestureDemo */,
 			);
 			name = JJ_Class_02_3DTouch;
-			sourceTree = "<group>";
-		};
-		A391FCE01C08028900EF9780 /* JJ_Class_05_运行时 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "JJ_Class_05_运行时";
 			sourceTree = "<group>";
 		};
 		A391FCE11C08029B00EF9780 /* JJ_Class_07_ReactiveCocoa */ = {
