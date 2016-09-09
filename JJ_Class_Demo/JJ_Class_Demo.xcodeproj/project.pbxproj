@@ -21,7 +21,6 @@
 		6979DD311C0753FF009F3038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6979DD2F1C0753FF009F3038 /* Main.storyboard */; };
 		6979DD331C0753FF009F3038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6979DD321C0753FF009F3038 /* Assets.xcassets */; };
 		6979DD361C0753FF009F3038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6979DD341C0753FF009F3038 /* LaunchScreen.storyboard */; };
-		69DA59F71C11EFE700851BC5 /* ViewController+MJKeyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DA59F61C11EFE700851BC5 /* ViewController+MJKeyValues.m */; };
 		69E705471CC91810007D0EE1 /* RACSubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E705451CC91810007D0EE1 /* RACSubjectVC.m */; };
 		69E705481CC91810007D0EE1 /* RACSubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E705451CC91810007D0EE1 /* RACSubjectVC.m */; };
 		69E705491CC91810007D0EE1 /* RACSubjectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E705461CC91810007D0EE1 /* RACSubjectVC.xib */; };
@@ -65,34 +64,6 @@
 		A3224C7B1C05610400675C60 /* TZTestOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3224C761C05610400675C60 /* TZTestOneViewController.xib */; };
 		A3224C7C1C05610400675C60 /* TZTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224C781C05610400675C60 /* TZTestTwoViewController.m */; };
 		A3224C7D1C05610400675C60 /* TZTestTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3224C791C05610400675C60 /* TZTestTwoViewController.xib */; };
-		A3224D431C05A1E500675C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D421C05A1E500675C60 /* main.m */; };
-		A3224D461C05A1E500675C60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D451C05A1E500675C60 /* AppDelegate.m */; };
-		A3224D491C05A1E500675C60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D481C05A1E500675C60 /* ViewController.m */; };
-		A3224D4C1C05A1E500675C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224D4A1C05A1E500675C60 /* Main.storyboard */; };
-		A3224D4E1C05A1E500675C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3224D4D1C05A1E500675C60 /* Assets.xcassets */; };
-		A3224D511C05A1E500675C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224D4F1C05A1E500675C60 /* LaunchScreen.storyboard */; };
-		A3224D611C05A24700675C60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D601C05A24700675C60 /* AppDelegate.m */; };
-		A3224D641C05A24700675C60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D631C05A24700675C60 /* ViewController.m */; };
-		A3224D671C05A24700675C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224D651C05A24700675C60 /* Main.storyboard */; };
-		A3224D691C05A24700675C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3224D681C05A24700675C60 /* Assets.xcassets */; };
-		A3224D6C1C05A24700675C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3224D6A1C05A24700675C60 /* LaunchScreen.storyboard */; };
-		A3224D821C05A3F800675C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D7F1C05A3F800675C60 /* main.m */; };
-		A3224D831C05A3F800675C60 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D811C05A3F800675C60 /* MJExtensionConfig.m */; };
-		A3224DBC1C05A42700675C60 /* MJAd.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224D9E1C05A42700675C60 /* MJAd.m */; };
-		A3224DBD1C05A42700675C60 /* MJBag.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DA01C05A42700675C60 /* MJBag.m */; };
-		A3224DBE1C05A42700675C60 /* MJBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DA21C05A42700675C60 /* MJBaseObject.m */; };
-		A3224DBF1C05A42700675C60 /* MJBook.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DA41C05A42700675C60 /* MJBook.m */; };
-		A3224DC01C05A42700675C60 /* MJBox.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DA61C05A42700675C60 /* MJBox.m */; };
-		A3224DC11C05A42700675C60 /* MJDog.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DA81C05A42700675C60 /* MJDog.m */; };
-		A3224DC21C05A42700675C60 /* MJStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DAA1C05A42700675C60 /* MJStatus.m */; };
-		A3224DC31C05A42700675C60 /* MJStatusResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DAC1C05A42700675C60 /* MJStatusResult.m */; };
-		A3224DC41C05A42700675C60 /* MJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DAE1C05A42700675C60 /* MJStudent.m */; };
-		A3224DC51C05A42700675C60 /* MJUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3224DB01C05A42700675C60 /* MJUser.m */; };
-		A32A5DC51C06A30A0000020D /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DC41C06A30A0000020D /* Test.m */; };
-		A32A5DC81C06BBF90000020D /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DC71C06BBF90000020D /* MyClass.m */; };
-		A32A5DCC1C06F31B0000020D /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DCB1C06F31B0000020D /* MyObject.m */; };
-		A32A5DD01C0709C60000020D /* SUTRuntimeMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DCF1C0709C60000020D /* SUTRuntimeMethodHelper.m */; };
-		A32A5DD31C0709DB0000020D /* SUTRuntimeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A32A5DD21C0709DB0000020D /* SUTRuntimeMethod.m */; };
 		A38C7ED71C61957300C6B167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7ED61C61957300C6B167 /* main.m */; };
 		A38C7EDA1C61957300C6B167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7ED91C61957300C6B167 /* AppDelegate.m */; };
 		A38C7EDD1C61957300C6B167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C7EDC1C61957300C6B167 /* ViewController.m */; };
@@ -352,8 +323,6 @@
 		6979DD321C0753FF009F3038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6979DD351C0753FF009F3038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6979DD371C0753FF009F3038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69DA59F51C11EFE700851BC5 /* ViewController+MJKeyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MJKeyValues.h"; sourceTree = "<group>"; };
-		69DA59F61C11EFE700851BC5 /* ViewController+MJKeyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MJKeyValues.m"; sourceTree = "<group>"; };
 		69E705441CC91810007D0EE1 /* RACSubjectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSubjectVC.h; sourceTree = "<group>"; };
 		69E705451CC91810007D0EE1 /* RACSubjectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSubjectVC.m; sourceTree = "<group>"; };
 		69E705461CC91810007D0EE1 /* RACSubjectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACSubjectVC.xib; sourceTree = "<group>"; };
@@ -419,58 +388,7 @@
 		A3224C791C05610400675C60 /* TZTestTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZTestTwoViewController.xib; sourceTree = "<group>"; };
 		A3224D2A1C059FB000675C60 /* JJ_Class_05_对象模型.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_05_对象模型.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3224D3F1C05A1E500675C60 /* JJ_Class_05_运行时.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_05_运行时.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3224D421C05A1E500675C60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A3224D441C05A1E500675C60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A3224D451C05A1E500675C60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A3224D471C05A1E500675C60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A3224D481C05A1E500675C60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A3224D4B1C05A1E500675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3224D4D1C05A1E500675C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A3224D501C05A1E500675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A3224D521C05A1E500675C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3224D5A1C05A24700675C60 /* JJ_Class_05_MJExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJ_Class_05_MJExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3224D5F1C05A24700675C60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A3224D601C05A24700675C60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A3224D621C05A24700675C60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A3224D631C05A24700675C60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A3224D661C05A24700675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3224D681C05A24700675C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A3224D6B1C05A24700675C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A3224D6D1C05A24700675C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3224D7E1C05A3F800675C60 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
-		A3224D7F1C05A3F800675C60 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A3224D801C05A3F800675C60 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
-		A3224D811C05A3F800675C60 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
-		A3224D9D1C05A42700675C60 /* MJAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJAd.h; sourceTree = "<group>"; };
-		A3224D9E1C05A42700675C60 /* MJAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJAd.m; sourceTree = "<group>"; };
-		A3224D9F1C05A42700675C60 /* MJBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBag.h; sourceTree = "<group>"; };
-		A3224DA01C05A42700675C60 /* MJBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBag.m; sourceTree = "<group>"; };
-		A3224DA11C05A42700675C60 /* MJBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBaseObject.h; sourceTree = "<group>"; };
-		A3224DA21C05A42700675C60 /* MJBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBaseObject.m; sourceTree = "<group>"; };
-		A3224DA31C05A42700675C60 /* MJBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBook.h; sourceTree = "<group>"; };
-		A3224DA41C05A42700675C60 /* MJBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBook.m; sourceTree = "<group>"; };
-		A3224DA51C05A42700675C60 /* MJBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBox.h; sourceTree = "<group>"; };
-		A3224DA61C05A42700675C60 /* MJBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBox.m; sourceTree = "<group>"; };
-		A3224DA71C05A42700675C60 /* MJDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDog.h; sourceTree = "<group>"; };
-		A3224DA81C05A42700675C60 /* MJDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDog.m; sourceTree = "<group>"; };
-		A3224DA91C05A42700675C60 /* MJStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJStatus.h; sourceTree = "<group>"; };
-		A3224DAA1C05A42700675C60 /* MJStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJStatus.m; sourceTree = "<group>"; };
-		A3224DAB1C05A42700675C60 /* MJStatusResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJStatusResult.h; sourceTree = "<group>"; };
-		A3224DAC1C05A42700675C60 /* MJStatusResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJStatusResult.m; sourceTree = "<group>"; };
-		A3224DAD1C05A42700675C60 /* MJStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJStudent.h; sourceTree = "<group>"; };
-		A3224DAE1C05A42700675C60 /* MJStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJStudent.m; sourceTree = "<group>"; };
-		A3224DAF1C05A42700675C60 /* MJUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJUser.h; sourceTree = "<group>"; };
-		A3224DB01C05A42700675C60 /* MJUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJUser.m; sourceTree = "<group>"; };
-		A32A5DC31C06A30A0000020D /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		A32A5DC41C06A30A0000020D /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
-		A32A5DC61C06BBF90000020D /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
-		A32A5DC71C06BBF90000020D /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
-		A32A5DCA1C06F31B0000020D /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
-		A32A5DCB1C06F31B0000020D /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
-		A32A5DCE1C0709C60000020D /* SUTRuntimeMethodHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTRuntimeMethodHelper.h; sourceTree = "<group>"; };
-		A32A5DCF1C0709C60000020D /* SUTRuntimeMethodHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTRuntimeMethodHelper.m; sourceTree = "<group>"; };
-		A32A5DD11C0709DB0000020D /* SUTRuntimeMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTRuntimeMethod.h; sourceTree = "<group>"; };
-		A32A5DD21C0709DB0000020D /* SUTRuntimeMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTRuntimeMethod.m; sourceTree = "<group>"; };
 		A38C7ED31C61957300C6B167 /* JJ_Class_12_崩溃.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_12_崩溃.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38C7ED61C61957300C6B167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A38C7ED81C61957300C6B167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1028,129 +946,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A3224D401C05A1E500675C60 /* JJ_Class_05_运行时 */ = {
-			isa = PBXGroup;
-			children = (
-				A32A5DCD1C0709900000020D /* 方法与消息 */,
-				A32A5DC91C06F2EC0000020D /* 成员变量与属性 */,
-				A32A5DC21C06A2C20000020D /* 类与对象 */,
-				A3224D441C05A1E500675C60 /* AppDelegate.h */,
-				A3224D451C05A1E500675C60 /* AppDelegate.m */,
-				A3224D471C05A1E500675C60 /* ViewController.h */,
-				A3224D481C05A1E500675C60 /* ViewController.m */,
-				A3224D4A1C05A1E500675C60 /* Main.storyboard */,
-				A3224D4D1C05A1E500675C60 /* Assets.xcassets */,
-				A3224D4F1C05A1E500675C60 /* LaunchScreen.storyboard */,
-				A3224D521C05A1E500675C60 /* Info.plist */,
-				A3224D411C05A1E500675C60 /* Supporting Files */,
-			);
-			path = "JJ_Class_05_运行时";
-			sourceTree = "<group>";
-		};
-		A3224D411C05A1E500675C60 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A3224D421C05A1E500675C60 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A3224D5B1C05A24700675C60 /* JJ_Class_05_MJExtension */ = {
-			isa = PBXGroup;
-			children = (
-				A3224D9C1C05A42700675C60 /* Model */,
-				A3224D7D1C05A3F800675C60 /* Main */,
-				A3224D5F1C05A24700675C60 /* AppDelegate.h */,
-				A3224D601C05A24700675C60 /* AppDelegate.m */,
-				A3224D621C05A24700675C60 /* ViewController.h */,
-				A3224D631C05A24700675C60 /* ViewController.m */,
-				69DA59F51C11EFE700851BC5 /* ViewController+MJKeyValues.h */,
-				69DA59F61C11EFE700851BC5 /* ViewController+MJKeyValues.m */,
-				A3224D651C05A24700675C60 /* Main.storyboard */,
-				A3224D681C05A24700675C60 /* Assets.xcassets */,
-				A3224D6A1C05A24700675C60 /* LaunchScreen.storyboard */,
-				A3224D6D1C05A24700675C60 /* Info.plist */,
-				A3224D5C1C05A24700675C60 /* Supporting Files */,
-			);
-			path = JJ_Class_05_MJExtension;
-			sourceTree = "<group>";
-		};
-		A3224D5C1C05A24700675C60 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A3224D7D1C05A3F800675C60 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				A3224D7E1C05A3F800675C60 /* main.h */,
-				A3224D7F1C05A3F800675C60 /* main.m */,
-				A3224D801C05A3F800675C60 /* MJExtensionConfig.h */,
-				A3224D811C05A3F800675C60 /* MJExtensionConfig.m */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		A3224D9C1C05A42700675C60 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A3224D9D1C05A42700675C60 /* MJAd.h */,
-				A3224D9E1C05A42700675C60 /* MJAd.m */,
-				A3224D9F1C05A42700675C60 /* MJBag.h */,
-				A3224DA01C05A42700675C60 /* MJBag.m */,
-				A3224DA11C05A42700675C60 /* MJBaseObject.h */,
-				A3224DA21C05A42700675C60 /* MJBaseObject.m */,
-				A3224DA31C05A42700675C60 /* MJBook.h */,
-				A3224DA41C05A42700675C60 /* MJBook.m */,
-				A3224DA51C05A42700675C60 /* MJBox.h */,
-				A3224DA61C05A42700675C60 /* MJBox.m */,
-				A3224DA71C05A42700675C60 /* MJDog.h */,
-				A3224DA81C05A42700675C60 /* MJDog.m */,
-				A3224DA91C05A42700675C60 /* MJStatus.h */,
-				A3224DAA1C05A42700675C60 /* MJStatus.m */,
-				A3224DAB1C05A42700675C60 /* MJStatusResult.h */,
-				A3224DAC1C05A42700675C60 /* MJStatusResult.m */,
-				A3224DAD1C05A42700675C60 /* MJStudent.h */,
-				A3224DAE1C05A42700675C60 /* MJStudent.m */,
-				A3224DAF1C05A42700675C60 /* MJUser.h */,
-				A3224DB01C05A42700675C60 /* MJUser.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A32A5DC21C06A2C20000020D /* 类与对象 */ = {
-			isa = PBXGroup;
-			children = (
-				A32A5DC31C06A30A0000020D /* Test.h */,
-				A32A5DC41C06A30A0000020D /* Test.m */,
-				A32A5DC61C06BBF90000020D /* MyClass.h */,
-				A32A5DC71C06BBF90000020D /* MyClass.m */,
-			);
-			path = "类与对象";
-			sourceTree = "<group>";
-		};
-		A32A5DC91C06F2EC0000020D /* 成员变量与属性 */ = {
-			isa = PBXGroup;
-			children = (
-				A32A5DCA1C06F31B0000020D /* MyObject.h */,
-				A32A5DCB1C06F31B0000020D /* MyObject.m */,
-			);
-			path = "成员变量与属性";
-			sourceTree = "<group>";
-		};
-		A32A5DCD1C0709900000020D /* 方法与消息 */ = {
-			isa = PBXGroup;
-			children = (
-				A32A5DCE1C0709C60000020D /* SUTRuntimeMethodHelper.h */,
-				A32A5DCF1C0709C60000020D /* SUTRuntimeMethodHelper.m */,
-				A32A5DD11C0709DB0000020D /* SUTRuntimeMethod.h */,
-				A32A5DD21C0709DB0000020D /* SUTRuntimeMethod.m */,
-			);
-			path = "方法与消息";
-			sourceTree = "<group>";
-		};
 		A38C7EBF1C61951D00C6B167 /* JJ_Class_12_崩溃 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1299,8 +1094,6 @@
 		A391FCE01C08028900EF9780 /* JJ_Class_05_运行时 */ = {
 			isa = PBXGroup;
 			children = (
-				A3224D401C05A1E500675C60 /* JJ_Class_05_运行时 */,
-				A3224D5B1C05A24700675C60 /* JJ_Class_05_MJExtension */,
 			);
 			name = "JJ_Class_05_运行时";
 			sourceTree = "<group>";
@@ -2295,9 +2088,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3224D511C05A1E500675C60 /* LaunchScreen.storyboard in Resources */,
-				A3224D4E1C05A1E500675C60 /* Assets.xcassets in Resources */,
-				A3224D4C1C05A1E500675C60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2305,9 +2095,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3224D6C1C05A24700675C60 /* LaunchScreen.storyboard in Resources */,
-				A3224D691C05A24700675C60 /* Assets.xcassets in Resources */,
-				A3224D671C05A24700675C60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2840,14 +2627,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3224D491C05A1E500675C60 /* ViewController.m in Sources */,
-				A32A5DC51C06A30A0000020D /* Test.m in Sources */,
-				A32A5DCC1C06F31B0000020D /* MyObject.m in Sources */,
-				A32A5DC81C06BBF90000020D /* MyClass.m in Sources */,
-				A3224D461C05A1E500675C60 /* AppDelegate.m in Sources */,
-				A3224D431C05A1E500675C60 /* main.m in Sources */,
-				A32A5DD31C0709DB0000020D /* SUTRuntimeMethod.m in Sources */,
-				A32A5DD01C0709C60000020D /* SUTRuntimeMethodHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2855,21 +2634,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3224DC21C05A42700675C60 /* MJStatus.m in Sources */,
-				69DA59F71C11EFE700851BC5 /* ViewController+MJKeyValues.m in Sources */,
-				A3224DBE1C05A42700675C60 /* MJBaseObject.m in Sources */,
-				A3224D641C05A24700675C60 /* ViewController.m in Sources */,
-				A3224DC51C05A42700675C60 /* MJUser.m in Sources */,
-				A3224DC41C05A42700675C60 /* MJStudent.m in Sources */,
-				A3224D821C05A3F800675C60 /* main.m in Sources */,
-				A3224D831C05A3F800675C60 /* MJExtensionConfig.m in Sources */,
-				A3224DBD1C05A42700675C60 /* MJBag.m in Sources */,
-				A3224D611C05A24700675C60 /* AppDelegate.m in Sources */,
-				A3224DBF1C05A42700675C60 /* MJBook.m in Sources */,
-				A3224DC01C05A42700675C60 /* MJBox.m in Sources */,
-				A3224DC11C05A42700675C60 /* MJDog.m in Sources */,
-				A3224DC31C05A42700675C60 /* MJStatusResult.m in Sources */,
-				A3224DBC1C05A42700675C60 /* MJAd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2972,38 +2736,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A3224C521C055FC000675C60 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		A3224D4A1C05A1E500675C60 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3224D4B1C05A1E500675C60 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A3224D4F1C05A1E500675C60 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3224D501C05A1E500675C60 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		A3224D651C05A24700675C60 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3224D661C05A24700675C60 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A3224D6A1C05A24700675C60 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3224D6B1C05A24700675C60 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
