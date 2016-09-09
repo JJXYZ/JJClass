@@ -205,22 +205,6 @@ http://www.cocoachina.com/cms/wap.php?action=article&id=11970 (JJ_Class_06_RunLo
  
   */
 
-#pragma mark - 运行时
-/**
- 南峰子的技术博客:Objective-C Runtime 运行时之一：类与对象 (JJ_Class_05_运行时)
- http://southpeak.github.io/blog/2014/10/25/objective-c-runtime-yun-xing-shi-zhi-lei-yu-dui-xiang/
- 
- 南峰子的技术博客:Objective-C Runtime 运行时之二：成员变量与属性 (JJ_Class_05_运行时)
- http://southpeak.github.io/blog/2014/10/30/objective-c-runtime-yun-xing-shi-zhi-er-:cheng-yuan-bian-liang-yu-shu-xing/
- 
- 南峰子的技术博客:Objective-C Runtime 运行时之三：方法与消息 (JJ_Class_05_运行时)
- http://southpeak.github.io/blog/2014/11/03/objective-c-runtime-yun-xing-shi-zhi-san-:fang-fa-yu-xiao-xi-zhuan-fa/
-
- 
- */
-
-
-
 #pragma mark - 插件
 /**
  
@@ -238,12 +222,6 @@ http://www.cocoachina.com/cms/wap.php?action=article&id=11970 (JJ_Class_06_RunLo
  */
 
 
-#pragma mark - VOIP
-/**
- 云之讯开放平台:iOS SDK开发指南
- http://113.31.88.100:1180/doku.php?id=ios_sdk%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97
- 
- */
 
 #pragma mark - Font
 /**
