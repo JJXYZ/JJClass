@@ -139,6 +139,8 @@ typedef void (^RWSignInResponse)(BOOL success);
             
             [subscriber sendNext:@(success)];
             [subscriber sendCompleted];
+            
+            [self.searchSubject sendNext:@(YES)];
         }];
         
         return [RACDisposable disposableWithBlock:^{
@@ -183,6 +185,14 @@ typedef void (^RWSignInResponse)(BOOL success);
         return signal;
     }];
     return _executeSearchCommand;
+}
+
+- (RACSubject *)searchSubject {
+    if (_searchSubject) {
+        return _searchSubject;
+    }
+    _searchSubject = [RACSubject subject];
+    return _searchSubject;
 }
 
 @end

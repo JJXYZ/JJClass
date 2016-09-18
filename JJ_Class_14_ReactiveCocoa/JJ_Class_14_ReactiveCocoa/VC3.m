@@ -29,7 +29,7 @@
     [self searchButton_RAC];
     [self searchActivity_RAC];
     [self resignFirstResponder_RAC];
-    
+    [self searchSubject_RAC];    
 }
 
 #pragma mark - Private Methods
@@ -80,6 +80,11 @@
     }];
 }
 
+- (void)searchSubject_RAC {
+    [self.vm3.searchSubject subscribeNext:^(id x) {
+        NSLog(@"searchSubject_RAC");
+    }];
+}
 
 
 

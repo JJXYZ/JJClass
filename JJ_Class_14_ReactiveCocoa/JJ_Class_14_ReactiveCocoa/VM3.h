@@ -17,6 +17,8 @@
 
 @property (strong, nonatomic) RACCommand *executeSearchCommand;
 
+@property (nonatomic, strong) RACSubject *searchSubject;
+
 /** TODO: */
 - (instancetype)initWithVM3Imp:(id<VM3Protocol>)vm3Imp;
 
