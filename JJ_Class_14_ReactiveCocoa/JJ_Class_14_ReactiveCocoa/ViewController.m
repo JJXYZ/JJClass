@@ -10,6 +10,7 @@
 #import "VC1.h"
 #import "VC2.h"
 #import "VC3.h"
+#import "VC4.h"
 
 /**
  *  ReactiveCocoa的核心是信号，它是一个事件流。使用ReactiveCocoa时，对于同一个问题，可能会有多种不同的方法来解决。ReactiveCocoa的目的就是为了简化我们的代码并更容易理解。如果使用一个清晰的管道，我们可以很容易理解问题的处理过程。在下一部分，我们将会讨论错误事件的处理及完成事件的处理。
@@ -26,6 +27,8 @@
 @end
 
 @implementation ViewController
+
+#pragma mark - Life Cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,6 +52,8 @@
 }
 
 - (IBAction)clickVC4:(id)sender {
+    VC4 *vc4 = [[VC4 alloc] init];
+    [self.navigationController pushViewController:vc4 animated:YES];
 }
 
 - (IBAction)clickVC5:(id)sender {

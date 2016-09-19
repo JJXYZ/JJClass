@@ -25,8 +25,7 @@
  南峰子的技术博客:MVVM Tutorial with ReactiveCocoa(JJ_Class_07_ReactiveCocoa_MVVM_Tutorial)
  http://southpeak.github.io/2014/08/12/mvvm-tutorial-with-reactivecocoa-1/
  http://southpeak.github.io/2014/08/12/mvvm-tutorial-with-reactivecocoa-2/
- 
- 
+
  */
 
 
