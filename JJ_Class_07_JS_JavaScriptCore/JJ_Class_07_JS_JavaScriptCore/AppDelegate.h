@@ -9,8 +9,10 @@
 
 /**
  *  http://blog.csdn.net/lizhongfu2013/article/details/9232129
+     IOS7开发～JavaScriptCore
  
-    IOS7开发～JavaScriptCore
+    iOS7新JavaScriptCore框架入门介绍
+    http://blog.iderzheng.com/introduction-to-ios7-javascriptcore-framework/
  */
 
 

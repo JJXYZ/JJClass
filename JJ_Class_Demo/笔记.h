@@ -99,56 +99,6 @@
  */
 
 
-#pragma mark - CocoaPods
-
-/**
- *
- 
- 
- 
- 唐巧的技术博客:用CocoaPods做iOS程序的依赖管理
- http://blog.devtang.com/blog/2014/05/25/use-cocoapod-to-manage-ios-lib-dependency/
- 
- 
- 
- 生成个人的pods
- 1.王中周的个人博客:CocoaPods详解之----制作篇
- http://blog.csdn.net/wzzvictory/article/details/20067595
- 2.玉令天下的博客:Publish Your Pods on CocoaPods with Trunk
- http://yulingtianxia.com/blog/2014/05/26/publish-your-pods-on-cocoapods-with-trunk/
- 
- 
- 
- 安装pods
- 
- 万花筒 邪灵噶 的博客:cocoapods安装与使用
- http://blog.csdn.net/folish_audi/article/details/37501403
- Code4App:CocoaPods安装和使用教程
- http://code4app.com/article/cocoapods-install-usage
- 最新版 CocoaPods 的安装流程
- http://www.tuicool.com/articles/7VvuAr3
- 
- 注意:
- 1.gem sources -a https://ruby.taobao.org/  被干掉了使用 http://rubygems.org/
- 2.sudo gem install cocoapods 备注：苹果系统升级 OS X EL Capitan 后改为 $sudo gem install -n /usr/local/bin cocoapods
- 
- 
- 
- 
- Podfile语法参考(译)
- http://www.jianshu.com/p/8af475c4f717
- 
- 王中周的个人博客:CocoaPods详解之----进阶篇
- http://blog.csdn.net/wzzvictory/article/details/19178709
- 
- 
- 
- Recording:从工程中删除Cocoapods
- http://blog.csdn.net/freedom2028/article/details/10244819
- 
- 
- */
-
 #pragma mark - HTTP
 
 /**
@@ -173,21 +123,6 @@
  
  */
 
-#pragma mark - 关于Git
-
-/**
- 
- 
- 
- 新Mac
- 拷贝/Users/JayXu/.ssh/id_rsa
- 
- 
- hustpzb的专栏:Git SSH Key 生成步骤
- http://blog.csdn.net/hustpzb/article/details/8230454/
- 
- 
-*/
 
 #pragma mark - NSCoder
 /**
@@ -197,57 +132,12 @@
  */
 
 
-#pragma mark - RunLoop
-/**
- 
-CocoaChina:深入理解RunLoop
-http://www.cocoachina.com/cms/wap.php?action=article&id=11970 (JJ_Class_06_RunLoop)
- 
-  */
-
-#pragma mark - 插件
-/**
- 
- github:Alcatraz
- 
- 唐巧的技术博客:使用Alcatraz来管理Xcode插件:
- http://blog.devtang.com/blog/2014/03/05/use-alcatraz-to-manage-xcode-plugins/
- 
- 自动添加注释插件:VVDocumenter
- 设置RGB颜色 预览的插件:ColorSense
- 自动对齐XAlign.tar:XAlign.xcplugin
- 图片名字提示插件KSImageNamed-Xcode-master
- 滤波器FuzzyAutocompletePlugin-master
-
- */
 
 
 
-#pragma mark - Font
-/**
- 
- 曾静的技术博客:在iOS开发中使用自定义字体
- http://git.devzeng.com/blog/using-custom-font-in-ios.html
- 
- */
 
-#pragma mark - SDWebImage
-/**
- 
- 
- CocoaChina:最新版SDWebImage的使用
- http://www.cocoachina.com/ios/20141212/10622.html
- 
-  */
-#pragma mark - JavaScriptCore
-/**
- IOS7开发～JavaScriptCore
- http://blog.csdn.net/lizhongfu2013/article/details/9232129
- iOS7新JavaScriptCore框架入门介绍
- http://blog.iderzheng.com/introduction-to-ios7-javascriptcore-framework/
-  */
 
- 
+
  
  
  
