@@ -6,6 +6,25 @@
 //  Copyright © 2016年 JayJJ. All rights reserved.
 //
 
+/*
+ 
+ #pragma mark - Lifecycle
+ #pragma mark - Private Methods
+ #pragma mark - Public Methods
+ #pragma mark - Inherit
+ #pragma mark - Event
+ #pragma mark - Property
+ #pragma mark - Override Method()
+ 
+ #warning xxxxxx
+ 
+ -fno-objc-arc(非ARC->ARC)
+ 
+ FaceBook  KVO
+ 
+ */
+
+
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
