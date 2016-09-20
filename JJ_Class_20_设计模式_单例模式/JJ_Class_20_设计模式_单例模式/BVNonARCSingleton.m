@@ -22,18 +22,18 @@ static BVNonARCSingleton *sharedInstance = nil;
 }
 
 // 线程安全的
-//+ (BVNonARCSingleton *)sharedInstance {
-//    // 保证在实例化的时候是线程安全的（当然，该方法不能保证该单例中所有方法的调用都是线程安全的）
-//    @synchronized (self)
-//    {
-//        if(sharedInstance == nil)
-//        {
-//            sharedInstance = [[super allocWithZone:NULL] init];
-//        }
-//    }
-//    
-//    return sharedInstance;
-//}
++ (BVNonARCSingleton *)sharedInstance_1 {
+    // 保证在实例化的时候是线程安全的（当然，该方法不能保证该单例中所有方法的调用都是线程安全的）
+    @synchronized (self)
+    {
+        if(sharedInstance == nil)
+        {
+            sharedInstance = [[super allocWithZone:NULL] init];
+        }
+    }
+    
+    return sharedInstance;
+}
 
 
 // 当第一次使用这个单例时，会调用这个init方法。

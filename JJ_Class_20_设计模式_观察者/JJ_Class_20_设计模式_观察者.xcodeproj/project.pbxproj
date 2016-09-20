@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6901A5291D90D1800094F303 /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6901A5281D90D1800094F303 /* WeatherData.m */; };
+		6901A52E1D90D2CC0094F303 /* CurrentConditionsDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6901A52D1D90D2CC0094F303 /* CurrentConditionsDisplay.m */; };
+		6901A5311D90D30A0094F303 /* StatisticsDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6901A5301D90D30A0094F303 /* StatisticsDisplay.m */; };
+		6901A5341D90D32C0094F303 /* ForecastDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6901A5331D90D32C0094F303 /* ForecastDisplay.m */; };
 		6960EDEB1D900A7000759326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EDEA1D900A7000759326 /* main.m */; };
 		6960EDEE1D900A7000759326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EDED1D900A7000759326 /* AppDelegate.m */; };
 		6960EDF11D900A7000759326 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EDF01D900A7000759326 /* ViewController.m */; };
@@ -16,12 +20,20 @@
 		6960EE141D900A9A00759326 /* BVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EE041D900A9A00759326 /* BVViewController.m */; };
 		6960EE151D900A9A00759326 /* KVOObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EE071D900A9A00759326 /* KVOObserver.m */; };
 		6960EE161D900A9A00759326 /* KVOSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EE091D900A9A00759326 /* KVOSubject.m */; };
-		6960EE171D900A9A00759326 /* OtherSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EE0C1D900A9A00759326 /* OtherSubscriber.m */; };
-		6960EE181D900A9A00759326 /* SomeSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EE0E1D900A9A00759326 /* SomeSubscriber.m */; };
-		6960EE191D900A9A00759326 /* StandardSubjectImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EE121D900A9A00759326 /* StandardSubjectImplementation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6901A5261D90D10A0094F303 /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		6901A5271D90D1800094F303 /* WeatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherData.h; sourceTree = "<group>"; };
+		6901A5281D90D1800094F303 /* WeatherData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = "<group>"; };
+		6901A52A1D90D23A0094F303 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		6901A52B1D90D25E0094F303 /* DisplayElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayElement.h; sourceTree = "<group>"; };
+		6901A52C1D90D2CC0094F303 /* CurrentConditionsDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentConditionsDisplay.h; sourceTree = "<group>"; };
+		6901A52D1D90D2CC0094F303 /* CurrentConditionsDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentConditionsDisplay.m; sourceTree = "<group>"; };
+		6901A52F1D90D30A0094F303 /* StatisticsDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsDisplay.h; sourceTree = "<group>"; };
+		6901A5301D90D30A0094F303 /* StatisticsDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsDisplay.m; sourceTree = "<group>"; };
+		6901A5321D90D32C0094F303 /* ForecastDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastDisplay.h; sourceTree = "<group>"; };
+		6901A5331D90D32C0094F303 /* ForecastDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastDisplay.m; sourceTree = "<group>"; };
 		6960EDE61D900A7000759326 /* JJ_Class_20_设计模式_观察者.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_20_设计模式_观察者.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6960EDEA1D900A7000759326 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6960EDEC1D900A7000759326 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,14 +50,6 @@
 		6960EE071D900A9A00759326 /* KVOObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOObserver.m; sourceTree = "<group>"; };
 		6960EE081D900A9A00759326 /* KVOSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOSubject.h; sourceTree = "<group>"; };
 		6960EE091D900A9A00759326 /* KVOSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOSubject.m; sourceTree = "<group>"; };
-		6960EE0B1D900A9A00759326 /* OtherSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherSubscriber.h; sourceTree = "<group>"; };
-		6960EE0C1D900A9A00759326 /* OtherSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherSubscriber.m; sourceTree = "<group>"; };
-		6960EE0D1D900A9A00759326 /* SomeSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeSubscriber.h; sourceTree = "<group>"; };
-		6960EE0E1D900A9A00759326 /* SomeSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeSubscriber.m; sourceTree = "<group>"; };
-		6960EE0F1D900A9A00759326 /* StandardObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardObserver.h; sourceTree = "<group>"; };
-		6960EE101D900A9A00759326 /* StandardSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardSubject.h; sourceTree = "<group>"; };
-		6960EE111D900A9A00759326 /* StandardSubjectImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardSubjectImplementation.h; sourceTree = "<group>"; };
-		6960EE121D900A9A00759326 /* StandardSubjectImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardSubjectImplementation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6901A5251D90C3850094F303 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				6960EE031D900A9A00759326 /* BVViewController.h */,
+				6960EE041D900A9A00759326 /* BVViewController.m */,
+				6960EE051D900A9A00759326 /* KVO */,
+			);
+			name = KVO;
+			sourceTree = "<group>";
+		};
+		6901A5351D90DAAC0094F303 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				6901A52A1D90D23A0094F303 /* Observer.h */,
+				6901A52B1D90D25E0094F303 /* DisplayElement.h */,
+				6901A52C1D90D2CC0094F303 /* CurrentConditionsDisplay.h */,
+				6901A52D1D90D2CC0094F303 /* CurrentConditionsDisplay.m */,
+				6901A52F1D90D30A0094F303 /* StatisticsDisplay.h */,
+				6901A5301D90D30A0094F303 /* StatisticsDisplay.m */,
+				6901A5321D90D32C0094F303 /* ForecastDisplay.h */,
+				6901A5331D90D32C0094F303 /* ForecastDisplay.m */,
+			);
+			name = Observer;
+			sourceTree = "<group>";
+		};
 		6960EDDD1D900A7000759326 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +107,9 @@
 		6960EDE81D900A7000759326 /* JJ_Class_20_设计模式_观察者 */ = {
 			isa = PBXGroup;
 			children = (
-				6960EE001D900A8400759326 /* 观察者 */,
+				6901A5251D90C3850094F303 /* KVO */,
+				6960EE001D900A8400759326 /* Subject */,
+				6901A5351D90DAAC0094F303 /* Observer */,
 				6960EDEC1D900A7000759326 /* AppDelegate.h */,
 				6960EDED1D900A7000759326 /* AppDelegate.m */,
 				6960EDEF1D900A7000759326 /* ViewController.h */,
@@ -100,15 +131,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6960EE001D900A8400759326 /* 观察者 */ = {
+		6960EE001D900A8400759326 /* Subject */ = {
 			isa = PBXGroup;
 			children = (
-				6960EE031D900A9A00759326 /* BVViewController.h */,
-				6960EE041D900A9A00759326 /* BVViewController.m */,
-				6960EE051D900A9A00759326 /* KVO */,
-				6960EE0A1D900A9A00759326 /* StandardObserver */,
+				6901A5261D90D10A0094F303 /* Subject.h */,
+				6901A5271D90D1800094F303 /* WeatherData.h */,
+				6901A5281D90D1800094F303 /* WeatherData.m */,
 			);
-			name = "观察者";
+			name = Subject;
 			sourceTree = "<group>";
 		};
 		6960EE051D900A9A00759326 /* KVO */ = {
@@ -120,21 +150,6 @@
 				6960EE091D900A9A00759326 /* KVOSubject.m */,
 			);
 			path = KVO;
-			sourceTree = "<group>";
-		};
-		6960EE0A1D900A9A00759326 /* StandardObserver */ = {
-			isa = PBXGroup;
-			children = (
-				6960EE0B1D900A9A00759326 /* OtherSubscriber.h */,
-				6960EE0C1D900A9A00759326 /* OtherSubscriber.m */,
-				6960EE0D1D900A9A00759326 /* SomeSubscriber.h */,
-				6960EE0E1D900A9A00759326 /* SomeSubscriber.m */,
-				6960EE0F1D900A9A00759326 /* StandardObserver.h */,
-				6960EE101D900A9A00759326 /* StandardSubject.h */,
-				6960EE111D900A9A00759326 /* StandardSubjectImplementation.h */,
-				6960EE121D900A9A00759326 /* StandardSubjectImplementation.m */,
-			);
-			path = StandardObserver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,15 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6901A5291D90D1800094F303 /* WeatherData.m in Sources */,
 				6960EDF11D900A7000759326 /* ViewController.m in Sources */,
+				6901A52E1D90D2CC0094F303 /* CurrentConditionsDisplay.m in Sources */,
 				6960EDEE1D900A7000759326 /* AppDelegate.m in Sources */,
-				6960EE171D900A9A00759326 /* OtherSubscriber.m in Sources */,
-				6960EE181D900A9A00759326 /* SomeSubscriber.m in Sources */,
 				6960EE161D900A9A00759326 /* KVOSubject.m in Sources */,
 				6960EE151D900A9A00759326 /* KVOObserver.m in Sources */,
 				6960EE141D900A9A00759326 /* BVViewController.m in Sources */,
 				6960EDEB1D900A7000759326 /* main.m in Sources */,
-				6960EE191D900A9A00759326 /* StandardSubjectImplementation.m in Sources */,
+				6901A5341D90D32C0094F303 /* ForecastDisplay.m in Sources */,
+				6901A5311D90D30A0094F303 /* StatisticsDisplay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +387,7 @@
 				6960EDFF1D900A7000759326 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

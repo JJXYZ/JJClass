@@ -23,28 +23,27 @@
     return sharedInstance;
 }
 
-////不用GCD的方法，使用@synchronized
-//+ (BVARCSingleton *) sharedInstance
-//{
-//    static BVARCSingleton *sharedInstance = nil;
-//    @synchronized(self)
-//    {
-//            if (sharedInstance == nil )
-//            {
-//                sharedInstance = [[self alloc] init];
-//            }
-//    }
-//
-//    return sharedInstance;
-//}
+//不用GCD的方法，使用@synchronized
++ (BVARCSingleton *) sharedInstance_1
+{
+    static BVARCSingleton *sharedInstance = nil;
+    if (sharedInstance == nil) {
+        @synchronized(self) {
+            if (sharedInstance == nil) {
+                sharedInstance = [[self alloc] init];
+            }
+        }
+    }
+    return sharedInstance;
+}
 
 //使用宏
-//+ (BVARCSingleton *) sharedInstance
-//{
-//    DEFINE_SHARED_INSTANCE_USING_BLOCK(^{
-//        return [[self alloc] init];
-//    });
-//}
++ (BVARCSingleton *) sharedInstance_2
+{
+    DEFINE_SHARED_INSTANCE_USING_BLOCK(^{
+        return [[self alloc] init];
+    });
+}
 
 
 

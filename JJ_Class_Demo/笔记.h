@@ -6,25 +6,7 @@
 //  Copyright © 2015年 JJ. All rights reserved.
 //
 
-#pragma mark - 代码
 
-/*
- 
-#pragma mark - Lifecycle
-#pragma mark - Private Methods
-#pragma mark - Public Methods
-#pragma mark - Inherit
-#pragma mark - Event
-#pragma mark - Property
-#pragma mark - Override Method()
- 
- #warning xxxxxx
- 
- -fno-objc-arc(非ARC->ARC)
- 
- FaceBook  KVO
- 
- */
 
 #pragma mark - 编译
 /**

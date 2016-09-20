@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "BVNonARCSingleton.h"
+#import "BVARCSingleton.h"
 
 @interface ViewController ()
 
@@ -16,13 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    [BVNonARCSingleton sharedInstance].tempProperty = @"非ARC单例的实现";
+    NSLog(@"%@", [BVNonARCSingleton sharedInstance].tempProperty);
+    
+    [BVARCSingleton sharedInstance].tempProperty = @"ARC单例的实现";
+    NSLog(@"%@", [BVARCSingleton sharedInstance].tempProperty);
 }
 
 

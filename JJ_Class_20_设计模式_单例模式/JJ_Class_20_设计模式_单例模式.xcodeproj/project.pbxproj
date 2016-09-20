@@ -13,9 +13,8 @@
 		6960EDC41D90099600759326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6960EDC21D90099600759326 /* Main.storyboard */; };
 		6960EDC61D90099600759326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6960EDC51D90099600759326 /* Assets.xcassets */; };
 		6960EDC91D90099600759326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6960EDC71D90099600759326 /* LaunchScreen.storyboard */; };
-		6960EDD91D9009ED00759326 /* BVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EDD21D9009ED00759326 /* BVAppDelegate.m */; };
 		6960EDDA1D9009ED00759326 /* BVARCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EDD41D9009ED00759326 /* BVARCSingleton.m */; };
-		6960EDDB1D9009ED00759326 /* BVNonARCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EDD61D9009ED00759326 /* BVNonARCSingleton.m */; };
+		6960EDDB1D9009ED00759326 /* BVNonARCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6960EDD61D9009ED00759326 /* BVNonARCSingleton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +28,6 @@
 		6960EDC51D90099600759326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6960EDC81D90099600759326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6960EDCA1D90099600759326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6960EDD11D9009ED00759326 /* BVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVAppDelegate.h; sourceTree = "<group>"; };
-		6960EDD21D9009ED00759326 /* BVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVAppDelegate.m; sourceTree = "<group>"; };
 		6960EDD31D9009ED00759326 /* BVARCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVARCSingleton.h; sourceTree = "<group>"; };
 		6960EDD41D9009ED00759326 /* BVARCSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVARCSingleton.m; sourceTree = "<group>"; };
 		6960EDD51D9009ED00759326 /* BVNonARCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVNonARCSingleton.h; sourceTree = "<group>"; };
@@ -92,8 +89,6 @@
 		6960EDD01D9009DA00759326 /* BV */ = {
 			isa = PBXGroup;
 			children = (
-				6960EDD11D9009ED00759326 /* BVAppDelegate.h */,
-				6960EDD21D9009ED00759326 /* BVAppDelegate.m */,
 				6960EDD31D9009ED00759326 /* BVARCSingleton.h */,
 				6960EDD41D9009ED00759326 /* BVARCSingleton.m */,
 				6960EDD51D9009ED00759326 /* BVNonARCSingleton.h */,
@@ -177,7 +172,6 @@
 				6960EDDA1D9009ED00759326 /* BVARCSingleton.m in Sources */,
 				6960EDDB1D9009ED00759326 /* BVNonARCSingleton.m in Sources */,
 				6960EDBE1D90099600759326 /* AppDelegate.m in Sources */,
-				6960EDD91D9009ED00759326 /* BVAppDelegate.m in Sources */,
 				6960EDBB1D90099600759326 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +327,7 @@
 				6960EDCF1D90099600759326 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

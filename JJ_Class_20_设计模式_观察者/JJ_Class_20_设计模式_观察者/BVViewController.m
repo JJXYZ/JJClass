@@ -9,9 +9,6 @@
 #import "BVViewController.h"
 #import "KVOSubject.h"
 #import "KVOObserver.h"
-#import "StandardSubjectImplementation.h"
-#import "SomeSubscriber.h"
-#import "OtherSubscriber.h"
 
 #define AnyNotification @"broadcastMessage"
 
@@ -88,19 +85,6 @@
     [kvoSubj removeObserver:kvoObserver forKeyPath:@"changeableProperty"];
 }
 
-#pragma mark- 标准Observer
-- (IBAction)btnStandardObservationTest:(id)sender {
-    StandardSubjectImplementation *subj = [[StandardSubjectImplementation alloc] init];
-    SomeSubscriber *someSubscriber = [[SomeSubscriber alloc] init];
-    OtherSubscriber *otherSubscriber = [[OtherSubscriber alloc] init];
-    
-    [subj addObserver:someSubscriber];
-    [subj addObserver: otherSubscriber];
-    
-    [subj changeValue:@"version" andValue:@"1.0.0"];
-}
 
-
-#pragma mark- 标准的观察者模式
 
 @end

@@ -61,6 +61,13 @@
             ReferencedContainer = "container:JJ_Class_20_&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;_&#x89c2;&#x5bdf;&#x8005;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = "disable"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

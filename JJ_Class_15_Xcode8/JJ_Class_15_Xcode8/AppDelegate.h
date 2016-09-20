@@ -15,6 +15,8 @@
     http://blog.csdn.net/developer_zhao/article/details/52561643
     Xcode8.0程序运行后打印出了一堆东西
  
+    OS_ACTIVITY_MODE:disable
+ 
  */
 
 
