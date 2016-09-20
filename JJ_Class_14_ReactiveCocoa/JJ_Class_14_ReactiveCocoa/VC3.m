@@ -41,7 +41,7 @@
     RAC是一个用于做绑定操作的宏，上面的代码会使用rac_textSignal发出的next信号来更新viewModel的searchText属性。
  */
 - (void)searchTextField_RAC {
-    RAC(self.vm3, searchText) = self.searchTextField.rac_textSignal;
+    RAC(self.vm3, searchText) = [RACSignal merge:@[self.searchTextField.rac_textSignal, RACObserve(self.searchTextField, text)]];
 }
 
 /**
@@ -83,6 +83,14 @@
 - (void)searchSubject_RAC {
     [self.vm3.searchSubject subscribeNext:^(id x) {
         NSLog(@"searchSubject_RAC");
+        
+        self.searchTextField.text = @"哈哈哈哈";
+        
+        
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"self.vm3.searchText = %@", self.vm3.searchText);
+        });
     }];
 }
 
