@@ -22,6 +22,8 @@
 		6901A5DB1D913C1B0094F303 /* VC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 6901A5D91D913C1B0094F303 /* VC4.m */; };
 		6901A5DC1D913C1B0094F303 /* VC4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6901A5DA1D913C1B0094F303 /* VC4.xib */; };
 		6901A5DF1D913D070094F303 /* View1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6901A5DE1D913D070094F303 /* View1.m */; };
+		691F60BE1D922AC500717025 /* View2.m in Sources */ = {isa = PBXBuildFile; fileRef = 691F60BD1D922AC500717025 /* View2.m */; };
+		691F60C11D92304F00717025 /* View3.m in Sources */ = {isa = PBXBuildFile; fileRef = 691F60C01D92304F00717025 /* View3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,10 @@
 		6901A5DA1D913C1B0094F303 /* VC4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC4.xib; sourceTree = "<group>"; };
 		6901A5DD1D913D070094F303 /* View1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View1.h; sourceTree = "<group>"; };
 		6901A5DE1D913D070094F303 /* View1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1.m; sourceTree = "<group>"; };
+		691F60BC1D922AC500717025 /* View2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View2.h; sourceTree = "<group>"; };
+		691F60BD1D922AC500717025 /* View2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2.m; sourceTree = "<group>"; };
+		691F60BF1D92304F00717025 /* View3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View3.h; sourceTree = "<group>"; };
+		691F60C01D92304F00717025 /* View3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,8 @@
 				6901A5D31D913C100094F303 /* VC3.h */,
 				6901A5D41D913C100094F303 /* VC3.m */,
 				6901A5D51D913C100094F303 /* VC3.xib */,
+				691F60BF1D92304F00717025 /* View3.h */,
+				691F60C01D92304F00717025 /* View3.m */,
 			);
 			name = VC3;
 			sourceTree = "<group>";
@@ -132,6 +140,8 @@
 				6901A5CE1D913C040094F303 /* VC2.h */,
 				6901A5CF1D913C040094F303 /* VC2.m */,
 				6901A5D01D913C040094F303 /* VC2.xib */,
+				691F60BC1D922AC500717025 /* View2.h */,
+				691F60BD1D922AC500717025 /* View2.m */,
 			);
 			name = VC2;
 			sourceTree = "<group>";
@@ -226,10 +236,12 @@
 				6901A5DB1D913C1B0094F303 /* VC4.m in Sources */,
 				6901A5D61D913C100094F303 /* VC3.m in Sources */,
 				6901A5B61D913A8C0094F303 /* ViewController.m in Sources */,
+				691F60BE1D922AC500717025 /* View2.m in Sources */,
 				6901A5B31D913A8C0094F303 /* AppDelegate.m in Sources */,
 				6901A5CC1D913BF60094F303 /* VC1.m in Sources */,
 				6901A5B01D913A8C0094F303 /* main.m in Sources */,
 				6901A5DF1D913D070094F303 /* View1.m in Sources */,
+				691F60C11D92304F00717025 /* View3.m in Sources */,
 				6901A5D11D913C040094F303 /* VC2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +289,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Liu (LWCUPRHZZN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yu Liu (LWCUPRHZZN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -324,7 +337,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Liu (LWCUPRHZZN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yu Liu (LWCUPRHZZN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

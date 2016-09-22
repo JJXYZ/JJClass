@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyf-Qh-sxN">
-                                <frame key="frameInset" minX="171" minY="188" width="36" height="30"/>
+                                <frame key="frameInset" minX="148" minY="188" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="VC2-"/>
+                                <state key="normal" title="VC2-五角星"/>
                                 <connections>
                                     <action selector="clickVC2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGn-ib-7bI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fv-UY-4wE">
-                                <frame key="frameInset" minX="172" minY="226" width="37" height="30"/>
+                                <frame key="frameInset" minX="115" minY="226" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="VC3-"/>
+                                <state key="normal" title="VC3-setNeedsDisplay"/>
                                 <connections>
                                     <action selector="clickVC3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NW0-I9-GIc"/>
                                 </connections>

@@ -133,6 +133,7 @@
         rtLabel.lineSpacing = 20.0;
 		[rtLabel setText:[rowInfo objectForKey:@"text"]];
 		CGSize optimumSize = [rtLabel optimumSize];
+        NSLog(@"rtLabel = %@", rtLabel.textComponents);
 		[rowInfo setObject:[NSNumber numberWithFloat:optimumSize.height+20] forKey:@"cell_height"];
 		return [[rowInfo objectForKey:@"cell_height"] floatValue];
 	}
@@ -166,7 +167,7 @@
 
 - (void)rtLabel:(id)rtLabel didSelectLinkWithURL:(NSURL*)url
 {
-	NSLog(@"did select url %@", url);
+	NSLog(@"did select url : %@", url);
 }
 
 
