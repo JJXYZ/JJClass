@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69A0941B1D82449F0031CCF9"
-               BuildableName = "JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;.app"
-               BlueprintName = "JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;"
-               ReferencedContainer = "container:JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;.xcodeproj">
+               BlueprintIdentifier = "6930DA131D6EFD42002B6543"
+               BuildableName = "JJ_Class_02_SDWebImage375.app"
+               BlueprintName = "JJ_Class_02_SDWebImage375"
+               ReferencedContainer = "container:JJ_Class_02_SDWebImage375.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69A0941B1D82449F0031CCF9"
-            BuildableName = "JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;.app"
-            BlueprintName = "JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;"
-            ReferencedContainer = "container:JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;.xcodeproj">
+            BlueprintIdentifier = "6930DA131D6EFD42002B6543"
+            BuildableName = "JJ_Class_02_SDWebImage375.app"
+            BlueprintName = "JJ_Class_02_SDWebImage375"
+            ReferencedContainer = "container:JJ_Class_02_SDWebImage375.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,19 +55,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69A0941B1D82449F0031CCF9"
-            BuildableName = "JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;.app"
-            BlueprintName = "JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;"
-            ReferencedContainer = "container:JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;.xcodeproj">
+            BlueprintIdentifier = "6930DA131D6EFD42002B6543"
+            BuildableName = "JJ_Class_02_SDWebImage375.app"
+            BlueprintName = "JJ_Class_02_SDWebImage375"
+            ReferencedContainer = "container:JJ_Class_02_SDWebImage375.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -81,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69A0941B1D82449F0031CCF9"
-            BuildableName = "JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;.app"
-            BlueprintName = "JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;"
-            ReferencedContainer = "container:JJ_Class_13_&#x8fd0;&#x884c;&#x65f6;_runtime&#x65b9;&#x6cd5;.xcodeproj">
+            BlueprintIdentifier = "6930DA131D6EFD42002B6543"
+            BuildableName = "JJ_Class_02_SDWebImage375.app"
+            BlueprintName = "JJ_Class_02_SDWebImage375"
+            ReferencedContainer = "container:JJ_Class_02_SDWebImage375.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

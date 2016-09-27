@@ -25,8 +25,17 @@
 #pragma mark - Touch
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self.view2 shakeAnimation];
+//    [self.view2 shakeAnimation];
+    [self touchWithTouches:touches];
 }
+
+- (void)touchWithTouches:(NSSet *)touches {
+    UITouch *touch = touches.anyObject;
+    CGPoint location = [touch locationInView:self.view];
+    
+    [self.view2 moveToPoint:location];
+}
+
 
 #pragma mark - Property
 

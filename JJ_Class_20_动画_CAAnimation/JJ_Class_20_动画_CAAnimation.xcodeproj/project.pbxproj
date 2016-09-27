@@ -22,6 +22,7 @@
 		69A3887C1D94C524005531DC /* VC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A3887A1D94C524005531DC /* VC4.m */; };
 		69A3887D1D94C524005531DC /* VC4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A3887B1D94C524005531DC /* VC4.xib */; };
 		69A388801D94D46C005531DC /* View2.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A3887F1D94D46C005531DC /* View2.m */; };
+		69B82E111D98B39400884737 /* View3.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B82E101D98B39400884737 /* View3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		69A3887B1D94C524005531DC /* VC4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC4.xib; sourceTree = "<group>"; };
 		69A3887E1D94D46C005531DC /* View2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View2.h; sourceTree = "<group>"; };
 		69A3887F1D94D46C005531DC /* View2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2.m; sourceTree = "<group>"; };
+		69B82E0F1D98B39400884737 /* View3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View3.h; sourceTree = "<group>"; };
+		69B82E101D98B39400884737 /* View3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,8 @@
 			children = (
 				69A388661D94C4DA005531DC /* VC1 */,
 				69A388671D94C4DF005531DC /* VC2 */,
-				69A388691D94C4EA005531DC /* VC4 */,
 				69A388681D94C4E5005531DC /* VC3 */,
+				69A388691D94C4EA005531DC /* VC4 */,
 				69A388521D94BF81005531DC /* AppDelegate.h */,
 				69A388531D94BF81005531DC /* AppDelegate.m */,
 				69A388551D94BF81005531DC /* ViewController.h */,
@@ -134,6 +137,8 @@
 				69A388741D94C518005531DC /* VC3.h */,
 				69A388751D94C518005531DC /* VC3.m */,
 				69A388761D94C518005531DC /* VC3.xib */,
+				69B82E0F1D98B39400884737 /* View3.h */,
+				69B82E101D98B39400884737 /* View3.m */,
 			);
 			name = VC3;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				69A388541D94BF81005531DC /* AppDelegate.m in Sources */,
 				69A3886D1D94C4FE005531DC /* VC1.m in Sources */,
 				69A388511D94BF81005531DC /* main.m in Sources */,
+				69B82E111D98B39400884737 /* View3.m in Sources */,
 				69A388721D94C50A005531DC /* VC2.m in Sources */,
 				69A388801D94D46C005531DC /* View2.m in Sources */,
 			);
@@ -385,6 +391,7 @@
 				69A388651D94BF81005531DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

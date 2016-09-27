@@ -16,6 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self methodExchangeImpLabel];
+}
+
+
+
+- (void)methodExchangeImpLabel {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 150, 100, 30)];
+    label.text = @"你好333";
+    label.font = [UIFont systemFontOfSize:20];
+//    label.font = [UIFont fontWithName:@"Bodoni 72 Smallcaps" size:16];
+    [self.view addSubview:label];
+    
+//    NSLog(@"%@", [UIFont familyNames]);
 }
 
 @end

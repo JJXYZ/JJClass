@@ -23,7 +23,7 @@
     
     if ([type isEqualToString:@"translationTo"]) {
         // 取出目标点 并 设置self.center
-        self.center = [[anim valueForKey:@"targetPoint"]CGPointValue];
+        self.center = [[anim valueForKey:@"targetPoint"] CGPointValue];
     }
     
 }
@@ -61,8 +61,8 @@
     [self.layer addAnimation:anim forKey:nil];
 }
 
-//贝塞尔曲线，两个控制点
-- (void)moveCurveWithDuration:(CFTimeInterval)duration to:(CGPoint)to
+//两个控制点
+- (void)moveCurve2:(CFTimeInterval)duration to:(CGPoint)to
 {
     // 1. 实例化关键帧动画
     CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
@@ -71,8 +71,8 @@
     anim.duration = duration;
     
     // 中间的控制点使用屏幕上得随机点
-    CGPoint cp1 = [self randomPoint];
-    CGPoint cp2 = [self randomPoint];
+    CGPoint cp1 = CGPointMake(100, 150);
+    CGPoint cp2 = CGPointMake(200, 150);
     
     CGMutablePathRef path = CGPathCreateMutable();
     
@@ -89,12 +89,14 @@
     [anim setValue:[NSValue valueWithCGPoint:to] forKey:@"targetPoint"];
     anim.delegate = self;
     
+    anim.removedOnCompletion = NO;
+    
     // 3. 将动画添加到图层
-    [self.layer addAnimation:anim forKey:nil];
+    [self.layer addAnimation:anim forKey:@"moveCurveWithDuration"];
 }
 
-//贝塞尔曲线，一个控制点
-- (void)moveQuadCurveWithDuration:(CFTimeInterval)duration to:(CGPoint)to
+//一个控制点
+- (void)moveCurve1:(CFTimeInterval)duration to:(CGPoint)to
 {
     // 1. 实例化关键帧动画
     CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
@@ -103,7 +105,7 @@
     anim.duration = duration;
     
     // 中间的控制点使用屏幕上得随机点
-    CGPoint cp = [self randomPoint];
+    CGPoint cp = CGPointMake(100, 100);
     
     CGMutablePathRef path = CGPathCreateMutable();
     
@@ -205,10 +207,10 @@
     NSValue *p2 = [NSValue valueWithCGPoint:CGPointMake(0, 0)];
     NSValue *p3 = [NSValue valueWithCGPoint:point];
     
-    [anim setValues:@[p1, p2, p3]];
+    anim.values = @[p1, p2, p3];
     
     // 2) 时长
-    [anim setDuration:1.0f];
+    anim.duration = 1;
     
     // 3) 设置键值记录目标位置，以便动画结束后，修正位置
     [anim setValue:@"translationTo" forKey:@"animationType"];

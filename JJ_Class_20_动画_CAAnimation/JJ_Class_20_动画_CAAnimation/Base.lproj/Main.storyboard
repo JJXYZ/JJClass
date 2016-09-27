@@ -27,9 +27,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkT-Tv-MEp">
-                                <frame key="frameInset" minX="163" minY="156" width="37" height="30"/>
+                                <frame key="frameInset" minX="120" minY="156" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="VC3-"/>
+                                <state key="normal" title="VC3-CATransition"/>
                                 <connections>
                                     <action selector="clickVC3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZE-9f-T0R"/>
                                 </connections>

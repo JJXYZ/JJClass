@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69479F851D993317004AEA22 /* UIFont+ExchangeImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 69479F841D993317004AEA22 /* UIFont+ExchangeImp.m */; };
+		69479F8B1D993C48004AEA22 /* UILabel+ExchangeImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 69479F8A1D993C48004AEA22 /* UILabel+ExchangeImp.m */; };
 		69A094211D82449F0031CCF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A094201D82449F0031CCF9 /* main.m */; };
 		69A094241D82449F0031CCF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A094231D82449F0031CCF9 /* AppDelegate.m */; };
 		69A094271D82449F0031CCF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A094261D82449F0031CCF9 /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69479F831D993317004AEA22 /* UIFont+ExchangeImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ExchangeImp.h"; sourceTree = "<group>"; };
+		69479F841D993317004AEA22 /* UIFont+ExchangeImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ExchangeImp.m"; sourceTree = "<group>"; };
+		69479F891D993C48004AEA22 /* UILabel+ExchangeImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ExchangeImp.h"; sourceTree = "<group>"; };
+		69479F8A1D993C48004AEA22 /* UILabel+ExchangeImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ExchangeImp.m"; sourceTree = "<group>"; };
 		69A0941C1D82449F0031CCF9 /* JJ_Class_13_运行时_runtime方法.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_13_运行时_runtime方法.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A094201D82449F0031CCF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69A094221D82449F0031CCF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69479F861D99331C004AEA22 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				69479F831D993317004AEA22 /* UIFont+ExchangeImp.h */,
+				69479F841D993317004AEA22 /* UIFont+ExchangeImp.m */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		69479F881D993C2D004AEA22 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				69479F891D993C48004AEA22 /* UILabel+ExchangeImp.h */,
+				69479F8A1D993C48004AEA22 /* UILabel+ExchangeImp.m */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
 		69A094131D82449F0031CCF9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +84,9 @@
 		69A0941E1D82449F0031CCF9 /* JJ_Class_13_运行时_runtime方法 */ = {
 			isa = PBXGroup;
 			children = (
+				69479F881D993C2D004AEA22 /* Label */,
 				69A094371D824FC80031CCF9 /* runtime方法 */,
+				69479F861D99331C004AEA22 /* Font */,
 				69A094221D82449F0031CCF9 /* AppDelegate.h */,
 				69A094231D82449F0031CCF9 /* AppDelegate.m */,
 				69A094251D82449F0031CCF9 /* ViewController.h */,
@@ -153,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69479F8B1D993C48004AEA22 /* UILabel+ExchangeImp.m in Sources */,
+				69479F851D993317004AEA22 /* UIFont+ExchangeImp.m in Sources */,
 				69A094271D82449F0031CCF9 /* ViewController.m in Sources */,
 				69A094241D82449F0031CCF9 /* AppDelegate.m in Sources */,
 				69A094211D82449F0031CCF9 /* main.m in Sources */,
@@ -304,6 +332,7 @@
 				69A094351D82449F0031CCF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

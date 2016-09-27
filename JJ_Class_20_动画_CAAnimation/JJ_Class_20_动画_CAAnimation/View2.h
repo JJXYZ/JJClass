@@ -13,11 +13,11 @@
 //摇晃动画
 - (void)shakeAnimation;
 
-//贝塞尔曲线，两个控制点
-- (void)moveCurveWithDuration:(CFTimeInterval)duration to:(CGPoint)to;
+//两个控制点
+- (void)moveCurve2:(CFTimeInterval)duration to:(CGPoint)to;
 
-//贝塞尔曲线，一个控制点
-- (void)moveQuadCurveWithDuration:(CFTimeInterval)duration to:(CGPoint)to;
+//一个控制点
+- (void)moveCurve1:(CFTimeInterval)duration to:(CGPoint)to;
 
 //按照矩形路径平移动画
 - (void)moveRectWithDuration:(CFTimeInterval)duration to:(CGPoint)to;

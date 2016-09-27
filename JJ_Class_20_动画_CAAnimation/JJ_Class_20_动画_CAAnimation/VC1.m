@@ -117,7 +117,7 @@
     // 默认按照z轴旋转
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     
-    [self.view1.layer setAnchorPoint:CGPointMake(0, 0)];
+    self.view1.layer.anchorPoint = CGPointMake(0, 0);
     
     // 2. 设置动画属性
     // 不停的旋转
@@ -131,7 +131,7 @@
     
     // 3) 动画完成时删除
     // 对于循环播放的动画效果，一定要将removedOnCompletion设置为NO，否则无法恢复动画
-    [anim setRemovedOnCompletion:NO];
+    anim.removedOnCompletion = NO;
     
     // 3. 添加动画
     // key可以随便指定，用于判断图层中是否存在该动画
@@ -145,21 +145,22 @@
     CFTimeInterval beginTime = CACurrentMediaTime() - pauseTime;
     
     // 3. 要把偏移时间清零
-    [self.view1.layer setTimeOffset:0.0];
-    // 4. 设置图层的开始动画时间
-    [self.view1.layer setBeginTime:beginTime];
+    self.view1.layer.timeOffset = 0;
     
-    [self.view1.layer setSpeed:1.0];
+    // 4. 设置图层的开始动画时间
+    self.view1.layer.beginTime = beginTime;
+    
+    self.view1.layer.speed = 1;
 }
 
 - (void)pauseRotationAnimation {
     // 1. 取出当前的动画的时间点，就是要暂停的时间点
     CFTimeInterval pauseTime = [self.view1.layer convertTime:CACurrentMediaTime() fromLayer:nil];
     // 2. 设置动画的时间偏移量，指定时间偏移量的目的是让动画定格在该时间点
-    [self.view1.layer setTimeOffset:pauseTime];
+    self.view1.layer.timeOffset = pauseTime;
     
     // 3. 将动画的运行速度设置为0，动画默认的运行速度是1.0
-    [self.view1.layer setSpeed:0.0];
+    self.view1.layer.speed = 0;
 }
 
 
