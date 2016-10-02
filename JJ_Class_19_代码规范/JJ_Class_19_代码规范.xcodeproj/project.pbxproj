@@ -13,6 +13,9 @@
 		692FC9F41D8F8921006CCE33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692FC9F21D8F8921006CCE33 /* Main.storyboard */; };
 		692FC9F61D8F8921006CCE33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692FC9F51D8F8921006CCE33 /* Assets.xcassets */; };
 		692FC9F91D8F8921006CCE33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692FC9F71D8F8921006CCE33 /* LaunchScreen.storyboard */; };
+		69F7064F1DA10A5E00190702 /* NameFormatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F7064E1DA10A5E00190702 /* NameFormatView.m */; };
+		69F706531DA10B3E00190702 /* XNOProductEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F706521DA10B3E00190702 /* XNOProductEntity.m */; };
+		69F7065A1DA1609F00190702 /* UITextField+XNOKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F706591DA1609F00190702 /* UITextField+XNOKeyBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,16 @@
 		692FC9F51D8F8921006CCE33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		692FC9F81D8F8921006CCE33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		692FC9FA1D8F8921006CCE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F7064C1DA1088A00190702 /* NotificationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMacro.h; sourceTree = "<group>"; };
+		69F7064D1DA10A5E00190702 /* NameFormatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameFormatView.h; sourceTree = "<group>"; };
+		69F7064E1DA10A5E00190702 /* NameFormatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameFormatView.m; sourceTree = "<group>"; };
+		69F706511DA10B3E00190702 /* XNOProductEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNOProductEntity.h; sourceTree = "<group>"; };
+		69F706521DA10B3E00190702 /* XNOProductEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNOProductEntity.m; sourceTree = "<group>"; };
+		69F706571DA10D1500190702 /* ENUMMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENUMMacro.h; sourceTree = "<group>"; };
+		69F706581DA1609F00190702 /* UITextField+XNOKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+XNOKeyBoard.h"; sourceTree = "<group>"; };
+		69F706591DA1609F00190702 /* UITextField+XNOKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+XNOKeyBoard.m"; sourceTree = "<group>"; };
+		69F7065B1DA161B800190702 /* ImageNameFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageNameFormat.h; sourceTree = "<group>"; };
+		69F7065C1DA1638600190702 /* Warning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Warning.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +71,17 @@
 		692FC9E81D8F8921006CCE33 /* JJ_Class_19_代码规范 */ = {
 			isa = PBXGroup;
 			children = (
+				69F706501DA10B0300190702 /* Entity */,
 				692FC9EC1D8F8921006CCE33 /* AppDelegate.h */,
 				692FC9ED1D8F8921006CCE33 /* AppDelegate.m */,
+				69F7064C1DA1088A00190702 /* NotificationMacro.h */,
+				69F706571DA10D1500190702 /* ENUMMacro.h */,
+				69F7064D1DA10A5E00190702 /* NameFormatView.h */,
+				69F7064E1DA10A5E00190702 /* NameFormatView.m */,
+				69F7065B1DA161B800190702 /* ImageNameFormat.h */,
+				69F706581DA1609F00190702 /* UITextField+XNOKeyBoard.h */,
+				69F706591DA1609F00190702 /* UITextField+XNOKeyBoard.m */,
+				69F7065C1DA1638600190702 /* Warning.h */,
 				692FC9EF1D8F8921006CCE33 /* ViewController.h */,
 				692FC9F01D8F8921006CCE33 /* ViewController.m */,
 				692FC9F21D8F8921006CCE33 /* Main.storyboard */,
@@ -77,6 +99,15 @@
 				692FC9EA1D8F8921006CCE33 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69F706501DA10B0300190702 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				69F706511DA10B3E00190702 /* XNOProductEntity.h */,
+				69F706521DA10B3E00190702 /* XNOProductEntity.m */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F7064F1DA10A5E00190702 /* NameFormatView.m in Sources */,
 				692FC9F11D8F8921006CCE33 /* ViewController.m in Sources */,
+				69F7065A1DA1609F00190702 /* UITextField+XNOKeyBoard.m in Sources */,
+				69F706531DA10B3E00190702 /* XNOProductEntity.m in Sources */,
 				692FC9EE1D8F8921006CCE33 /* AppDelegate.m in Sources */,
 				692FC9EB1D8F8921006CCE33 /* main.m in Sources */,
 			);
@@ -307,6 +341,7 @@
 				692FC9FF1D8F8921006CCE33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
