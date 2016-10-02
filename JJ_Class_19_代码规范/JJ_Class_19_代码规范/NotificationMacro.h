@@ -23,10 +23,10 @@
 #define XNO_CMD_URL_OPEN @"open.json"
 
 /** 账户浮层 */
-#define XNO_AccountHint_Key             @"XNO_AccountHint_Key_"
+#define XNO_AccountHint_Key @"XNO_AccountHint_Key_"
 
 /** UUID、应用唯一标识 */
-#define OpenSessionID                   @"opensessionId"
+#define OpenSessionID @"opensessionId"
 
 /** 正在刷新… */
 #define kTableViewRefreshTextHeaderRefreshing @"正在刷新…"

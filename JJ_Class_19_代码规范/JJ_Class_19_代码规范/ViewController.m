@@ -206,6 +206,13 @@
 /** if语句 */
 - (void)ifFuntion {
     NSUInteger type;
+    
+    if (type == 10) {
+        //do Something
+    } else {
+        //do Something
+    }
+    
     if (type == 10) {
         //do Something
     }
@@ -219,12 +226,6 @@
     }
     else
     {
-        //do Something
-    }
-    
-    if (type == 10) {
-        //do Something
-    } else {
         //do Something
     }
 }
@@ -334,6 +335,17 @@
                                       highlightedColor:nil];
 }
 
+
+/**
+ block
+ */
+- (void)blockFunction {
+    [UIView animateWithDuration:1.0 animations:^{
+        //do Something
+    } completion:^(BOOL finished) {
+        //do Something
+    }];
+}
 
 /**
  为需要暴露给其他类，供其他类(子类)调用的方法，
