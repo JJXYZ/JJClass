@@ -28,6 +28,8 @@
  
  协议名:XNOInvestmentDetailBottomViewDelegate，XNOServiceJSONFileProtocol，
  
+ 分类:XNOConnect+Simple,UITextField+XNOKeyBoard
+ 
  */
 @protocol NameFormatViewDeleagte <NSObject>
 

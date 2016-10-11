@@ -16,6 +16,7 @@
  
  如果有一个以上的 import 语句，就对这些语句进行分组。每个分组的注释是可选的。 注：对于模块使用 @import 语法。
  
+ //System
  //VC
  //VM
  //View
@@ -97,7 +98,7 @@
 }
 
 /**
- 在UIViewController的子类实现文件中，该分段包含，loadView、viewDidLoad、viewWillAppear、viewDidAppear、 viewWillDisappear、viewDidDisappear、viewWillLayoutSubviews等方法
+ 在UIViewController的子类实现文件中，该分段包含，loadView、viewDidLoad、viewWillAppear、viewDidAppear、 viewWillDisappear、viewDidDisappear、viewWillLayoutSubviews等方法，注意顺序
  */
 #pragma mark - Life Cycle
 
@@ -378,7 +379,8 @@
 
 /** 通知n */
 - (void)nLoginSuccess:(NSNotification *)notification {
-    
+    /** return(空格); */
+    return ;
 }
 
 /** 手势geture */

@@ -21,6 +21,10 @@
  
  4.多抽出方法
  
+ 5.HTTP,URL,等
+ 
+ 6.setup,layout,build,
+ 
  */
 
 
