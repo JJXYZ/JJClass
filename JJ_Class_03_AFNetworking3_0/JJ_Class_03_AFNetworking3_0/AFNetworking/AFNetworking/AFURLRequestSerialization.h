@@ -97,6 +97,8 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
 
 /**
  The string encoding used to serialize parameters. `NSUTF8StringEncoding` by default.
+ 
+    对于参数使用的编码，默认是NSUTF8StringEncoding
  */
 @property (nonatomic, assign) NSStringEncoding stringEncoding;
 
@@ -104,6 +106,8 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
  Whether created requests can use the device’s cellular radio (if present). `YES` by default.
 
  @see NSMutableURLRequest -setAllowsCellularAccess:
+ 
+ 是否允许使用蜂窝网络，默认允许
  */
 @property (nonatomic, assign) BOOL allowsCellularAccess;
 
@@ -111,6 +115,8 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
  The cache policy of created requests. `NSURLRequestUseProtocolCachePolicy` by default.
 
  @see NSMutableURLRequest -setCachePolicy:
+ 
+    缓存策略。默认NSURLRequestUseProtocolCachePolicy，也就是协议的缓存策略，至于协议怎么实现了就是iOS系统的事了。在实际测试过程中，iOS是遵循标准http缓存协议的，也就是对304状态码可以正确处理。
  */
 @property (nonatomic, assign) NSURLRequestCachePolicy cachePolicy;
 
@@ -118,6 +124,8 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
  Whether created requests should use the default cookie handling. `YES` by default.
 
  @see NSMutableURLRequest -setHTTPShouldHandleCookies:
+ 
+    是否处理cookie，默认YES，具体怎么处理iOS系统自己的事了。
  */
 @property (nonatomic, assign) BOOL HTTPShouldHandleCookies;
 
@@ -125,6 +133,10 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
  Whether created requests can continue transmitting data before receiving a response from an earlier transmission. `NO` by default
 
  @see NSMutableURLRequest -setHTTPShouldUsePipelining:
+ 
+    是否使用http管道技术，默认不使用。也就是在同一个连接上，并行多个请求，服务端和客户端依然可以正常工作。需要客户端和服务端同时支持。
+ 
+    具体的http管道技术可以参考博文HTTP的长连接和短连接的第六部分。http://www.cnblogs.com/jingzhishen/p/3951052.html
  */
 @property (nonatomic, assign) BOOL HTTPShouldUsePipelining;
 
@@ -153,6 +165,8 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
  - `User-Agent` with the contents of various bundle identifiers and OS designations
 
  @discussion To add or remove default request headers, use `setValue:forHTTPHeaderField:`.
+ 
+ http头部字段
  */
 @property (readonly, nonatomic, strong) NSDictionary <NSString *, NSString *> *HTTPRequestHeaders;
 
@@ -233,6 +247,8 @@ forHTTPHeaderField:(NSString *)field;
  @param error The error that occurred while constructing the request.
 
  @return An `NSMutableURLRequest` object.
+ 
+ 这个方法用于构造get，head或者delete请求，他们的参数将放在url中以key=value的方式编码。
  */
 - (NSMutableURLRequest *)requestWithMethod:(NSString *)method
                                  URLString:(NSString *)URLString
@@ -251,6 +267,10 @@ forHTTPHeaderField:(NSString *)field;
  @param error The error that occurred while constructing the request.
 
  @return An `NSMutableURLRequest` object
+ 
+ 这个方法用于构造post或者put请求，第四个参数用于在上传文件的时候将数据拼接在formData里，可以拼接多个文件数据。
+ 
+ 
  */
 - (NSMutableURLRequest *)multipartFormRequestWithMethod:(NSString *)method
                                               URLString:(NSString *)URLString
@@ -268,6 +288,9 @@ forHTTPHeaderField:(NSString *)field;
  @discussion There is a bug in `NSURLSessionTask` that causes requests to not send a `Content-Length` header when streaming contents from an HTTP body, which is notably problematic when interacting with the Amazon S3 webservice. As a workaround, this method takes a request constructed with `multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:error:`, or any other request with an `HTTPBodyStream`, writes the contents to the specified file and returns a copy of the original request with the `HTTPBodyStream` property set to `nil`. From here, the file can either be passed to `AFURLSessionManager -uploadTaskWithRequest:fromFile:progress:completionHandler:`, or have its contents read into an `NSData` that's assigned to the `HTTPBody` property of the request.
 
  @see https://github.com/AFNetworking/AFNetworking/issues/1398
+ 
+ 这个方法和上面的方法类似，只是多了一个将流内容异步写入指定文件的功能。
+ 对于请求的序列化比较复杂的情况是带参数，带文件的post上传请求。
  */
 - (NSMutableURLRequest *)requestWithMultipartFormRequest:(NSURLRequest *)request
                              writingStreamContentsToFile:(NSURL *)fileURL

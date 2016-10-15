@@ -390,6 +390,7 @@ forHTTPHeaderField:(NSString *)field
 
     __block AFStreamingMultipartFormData *formData = [[AFStreamingMultipartFormData alloc] initWithURLRequest:mutableRequest stringEncoding:NSUTF8StringEncoding];
 
+    //如果参数不空则将参数放入以key=value的方式放入formdata的bodyparts数组中
     if (parameters) {
         for (AFQueryStringPair *pair in AFQueryStringPairsFromDictionary(parameters)) {
             NSData *data = nil;

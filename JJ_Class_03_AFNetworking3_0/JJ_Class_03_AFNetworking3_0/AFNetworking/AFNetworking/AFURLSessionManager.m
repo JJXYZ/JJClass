@@ -127,6 +127,8 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 @property (nonatomic, copy) AFURLSessionTaskCompletionHandler completionHandler;
 @end
 
+
+// 用于管理网络请求所有的回调，每一个delegate对应一个task
 @implementation AFURLSessionManagerTaskDelegate
 
 - (instancetype)init {
@@ -186,6 +188,7 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
         }];
     }
 
+    // 使用kvo监听countOfBytesReceived，countOfBytesExpectedToReceive，countOfBytesSent，countOfBytesExpectedToSend的变化
     [task addObserver:self
            forKeyPath:NSStringFromSelector(@selector(countOfBytesReceived))
               options:NSKeyValueObservingOptionNew
@@ -258,7 +261,7 @@ didCompleteWithError:(NSError *)error
     __strong AFURLSessionManager *manager = self.manager;
 
     __block id responseObject = nil;
-
+    // userinfo会通过通知抛送到上层，给予AFNetworkActivityIndicatorManager监听使用
     __block NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
     userInfo[AFNetworkingTaskDidCompleteResponseSerializerKey] = manager.responseSerializer;
 
@@ -279,7 +282,10 @@ didCompleteWithError:(NSError *)error
     if (error) {
         userInfo[AFNetworkingTaskDidCompleteErrorKey] = error;
 
+        
         dispatch_group_async(manager.completionGroup ?: url_session_manager_completion_group(), manager.completionQueue ?: dispatch_get_main_queue(), ^{
+            
+            // 所有的completionhandler 都通过AFURLSessionManagerTaskDelegate调用
             if (self.completionHandler) {
                 self.completionHandler(task.response, responseObject, error);
             }
@@ -481,10 +487,16 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
 
 #pragma mark -
 
+// 封装了网络请求业务逻辑
 @interface AFURLSessionManager ()
 @property (readwrite, nonatomic, strong) NSURLSessionConfiguration *sessionConfiguration;
 @property (readwrite, nonatomic, strong) NSOperationQueue *operationQueue;
 @property (readwrite, nonatomic, strong) NSURLSession *session;
+
+/**
+ AFURLSessionManagerTaskDelegate 存储于AFURLSessionManager的成员变量
+ 每一个task的taskIdentifier以key-value对应一个AFURLSessionManagerTaskDelegate
+ */
 @property (readwrite, nonatomic, strong) NSMutableDictionary *mutableTaskDelegatesKeyedByTaskIdentifier;
 @property (readonly, nonatomic, copy) NSString *taskDescriptionForSessionTasks;
 @property (readwrite, nonatomic, strong) NSLock *lock;
@@ -770,10 +782,12 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
 
     __block NSURLSessionDataTask *dataTask = nil;
     // 这个方法是同步的
+    // 调用静态函数url_session_manager_create_task_safely在当前线程下(iOS8下有bug，又多创建了一个线程去创建task)创建一个task，AF内有很多这样static函数，如果函数的可见范围是文件的话，就可以使用静态static函数。
     url_session_manager_create_task_safely(^{
         dataTask = [self.session dataTaskWithRequest:request];
     });
 
+     // 为每一个task配置delegate以及对应的progress回调block
     [self addDelegateForDataTask:dataTask uploadProgress:uploadProgressBlock downloadProgress:downloadProgressBlock completionHandler:completionHandler];
 
     return dataTask;
@@ -1088,6 +1102,10 @@ totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend
     }
 }
 
+
+/**
+ AFURLSessionManager的实现的NSURLSessionDataDelegate中的didCompleteWithError回调
+ */
 - (void)URLSession:(NSURLSession *)session
               task:(NSURLSessionTask *)task
 didCompleteWithError:(NSError *)error
@@ -1140,11 +1158,15 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     }
 }
 
+
+/**
+ AFURLSessionManager的实现的NSURLSessionDataDelegate中的ReceiveData回调
+ */
 - (void)URLSession:(NSURLSession *)session
           dataTask:(NSURLSessionDataTask *)dataTask
     didReceiveData:(NSData *)data
 {
-
+    // 通过保存的字典获取task对应的delegate，主动调用delegate里对应的方法
     AFURLSessionManagerTaskDelegate *delegate = [self delegateForTask:dataTask];
     [delegate URLSession:session dataTask:dataTask didReceiveData:data];
 

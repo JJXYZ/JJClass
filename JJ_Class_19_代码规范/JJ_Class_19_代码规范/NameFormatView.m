@@ -19,6 +19,7 @@
  NSArray            Arr
  NSDictionary       Dic
  Entity             Entity
+ UIButton           Btn
  UILabel            Label
  UIView             View
  UIImageView        ImageView

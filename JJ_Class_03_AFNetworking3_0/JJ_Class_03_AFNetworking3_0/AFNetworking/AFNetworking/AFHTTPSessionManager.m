@@ -282,6 +282,7 @@
     }
 
     __block NSURLSessionDataTask *dataTask = nil;
+    // 传入request创建dataTask
     dataTask = [self dataTaskWithRequest:request
                           uploadProgress:uploadProgress
                         downloadProgress:downloadProgress

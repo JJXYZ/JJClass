@@ -91,6 +91,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		694D6B001DAE21BC007C8F05 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				6977ADCB1D76700D003FFA83 /* AFHTTPSessionManager.h */,
+				6977ADCC1D76700D003FFA83 /* AFHTTPSessionManager.m */,
+				6977ADD61D76700D003FFA83 /* AFURLSessionManager.h */,
+				6977ADD71D76700D003FFA83 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		694D6B011DAE21CA007C8F05 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				6977ADCE1D76700D003FFA83 /* AFNetworkReachabilityManager.h */,
+				6977ADCF1D76700D003FFA83 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		694D6B021DAE21DB007C8F05 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				6977ADD21D76700D003FFA83 /* AFURLRequestSerialization.h */,
+				6977ADD31D76700D003FFA83 /* AFURLRequestSerialization.m */,
+				6977ADD41D76700D003FFA83 /* AFURLResponseSerialization.h */,
+				6977ADD51D76700D003FFA83 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		694D6B031DAE21E7007C8F05 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				6977ADD01D76700D003FFA83 /* AFSecurityPolicy.h */,
+				6977ADD11D76700D003FFA83 /* AFSecurityPolicy.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
 		6977ADA61D766FFB003FFA83 = {
 			isa = PBXGroup;
 			children = (
@@ -146,19 +186,11 @@
 		6977ADCA1D76700D003FFA83 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				6977ADCB1D76700D003FFA83 /* AFHTTPSessionManager.h */,
-				6977ADCC1D76700D003FFA83 /* AFHTTPSessionManager.m */,
 				6977ADCD1D76700D003FFA83 /* AFNetworking.h */,
-				6977ADCE1D76700D003FFA83 /* AFNetworkReachabilityManager.h */,
-				6977ADCF1D76700D003FFA83 /* AFNetworkReachabilityManager.m */,
-				6977ADD01D76700D003FFA83 /* AFSecurityPolicy.h */,
-				6977ADD11D76700D003FFA83 /* AFSecurityPolicy.m */,
-				6977ADD21D76700D003FFA83 /* AFURLRequestSerialization.h */,
-				6977ADD31D76700D003FFA83 /* AFURLRequestSerialization.m */,
-				6977ADD41D76700D003FFA83 /* AFURLResponseSerialization.h */,
-				6977ADD51D76700D003FFA83 /* AFURLResponseSerialization.m */,
-				6977ADD61D76700D003FFA83 /* AFURLSessionManager.h */,
-				6977ADD71D76700D003FFA83 /* AFURLSessionManager.m */,
+				694D6B001DAE21BC007C8F05 /* NSURLSession */,
+				694D6B031DAE21E7007C8F05 /* Serialization */,
+				694D6B021DAE21DB007C8F05 /* Serialization */,
+				694D6B011DAE21CA007C8F05 /* Reachability */,
 			);
 			path = AFNetworking;
 			sourceTree = "<group>";
@@ -426,6 +458,7 @@
 				6977ADC81D766FFB003FFA83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

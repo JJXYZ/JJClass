@@ -39,4 +39,18 @@ typedef NS_ENUM(NSInteger, XNOTableCellTypeAcount) {
 };
 
 
+/**
+ SDWebImageDownloaderOptions
+
+ - SDWebImageDownloaderLowPriority:         1
+ - SDWebImageDownloaderProgressiveDownload: 2
+ - SDWebImageDownloaderUseNSURLCache:       3
+ */
+typedef NS_OPTIONS(NSUInteger, SDWebImageDownloaderOptions) {
+    SDWebImageDownloaderLowPriority = 1 << 0,
+    SDWebImageDownloaderProgressiveDownload = 1 << 1,
+    SDWebImageDownloaderUseNSURLCache = 1 << 2,
+};
+
+
 #endif /* ENUMMacro_h */

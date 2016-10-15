@@ -91,6 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  The managed session.
+ 创建的NSURLSession对象。由于NSURLSession本身的构造接口提供了一个回调队列，因此多了一个NSOperationQueue，如果不设置，NSURLSession会自动创建一个串行队列，所有的回调都将在这个队列里进行。
  */
 @property (readonly, nonatomic, strong) NSURLSession *session;
 
@@ -112,6 +113,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  The security policy used by created session to evaluate server trust for secure connections. `AFURLSessionManager` uses the `defaultPolicy` unless otherwise specified.
+ 
+ 在https链接当需要做身份验证时采取的安全策略。默认是不会进行证书验证。
  */
 @property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
 
@@ -132,21 +135,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  The data, upload, and download tasks currently run by the managed session.
+ 当前正在执行的全部task数组
  */
 @property (readonly, nonatomic, strong) NSArray <NSURLSessionTask *> *tasks;
 
 /**
  The data tasks currently run by the managed session.
+ 当前正在执行datatask数组
  */
 @property (readonly, nonatomic, strong) NSArray <NSURLSessionDataTask *> *dataTasks;
 
 /**
  The upload tasks currently run by the managed session.
+ 当前正在执行上传task数组
  */
 @property (readonly, nonatomic, strong) NSArray <NSURLSessionUploadTask *> *uploadTasks;
 
 /**
  The download tasks currently run by the managed session.
+ 当前正在执行的下载task数组
+ 这些task在执行完了之后会被移除数组并销毁。
  */
 @property (readonly, nonatomic, strong) NSArray <NSURLSessionDownloadTask *> *downloadTasks;
 
