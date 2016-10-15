@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69D3F4C01DB1E5A300F5B704 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F4BF1DB1E5A300F5B704 /* main.m */; };
+		69D3F4C31DB1E5A300F5B704 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F4C21DB1E5A300F5B704 /* AppDelegate.m */; };
+		69D3F4C61DB1E5A300F5B704 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F4C51DB1E5A300F5B704 /* ViewController.m */; };
+		69D3F4C91DB1E5A300F5B704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D3F4C71DB1E5A300F5B704 /* Main.storyboard */; };
+		69D3F4CB1DB1E5A300F5B704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D3F4CA1DB1E5A300F5B704 /* Assets.xcassets */; };
+		69D3F4CE1DB1E5A300F5B704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D3F4CC1DB1E5A300F5B704 /* LaunchScreen.storyboard */; };
+		69D3F4E01DB1E5C000F5B704 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F4D71DB1E5C000F5B704 /* BEMAverageLine.m */; };
+		69D3F4E11DB1E5C000F5B704 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F4D91DB1E5C000F5B704 /* BEMCircle.m */; };
+		69D3F4E21DB1E5C000F5B704 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F4DB1DB1E5C000F5B704 /* BEMLine.m */; };
+		69D3F4E31DB1E5C000F5B704 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F4DD1DB1E5C000F5B704 /* BEMPermanentPopupView.m */; };
+		69D3F4E41DB1E5C000F5B704 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D3F4DF1DB1E5C000F5B704 /* BEMSimpleLineGraphView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69D3F4BB1DB1E5A300F5B704 /* JJ_Class_21_绘图_BEMLineGraphView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_21_绘图_BEMLineGraphView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D3F4BF1DB1E5A300F5B704 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69D3F4C11DB1E5A300F5B704 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69D3F4C21DB1E5A300F5B704 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69D3F4C41DB1E5A300F5B704 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69D3F4C51DB1E5A300F5B704 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69D3F4C81DB1E5A300F5B704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69D3F4CA1DB1E5A300F5B704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69D3F4CD1DB1E5A300F5B704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69D3F4CF1DB1E5A300F5B704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D3F4D61DB1E5C000F5B704 /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAverageLine.h; sourceTree = "<group>"; };
+		69D3F4D71DB1E5C000F5B704 /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAverageLine.m; sourceTree = "<group>"; };
+		69D3F4D81DB1E5C000F5B704 /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		69D3F4D91DB1E5C000F5B704 /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		69D3F4DA1DB1E5C000F5B704 /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		69D3F4DB1DB1E5C000F5B704 /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		69D3F4DC1DB1E5C000F5B704 /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		69D3F4DD1DB1E5C000F5B704 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		69D3F4DE1DB1E5C000F5B704 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		69D3F4DF1DB1E5C000F5B704 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69D3F4B81DB1E5A300F5B704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69D3F4B21DB1E5A300F5B704 = {
+			isa = PBXGroup;
+			children = (
+				69D3F4BD1DB1E5A300F5B704 /* JJ_Class_21_绘图_BEMLineGraphView */,
+				69D3F4BC1DB1E5A300F5B704 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69D3F4BC1DB1E5A300F5B704 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69D3F4BB1DB1E5A300F5B704 /* JJ_Class_21_绘图_BEMLineGraphView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69D3F4BD1DB1E5A300F5B704 /* JJ_Class_21_绘图_BEMLineGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				69D3F4D51DB1E5C000F5B704 /* BEMLineGraphView */,
+				69D3F4C11DB1E5A300F5B704 /* AppDelegate.h */,
+				69D3F4C21DB1E5A300F5B704 /* AppDelegate.m */,
+				69D3F4C41DB1E5A300F5B704 /* ViewController.h */,
+				69D3F4C51DB1E5A300F5B704 /* ViewController.m */,
+				69D3F4C71DB1E5A300F5B704 /* Main.storyboard */,
+				69D3F4CA1DB1E5A300F5B704 /* Assets.xcassets */,
+				69D3F4CC1DB1E5A300F5B704 /* LaunchScreen.storyboard */,
+				69D3F4CF1DB1E5A300F5B704 /* Info.plist */,
+				69D3F4BE1DB1E5A300F5B704 /* Supporting Files */,
+			);
+			path = "JJ_Class_21_绘图_BEMLineGraphView";
+			sourceTree = "<group>";
+		};
+		69D3F4BE1DB1E5A300F5B704 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69D3F4BF1DB1E5A300F5B704 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69D3F4D51DB1E5C000F5B704 /* BEMLineGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				69D3F4D61DB1E5C000F5B704 /* BEMAverageLine.h */,
+				69D3F4D71DB1E5C000F5B704 /* BEMAverageLine.m */,
+				69D3F4D81DB1E5C000F5B704 /* BEMCircle.h */,
+				69D3F4D91DB1E5C000F5B704 /* BEMCircle.m */,
+				69D3F4DA1DB1E5C000F5B704 /* BEMLine.h */,
+				69D3F4DB1DB1E5C000F5B704 /* BEMLine.m */,
+				69D3F4DC1DB1E5C000F5B704 /* BEMPermanentPopupView.h */,
+				69D3F4DD1DB1E5C000F5B704 /* BEMPermanentPopupView.m */,
+				69D3F4DE1DB1E5C000F5B704 /* BEMSimpleLineGraphView.h */,
+				69D3F4DF1DB1E5C000F5B704 /* BEMSimpleLineGraphView.m */,
+			);
+			path = BEMLineGraphView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69D3F4BA1DB1E5A300F5B704 /* JJ_Class_21_绘图_BEMLineGraphView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D3F4D21DB1E5A300F5B704 /* Build configuration list for PBXNativeTarget "JJ_Class_21_绘图_BEMLineGraphView" */;
+			buildPhases = (
+				69D3F4B71DB1E5A300F5B704 /* Sources */,
+				69D3F4B81DB1E5A300F5B704 /* Frameworks */,
+				69D3F4B91DB1E5A300F5B704 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JJ_Class_21_绘图_BEMLineGraphView";
+			productName = "JJ_Class_21_绘图_BEMLineGraphView";
+			productReference = 69D3F4BB1DB1E5A300F5B704 /* JJ_Class_21_绘图_BEMLineGraphView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69D3F4B31DB1E5A300F5B704 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = JayJJ;
+				TargetAttributes = {
+					69D3F4BA1DB1E5A300F5B704 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 69D3F4B61DB1E5A300F5B704 /* Build configuration list for PBXProject "JJ_Class_21_绘图_BEMLineGraphView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69D3F4B21DB1E5A300F5B704;
+			productRefGroup = 69D3F4BC1DB1E5A300F5B704 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69D3F4BA1DB1E5A300F5B704 /* JJ_Class_21_绘图_BEMLineGraphView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69D3F4B91DB1E5A300F5B704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D3F4CE1DB1E5A300F5B704 /* LaunchScreen.storyboard in Resources */,
+				69D3F4CB1DB1E5A300F5B704 /* Assets.xcassets in Resources */,
+				69D3F4C91DB1E5A300F5B704 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69D3F4B71DB1E5A300F5B704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D3F4E31DB1E5C000F5B704 /* BEMPermanentPopupView.m in Sources */,
+				69D3F4E11DB1E5C000F5B704 /* BEMCircle.m in Sources */,
+				69D3F4C61DB1E5A300F5B704 /* ViewController.m in Sources */,
+				69D3F4E21DB1E5C000F5B704 /* BEMLine.m in Sources */,
+				69D3F4C31DB1E5A300F5B704 /* AppDelegate.m in Sources */,
+				69D3F4E01DB1E5C000F5B704 /* BEMAverageLine.m in Sources */,
+				69D3F4E41DB1E5C000F5B704 /* BEMSimpleLineGraphView.m in Sources */,
+				69D3F4C01DB1E5A300F5B704 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69D3F4C71DB1E5A300F5B704 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D3F4C81DB1E5A300F5B704 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69D3F4CC1DB1E5A300F5B704 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D3F4CD1DB1E5A300F5B704 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69D3F4D01DB1E5A300F5B704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69D3F4D11DB1E5A300F5B704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69D3F4D31DB1E5A300F5B704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JJ_Class_21_绘图_BEMLineGraphView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JJ.comJJ.com.JJ-Class-21----BEMLineGraphView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69D3F4D41DB1E5A300F5B704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JJ_Class_21_绘图_BEMLineGraphView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JJ.comJJ.com.JJ-Class-21----BEMLineGraphView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69D3F4B61DB1E5A300F5B704 /* Build configuration list for PBXProject "JJ_Class_21_绘图_BEMLineGraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D3F4D01DB1E5A300F5B704 /* Debug */,
+				69D3F4D11DB1E5A300F5B704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D3F4D21DB1E5A300F5B704 /* Build configuration list for PBXNativeTarget "JJ_Class_21_绘图_BEMLineGraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D3F4D31DB1E5A300F5B704 /* Debug */,
+				69D3F4D41DB1E5A300F5B704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69D3F4B31DB1E5A300F5B704 /* Project object */;
+}
