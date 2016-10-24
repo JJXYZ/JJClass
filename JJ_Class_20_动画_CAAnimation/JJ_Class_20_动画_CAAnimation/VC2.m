@@ -33,7 +33,9 @@
     UITouch *touch = touches.anyObject;
     CGPoint location = [touch locationInView:self.view];
     
-    [self.view2 moveToPoint:location];
+//    [self.view2 moveToPoint:location];
+    
+    [self.view2 moveCurve1:2 to:location];
 }
 
 

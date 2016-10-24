@@ -24,6 +24,7 @@
 		6901A5DF1D913D070094F303 /* View1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6901A5DE1D913D070094F303 /* View1.m */; };
 		691F60BE1D922AC500717025 /* View2.m in Sources */ = {isa = PBXBuildFile; fileRef = 691F60BD1D922AC500717025 /* View2.m */; };
 		691F60C11D92304F00717025 /* View3.m in Sources */ = {isa = PBXBuildFile; fileRef = 691F60C01D92304F00717025 /* View3.m */; };
+		696859411DB78B1200EA9FA2 /* View4.m in Sources */ = {isa = PBXBuildFile; fileRef = 696859401DB78B1200EA9FA2 /* View4.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		691F60BD1D922AC500717025 /* View2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2.m; sourceTree = "<group>"; };
 		691F60BF1D92304F00717025 /* View3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View3.h; sourceTree = "<group>"; };
 		691F60C01D92304F00717025 /* View3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View3.m; sourceTree = "<group>"; };
+		6968593F1DB78B1200EA9FA2 /* View4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View4.h; sourceTree = "<group>"; };
+		696859401DB78B1200EA9FA2 /* View4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View4.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				6901A5D81D913C1B0094F303 /* VC4.h */,
 				6901A5D91D913C1B0094F303 /* VC4.m */,
+				6968593F1DB78B1200EA9FA2 /* View4.h */,
+				696859401DB78B1200EA9FA2 /* View4.m */,
 				6901A5DA1D913C1B0094F303 /* VC4.xib */,
 			);
 			name = VC4;
@@ -235,6 +240,7 @@
 			files = (
 				6901A5DB1D913C1B0094F303 /* VC4.m in Sources */,
 				6901A5D61D913C100094F303 /* VC3.m in Sources */,
+				696859411DB78B1200EA9FA2 /* View4.m in Sources */,
 				6901A5B61D913A8C0094F303 /* ViewController.m in Sources */,
 				691F60BE1D922AC500717025 /* View2.m in Sources */,
 				6901A5B31D913A8C0094F303 /* AppDelegate.m in Sources */,

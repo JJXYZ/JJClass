@@ -19,7 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"view1 1 : %@", NSStringFromCGRect(self.view1.frame));
     [self.view addSubview:self.view1];
+    NSLog(@"view1 2 : %@", NSStringFromCGRect(self.view1.frame));
 }
 
 #pragma mark - Property
@@ -28,7 +30,7 @@
     if (_view1) {
         return _view1;
     }
-    _view1 = [[View1 alloc] initWithFrame:self.view.bounds];
+    _view1 = [[View1 alloc] initWithFrame:CGRectMake(10.3, 100.3, 200.3, 200.3)];
     _view1.backgroundColor = [UIColor whiteColor];
     return _view1;
 }
