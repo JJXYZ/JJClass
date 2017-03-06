@@ -25,6 +25,13 @@
 		698F0B461D8E41BE00272016 /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698F0B441D8E41BE00272016 /* VC2.xib */; };
 		6998085A1D8E905200B0F292 /* SearchImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 699808591D8E905200B0F292 /* SearchImp.m */; };
 		69997BD51D8E95EF00A64988 /* VM3Imp.m in Sources */ = {isa = PBXBuildFile; fileRef = 69997BD41D8E95EF00A64988 /* VM3Imp.m */; };
+		69FAE6AD1E67EF6D00F15A0A /* VC5_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FAE6AB1E67EF6D00F15A0A /* VC5_2.m */; };
+		69FAE6AE1E67EF6D00F15A0A /* VC5_2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FAE6AC1E67EF6D00F15A0A /* VC5_2.xib */; };
+		69FAE6B11E67F14000F15A0A /* VCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FAE6B01E67F14000F15A0A /* VCManager.m */; };
+		69FDCDD71E64188B008C3BC1 /* VC5.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FDCDD51E64188B008C3BC1 /* VC5.m */; };
+		69FDCDD81E64188B008C3BC1 /* VC5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FDCDD61E64188B008C3BC1 /* VC5.xib */; };
+		69FDCDDC1E64190D008C3BC1 /* VC5_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FDCDDA1E64190D008C3BC1 /* VC5_1.m */; };
+		69FDCDDD1E64190D008C3BC1 /* VC5_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FDCDDB1E64190D008C3BC1 /* VC5_1.xib */; };
 		F9A2BDF6916310D87CEB5CAD /* libPods-JJ_Class_14_ReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D7658B5675F65046E13C91 /* libPods-JJ_Class_14_ReactiveCocoa.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +69,17 @@
 		6998085C1D8E938100B0F292 /* VM3Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VM3Protocol.h; sourceTree = "<group>"; };
 		69997BD31D8E95EF00A64988 /* VM3Imp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VM3Imp.h; sourceTree = "<group>"; };
 		69997BD41D8E95EF00A64988 /* VM3Imp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VM3Imp.m; sourceTree = "<group>"; };
+		69FAE6AA1E67EF6D00F15A0A /* VC5_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC5_2.h; sourceTree = "<group>"; };
+		69FAE6AB1E67EF6D00F15A0A /* VC5_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC5_2.m; sourceTree = "<group>"; };
+		69FAE6AC1E67EF6D00F15A0A /* VC5_2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC5_2.xib; sourceTree = "<group>"; };
+		69FAE6AF1E67F14000F15A0A /* VCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCManager.h; sourceTree = "<group>"; };
+		69FAE6B01E67F14000F15A0A /* VCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCManager.m; sourceTree = "<group>"; };
+		69FDCDD41E64188B008C3BC1 /* VC5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC5.h; sourceTree = "<group>"; };
+		69FDCDD51E64188B008C3BC1 /* VC5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC5.m; sourceTree = "<group>"; };
+		69FDCDD61E64188B008C3BC1 /* VC5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC5.xib; sourceTree = "<group>"; };
+		69FDCDD91E64190D008C3BC1 /* VC5_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC5_1.h; sourceTree = "<group>"; };
+		69FDCDDA1E64190D008C3BC1 /* VC5_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC5_1.m; sourceTree = "<group>"; };
+		69FDCDDB1E64190D008C3BC1 /* VC5_1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC5_1.xib; sourceTree = "<group>"; };
 		90D7658B5675F65046E13C91 /* libPods-JJ_Class_14_ReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJ_Class_14_ReactiveCocoa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D680028B95230D68FACD14 /* Pods-JJ_Class_14_ReactiveCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJ_Class_14_ReactiveCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJ_Class_14_ReactiveCocoa/Pods-JJ_Class_14_ReactiveCocoa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +169,8 @@
 		697B1B0B1D8BA37E00072DD8 /* JJ_Class_14_ReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				69FAE6B21E67F14700F15A0A /* Manager */,
+				69FDCDD31E641872008C3BC1 /* VC5 */,
 				692FC9401D8F7048006CCE33 /* VC4 */,
 				696D35BF1D8E71EC00841D39 /* VC3 */,
 				698F0B411D8E418500272016 /* VC2 */,
@@ -204,6 +224,31 @@
 				698F0B441D8E41BE00272016 /* VC2.xib */,
 			);
 			name = VC2;
+			sourceTree = "<group>";
+		};
+		69FAE6B21E67F14700F15A0A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				69FAE6AF1E67F14000F15A0A /* VCManager.h */,
+				69FAE6B01E67F14000F15A0A /* VCManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		69FDCDD31E641872008C3BC1 /* VC5 */ = {
+			isa = PBXGroup;
+			children = (
+				69FDCDD41E64188B008C3BC1 /* VC5.h */,
+				69FDCDD51E64188B008C3BC1 /* VC5.m */,
+				69FDCDD61E64188B008C3BC1 /* VC5.xib */,
+				69FDCDD91E64190D008C3BC1 /* VC5_1.h */,
+				69FDCDDA1E64190D008C3BC1 /* VC5_1.m */,
+				69FDCDDB1E64190D008C3BC1 /* VC5_1.xib */,
+				69FAE6AA1E67EF6D00F15A0A /* VC5_2.h */,
+				69FAE6AB1E67EF6D00F15A0A /* VC5_2.m */,
+				69FAE6AC1E67EF6D00F15A0A /* VC5_2.xib */,
+			);
+			name = VC5;
 			sourceTree = "<group>";
 		};
 		7EA52E364FE2A42EDC5A938D /* Pods */ = {
@@ -283,13 +328,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FDCDDD1E64190D008C3BC1 /* VC5_1.xib in Resources */,
 				696D35C41D8E720000841D39 /* VC3.xib in Resources */,
 				697B1B1C1D8BA37E00072DD8 /* LaunchScreen.storyboard in Resources */,
 				698F0B461D8E41BE00272016 /* VC2.xib in Resources */,
 				697B1B191D8BA37E00072DD8 /* Assets.xcassets in Resources */,
 				692FC9451D8F7065006CCE33 /* VC4.xib in Resources */,
 				697B1C581D8BE5F200072DD8 /* VC1.xib in Resources */,
+				69FDCDD81E64188B008C3BC1 /* VC5.xib in Resources */,
 				697B1B171D8BA37E00072DD8 /* Main.storyboard in Resources */,
+				69FAE6AE1E67EF6D00F15A0A /* VC5_2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,15 +398,19 @@
 			files = (
 				692FC9441D8F7065006CCE33 /* VC4.m in Sources */,
 				6998085A1D8E905200B0F292 /* SearchImp.m in Sources */,
+				69FAE6B11E67F14000F15A0A /* VCManager.m in Sources */,
 				69997BD51D8E95EF00A64988 /* VM3Imp.m in Sources */,
 				697B1B141D8BA37E00072DD8 /* ViewController.m in Sources */,
 				696D35C31D8E720000841D39 /* VC3.m in Sources */,
+				69FAE6AD1E67EF6D00F15A0A /* VC5_2.m in Sources */,
 				697B1C571D8BE5F200072DD8 /* VC1.m in Sources */,
+				69FDCDD71E64188B008C3BC1 /* VC5.m in Sources */,
 				697B1B111D8BA37E00072DD8 /* AppDelegate.m in Sources */,
 				698F0B451D8E41BE00272016 /* VC2.m in Sources */,
 				697B1B0E1D8BA37E00072DD8 /* main.m in Sources */,
 				696D35CA1D8E787000841D39 /* VM3.m in Sources */,
 				698F0B401D8E3BED00272016 /* RWDummySignInService.m in Sources */,
+				69FDCDDC1E64190D008C3BC1 /* VC5_1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

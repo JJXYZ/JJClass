@@ -11,6 +11,8 @@
 #import "VC2.h"
 #import "VC3.h"
 #import "VC4.h"
+#import "VC5.h"
+#import "VCManager.h"
 
 /**
  *  ReactiveCocoa的核心是信号，它是一个事件流。使用ReactiveCocoa时，对于同一个问题，可能会有多种不同的方法来解决。ReactiveCocoa的目的就是为了简化我们的代码并更容易理解。如果使用一个清晰的管道，我们可以很容易理解问题的处理过程。在下一部分，我们将会讨论错误事件的处理及完成事件的处理。
@@ -32,6 +34,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [VCManager sharedManager].vc = self;
 }
 
 #pragma mark - Event
@@ -57,5 +61,8 @@
 }
 
 - (IBAction)clickVC5:(id)sender {
+    VC5 *vc5 = [[VC5 alloc] init];
+    NSLog(@"%@ %@", self.navigationController, self.class);
+    [self.navigationController pushViewController:vc5 animated:YES];
 }
 @end
