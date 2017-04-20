@@ -28,7 +28,9 @@
  http://www.tuicool.com/articles/7VvuAr3
  
  注意:
- 1.gem sources -a https://ruby.taobao.org/  被干掉了使用 http://rubygems.org/
+ 1.gem sources -a https://ruby.taobao.org/  
+    被干掉了使用 http://rubygems.org/
+    被干掉了使用https://gems.ruby-china.org
  2.sudo gem install cocoapods 备注：苹果系统升级 OS X EL Capitan 后改为 $sudo gem install -n /usr/local/bin cocoapods
  
  

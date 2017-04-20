@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>内购流程以及实现 | 主要内容</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./13.html" />
+    
+    
+    <link rel="prev" href="./11.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="12" data-basepath="." data-revision="1450889079241">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         内容介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="1.html">
+            
+                
+                    <a href="./1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         真机调试介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="appleid/README.html">
+            
+                
+                    <a href="./appleid/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         如何申请AppleID
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="3.html">
+            
+                
+                    <a href="./3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         加入苹果开发者计划
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="4.html">
+            
+                
+                    <a href="./4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         配置真机调试
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="p12/README.html">
+            
+                
+                    <a href="./p12/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         配置P12文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="6.html">
+            
+                
+                    <a href="./6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         测试打包的介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="7.html">
+            
+                
+                    <a href="./7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         测试打包流程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="8.html">
+            
+                
+                    <a href="./8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         发布程序介绍和证书配置
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="9.html">
+            
+                
+                    <a href="./9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         发布程序流程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="app/README.html">
+            
+                
+                    <a href="./app/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         APP内购的介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="11.html">
+            
+                
+                    <a href="./11.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         添加内购项目
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="12" data-path="12.html">
+            
+                
+                    <a href="./12.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         内购流程以及实现
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="13.html">
+            
+                
+                    <a href="./13.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         广告
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >主要内容</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_196">
+                    
+                        <h2 id="">内购流程以及实现</h2>
+<h4 id="">一.内购的流程</h4>
+<ul>
+<li>内购的流程和商场购物非常的相似<ul>
+<li>商场购物流程<ul>
+<li>向商场说明准备购买的物品</li>
+<li>经过商场同意,商场告知可以卖哪些商品</li>
+<li>在店铺中展示自己的商品</li>
+<li>用户查看商品,选择购买某一件商品</li>
+<li>店铺给用户开取票据</li>
+<li>用于拿到票据去收银台付款</li>
+<li>用户付款成功,拿回票据,获取商品</li>
+<li>对应的流程图<img src="Images/Snip20151027_46.png" alt=""></li>
+</ul>
+</li>
+<li>内购流程<ul>
+<li>向苹果请求准备卖的商品</li>
+<li>苹果返回可销售的商品</li>
+<li>展示对应的商品</li>
+<li>用户选择购买商品</li>
+<li>创建票据,用户付费</li>
+<li>监听用户付费成功or失败,决定是否给用户商品</li>
+<li>对用的流程图<img src="Images/Snip20151027_49.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="">二.内购代码的实现</h4>
+<ul>
+<li>按照刚才的流程实现对应的代码即可</li>
+<li>注意:此处我将所有打算内购的商品放入了.plist文件,方便自己请求</li>
+<li><p>代码具体的实现</p>
+<ul>
+<li><p>请求可销售的商品</p>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)requestWangtedProducts
+{
+<span class="hljs-comment">// 1.获取想要卖的商品的ProductId</span>
+<span class="hljs-built_in">NSString</span> *productPath = [[<span class="hljs-built_in">NSBundle</span> mainBundle] pathForResource:<span class="hljs-string">@"iapdemo.plist"</span> ofType:<span class="hljs-literal">nil</span>];
+<span class="hljs-built_in">NSArray</span> *products = [<span class="hljs-built_in">NSArray</span> arrayWithContentsOfFile:productPath];
+<span class="hljs-built_in">NSArray</span> *productIds = [products valueForKeyPath:<span class="hljs-string">@"productId"</span>];
+
+<span class="hljs-comment">// 2.将ProductIds发送到苹果服务器,请求这些商品是否可卖</span>
+<span class="hljs-built_in">NSSet</span> *productIdSet = [<span class="hljs-built_in">NSSet</span> setWithArray:productIds];
+SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:productIdSet];
+request<span class="hljs-variable">.delegate</span> = <span class="hljs-keyword">self</span>;
+[request start];
+}
+</code></pre>
+</li>
+<li><p>在代理方法中拿到可销售的商品</p>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#pragma mark - 实现SKProductsRequest的代理方法</span>
+- (<span class="hljs-keyword">void</span>)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response
+{
+<span class="hljs-comment">// 1.获取可销售的商品,并且排序</span>
+<span class="hljs-keyword">self</span><span class="hljs-variable">.products</span> = [response<span class="hljs-variable">.products</span> sortedArrayWithOptions:NSSortConcurrent usingComparator:^NSComparisonResult(SKProduct *obj1, SKProduct *obj2) {
+  <span class="hljs-keyword">return</span> [obj1<span class="hljs-variable">.price</span> compare:obj2<span class="hljs-variable">.price</span>];
+}];
+
+<span class="hljs-comment">// 2.以tableView的形式展示商品</span>
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.tableView</span> reloadData];
+}
+</code></pre>
+</li>
+<li><p>展示效果<img src="Images/Snip20151027_52.png" alt=""></p>
+</li>
+<li><p>用户点击购买,创建票据</p>
+<pre><code>- (void)buyProduct:(SKProduct *)product
+{
+// 1.创建票据
+SKPayment *payment = [SKPayment paymentWithProduct:product];
+
+// 2.将票据加到到交易队列中
+[[SKPaymentQueue defaultQueue] addPayment:payment];
+
+// 3.观察交易队列中交易发生的改变
+[[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+}
+</code></pre></li>
+<li><p>交易队列中交易发生改变时,执行的监听方法</p>
+<pre><code>#pragma mark - 实现交易发生改变的回调方法
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions
+{
+for (SKPaymentTransaction *transaction in transactions) {
+  switch (transaction.transactionState) {
+      case SKPaymentTransactionStatePurchasing:
+          NSLog(@&quot;正在购买商品&quot;);
+          break;
+
+      case SKPaymentTransactionStatePurchased:
+          NSLog(@&quot;购买成功&quot;);
+          [queue finishTransaction:transaction];
+          break;
+
+      case SKPaymentTransactionStateFailed:
+          NSLog(@&quot;购买商品失败&quot;);
+          [queue finishTransaction:transaction];
+          break;
+
+      case SKPaymentTransactionStateRestored:
+          NSLog(@&quot;恢复购买&quot;);
+          [queue finishTransaction:transaction];
+          break;
+
+      case SKPaymentTransactionStateDeferred:
+          NSLog(@&quot;最终状态未决定&quot;);
+          break;
+
+      default:
+          break;
+  }
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./11.html" class="navigation navigation-prev " aria-label="Previous page: 添加内购项目"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./13.html" class="navigation navigation-next " aria-label="Next page: 广告"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
