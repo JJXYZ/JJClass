@@ -14,4 +14,6 @@
 
 @property (nonatomic, strong) NSString *height;
 
+@property (nonatomic, assign) NSInteger age;
+
 @end

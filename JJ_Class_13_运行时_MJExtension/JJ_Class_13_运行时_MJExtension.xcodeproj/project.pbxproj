@@ -39,6 +39,10 @@
 		69F7AFE41D87AF2500B2421F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 69F7AFCC1D87AF2500B2421F /* README.md */; };
 		69F7AFE81D87AF5900B2421F /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F7AFE71D87AF5900B2421F /* Student.m */; };
 		69F7AFEB1D87CB5100B2421F /* JSONStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F7AFEA1D87CB5100B2421F /* JSONStudent.m */; };
+		69FFA9C41EC01FFF00AB99DE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 69FFA9BC1EC01FFF00AB99DE /* LICENSE */; };
+		69FFA9C51EC01FFF00AB99DE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 69FFA9BD1EC01FFF00AB99DE /* README.md */; };
+		69FFA9C61EC01FFF00AB99DE /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFA9C01EC01FFF00AB99DE /* NSObject+YYModel.m */; };
+		69FFA9C71EC01FFF00AB99DE /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFA9C21EC01FFF00AB99DE /* YYClassInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +106,13 @@
 		69F7AFE71D87AF5900B2421F /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		69F7AFE91D87CB5100B2421F /* JSONStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONStudent.h; sourceTree = "<group>"; };
 		69F7AFEA1D87CB5100B2421F /* JSONStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONStudent.m; sourceTree = "<group>"; };
+		69FFA9BC1EC01FFF00AB99DE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		69FFA9BD1EC01FFF00AB99DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		69FFA9BF1EC01FFF00AB99DE /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		69FFA9C01EC01FFF00AB99DE /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		69FFA9C11EC01FFF00AB99DE /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		69FFA9C21EC01FFF00AB99DE /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		69FFA9C31EC01FFF00AB99DE /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				69F7AFE51D87AF3B00B2421F /* Models */,
+				69FFA9BB1EC01FFF00AB99DE /* YYModel */,
 				69F7AF971D87AF2500B2421F /* MJExtension */,
 				69F7AFB01D87AF2500B2421F /* JSONModel */,
 				69A094971D82548B0031CCF9 /* AppDelegate.h */,
@@ -277,6 +289,28 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		69FFA9BB1EC01FFF00AB99DE /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				69FFA9BC1EC01FFF00AB99DE /* LICENSE */,
+				69FFA9BD1EC01FFF00AB99DE /* README.md */,
+				69FFA9BE1EC01FFF00AB99DE /* YYModel */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		69FFA9BE1EC01FFF00AB99DE /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				69FFA9BF1EC01FFF00AB99DE /* NSObject+YYModel.h */,
+				69FFA9C01EC01FFF00AB99DE /* NSObject+YYModel.m */,
+				69FFA9C11EC01FFF00AB99DE /* YYClassInfo.h */,
+				69FFA9C21EC01FFF00AB99DE /* YYClassInfo.m */,
+				69FFA9C31EC01FFF00AB99DE /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +342,8 @@
 				TargetAttributes = {
 					69A094901D82548B0031CCF9 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ZWCLX6R5R6;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -334,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FFA9C41EC01FFF00AB99DE /* LICENSE in Resources */,
 				69A094A41D82548B0031CCF9 /* LaunchScreen.storyboard in Resources */,
 				69A094A11D82548B0031CCF9 /* Assets.xcassets in Resources */,
 				69F7AFCD1D87AF2500B2421F /* LICENSE in Resources */,
@@ -355,10 +392,12 @@
 				69F7AFCE1D87AF2500B2421F /* MJExtensionConst.m in Sources */,
 				69F7AFDD1D87AF2500B2421F /* NSArray+JSONModel.m in Sources */,
 				69F7AFE11D87AF2500B2421F /* JSONKeyMapper.m in Sources */,
+				69FFA9C61EC01FFF00AB99DE /* NSObject+YYModel.m in Sources */,
 				69F7AFD21D87AF2500B2421F /* MJPropertyType.m in Sources */,
 				69F7AFD11D87AF2500B2421F /* MJPropertyKey.m in Sources */,
 				69F7AFD51D87AF2500B2421F /* NSObject+MJKeyValue.m in Sources */,
 				69F7AFDA1D87AF2500B2421F /* JSONModelArray.m in Sources */,
+				69FFA9C51EC01FFF00AB99DE /* README.md in Sources */,
 				69F7AFD41D87AF2500B2421F /* NSObject+MJCoding.m in Sources */,
 				69F7AFDE1D87AF2500B2421F /* JSONAPI.m in Sources */,
 				69F7AFE21D87AF2500B2421F /* JSONValueTransformer.m in Sources */,
@@ -375,6 +414,7 @@
 				69F7AFD81D87AF2500B2421F /* README.md in Sources */,
 				69A094991D82548B0031CCF9 /* AppDelegate.m in Sources */,
 				69F7AFCF1D87AF2500B2421F /* MJFoundation.m in Sources */,
+				69FFA9C71EC01FFF00AB99DE /* YYClassInfo.m in Sources */,
 				69A094961D82548B0031CCF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -476,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -487,10 +527,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZWCLX6R5R6;
 				INFOPLIST_FILE = "JJ_Class_13_运行时_MJExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JJ.com.JJ-Class-13-----MJExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoniu88.XNOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5554dd1b-0f7d-40e3-99da-fcc43b799e5c";
+				PROVISIONING_PROFILE_SPECIFIER = XNOnline_Development;
 			};
 			name = Debug;
 		};
@@ -498,10 +541,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZWCLX6R5R6;
 				INFOPLIST_FILE = "JJ_Class_13_运行时_MJExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JJ.com.JJ-Class-13-----MJExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoniu88.XNOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5554dd1b-0f7d-40e3-99da-fcc43b799e5c";
+				PROVISIONING_PROFILE_SPECIFIER = XNOnline_Development;
 			};
 			name = Release;
 		};

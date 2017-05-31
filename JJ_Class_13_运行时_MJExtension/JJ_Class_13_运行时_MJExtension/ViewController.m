@@ -10,6 +10,7 @@
 #import "MJExtension.h"
 #import "Student.h"
 #import "JSONStudent.h"
+#import "YYModel.h"
 
 @interface ViewController ()
 
@@ -17,13 +18,32 @@
 
 @implementation ViewController
 
+#pragma mark - Life Cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    for (NSInteger i = 0; i<20; i++) {
-        [self JSONStudent];
-    }
+    JSONStudent *stu = [self getJSONStudent];
     
+    id json = stu.mj_JSONObject;
+    
+    NSLog(@"%@", json);
+}
+
+#pragma mark - Private Methods
+
+- (Student *)getStudent {
+    Student *stu = [[Student alloc] init];
+    stu.name = @"aaaa";
+    stu.height = @"1.80";
+    stu.age = 20;
+    
+    return stu;
+}
+
+- (JSONStudent *)getJSONStudent {
+    JSONStudent *stu = [JSONStudent parserEntityWithDictionary:[self getDic]];
+    return stu;
 }
 
 - (NSDictionary *)getDic {
