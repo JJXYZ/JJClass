@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69A743B7208453BE008FBED7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743B6208453BE008FBED7 /* AppDelegate.m */; };
+		69A743BA208453BE008FBED7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743B9208453BE008FBED7 /* ViewController.m */; };
+		69A743BD208453BE008FBED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A743BB208453BE008FBED7 /* Main.storyboard */; };
+		69A743BF208453C1008FBED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A743BE208453C1008FBED7 /* Assets.xcassets */; };
+		69A743C2208453C1008FBED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A743C0208453C1008FBED7 /* LaunchScreen.storyboard */; };
+		69A743C5208453C1008FBED7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743C4208453C1008FBED7 /* main.m */; };
+		69A743D12084748D008FBED7 /* JJInterview1.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743D02084748D008FBED7 /* JJInterview1.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69A743B2208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_25_2018_iOS面试题系列.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A743B5208453BE008FBED7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69A743B6208453BE008FBED7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69A743B8208453BE008FBED7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69A743B9208453BE008FBED7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69A743BC208453BE008FBED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69A743BE208453C1008FBED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A743C1208453C1008FBED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69A743C3208453C1008FBED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A743C4208453C1008FBED7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69A743CF2084748D008FBED7 /* JJInterview1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJInterview1.h; sourceTree = "<group>"; };
+		69A743D02084748D008FBED7 /* JJInterview1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJInterview1.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69A743AF208453BE008FBED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69A743A9208453BE008FBED7 = {
+			isa = PBXGroup;
+			children = (
+				69A743B4208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列 */,
+				69A743B3208453BE008FBED7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69A743B3208453BE008FBED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69A743B2208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69A743B4208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列 */ = {
+			isa = PBXGroup;
+			children = (
+				69A743CD20845440008FBED7 /* C面试题1 */,
+				69A743CC20845434008FBED7 /* ViewController */,
+				69A743CB20845424008FBED7 /* AppDelegate */,
+				69A743BB208453BE008FBED7 /* Main.storyboard */,
+				69A743BE208453C1008FBED7 /* Assets.xcassets */,
+				69A743C0208453C1008FBED7 /* LaunchScreen.storyboard */,
+				69A743C3208453C1008FBED7 /* Info.plist */,
+				69A743C4208453C1008FBED7 /* main.m */,
+			);
+			path = "JJ_Class_25_2018_iOS面试题系列";
+			sourceTree = "<group>";
+		};
+		69A743CB20845424008FBED7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				69A743B5208453BE008FBED7 /* AppDelegate.h */,
+				69A743B6208453BE008FBED7 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		69A743CC20845434008FBED7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				69A743B8208453BE008FBED7 /* ViewController.h */,
+				69A743B9208453BE008FBED7 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		69A743CD20845440008FBED7 /* C面试题1 */ = {
+			isa = PBXGroup;
+			children = (
+				69A743CF2084748D008FBED7 /* JJInterview1.h */,
+				69A743D02084748D008FBED7 /* JJInterview1.m */,
+			);
+			path = "C面试题1";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69A743B1208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A743C8208453C1008FBED7 /* Build configuration list for PBXNativeTarget "JJ_Class_25_2018_iOS面试题系列" */;
+			buildPhases = (
+				69A743AE208453BE008FBED7 /* Sources */,
+				69A743AF208453BE008FBED7 /* Frameworks */,
+				69A743B0208453BE008FBED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JJ_Class_25_2018_iOS面试题系列";
+			productName = "JJ_Class_25_2018_iOS面试题系列";
+			productReference = 69A743B2208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69A743AA208453BE008FBED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = com.xiaoniu88.XNOnline;
+				TargetAttributes = {
+					69A743B1208453BE008FBED7 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 69A743AD208453BE008FBED7 /* Build configuration list for PBXProject "JJ_Class_25_2018_iOS面试题系列" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69A743A9208453BE008FBED7;
+			productRefGroup = 69A743B3208453BE008FBED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69A743B1208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69A743B0208453BE008FBED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A743C2208453C1008FBED7 /* LaunchScreen.storyboard in Resources */,
+				69A743BF208453C1008FBED7 /* Assets.xcassets in Resources */,
+				69A743BD208453BE008FBED7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69A743AE208453BE008FBED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A743BA208453BE008FBED7 /* ViewController.m in Sources */,
+				69A743C5208453C1008FBED7 /* main.m in Sources */,
+				69A743B7208453BE008FBED7 /* AppDelegate.m in Sources */,
+				69A743D12084748D008FBED7 /* JJInterview1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69A743BB208453BE008FBED7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A743BC208453BE008FBED7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69A743C0208453C1008FBED7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A743C1208453C1008FBED7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69A743C6208453C1008FBED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69A743C7208453C1008FBED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69A743C9208453C1008FBED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "JJ_Class_25_2018_iOS面试题系列/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoniu88.XNOnline.JJ-Class-25-2018-iOS-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69A743CA208453C1008FBED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "JJ_Class_25_2018_iOS面试题系列/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoniu88.XNOnline.JJ-Class-25-2018-iOS-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69A743AD208453BE008FBED7 /* Build configuration list for PBXProject "JJ_Class_25_2018_iOS面试题系列" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A743C6208453C1008FBED7 /* Debug */,
+				69A743C7208453C1008FBED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A743C8208453C1008FBED7 /* Build configuration list for PBXNativeTarget "JJ_Class_25_2018_iOS面试题系列" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A743C9208453C1008FBED7 /* Debug */,
+				69A743CA208453C1008FBED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69A743AA208453BE008FBED7 /* Project object */;
+}
