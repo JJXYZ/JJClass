@@ -8,15 +8,19 @@
 
 #import "ViewController.h"
 
-void swap(int p1, int p2)
-{
+void swap( int* p1,int* p2 ) {
+    int p;
+    p = *p1;
+    *p1 = *p2;
+    *p2 = p;
+}
+
+void swap1( int p1,int p2 ) {
     int p;
     p = p1;
     p1 = p2;
     p2 = p;
 }
-
-
 
 @interface ViewController ()
 
@@ -30,8 +34,8 @@ void swap(int p1, int p2)
     int a = 10;
     int b = 20;
     
-    swap(a, b);
-    
+    swap(&a, &b);
+    NSLog(@"%d %d", a, b);
     
 }
 
