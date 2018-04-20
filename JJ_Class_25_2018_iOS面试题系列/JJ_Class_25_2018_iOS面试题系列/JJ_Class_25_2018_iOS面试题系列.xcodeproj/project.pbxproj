@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		698E78F92089945A00E500DD /* JJiOSInterview06.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E78F82089945A00E500DD /* JJiOSInterview06.m */; };
+		698E78FD2089D46100E500DD /* JJiOSInterview07.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E78FC2089D46100E500DD /* JJiOSInterview07.m */; };
+		698E79012089D50700E500DD /* JJiOSInterview08.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E79002089D50700E500DD /* JJiOSInterview08.m */; };
+		698E79052089DF1600E500DD /* JJiOSInterview09.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E79042089DF1600E500DD /* JJiOSInterview09.m */; };
 		69A743B7208453BE008FBED7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743B6208453BE008FBED7 /* AppDelegate.m */; };
 		69A743BA208453BE008FBED7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743B9208453BE008FBED7 /* ViewController.m */; };
 		69A743BD208453BE008FBED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A743BB208453BE008FBED7 /* Main.storyboard */; };
@@ -17,9 +21,26 @@
 		69A743D520858F79008FBED7 /* JJInterview2.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743D420858F79008FBED7 /* JJInterview2.m */; };
 		69A743E320883783008FBED7 /* JJInterview3.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743E220883783008FBED7 /* JJInterview3.m */; };
 		69A743E720883B78008FBED7 /* JJOCInterview1.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743E620883B78008FBED7 /* JJOCInterview1.m */; };
+		69A743EB2088459F008FBED7 /* JJOCInterview2.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743EA2088459F008FBED7 /* JJOCInterview2.m */; };
+		69A743EF208845CF008FBED7 /* JJOCInterview3.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743EE208845CF008FBED7 /* JJOCInterview3.m */; };
+		69A743F3208846DA008FBED7 /* JJOCInterview4.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743F2208846DA008FBED7 /* JJOCInterview4.m */; };
+		69A743F82088620D008FBED7 /* JJiOSInterview01.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743F72088620D008FBED7 /* JJiOSInterview01.m */; };
+		69A743FA20886698008FBED7 /* TCP连接的三次握手.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A743F920886698008FBED7 /* TCP连接的三次握手.png */; };
+		69A743FE208866EC008FBED7 /* JJiOSInterview02.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743FD208866EC008FBED7 /* JJiOSInterview02.m */; };
+		69A7440220887449008FBED7 /* JJiOSInterview03.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A7440120887449008FBED7 /* JJiOSInterview03.m */; };
+		69A74406208876D1008FBED7 /* JJiOSInterview04.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A74405208876D1008FBED7 /* JJiOSInterview04.m */; };
+		69A7440A208877EF008FBED7 /* JJiOSInterview05.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A74409208877EF008FBED7 /* JJiOSInterview05.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		698E78F72089945A00E500DD /* JJiOSInterview06.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview06.h; sourceTree = "<group>"; };
+		698E78F82089945A00E500DD /* JJiOSInterview06.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview06.m; sourceTree = "<group>"; };
+		698E78FB2089D46100E500DD /* JJiOSInterview07.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview07.h; sourceTree = "<group>"; };
+		698E78FC2089D46100E500DD /* JJiOSInterview07.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview07.m; sourceTree = "<group>"; };
+		698E78FF2089D50700E500DD /* JJiOSInterview08.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview08.h; sourceTree = "<group>"; };
+		698E79002089D50700E500DD /* JJiOSInterview08.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview08.m; sourceTree = "<group>"; };
+		698E79032089DF1600E500DD /* JJiOSInterview09.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview09.h; sourceTree = "<group>"; };
+		698E79042089DF1600E500DD /* JJiOSInterview09.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview09.m; sourceTree = "<group>"; };
 		69A743B2208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_25_2018_iOS面试题系列.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A743B5208453BE008FBED7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69A743B6208453BE008FBED7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,6 +59,23 @@
 		69A743E220883783008FBED7 /* JJInterview3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJInterview3.m; sourceTree = "<group>"; };
 		69A743E520883B77008FBED7 /* JJOCInterview1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJOCInterview1.h; sourceTree = "<group>"; };
 		69A743E620883B78008FBED7 /* JJOCInterview1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJOCInterview1.m; sourceTree = "<group>"; };
+		69A743E92088459F008FBED7 /* JJOCInterview2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJOCInterview2.h; sourceTree = "<group>"; };
+		69A743EA2088459F008FBED7 /* JJOCInterview2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJOCInterview2.m; sourceTree = "<group>"; };
+		69A743ED208845CF008FBED7 /* JJOCInterview3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJOCInterview3.h; sourceTree = "<group>"; };
+		69A743EE208845CF008FBED7 /* JJOCInterview3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJOCInterview3.m; sourceTree = "<group>"; };
+		69A743F1208846DA008FBED7 /* JJOCInterview4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJOCInterview4.h; sourceTree = "<group>"; };
+		69A743F2208846DA008FBED7 /* JJOCInterview4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJOCInterview4.m; sourceTree = "<group>"; };
+		69A743F62088620D008FBED7 /* JJiOSInterview01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview01.h; sourceTree = "<group>"; };
+		69A743F72088620D008FBED7 /* JJiOSInterview01.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview01.m; sourceTree = "<group>"; };
+		69A743F920886698008FBED7 /* TCP连接的三次握手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TCP连接的三次握手.png"; sourceTree = "<group>"; };
+		69A743FC208866EC008FBED7 /* JJiOSInterview02.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview02.h; sourceTree = "<group>"; };
+		69A743FD208866EC008FBED7 /* JJiOSInterview02.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview02.m; sourceTree = "<group>"; };
+		69A7440020887449008FBED7 /* JJiOSInterview03.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview03.h; sourceTree = "<group>"; };
+		69A7440120887449008FBED7 /* JJiOSInterview03.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview03.m; sourceTree = "<group>"; };
+		69A74404208876D1008FBED7 /* JJiOSInterview04.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview04.h; sourceTree = "<group>"; };
+		69A74405208876D1008FBED7 /* JJiOSInterview04.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview04.m; sourceTree = "<group>"; };
+		69A74408208877EF008FBED7 /* JJiOSInterview05.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview05.h; sourceTree = "<group>"; };
+		69A74409208877EF008FBED7 /* JJiOSInterview05.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview05.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +89,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		698E78F62089944A00E500DD /* iOS面试题06-应用程序 */ = {
+			isa = PBXGroup;
+			children = (
+				698E78F72089945A00E500DD /* JJiOSInterview06.h */,
+				698E78F82089945A00E500DD /* JJiOSInterview06.m */,
+			);
+			path = "iOS面试题06-应用程序";
+			sourceTree = "<group>";
+		};
+		698E78FA2089D45200E500DD /* iOS面试题07-第三方框架 */ = {
+			isa = PBXGroup;
+			children = (
+				698E78FB2089D46100E500DD /* JJiOSInterview07.h */,
+				698E78FC2089D46100E500DD /* JJiOSInterview07.m */,
+			);
+			path = "iOS面试题07-第三方框架";
+			sourceTree = "<group>";
+		};
+		698E78FE2089D4F500E500DD /* iOS面试题08-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				698E78FF2089D50700E500DD /* JJiOSInterview08.h */,
+				698E79002089D50700E500DD /* JJiOSInterview08.m */,
+			);
+			path = "iOS面试题08-其他";
+			sourceTree = "<group>";
+		};
+		698E79022089DEFE00E500DD /* iOS面试题09- 基础篇 */ = {
+			isa = PBXGroup;
+			children = (
+				698E79032089DF1600E500DD /* JJiOSInterview09.h */,
+				698E79042089DF1600E500DD /* JJiOSInterview09.m */,
+			);
+			path = "iOS面试题09- 基础篇";
+			sourceTree = "<group>";
+		};
 		69A743A9208453BE008FBED7 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +144,18 @@
 		69A743B4208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列 */ = {
 			isa = PBXGroup;
 			children = (
+				698E79022089DEFE00E500DD /* iOS面试题09- 基础篇 */,
+				698E78FE2089D4F500E500DD /* iOS面试题08-其他 */,
+				698E78FA2089D45200E500DD /* iOS面试题07-第三方框架 */,
+				698E78F62089944A00E500DD /* iOS面试题06-应用程序 */,
+				69A74407208877E2008FBED7 /* iOS面试题05-UI 控件 */,
+				69A74403208876AC008FBED7 /* iOS面试题04-数据存储 */,
+				69A743FF2088742D008FBED7 /* iOS面试题03-Foundation */,
+				69A743FB208866DD008FBED7 /* iOS面试题02-内存管理 */,
+				69A743F4208861DB008FBED7 /* iOS面试题01-多线程网络 */,
+				69A743F0208846C9008FBED7 /* OC笔试题4 */,
+				69A743EC208845BD008FBED7 /* OC笔试题3 */,
+				69A743E82088458D008FBED7 /* OC笔试题2 */,
 				69A743E420883B4E008FBED7 /* OC笔试题1 */,
 				69A743E02088376F008FBED7 /* C面试题3 */,
 				69A743D220858F5F008FBED7 /* C面试题2 */,
@@ -139,6 +225,79 @@
 			path = "OC笔试题1";
 			sourceTree = "<group>";
 		};
+		69A743E82088458D008FBED7 /* OC笔试题2 */ = {
+			isa = PBXGroup;
+			children = (
+				69A743E92088459F008FBED7 /* JJOCInterview2.h */,
+				69A743EA2088459F008FBED7 /* JJOCInterview2.m */,
+			);
+			path = "OC笔试题2";
+			sourceTree = "<group>";
+		};
+		69A743EC208845BD008FBED7 /* OC笔试题3 */ = {
+			isa = PBXGroup;
+			children = (
+				69A743ED208845CF008FBED7 /* JJOCInterview3.h */,
+				69A743EE208845CF008FBED7 /* JJOCInterview3.m */,
+			);
+			path = "OC笔试题3";
+			sourceTree = "<group>";
+		};
+		69A743F0208846C9008FBED7 /* OC笔试题4 */ = {
+			isa = PBXGroup;
+			children = (
+				69A743F1208846DA008FBED7 /* JJOCInterview4.h */,
+				69A743F2208846DA008FBED7 /* JJOCInterview4.m */,
+			);
+			path = "OC笔试题4";
+			sourceTree = "<group>";
+		};
+		69A743F4208861DB008FBED7 /* iOS面试题01-多线程网络 */ = {
+			isa = PBXGroup;
+			children = (
+				69A743F920886698008FBED7 /* TCP连接的三次握手.png */,
+				69A743F62088620D008FBED7 /* JJiOSInterview01.h */,
+				69A743F72088620D008FBED7 /* JJiOSInterview01.m */,
+			);
+			path = "iOS面试题01-多线程网络";
+			sourceTree = "<group>";
+		};
+		69A743FB208866DD008FBED7 /* iOS面试题02-内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				69A743FC208866EC008FBED7 /* JJiOSInterview02.h */,
+				69A743FD208866EC008FBED7 /* JJiOSInterview02.m */,
+			);
+			path = "iOS面试题02-内存管理";
+			sourceTree = "<group>";
+		};
+		69A743FF2088742D008FBED7 /* iOS面试题03-Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				69A7440020887449008FBED7 /* JJiOSInterview03.h */,
+				69A7440120887449008FBED7 /* JJiOSInterview03.m */,
+			);
+			path = "iOS面试题03-Foundation";
+			sourceTree = "<group>";
+		};
+		69A74403208876AC008FBED7 /* iOS面试题04-数据存储 */ = {
+			isa = PBXGroup;
+			children = (
+				69A74404208876D1008FBED7 /* JJiOSInterview04.h */,
+				69A74405208876D1008FBED7 /* JJiOSInterview04.m */,
+			);
+			path = "iOS面试题04-数据存储";
+			sourceTree = "<group>";
+		};
+		69A74407208877E2008FBED7 /* iOS面试题05-UI 控件 */ = {
+			isa = PBXGroup;
+			children = (
+				69A74408208877EF008FBED7 /* JJiOSInterview05.h */,
+				69A74409208877EF008FBED7 /* JJiOSInterview05.m */,
+			);
+			path = "iOS面试题05-UI 控件";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,6 +357,7 @@
 			files = (
 				69A743C2208453C1008FBED7 /* LaunchScreen.storyboard in Resources */,
 				69A743BF208453C1008FBED7 /* Assets.xcassets in Resources */,
+				69A743FA20886698008FBED7 /* TCP连接的三次握手.png in Resources */,
 				69A743BD208453BE008FBED7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,13 +369,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A743EB2088459F008FBED7 /* JJOCInterview2.m in Sources */,
+				69A743EF208845CF008FBED7 /* JJOCInterview3.m in Sources */,
+				698E78FD2089D46100E500DD /* JJiOSInterview07.m in Sources */,
 				69A743BA208453BE008FBED7 /* ViewController.m in Sources */,
+				698E79052089DF1600E500DD /* JJiOSInterview09.m in Sources */,
+				69A74406208876D1008FBED7 /* JJiOSInterview04.m in Sources */,
 				69A743C5208453C1008FBED7 /* main.m in Sources */,
+				69A743F82088620D008FBED7 /* JJiOSInterview01.m in Sources */,
 				69A743D520858F79008FBED7 /* JJInterview2.m in Sources */,
 				69A743B7208453BE008FBED7 /* AppDelegate.m in Sources */,
+				69A7440A208877EF008FBED7 /* JJiOSInterview05.m in Sources */,
 				69A743D12084748D008FBED7 /* JJInterview1.m in Sources */,
+				698E79012089D50700E500DD /* JJiOSInterview08.m in Sources */,
 				69A743E320883783008FBED7 /* JJInterview3.m in Sources */,
+				69A7440220887449008FBED7 /* JJiOSInterview03.m in Sources */,
+				69A743F3208846DA008FBED7 /* JJOCInterview4.m in Sources */,
 				69A743E720883B78008FBED7 /* JJOCInterview1.m in Sources */,
+				69A743FE208866EC008FBED7 /* JJiOSInterview02.m in Sources */,
+				698E78F92089945A00E500DD /* JJiOSInterview06.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

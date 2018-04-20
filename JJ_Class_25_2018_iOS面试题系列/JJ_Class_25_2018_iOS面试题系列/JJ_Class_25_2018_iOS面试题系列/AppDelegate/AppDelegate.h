@@ -6,6 +6,9 @@
 //  Copyright © 2018年 com.xiaoniu88.XNOnline. All rights reserved.
 //
 
+
+/** http://www.cocoachina.com/ios/20180404/22917.html */
+
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
