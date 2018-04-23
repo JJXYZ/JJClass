@@ -11,6 +11,11 @@
 		698E78FD2089D46100E500DD /* JJiOSInterview07.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E78FC2089D46100E500DD /* JJiOSInterview07.m */; };
 		698E79012089D50700E500DD /* JJiOSInterview08.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E79002089D50700E500DD /* JJiOSInterview08.m */; };
 		698E79052089DF1600E500DD /* JJiOSInterview09.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E79042089DF1600E500DD /* JJiOSInterview09.m */; };
+		698E7909208D877800E500DD /* JJiOSInterview10.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E7908208D877800E500DD /* JJiOSInterview10.m */; };
+		698E790D208D87BE00E500DD /* JJiOSInterview11.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E790C208D87BE00E500DD /* JJiOSInterview11.m */; };
+		698E7911208DB52B00E500DD /* JJiOSInterview12.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E7910208DB52B00E500DD /* JJiOSInterview12.m */; };
+		698E7915208DC69100E500DD /* JJiOSInterview13.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E7914208DC69100E500DD /* JJiOSInterview13.m */; };
+		698E7919208DCBAB00E500DD /* JJiOSInterview0.m in Sources */ = {isa = PBXBuildFile; fileRef = 698E7918208DCBAB00E500DD /* JJiOSInterview0.m */; };
 		69A743B7208453BE008FBED7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743B6208453BE008FBED7 /* AppDelegate.m */; };
 		69A743BA208453BE008FBED7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A743B9208453BE008FBED7 /* ViewController.m */; };
 		69A743BD208453BE008FBED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A743BB208453BE008FBED7 /* Main.storyboard */; };
@@ -41,6 +46,16 @@
 		698E79002089D50700E500DD /* JJiOSInterview08.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview08.m; sourceTree = "<group>"; };
 		698E79032089DF1600E500DD /* JJiOSInterview09.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview09.h; sourceTree = "<group>"; };
 		698E79042089DF1600E500DD /* JJiOSInterview09.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview09.m; sourceTree = "<group>"; };
+		698E7907208D877800E500DD /* JJiOSInterview10.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview10.h; sourceTree = "<group>"; };
+		698E7908208D877800E500DD /* JJiOSInterview10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview10.m; sourceTree = "<group>"; };
+		698E790B208D87BE00E500DD /* JJiOSInterview11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview11.h; sourceTree = "<group>"; };
+		698E790C208D87BE00E500DD /* JJiOSInterview11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview11.m; sourceTree = "<group>"; };
+		698E790F208DB52B00E500DD /* JJiOSInterview12.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview12.h; sourceTree = "<group>"; };
+		698E7910208DB52B00E500DD /* JJiOSInterview12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview12.m; sourceTree = "<group>"; };
+		698E7913208DC69100E500DD /* JJiOSInterview13.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview13.h; sourceTree = "<group>"; };
+		698E7914208DC69100E500DD /* JJiOSInterview13.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview13.m; sourceTree = "<group>"; };
+		698E7917208DCBAB00E500DD /* JJiOSInterview0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview0.h; sourceTree = "<group>"; };
+		698E7918208DCBAB00E500DD /* JJiOSInterview0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview0.m; sourceTree = "<group>"; };
 		69A743B2208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JJ_Class_25_2018_iOS面试题系列.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A743B5208453BE008FBED7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69A743B6208453BE008FBED7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +140,51 @@
 			path = "iOS面试题09- 基础篇";
 			sourceTree = "<group>";
 		};
+		698E7906208D876800E500DD /* iOS面试题10-UI 篇 */ = {
+			isa = PBXGroup;
+			children = (
+				698E7907208D877800E500DD /* JJiOSInterview10.h */,
+				698E7908208D877800E500DD /* JJiOSInterview10.m */,
+			);
+			path = "iOS面试题10-UI 篇";
+			sourceTree = "<group>";
+		};
+		698E790A208D87B000E500DD /* iOS面试题11-原理篇 */ = {
+			isa = PBXGroup;
+			children = (
+				698E790B208D87BE00E500DD /* JJiOSInterview11.h */,
+				698E790C208D87BE00E500DD /* JJiOSInterview11.m */,
+			);
+			path = "iOS面试题11-原理篇";
+			sourceTree = "<group>";
+		};
+		698E790E208DB51D00E500DD /* iOS面试题12-数据结构算法篇 */ = {
+			isa = PBXGroup;
+			children = (
+				698E790F208DB52B00E500DD /* JJiOSInterview12.h */,
+				698E7910208DB52B00E500DD /* JJiOSInterview12.m */,
+			);
+			path = "iOS面试题12-数据结构算法篇";
+			sourceTree = "<group>";
+		};
+		698E7912208DB94700E500DD /* iOS面试题13-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				698E7913208DC69100E500DD /* JJiOSInterview13.h */,
+				698E7914208DC69100E500DD /* JJiOSInterview13.m */,
+			);
+			path = "iOS面试题13-其他";
+			sourceTree = "<group>";
+		};
+		698E7916208DCB8F00E500DD /* 非技术面试题 */ = {
+			isa = PBXGroup;
+			children = (
+				698E7917208DCBAB00E500DD /* JJiOSInterview0.h */,
+				698E7918208DCBAB00E500DD /* JJiOSInterview0.m */,
+			);
+			path = "非技术面试题";
+			sourceTree = "<group>";
+		};
 		69A743A9208453BE008FBED7 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +204,11 @@
 		69A743B4208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列 */ = {
 			isa = PBXGroup;
 			children = (
+				698E7916208DCB8F00E500DD /* 非技术面试题 */,
+				698E7912208DB94700E500DD /* iOS面试题13-其他 */,
+				698E790E208DB51D00E500DD /* iOS面试题12-数据结构算法篇 */,
+				698E790A208D87B000E500DD /* iOS面试题11-原理篇 */,
+				698E7906208D876800E500DD /* iOS面试题10-UI 篇 */,
 				698E79022089DEFE00E500DD /* iOS面试题09- 基础篇 */,
 				698E78FE2089D4F500E500DD /* iOS面试题08-其他 */,
 				698E78FA2089D45200E500DD /* iOS面试题07-第三方框架 */,
@@ -381,12 +446,17 @@
 				69A743B7208453BE008FBED7 /* AppDelegate.m in Sources */,
 				69A7440A208877EF008FBED7 /* JJiOSInterview05.m in Sources */,
 				69A743D12084748D008FBED7 /* JJInterview1.m in Sources */,
+				698E7915208DC69100E500DD /* JJiOSInterview13.m in Sources */,
 				698E79012089D50700E500DD /* JJiOSInterview08.m in Sources */,
 				69A743E320883783008FBED7 /* JJInterview3.m in Sources */,
 				69A7440220887449008FBED7 /* JJiOSInterview03.m in Sources */,
+				698E7919208DCBAB00E500DD /* JJiOSInterview0.m in Sources */,
 				69A743F3208846DA008FBED7 /* JJOCInterview4.m in Sources */,
+				698E7911208DB52B00E500DD /* JJiOSInterview12.m in Sources */,
 				69A743E720883B78008FBED7 /* JJOCInterview1.m in Sources */,
 				69A743FE208866EC008FBED7 /* JJiOSInterview02.m in Sources */,
+				698E7909208D877800E500DD /* JJiOSInterview10.m in Sources */,
+				698E790D208D87BE00E500DD /* JJiOSInterview11.m in Sources */,
 				698E78F92089945A00E500DD /* JJiOSInterview06.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
