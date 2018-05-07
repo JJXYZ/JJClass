@@ -35,6 +35,7 @@
 		69A7440220887449008FBED7 /* JJiOSInterview03.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A7440120887449008FBED7 /* JJiOSInterview03.m */; };
 		69A74406208876D1008FBED7 /* JJiOSInterview04.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A74405208876D1008FBED7 /* JJiOSInterview04.m */; };
 		69A7440A208877EF008FBED7 /* JJiOSInterview05.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A74409208877EF008FBED7 /* JJiOSInterview05.m */; };
+		69C557A1209FFCD300F65248 /* 面试题 in Resources */ = {isa = PBXBuildFile; fileRef = 69C557A0209FFCD200F65248 /* 面试题 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		69A74405208876D1008FBED7 /* JJiOSInterview04.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview04.m; sourceTree = "<group>"; };
 		69A74408208877EF008FBED7 /* JJiOSInterview05.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJiOSInterview05.h; sourceTree = "<group>"; };
 		69A74409208877EF008FBED7 /* JJiOSInterview05.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJiOSInterview05.m; sourceTree = "<group>"; };
+		69C557A0209FFCD200F65248 /* 面试题 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "面试题"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		69A743B4208453BE008FBED7 /* JJ_Class_25_2018_iOS面试题系列 */ = {
 			isa = PBXGroup;
 			children = (
+				69C557A0209FFCD200F65248 /* 面试题 */,
 				698E7916208DCB8F00E500DD /* 非技术面试题 */,
 				698E7912208DB94700E500DD /* iOS面试题13-其他 */,
 				698E790E208DB51D00E500DD /* iOS面试题12-数据结构算法篇 */,
@@ -422,6 +425,7 @@
 			files = (
 				69A743C2208453C1008FBED7 /* LaunchScreen.storyboard in Resources */,
 				69A743BF208453C1008FBED7 /* Assets.xcassets in Resources */,
+				69C557A1209FFCD300F65248 /* 面试题 in Resources */,
 				69A743FA20886698008FBED7 /* TCP连接的三次握手.png in Resources */,
 				69A743BD208453BE008FBED7 /* Main.storyboard in Resources */,
 			);
