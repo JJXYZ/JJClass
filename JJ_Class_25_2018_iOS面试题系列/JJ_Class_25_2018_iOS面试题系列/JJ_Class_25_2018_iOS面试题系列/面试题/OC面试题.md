@@ -23,10 +23,11 @@
 ###OC面试题
 
 * 属性(@property本质)(默认)/strong/weak(IBOutlet)/assign修饰符的区别/atomic一定线程安全/@synthesize和@dynamic/@synthesize合成实例变量的规则/copy/mutiblecopy/unsafe_unretained 
-* +(void)load; +(void)initialize/调用时机
+* 浅拷贝和深拷贝
 * OC的多继承
-* OC如何对内存管理的，对象是什么时候被释放的。
 * category的使用场景，继承和category使用时机，调用顺序
+* 分类/扩展类/继承
+* OC如何对内存管理的，对象是什么时候被释放的。
 * autorelease的使用场景、autoreleasepool原理
 * get和set方法手动内存管理。
 * MRC和ARC(内部实现)区别,循环引用
@@ -35,32 +36,27 @@
 * NSOperationQueue和GCD的区别
 * A/B/C三个线程,执行完A,B后再执行C,顺/逆序
 * GCD以及block时要注意些什么？ARC/MRC?
-* 浅拷贝和深拷贝
-* 分类/扩展类/继承
 * KVO/KVC原理/手动触发KVO/自己动手实现KVO
 * delegate/NSNotification(耗时操作)
-* runtime理解/怎么添加属性/方法/调用方法的过程/method swizzling/[obj foo]和objc_msgSend()函数之间有什么关系/什么时候会报 unrecognized selector的异常/OC消息转发三部分
-* RunLoop的理解/runloop和线程/runloop的mode/内部实现
 * 简描元类和根类
+* runtime理解/怎么添加属性/方法/调用方法的过程/method swizzling/[obj foo]和objc_msgSend()函数之间有什么关系/什么时候会报 unrecognized selector的异常/OC消息转发三部分/method和selector区别
+* +(void)load; +(void)initialize/调用时机/APP的启动过程(优化)/main之前的操作
+* RunLoop的理解/runloop和线程/runloop的mode/内部实现
 * 推送原理/APNS发送系统消息的机制
 * 单例,注意事项(MRC和ARC)
 * 响应者链/事件传递
 * frame/bounds
-* method和selector区别
 * 数据存储的方式
 * tableView的重用机制
 * ViewCointroller的生命周期
 * MVC和MVVM
 * self/self./self->
 * iOS性能测试
-* Socket的实现原理及Socket之间是如何通信的
-* http(s)协议的实现/三次握手/HTTP协议中 POST方法和 GET方法有那些区别?/TCP 和 UDP 有什么区别
 * Foundation对象与Core Foundation对象的区别
 * 动态库/静态库
 * CoreText简单介绍
 * FMDB使用/多线程处理
 * UIView/UIButton/CAAnimation层级结构，具体作用
-* APP的启动过程,从 main文件开始说起
 * 第三方框架/SDWebImage内部实现过程(缺点)/构建框架注意事项/AFN 与 ASI
 * OC对象内存布局/isa的指针/[self/super class]/类方法和实例方法/Associate方法关联的对象/selector/IMP区别/
 * BAD_ACCESS在什么情况下出现/如何调试
@@ -76,6 +72,8 @@
 
 ###网络相关问题
 * HTTP、HTTPS的区别？
+* Socket的实现原理及Socket之间是如何通信的
+* http(s)协议的实现/三次握手/HTTP协议中 POST方法和 GET方法有那些区别?/TCP 和 UDP 有什么区别
 * HTTPS安全层的构建过程及实现？
 * 简述几种对称、非对称加密方式？
 * MD5和SHA-1两种编码方式的区别？
