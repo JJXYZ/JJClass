@@ -22,9 +22,12 @@
  · OC的NSOperation和NSOperationQueue（基于GCD）
  
  二、线程间怎么通信？
+ 
  performSelector:onThread:withObject:waitUntilDone:
  NSMachPort
  (基本机制：A线程（父线程）创建NSMachPort对象，并加入A线程的runloop。当创建B线程（辅助线程）时，将创建的NSMachPort对象传递到主体入口点，B线程（辅助线程）就可以使用相同的端口对象将消息传回A线程（父线程）。)
+ 
+ 
  三、网络图片处理问题中怎么解决一个相同的网络,地址重复请求的问题？
  提示：
  利用字典（图片地址为key，下载操作为value）
