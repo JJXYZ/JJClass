@@ -83,7 +83,7 @@
  @end
  答案：都输出 Son
  这个题目主要是考察关于 objc 中对 self 和 super 的理解：
- self 是类的隐藏参数，指向当前调用方法的这个类的实例。而 super 本质是一个编译器标示符，和 self 是指向的同一个消息接受者，当使用 self 调用方法时，会从当前类的方法列表中开始找，如果没有，就从父类中再找；而当使用 super 时，则从父类的方法列表中开始找。然后调用父类的这个方法调用[self class] 时，会转化成 objc_msgSend 函数id objc_msgSend(id self, SELop, ...)。
+ self 是类的隐藏参数，指向当前调用方法的这个类的实例。而 super 本质是一个编译器标示符，和 self 是指向的同一个消息接受者，当使用 self 调用方法时，会从当前类的方法列表中开始找，如果没有，就从父类中再找；而当使用 super 时，则从父类的方法列表中开始找。然后调用父类的这个方法调用[self class] 时，会转化成 objc_msgSend 函数id objc_msgSend(id self, SEL op, ...)。
  调用[super class] 时 ，会转化成objc_msgSendSuper函数id objc_msgSendSuper(struct objc_super *super, SEL op, ...)。
  第一个参数是objc_super 这样一个结构体，其定义如下
  
