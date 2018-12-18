@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self personInitialize];
+    [self personLoad];
 }
 
 #pragma mark - Private Methods
@@ -56,7 +56,7 @@
 }
 
 - (void)personLoad {
-    [Person test];
+//    [Person test];
 }
 
 - (void)personInitialize {

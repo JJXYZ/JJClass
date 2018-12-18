@@ -106,8 +106,10 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_737ab3_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"Person test2",12};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_737ab3_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"Person test",11};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_3f0c36_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"Person (Test) + load",20};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_3f0c36_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"Person test2",12};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_3f0c36_mi_2 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"Person (Test) + test",20};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_3f0c36_mi_3 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"Person (Test) + test",20};
 
 
 
@@ -54870,12 +54872,20 @@ _mm_adds_epu16(__m128i __a, __m128i __b)
 static __inline__ __m128i __attribute__((__always_inline__, __nodebug__, __target__("sse2")))
 _mm_avg_epu8(__m128i __a, __m128i __b)
 {
-  return (__m128i)__builtin_ia32_pavgb128((__v16qi)__a, (__v16qi)__b);
+  typedef unsigned short __v16hu __attribute__ ((__vector_size__ (32)));
+  return (__m128i)__builtin_convertvector(
+               ((__builtin_convertvector((__v16qu)__a, __v16hu) +
+                 __builtin_convertvector((__v16qu)__b, __v16hu)) + 1)
+                 >> 1, __v16qu);
 }
 static __inline__ __m128i __attribute__((__always_inline__, __nodebug__, __target__("sse2")))
 _mm_avg_epu16(__m128i __a, __m128i __b)
 {
-  return (__m128i)__builtin_ia32_pavgw128((__v8hi)__a, (__v8hi)__b);
+  typedef unsigned int __v8su __attribute__ ((__vector_size__ (32)));
+  return (__m128i)__builtin_convertvector(
+               ((__builtin_convertvector((__v8hu)__a, __v8su) +
+                 __builtin_convertvector((__v8hu)__b, __v8su)) + 1)
+                 >> 1, __v8hu);
 }
 static __inline__ __m128i __attribute__((__always_inline__, __nodebug__, __target__("sse2")))
 _mm_madd_epi16(__m128i __a, __m128i __b)
@@ -97803,6 +97813,8 @@ struct Person_IMPL {
 
 // - (void)run;
 
+// + (void)test;
+
 /* @end */
 
 
@@ -97812,6 +97824,8 @@ struct Person_IMPL {
 
 // - (void)test;
 
+// + (void)test;
+
 /* @end */
 
 
@@ -97820,13 +97834,29 @@ struct Person_IMPL {
 
 
 
+static void _C_Person_Test_load(Class self, SEL _cmd) {
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_3f0c36_mi_0);
+}
+
+
+
+
+
+
+
+
 static void _C_Person_Test_test2(Class self, SEL _cmd) {
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_737ab3_mi_0);
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_3f0c36_mi_1);
 }
 
 
 static void _I_Person_Test_test(Person * self, SEL _cmd) {
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_737ab3_mi_1);
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_3f0c36_mi_2);
+}
+
+
+static void _C_Person_Test_test(Class self, SEL _cmd) {
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_06_qjyqjkyd1m33xtx_1syb5yvw0000gn_T_Person_Test_3f0c36_mi_3);
 }
 
 // @end
@@ -97912,11 +97942,13 @@ static struct /*_method_list_t*/ {
 static struct /*_method_list_t*/ {
 	unsigned int entsize;  // sizeof(struct _objc_method)
 	unsigned int method_count;
-	struct _objc_method method_list[1];
+	struct _objc_method method_list[3];
 } _OBJC_$_CATEGORY_CLASS_METHODS_Person_$_Test __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_objc_method),
-	1,
-	{{(struct objc_selector *)"test2", "v16@0:8", (void *)_C_Person_Test_test2}}
+	3,
+	{{(struct objc_selector *)"load", "v16@0:8", (void *)_C_Person_Test_load},
+	{(struct objc_selector *)"test2", "v16@0:8", (void *)_C_Person_Test_test2},
+	{(struct objc_selector *)"test", "v16@0:8", (void *)_C_Person_Test_test}}
 };
 
 extern "C" __declspec(dllimport) struct _class_t OBJC_CLASS_$_Person;
@@ -97939,5 +97971,8 @@ __declspec(allocate(".objc_inithooks$B")) static void *OBJC_CATEGORY_SETUP[] = {
 };
 static struct _category_t *L_OBJC_LABEL_CATEGORY_$ [1] __attribute__((used, section ("__DATA, __objc_catlist,regular,no_dead_strip")))= {
 	&_OBJC_$_CATEGORY_Person_$_Test,
+};
+static struct _category_t *_OBJC_LABEL_NONLAZY_CATEGORY_$[] = {
+		&_OBJC_$_CATEGORY_Person_$_Test,
 };
 static struct IMAGE_INFO { unsigned version; unsigned flag; } _OBJC_IMAGE_INFO = { 0, 2 };
